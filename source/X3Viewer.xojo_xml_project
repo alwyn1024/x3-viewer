@@ -52,6 +52,74 @@
  <WebHTMLHeader></WebHTMLHeader>
  <WebDisconnectString>The application has gone off-line. Please try again later.</WebDisconnectString>
 </block>
+<block type="Module" ID="1477969919">
+ <ObjName>App</ObjName>
+ <ObjContainerID>0</ObjContainerID>
+ <IsClass>1</IsClass>
+ <Superclass>Application</Superclass>
+ <ItemFlags>1</ItemFlags>
+ <IsInterface>0</IsInterface>
+ <IsApplicationObject>1</IsApplicationObject>
+ <Compatibility></Compatibility>
+ <PropertyVal Name="MenuBar"><Hex bytes="10">31343339333438373335</Hex></PropertyVal>
+ <ViewBehavior>
+ </ViewBehavior>
+ <Constant>
+  <ItemName>kFileQuitShortcut</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <TextEncoding>134217984</TextEncoding>
+  <ItemName>kFileQuitShortcut</ItemName>
+  <ItemType>0</ItemType>
+  <ItemDef></ItemDef>
+  <ItemFlags>0</ItemFlags>
+  <ConstantInstance>
+   <ItemPlatform>1</ItemPlatform>
+   <ItemLanguage>0</ItemLanguage>
+   <ItemDef>Cmd+Q</ItemDef>
+  </ConstantInstance>
+  <ConstantInstance>
+   <ItemPlatform>5</ItemPlatform>
+   <ItemLanguage>0</ItemLanguage>
+   <ItemDef>Ctrl+Q</ItemDef>
+  </ConstantInstance>
+ </Constant>
+ <Constant>
+  <ItemName>kFileQuit</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <TextEncoding>134217984</TextEncoding>
+  <ItemName>kFileQuit</ItemName>
+  <ItemType>0</ItemType>
+  <ItemDef>&amp;Quit</ItemDef>
+  <ItemFlags>0</ItemFlags>
+  <ConstantInstance>
+   <ItemPlatform>2</ItemPlatform>
+   <ItemLanguage>0</ItemLanguage>
+   <ItemDef>E&amp;xit</ItemDef>
+  </ConstantInstance>
+ </Constant>
+ <Constant>
+  <ItemName>kEditClear</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <TextEncoding>134217984</TextEncoding>
+  <ItemName>kEditClear</ItemName>
+  <ItemType>0</ItemType>
+  <ItemDef>&amp;Delete</ItemDef>
+  <ItemFlags>0</ItemFlags>
+  <ConstantInstance>
+   <ItemPlatform>2</ItemPlatform>
+   <ItemLanguage>0</ItemLanguage>
+   <ItemDef>&amp;Delete</ItemDef>
+  </ConstantInstance>
+  <ConstantInstance>
+   <ItemPlatform>5</ItemPlatform>
+   <ItemLanguage>0</ItemLanguage>
+   <ItemDef>&amp;Delete</ItemDef>
+  </ConstantInstance>
+ </Constant>
+</block>
 <block type="Toolbar" ID="941037567">
  <ObjName>MainToolbar</ObjName>
  <ObjContainerID>0</ObjContainerID>
@@ -683,75 +751,7 @@
   <Locked>0</Locked>
  </Control>
 </block>
-<block type="Module" ID="1477969919">
- <ObjName>App</ObjName>
- <ObjContainerID>0</ObjContainerID>
- <IsClass>1</IsClass>
- <Superclass>Application</Superclass>
- <ItemFlags>1</ItemFlags>
- <IsInterface>0</IsInterface>
- <IsApplicationObject>1</IsApplicationObject>
- <Compatibility></Compatibility>
- <PropertyVal Name="MenuBar"><Hex bytes="10">31343339333438373335</Hex></PropertyVal>
- <ViewBehavior>
- </ViewBehavior>
- <Constant>
-  <ItemName>kFileQuitShortcut</ItemName>
-  <Compatibility></Compatibility>
-  <Visible>1</Visible>
-  <TextEncoding>134217984</TextEncoding>
-  <ItemName>kFileQuitShortcut</ItemName>
-  <ItemType>0</ItemType>
-  <ItemDef></ItemDef>
-  <ItemFlags>0</ItemFlags>
-  <ConstantInstance>
-   <ItemPlatform>1</ItemPlatform>
-   <ItemLanguage>0</ItemLanguage>
-   <ItemDef>Cmd+Q</ItemDef>
-  </ConstantInstance>
-  <ConstantInstance>
-   <ItemPlatform>5</ItemPlatform>
-   <ItemLanguage>0</ItemLanguage>
-   <ItemDef>Ctrl+Q</ItemDef>
-  </ConstantInstance>
- </Constant>
- <Constant>
-  <ItemName>kFileQuit</ItemName>
-  <Compatibility></Compatibility>
-  <Visible>1</Visible>
-  <TextEncoding>134217984</TextEncoding>
-  <ItemName>kFileQuit</ItemName>
-  <ItemType>0</ItemType>
-  <ItemDef>&amp;Quit</ItemDef>
-  <ItemFlags>0</ItemFlags>
-  <ConstantInstance>
-   <ItemPlatform>2</ItemPlatform>
-   <ItemLanguage>0</ItemLanguage>
-   <ItemDef>E&amp;xit</ItemDef>
-  </ConstantInstance>
- </Constant>
- <Constant>
-  <ItemName>kEditClear</ItemName>
-  <Compatibility></Compatibility>
-  <Visible>1</Visible>
-  <TextEncoding>134217984</TextEncoding>
-  <ItemName>kEditClear</ItemName>
-  <ItemType>0</ItemType>
-  <ItemDef>&amp;Delete</ItemDef>
-  <ItemFlags>0</ItemFlags>
-  <ConstantInstance>
-   <ItemPlatform>2</ItemPlatform>
-   <ItemLanguage>0</ItemLanguage>
-   <ItemDef>&amp;Delete</ItemDef>
-  </ConstantInstance>
-  <ConstantInstance>
-   <ItemPlatform>5</ItemPlatform>
-   <ItemLanguage>0</ItemLanguage>
-   <ItemDef>&amp;Delete</ItemDef>
-  </ConstantInstance>
- </Constant>
-</block>
-<block type="Module" ID="2031818751">
+<block type="Module" ID="1566537727">
  <ObjName>X3Core</ObjName>
  <ObjContainerID>0</ObjContainerID>
  <IsClass>0</IsClass>
@@ -3097,7 +3097,7 @@
    <SourceLine>modelJSON = tin.ReadAll() ' load X3DF JSON from file</SourceLine>
    <SourceLine>tin.Close ' close file</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>Model = ModelFromX3DF(modelJSON) ' parse data and create X3Model from JSON</SourceLine>
+   <SourceLine>Model = ModelFromJSON(modelJSON) ' parse data and create X3Model from JSON</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>return model</SourceLine>
    <SourceLine></SourceLine>
@@ -3112,12 +3112,12 @@
   <ItemResult>X3Core.X3Model</ItemResult>
  </Method>
  <Method>
-  <ItemName>ModelFromX3DF</ItemName>
+  <ItemName>ModelFromJSON</ItemName>
   <Compatibility></Compatibility>
   <Visible>1</Visible>
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Function ModelFromX3DF(modelJSON As String) As X3Core.X3Model</SourceLine>
+   <SourceLine>Function ModelFromJSON(modelJSON As String) As X3Core.X3Model</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim model As new X3Core.X3Model</SourceLine>
@@ -3157,7 +3157,7 @@
    <SourceLine>Dim json as String</SourceLine>
    <SourceLine>Dim tout As TextOutputStream</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>json = X3DFFromModel(model) ' generate X3 Data Format JSON from X3Model</SourceLine>
+   <SourceLine>json = ModelToJSON(model) ' generate X3 Data Format JSON from X3Model</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>tout = TextOutputStream.Create(modelFile) ' open file for output</SourceLine>
    <SourceLine>tout.WriteLine json ' write X3DF JASON to file</SourceLine>
@@ -3173,12 +3173,12 @@
   <ItemResult></ItemResult>
  </Method>
  <Method>
-  <ItemName>X3DFFromModel</ItemName>
+  <ItemName>ModelToJSON</ItemName>
   <Compatibility></Compatibility>
   <Visible>1</Visible>
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Function X3DFFromModel(model As X3Core.X3Model) As String</SourceLine>
+   <SourceLine>Function ModelToJSON(model As X3Core.X3Model) As String</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim addedChild As Boolean</SourceLine>
@@ -3673,9 +3673,9 @@
  <ObjName>Build</ObjName>
  <ObjContainerID>1656686591</ObjContainerID>
 </block>
-<block type="Module" ID="1386340351">
+<block type="Module" ID="166889471">
  <ObjName>X3Vector</ObjName>
- <ObjContainerID>2031818751</ObjContainerID>
+ <ObjContainerID>1566537727</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -3876,9 +3876,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="1732009983">
+<block type="Module" ID="679059455">
  <ObjName>X3Color</ObjName>
- <ObjContainerID>2031818751</ObjContainerID>
+ <ObjContainerID>1566537727</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -4072,9 +4072,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="674822143">
+<block type="Module" ID="1423618047">
  <ObjName>X3Polygon</ObjName>
- <ObjContainerID>2031818751</ObjContainerID>
+ <ObjContainerID>1566537727</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -4686,9 +4686,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="2080915455">
+<block type="Module" ID="1659863039">
  <ObjName>X3Light</ObjName>
- <ObjContainerID>2031818751</ObjContainerID>
+ <ObjContainerID>1566537727</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -4812,9 +4812,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="1838479359">
+<block type="Module" ID="607508479">
  <ObjName>X3Model</ObjName>
- <ObjContainerID>2031818751</ObjContainerID>
+ <ObjContainerID>1566537727</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -5315,9 +5315,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="238944255">
+<block type="Module" ID="1324380159">
  <ObjName>X3Texture</ObjName>
- <ObjContainerID>2031818751</ObjContainerID>
+ <ObjContainerID>1566537727</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -5576,9 +5576,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="1167400959">
+<block type="Module" ID="221951999">
  <ObjName>X3UVCoordinate</ObjName>
- <ObjContainerID>2031818751</ObjContainerID>
+ <ObjContainerID>1566537727</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -5703,9 +5703,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="331718655">
+<block type="Module" ID="794232831">
  <ObjName>X3Quaternion</ObjName>
- <ObjContainerID>2031818751</ObjContainerID>
+ <ObjContainerID>1566537727</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -6077,9 +6077,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="1439299583">
+<block type="Module" ID="1482893311">
  <ObjName>X3Material</ObjName>
- <ObjContainerID>2031818751</ObjContainerID>
+ <ObjContainerID>1566537727</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -6231,9 +6231,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="1976344575">
+<block type="Module" ID="1340250111">
  <ObjName>X3Sprite</ObjName>
- <ObjContainerID>2031818751</ObjContainerID>
+ <ObjContainerID>1566537727</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -6422,9 +6422,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="1516978175">
+<block type="Module" ID="1367908351">
  <ObjName>X3SpriteCoordinate</ObjName>
- <ObjContainerID>2031818751</ObjContainerID>
+ <ObjContainerID>1566537727</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -6594,9 +6594,9 @@
    <EditorCount>1</EditorCount>
    <Editor>
     <EditorIndex>0</EditorIndex>
-    <EditorLocation>frmMain.action_Open</EditorLocation>
+    <EditorLocation>X3Core</EditorLocation>
     <EditorPath></EditorPath>
-    <EditingPartID>893575167</EditingPartID>
+    <EditingPartID>1566537727</EditingPartID>
    </Editor>
    <SelectedTab>0</SelectedTab>
   </Editors>
