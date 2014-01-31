@@ -19,7 +19,7 @@
  <DefaultLanguage>0</DefaultLanguage>
  <CurrentLanguage>0</CurrentLanguage>
  <DefaultEncoding>0</DefaultEncoding>
- <BuildFlags>22928</BuildFlags>
+ <BuildFlags>31120</BuildFlags>
  <UseBuildsFolder>1</UseBuildsFolder>
  <WebApp>0</WebApp>
  <Icon>
@@ -638,28 +638,28 @@
  <Control>
   <ControlClass>OpenGLSurface</ControlClass>
   <ItemName>OpenGLSurface</ItemName>
-  <PropertyVal Name="Name">Surface</PropertyVal>
-  <PropertyVal Name="Index"><Hex bytes="11">2D32313437343833363438</Hex></PropertyVal>
-  <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Left"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="Top"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="Width"><Hex bytes="3">363030</Hex></PropertyVal>
-  <PropertyVal Name="Height"><Hex bytes="3">343030</Hex></PropertyVal>
-  <PropertyVal Name="LockLeft">True</PropertyVal>
-  <PropertyVal Name="LockTop">True</PropertyVal>
-  <PropertyVal Name="LockRight">True</PropertyVal>
-  <PropertyVal Name="LockBottom">True</PropertyVal>
-  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="TabIndex"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="TabStop">True</PropertyVal>
-  <PropertyVal Name="InitialParent"></PropertyVal>
-  <PropertyVal Name="Visible">True</PropertyVal>
-  <PropertyVal Name="HelpTag"></PropertyVal>
-  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
-  <PropertyVal Name="Enabled">True</PropertyVal>
-  <PropertyVal Name="ColorBits"><Hex bytes="2">3234</Hex></PropertyVal>
-  <PropertyVal Name="DepthBits"><Hex bytes="2">3234</Hex></PropertyVal>
   <PropertyVal Name="DoubleBuffer">True</PropertyVal>
+  <PropertyVal Name="DepthBits"><Hex bytes="2">3234</Hex></PropertyVal>
+  <PropertyVal Name="ColorBits"><Hex bytes="2">3234</Hex></PropertyVal>
+  <PropertyVal Name="Enabled">True</PropertyVal>
+  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
+  <PropertyVal Name="HelpTag"></PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="InitialParent"></PropertyVal>
+  <PropertyVal Name="TabStop">True</PropertyVal>
+  <PropertyVal Name="TabIndex"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="LockBottom">True</PropertyVal>
+  <PropertyVal Name="LockRight">True</PropertyVal>
+  <PropertyVal Name="LockTop">True</PropertyVal>
+  <PropertyVal Name="LockLeft">True</PropertyVal>
+  <PropertyVal Name="Height"><Hex bytes="3">343030</Hex></PropertyVal>
+  <PropertyVal Name="Width"><Hex bytes="3">363030</Hex></PropertyVal>
+  <PropertyVal Name="Top"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="Left"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Index"><Hex bytes="11">2D32313437343833363438</Hex></PropertyVal>
+  <PropertyVal Name="Name">Surface</PropertyVal>
   <PropertyVal Name="Super">OpenGLSurface</PropertyVal>
   <ControlIndex>0</ControlIndex>
   <Locked>0</Locked>
@@ -667,17 +667,17 @@
  <Control>
   <ControlClass>MainToolbar</ControlClass>
   <ItemName>MainToolbar</ItemName>
-  <PropertyVal Name="Name">tbMain</PropertyVal>
-  <PropertyVal Name="Index"><Hex bytes="11">2D32313437343833363438</Hex></PropertyVal>
-  <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Left"><Hex bytes="2">3230</Hex></PropertyVal>
-  <PropertyVal Name="Top"><Hex bytes="2">3230</Hex></PropertyVal>
-  <PropertyVal Name="Width"><Hex bytes="3">313030</Hex></PropertyVal>
-  <PropertyVal Name="Height"><Hex bytes="2">3332</Hex></PropertyVal>
-  <PropertyVal Name="Visible">True</PropertyVal>
-  <PropertyVal Name="Enabled">True</PropertyVal>
-  <PropertyVal Name="InitialParent"></PropertyVal>
   <PropertyVal Name="TabPanelIndex">0</PropertyVal>
+  <PropertyVal Name="InitialParent"></PropertyVal>
+  <PropertyVal Name="Enabled">True</PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="Height"><Hex bytes="2">3332</Hex></PropertyVal>
+  <PropertyVal Name="Width"><Hex bytes="3">313030</Hex></PropertyVal>
+  <PropertyVal Name="Top"><Hex bytes="2">3230</Hex></PropertyVal>
+  <PropertyVal Name="Left"><Hex bytes="2">3230</Hex></PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Index"><Hex bytes="11">2D32313437343833363438</Hex></PropertyVal>
+  <PropertyVal Name="Name">tbMain</PropertyVal>
   <PropertyVal Name="Super">MainToolbar</PropertyVal>
   <ControlIndex>1</ControlIndex>
   <Locked>0</Locked>
@@ -1705,229 +1705,67 @@
   <ItemParams>model As X3Core.X3Model, x As Integer, y As Integer</ItemParams>
   <ItemResult>X3Core.X3Polygon</ItemResult>
  </Method>
- <ViewBehavior>
-  <ViewProperty>
-   <ObjName>Index</ObjName>
-   <Visible>1</Visible>
-   <PropertyGroup>ID</PropertyGroup>
-   <PropertyValue>-2147483648</PropertyValue>
-   <ItemType>Integer</ItemType>
-  </ViewProperty>
-  <ViewProperty>
-   <ObjName>Left</ObjName>
-   <Visible>1</Visible>
-   <PropertyGroup>Position</PropertyGroup>
-   <PropertyValue>0</PropertyValue>
-   <ItemType>Integer</ItemType>
-  </ViewProperty>
-  <ViewProperty>
-   <ObjName>Name</ObjName>
-   <Visible>1</Visible>
-   <PropertyGroup>ID</PropertyGroup>
-   <ItemType>String</ItemType>
-  </ViewProperty>
-  <ViewProperty>
-   <ObjName>Super</ObjName>
-   <Visible>1</Visible>
-   <PropertyGroup>ID</PropertyGroup>
-   <ItemType>String</ItemType>
-  </ViewProperty>
-  <ViewProperty>
-   <ObjName>Top</ObjName>
-   <Visible>1</Visible>
-   <PropertyGroup>Position</PropertyGroup>
-   <PropertyValue>0</PropertyValue>
-   <ItemType>Integer</ItemType>
-  </ViewProperty>
- </ViewBehavior>
- <Constant>
-  <ItemName>X3_180OverPi</ItemName>
-  <Compatibility></Compatibility>
-  <Visible>1</Visible>
-  <TextEncoding>134217984</TextEncoding>
-  <ItemName>X3_180OverPi</ItemName>
-  <ItemType>2</ItemType>
-  <ItemDef>57.295779513082321</ItemDef>
-  <ItemFlags>0</ItemFlags>
- </Constant>
- <Constant>
-  <ItemName>X3_PiOver180</ItemName>
-  <Compatibility></Compatibility>
-  <Visible>1</Visible>
-  <TextEncoding>134217984</TextEncoding>
-  <ItemName>X3_PiOver180</ItemName>
-  <ItemType>2</ItemType>
-  <ItemDef>0.017453292519943</ItemDef>
-  <ItemFlags>0</ItemFlags>
- </Constant>
-</block>
-<block type="Module" ID="1442105343">
- <ObjName>X3Extended</ObjName>
- <ObjContainerID>0</ObjContainerID>
- <IsClass>0</IsClass>
- <ItemFlags>1</ItemFlags>
- <IsInterface>0</IsInterface>
- <Compatibility></Compatibility>
  <Method>
-  <ItemName>X3E_CenterModel</ItemName>
+  <ItemName>x3df_matchUVIndex</ItemName>
   <Compatibility></Compatibility>
   <Visible>1</Visible>
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Sub X3E_CenterModel(ByRef model As X3Core.X3Model, pos As X3Core.X3Vector = nil)</SourceLine>
-   <SourceLine>Dim centPos As X3Core.X3Vector</SourceLine>
-   <SourceLine>Dim i As Integer</SourceLine>
-   <SourceLine>Dim midX As Double</SourceLine>
-   <SourceLine>Dim midY As Double</SourceLine>
-   <SourceLine>Dim midZ As Double</SourceLine>
-   <SourceLine>Dim xStep As Double</SourceLine>
-   <SourceLine>Dim yStep As Double</SourceLine>
-   <SourceLine>Dim zStep As Double</SourceLine>
+   <SourceLine>Function x3df_matchUVIndex(mp As Ptr, ByRef pos As Integer, ByRef poly As X3Core.X3Polygon) As Boolean</SourceLine>
+   <SourceLine>'#pragma DisableBackgroundTasks</SourceLine>
+   <SourceLine>'#pragma NilObjectChecking</SourceLine>
+   <SourceLine>'#pragma StackOverflowChecking</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>if pos = nil then</SourceLine>
-   <SourceLine>centPos = new X3Core.X3Vector(0, 0, 0)</SourceLine>
-   <SourceLine>else</SourceLine>
-   <SourceLine>centPos = pos</SourceLine>
+   <SourceLine>Dim result As Boolean</SourceLine>
+   <SourceLine>Dim tmpInt As Integer</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>result = false</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if mp.Byte(pos) = 91 then ' [</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' skip white space</SourceLine>
+   <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
+   <SourceLine>wend</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>do</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>result = x3df_matchInteger(mp, pos, tmpInt)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' skip white space</SourceLine>
+   <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
+   <SourceLine>wend</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if mp.Byte(pos) = 44 then ' ,</SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
    <SourceLine>end if</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>midX = 0</SourceLine>
-   <SourceLine>midY = 0</SourceLine>
-   <SourceLine>midZ = 0</SourceLine>
+   <SourceLine>' skip white space</SourceLine>
+   <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
+   <SourceLine>wend</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>for i = 0 to model.Vertex.Ubound</SourceLine>
-   <SourceLine>midX = midX + model.Vertex(i).X</SourceLine>
-   <SourceLine>midY = midY + model.Vertex(i).Y</SourceLine>
-   <SourceLine>midZ = midZ + model.Vertex(i).Z</SourceLine>
-   <SourceLine>next i</SourceLine>
+   <SourceLine>poly.UVIndex.Append tmpInt</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>midX = midX / (model.Vertex.Ubound + 1)</SourceLine>
-   <SourceLine>midY = midY / (model.Vertex.Ubound + 1)</SourceLine>
-   <SourceLine>midZ = midZ / (model.Vertex.Ubound + 1)</SourceLine>
+   <SourceLine>loop until (mp.Byte(pos) = 93) or not result ' ]</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>xStep = centPos.X - midX</SourceLine>
-   <SourceLine>yStep = centPos.Y - midY</SourceLine>
-   <SourceLine>zStep = centPos.Z - midZ</SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>for i = 0 to model.Vertex.Ubound</SourceLine>
-   <SourceLine>model.Vertex(i).X = model.Vertex(i).X + xStep</SourceLine>
-   <SourceLine>model.Vertex(i).Y = model.Vertex(i).Y + yStep</SourceLine>
-   <SourceLine>model.Vertex(i).Z = model.Vertex(i).Z + zStep</SourceLine>
-   <SourceLine>next i</SourceLine>
-   <SourceLine>End Sub</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>return result</SourceLine>
+   <SourceLine>End Function</SourceLine>
   </ItemSource>
   <TextEncoding>134217984</TextEncoding>
   <AliasName></AliasName>
-  <ItemFlags>0</ItemFlags>
+  <ItemFlags>33</ItemFlags>
   <IsShared>0</IsShared>
-  <ItemParams>ByRef model As X3Core.X3Model, pos As X3Core.X3Vector = nil</ItemParams>
-  <ItemResult></ItemResult>
+  <ItemParams>mp As Ptr, ByRef pos As Integer, ByRef poly As X3Core.X3Polygon</ItemParams>
+  <ItemResult>Boolean</ItemResult>
  </Method>
- <Method>
-  <ItemName>X3E_UnitizeModel</ItemName>
-  <Compatibility></Compatibility>
-  <Visible>1</Visible>
-  <ItemSource>
-   <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Sub X3E_UnitizeModel(ByRef model As X3Core.X3Model, pos As X3Core.X3Vector = nil)</SourceLine>
-   <SourceLine>Dim centPos As X3Core.X3Vector</SourceLine>
-   <SourceLine>Dim i As Integer</SourceLine>
-   <SourceLine>Dim midX As Double</SourceLine>
-   <SourceLine>Dim midY As Double</SourceLine>
-   <SourceLine>Dim midZ As Double</SourceLine>
-   <SourceLine>Dim vertLen As Double</SourceLine>
-   <SourceLine>Dim maxLen As Double</SourceLine>
-   <SourceLine>Dim scale As Double</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if pos = nil then</SourceLine>
-   <SourceLine>centPos = new X3Core.X3Vector(0, 0, 0)</SourceLine>
-   <SourceLine>else</SourceLine>
-   <SourceLine>centPos = pos</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>midX = 0</SourceLine>
-   <SourceLine>midY = 0</SourceLine>
-   <SourceLine>midZ = 0</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>for i = 0 to model.Vertex.Ubound</SourceLine>
-   <SourceLine>midX = midX + model.Vertex(i).X</SourceLine>
-   <SourceLine>midY = midY + model.Vertex(i).Y</SourceLine>
-   <SourceLine>midZ = midZ + model.Vertex(i).Z</SourceLine>
-   <SourceLine>next i</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>midX = midX / (model.Vertex.Ubound + 1)</SourceLine>
-   <SourceLine>midY = midY / (model.Vertex.Ubound + 1)</SourceLine>
-   <SourceLine>midZ = midZ / (model.Vertex.Ubound + 1)</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>maxLen = 0</SourceLine>
-   <SourceLine>for i = 0 to model.Vertex.Ubound</SourceLine>
-   <SourceLine>vertLen = Sqrt((model.Vertex(i).X - midX)^2 + (model.Vertex(i).Y - midY)^2 + (model.Vertex(i).Z - midZ)^2)</SourceLine>
-   <SourceLine>if vertLen &gt; maxLen then</SourceLine>
-   <SourceLine>maxLen = vertLen</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine>next i</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' scale model</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>scale = 1 / maxLen</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>for i = 0 to model.Vertex.Ubound</SourceLine>
-   <SourceLine>model.Vertex(i).X = model.Vertex(i).X / maxLen</SourceLine>
-   <SourceLine>model.Vertex(i).Y = model.Vertex(i).Y / maxLen</SourceLine>
-   <SourceLine>model.Vertex(i).Z = model.Vertex(i).Z / maxLen</SourceLine>
-   <SourceLine>next i</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>End Sub</SourceLine>
-  </ItemSource>
-  <TextEncoding>134217984</TextEncoding>
-  <AliasName></AliasName>
-  <ItemFlags>0</ItemFlags>
-  <IsShared>0</IsShared>
-  <ItemParams>ByRef model As X3Core.X3Model, pos As X3Core.X3Vector = nil</ItemParams>
-  <ItemResult></ItemResult>
- </Method>
- <ViewBehavior>
-  <ViewProperty>
-   <ObjName>Index</ObjName>
-   <Visible>1</Visible>
-   <PropertyGroup>ID</PropertyGroup>
-   <PropertyValue>-2147483648</PropertyValue>
-   <ItemType>Integer</ItemType>
-  </ViewProperty>
-  <ViewProperty>
-   <ObjName>Left</ObjName>
-   <Visible>1</Visible>
-   <PropertyGroup>Position</PropertyGroup>
-   <PropertyValue>0</PropertyValue>
-   <ItemType>Integer</ItemType>
-  </ViewProperty>
-  <ViewProperty>
-   <ObjName>Name</ObjName>
-   <Visible>1</Visible>
-   <PropertyGroup>ID</PropertyGroup>
-   <ItemType>String</ItemType>
-  </ViewProperty>
-  <ViewProperty>
-   <ObjName>Super</ObjName>
-   <Visible>1</Visible>
-   <PropertyGroup>ID</PropertyGroup>
-   <ItemType>String</ItemType>
-  </ViewProperty>
-  <ViewProperty>
-   <ObjName>Top</ObjName>
-   <Visible>1</Visible>
-   <PropertyGroup>Position</PropertyGroup>
-   <PropertyValue>0</PropertyValue>
-   <ItemType>Integer</ItemType>
-  </ViewProperty>
- </ViewBehavior>
-</block>
-<block type="Module" ID="338192383">
- <ObjName>X3IO</ObjName>
- <ObjContainerID>0</ObjContainerID>
- <IsClass>0</IsClass>
- <ItemFlags>1</ItemFlags>
- <IsInterface>0</IsInterface>
- <Compatibility></Compatibility>
  <Method>
   <ItemName>x3df_matchColorPal</ItemName>
   <Compatibility></Compatibility>
@@ -2828,67 +2666,6 @@
   <ItemFlags>33</ItemFlags>
   <IsShared>0</IsShared>
   <ItemParams>mp As Ptr, ByRef pos As Integer, ByRef model As X3Core.X3Model</ItemParams>
-  <ItemResult>Boolean</ItemResult>
- </Method>
- <Method>
-  <ItemName>x3df_matchUVIndex</ItemName>
-  <Compatibility></Compatibility>
-  <Visible>1</Visible>
-  <ItemSource>
-   <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Function x3df_matchUVIndex(mp As Ptr, ByRef pos As Integer, ByRef poly As X3Core.X3Polygon) As Boolean</SourceLine>
-   <SourceLine>'#pragma DisableBackgroundTasks</SourceLine>
-   <SourceLine>'#pragma NilObjectChecking</SourceLine>
-   <SourceLine>'#pragma StackOverflowChecking</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>Dim result As Boolean</SourceLine>
-   <SourceLine>Dim tmpInt As Integer</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>result = false</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if mp.Byte(pos) = 91 then ' [</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>pos = pos + 1</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' skip white space</SourceLine>
-   <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
-   <SourceLine>pos = pos + 1</SourceLine>
-   <SourceLine>wend</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>do</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>result = x3df_matchInteger(mp, pos, tmpInt)</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' skip white space</SourceLine>
-   <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
-   <SourceLine>pos = pos + 1</SourceLine>
-   <SourceLine>wend</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if mp.Byte(pos) = 44 then ' ,</SourceLine>
-   <SourceLine>pos = pos + 1</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' skip white space</SourceLine>
-   <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
-   <SourceLine>pos = pos + 1</SourceLine>
-   <SourceLine>wend</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>poly.UVIndex.Append tmpInt</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>loop until (mp.Byte(pos) = 93) or not result ' ]</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>pos = pos + 1</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>return result</SourceLine>
-   <SourceLine>End Function</SourceLine>
-  </ItemSource>
-  <TextEncoding>134217984</TextEncoding>
-  <AliasName></AliasName>
-  <ItemFlags>33</ItemFlags>
-  <IsShared>0</IsShared>
-  <ItemParams>mp As Ptr, ByRef pos As Integer, ByRef poly As X3Core.X3Polygon</ItemParams>
   <ItemResult>Boolean</ItemResult>
  </Method>
  <Method>
@@ -3846,6 +3623,123 @@
   <ItemParams>model As X3Core.X3Model</ItemParams>
   <ItemResult>String</ItemResult>
  </Method>
+ <Method>
+  <ItemName>X3E_UnitizeModel</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub X3E_UnitizeModel(ByRef model As X3Core.X3Model, pos As X3Core.X3Vector = nil)</SourceLine>
+   <SourceLine>Dim centPos As X3Core.X3Vector</SourceLine>
+   <SourceLine>Dim i As Integer</SourceLine>
+   <SourceLine>Dim midX As Double</SourceLine>
+   <SourceLine>Dim midY As Double</SourceLine>
+   <SourceLine>Dim midZ As Double</SourceLine>
+   <SourceLine>Dim vertLen As Double</SourceLine>
+   <SourceLine>Dim maxLen As Double</SourceLine>
+   <SourceLine>Dim scale As Double</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if pos = nil then</SourceLine>
+   <SourceLine>centPos = new X3Core.X3Vector(0, 0, 0)</SourceLine>
+   <SourceLine>else</SourceLine>
+   <SourceLine>centPos = pos</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>midX = 0</SourceLine>
+   <SourceLine>midY = 0</SourceLine>
+   <SourceLine>midZ = 0</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>for i = 0 to model.Vertex.Ubound</SourceLine>
+   <SourceLine>midX = midX + model.Vertex(i).X</SourceLine>
+   <SourceLine>midY = midY + model.Vertex(i).Y</SourceLine>
+   <SourceLine>midZ = midZ + model.Vertex(i).Z</SourceLine>
+   <SourceLine>next i</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>midX = midX / (model.Vertex.Ubound + 1)</SourceLine>
+   <SourceLine>midY = midY / (model.Vertex.Ubound + 1)</SourceLine>
+   <SourceLine>midZ = midZ / (model.Vertex.Ubound + 1)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>maxLen = 0</SourceLine>
+   <SourceLine>for i = 0 to model.Vertex.Ubound</SourceLine>
+   <SourceLine>vertLen = Sqrt((model.Vertex(i).X - midX)^2 + (model.Vertex(i).Y - midY)^2 + (model.Vertex(i).Z - midZ)^2)</SourceLine>
+   <SourceLine>if vertLen &gt; maxLen then</SourceLine>
+   <SourceLine>maxLen = vertLen</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine>next i</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' scale model</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>scale = 1 / maxLen</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>for i = 0 to model.Vertex.Ubound</SourceLine>
+   <SourceLine>model.Vertex(i).X = model.Vertex(i).X / maxLen</SourceLine>
+   <SourceLine>model.Vertex(i).Y = model.Vertex(i).Y / maxLen</SourceLine>
+   <SourceLine>model.Vertex(i).Z = model.Vertex(i).Z / maxLen</SourceLine>
+   <SourceLine>next i</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>ByRef model As X3Core.X3Model, pos As X3Core.X3Vector = nil</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>X3E_CenterModel</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub X3E_CenterModel(ByRef model As X3Core.X3Model, pos As X3Core.X3Vector = nil)</SourceLine>
+   <SourceLine>Dim centPos As X3Core.X3Vector</SourceLine>
+   <SourceLine>Dim i As Integer</SourceLine>
+   <SourceLine>Dim midX As Double</SourceLine>
+   <SourceLine>Dim midY As Double</SourceLine>
+   <SourceLine>Dim midZ As Double</SourceLine>
+   <SourceLine>Dim xStep As Double</SourceLine>
+   <SourceLine>Dim yStep As Double</SourceLine>
+   <SourceLine>Dim zStep As Double</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if pos = nil then</SourceLine>
+   <SourceLine>centPos = new X3Core.X3Vector(0, 0, 0)</SourceLine>
+   <SourceLine>else</SourceLine>
+   <SourceLine>centPos = pos</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>midX = 0</SourceLine>
+   <SourceLine>midY = 0</SourceLine>
+   <SourceLine>midZ = 0</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>for i = 0 to model.Vertex.Ubound</SourceLine>
+   <SourceLine>midX = midX + model.Vertex(i).X</SourceLine>
+   <SourceLine>midY = midY + model.Vertex(i).Y</SourceLine>
+   <SourceLine>midZ = midZ + model.Vertex(i).Z</SourceLine>
+   <SourceLine>next i</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>midX = midX / (model.Vertex.Ubound + 1)</SourceLine>
+   <SourceLine>midY = midY / (model.Vertex.Ubound + 1)</SourceLine>
+   <SourceLine>midZ = midZ / (model.Vertex.Ubound + 1)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>xStep = centPos.X - midX</SourceLine>
+   <SourceLine>yStep = centPos.Y - midY</SourceLine>
+   <SourceLine>zStep = centPos.Z - midZ</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>for i = 0 to model.Vertex.Ubound</SourceLine>
+   <SourceLine>model.Vertex(i).X = model.Vertex(i).X + xStep</SourceLine>
+   <SourceLine>model.Vertex(i).Y = model.Vertex(i).Y + yStep</SourceLine>
+   <SourceLine>model.Vertex(i).Z = model.Vertex(i).Z + zStep</SourceLine>
+   <SourceLine>next i</SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>ByRef model As X3Core.X3Model, pos As X3Core.X3Vector = nil</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
  <ViewBehavior>
   <ViewProperty>
    <ObjName>Index</ObjName>
@@ -3881,6 +3775,26 @@
    <ItemType>Integer</ItemType>
   </ViewProperty>
  </ViewBehavior>
+ <Constant>
+  <ItemName>X3_180OverPi</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <TextEncoding>134217984</TextEncoding>
+  <ItemName>X3_180OverPi</ItemName>
+  <ItemType>2</ItemType>
+  <ItemDef>57.295779513082321</ItemDef>
+  <ItemFlags>0</ItemFlags>
+ </Constant>
+ <Constant>
+  <ItemName>X3_PiOver180</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <TextEncoding>134217984</TextEncoding>
+  <ItemName>X3_PiOver180</ItemName>
+  <ItemType>2</ItemType>
+  <ItemDef>0.017453292519943</ItemDef>
+  <ItemFlags>0</ItemFlags>
+ </Constant>
 </block>
 <block type="BuildAutomation" ID="1587267583">
  <ObjName>Build Automation</ObjName>
@@ -6672,9 +6586,9 @@
    <EditorCount>1</EditorCount>
    <Editor>
     <EditorIndex>0</EditorIndex>
-    <EditorLocation>X3Core.renderPolygon</EditorLocation>
+    <EditorLocation></EditorLocation>
     <EditorPath></EditorPath>
-    <EditingPartID>2031818751</EditingPartID>
+    <EditingPartID>1442105343</EditingPartID>
    </Editor>
    <SelectedTab>0</SelectedTab>
   </Editors>
