@@ -933,8 +933,6 @@
    <SourceLine></SourceLine>
    <SourceLine>' add vertices to the model</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>' TODO: determine dimensions correctly based on spriteWidth and Height</SourceLine>
-   <SourceLine></SourceLine>
    <SourceLine>Model.Vertex.Append new X3Core.X3Vector(-1, 1, 0)</SourceLine>
    <SourceLine>Model.Vertex.Append new X3Core.X3Vector(-1, -1, 0)</SourceLine>
    <SourceLine>Model.Vertex.Append new X3Core.X3Vector(1, -1, 0)</SourceLine>
@@ -6594,7 +6592,7 @@
    <EditorCount>1</EditorCount>
    <Editor>
     <EditorIndex>0</EditorIndex>
-    <EditorLocation>X3Core</EditorLocation>
+    <EditorLocation>X3Core.X3_CreateSprite</EditorLocation>
     <EditorPath></EditorPath>
     <EditingPartID>1566537727</EditingPartID>
    </Editor>
