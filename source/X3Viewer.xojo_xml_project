@@ -690,9 +690,10 @@
    <ItemSource>
     <TextEncoding>134217984</TextEncoding>
     <SourceLine>Sub MouseDrag(x as Integer, y as Integer)</SourceLine>
+    <SourceLine>if CurrentModel &lt;&gt; nil then</SourceLine>
     <SourceLine>X3_RotateWithXY CurrentModel.Rotation, (y - MousePrevY), (x - MousePrevX)</SourceLine>
-    <SourceLine></SourceLine>
     <SourceLine>Surface.Render</SourceLine>
+    <SourceLine>end if</SourceLine>
     <SourceLine></SourceLine>
     <SourceLine>MousePrevX = x</SourceLine>
     <SourceLine>MousePrevY = y</SourceLine>
@@ -6902,9 +6903,9 @@
    <EditorCount>1</EditorCount>
    <Editor>
     <EditorIndex>0</EditorIndex>
-    <EditorLocation>X3Core.X3Model.Center</EditorLocation>
+    <EditorLocation>frmMain.Controls.Surface.MouseDrag</EditorLocation>
     <EditorPath></EditorPath>
-    <EditingPartID>733429759</EditingPartID>
+    <EditingPartID>893575167</EditingPartID>
    </Editor>
    <SelectedTab>0</SelectedTab>
   </Editors>
