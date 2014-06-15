@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<RBProject version="2013r4.1" FormatVersion="2" MinIDEVersion="20070100">
+<RBProject version="2014r1.1" FormatVersion="2" MinIDEVersion="20070100">
 <block type="Project" ID="0">
- <ProjectSavedInVers>2013.041</ProjectSavedInVers>
+ <ProjectSavedInVers>2014.011</ProjectSavedInVers>
  <ProjMgrUser></ProjMgrUser>
  <ProjMgrServer></ProjMgrServer>
  <MajorVersion>0</MajorVersion>
@@ -51,6 +51,8 @@
  <WebLaunchString>Launching...</WebLaunchString>
  <WebHTMLHeader></WebHTMLHeader>
  <WebDisconnectString>The application has gone off-line. Please try again later.</WebDisconnectString>
+ <WebHostingIdentifier></WebHostingIdentifier>
+ <WebHostingAppName>MyApplication</WebHostingAppName>
 </block>
 <block type="Module" ID="1477969919">
  <ObjName>App</ObjName>
@@ -331,6 +333,20 @@
   </ItemSource>
   <TextEncoding>134217984</TextEncoding>
   <ItemDeclaration>MousePrevY As Integer</ItemDeclaration>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+ </Property>
+ <Property>
+  <ItemName>CurrentScene</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>CurrentScene As X3Core.X3Scene</SourceLine>
+   <SourceLine></SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <ItemDeclaration>CurrentScene As X3Core.X3Scene</ItemDeclaration>
   <ItemFlags>0</ItemFlags>
   <IsShared>0</IsShared>
  </Property>
@@ -631,18 +647,18 @@
    <ItemSource>
     <TextEncoding>134217984</TextEncoding>
     <SourceLine>Function Render() As Boolean</SourceLine>
-    <SourceLine></SourceLine>
     <SourceLine>OpenGL.glClearColor(0.2, 0.2, 0.2, 1) ' set the background color</SourceLine>
     <SourceLine>OpenGL.glClear(OpenGL.GL_COLOR_BUFFER_BIT + OpenGL.GL_DEPTH_BUFFER_BIT)</SourceLine>
     <SourceLine></SourceLine>
-    <SourceLine>if CurrentModel &lt;&gt; nil then</SourceLine>
+    <SourceLine>if CurrentScene &lt;&gt; nil then</SourceLine>
+    <SourceLine></SourceLine>
+    <SourceLine>X3_RenderScene CurrentScene</SourceLine>
+    <SourceLine></SourceLine>
+    <SourceLine>elseif CurrentModel &lt;&gt; nil then</SourceLine>
     <SourceLine></SourceLine>
     <SourceLine>OpenGL.glPushMatrix</SourceLine>
-    <SourceLine></SourceLine>
     <SourceLine>OpenGL.glTranslatef 0, 0, -2</SourceLine>
-    <SourceLine></SourceLine>
     <SourceLine>X3_RenderModel CurrentModel</SourceLine>
-    <SourceLine></SourceLine>
     <SourceLine>OpenGL.glPopMatrix</SourceLine>
     <SourceLine></SourceLine>
     <SourceLine>end if</SourceLine>
@@ -707,52 +723,52 @@
  <Control>
   <ControlClass>OpenGLSurface</ControlClass>
   <ItemName>OpenGLSurface</ItemName>
-  <PropertyVal Name="Name">Surface</PropertyVal>
-  <PropertyVal Name="Index"><Hex bytes="11">2D32313437343833363438</Hex></PropertyVal>
-  <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Left"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="Top"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="Width"><Hex bytes="3">363030</Hex></PropertyVal>
-  <PropertyVal Name="Height"><Hex bytes="3">343030</Hex></PropertyVal>
-  <PropertyVal Name="LockLeft">True</PropertyVal>
-  <PropertyVal Name="LockTop">True</PropertyVal>
-  <PropertyVal Name="LockRight">True</PropertyVal>
-  <PropertyVal Name="LockBottom">True</PropertyVal>
-  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="TabIndex"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="TabStop">True</PropertyVal>
-  <PropertyVal Name="InitialParent"></PropertyVal>
-  <PropertyVal Name="Visible">True</PropertyVal>
-  <PropertyVal Name="HelpTag"></PropertyVal>
-  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
-  <PropertyVal Name="Enabled">True</PropertyVal>
-  <PropertyVal Name="ColorBits"><Hex bytes="2">3234</Hex></PropertyVal>
-  <PropertyVal Name="DepthBits"><Hex bytes="2">3234</Hex></PropertyVal>
   <PropertyVal Name="DoubleBuffer">True</PropertyVal>
+  <PropertyVal Name="DepthBits"><Hex bytes="2">3234</Hex></PropertyVal>
+  <PropertyVal Name="ColorBits"><Hex bytes="2">3234</Hex></PropertyVal>
+  <PropertyVal Name="Enabled">True</PropertyVal>
+  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
+  <PropertyVal Name="HelpTag"></PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="InitialParent"></PropertyVal>
+  <PropertyVal Name="TabStop">True</PropertyVal>
+  <PropertyVal Name="TabIndex"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="LockBottom">True</PropertyVal>
+  <PropertyVal Name="LockRight">True</PropertyVal>
+  <PropertyVal Name="LockTop">True</PropertyVal>
+  <PropertyVal Name="LockLeft">True</PropertyVal>
+  <PropertyVal Name="Height"><Hex bytes="3">343030</Hex></PropertyVal>
+  <PropertyVal Name="Width"><Hex bytes="3">363030</Hex></PropertyVal>
+  <PropertyVal Name="Top"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="Left"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
   <PropertyVal Name="Super">OpenGLSurface</PropertyVal>
+  <PropertyVal Name="Index"><Hex bytes="11">2D32313437343833363438</Hex></PropertyVal>
+  <PropertyVal Name="Name">Surface</PropertyVal>
   <ControlIndex>0</ControlIndex>
   <Locked>0</Locked>
  </Control>
  <Control>
   <ControlClass>MainToolbar</ControlClass>
   <ItemName>MainToolbar</ItemName>
-  <PropertyVal Name="Name">tbMain</PropertyVal>
-  <PropertyVal Name="Index"><Hex bytes="11">2D32313437343833363438</Hex></PropertyVal>
-  <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Left"><Hex bytes="2">3230</Hex></PropertyVal>
-  <PropertyVal Name="Top"><Hex bytes="2">3230</Hex></PropertyVal>
-  <PropertyVal Name="Width"><Hex bytes="3">313030</Hex></PropertyVal>
-  <PropertyVal Name="Height"><Hex bytes="2">3332</Hex></PropertyVal>
-  <PropertyVal Name="Visible">True</PropertyVal>
-  <PropertyVal Name="Enabled">True</PropertyVal>
-  <PropertyVal Name="InitialParent"></PropertyVal>
   <PropertyVal Name="TabPanelIndex">0</PropertyVal>
+  <PropertyVal Name="InitialParent"></PropertyVal>
+  <PropertyVal Name="Enabled">True</PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="Height"><Hex bytes="2">3332</Hex></PropertyVal>
+  <PropertyVal Name="Width"><Hex bytes="3">313030</Hex></PropertyVal>
+  <PropertyVal Name="Top"><Hex bytes="2">3230</Hex></PropertyVal>
+  <PropertyVal Name="Left"><Hex bytes="2">3230</Hex></PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
   <PropertyVal Name="Super">MainToolbar</PropertyVal>
+  <PropertyVal Name="Index"><Hex bytes="11">2D32313437343833363438</Hex></PropertyVal>
+  <PropertyVal Name="Name">tbMain</PropertyVal>
   <ControlIndex>1</ControlIndex>
   <Locked>0</Locked>
  </Control>
 </block>
-<block type="Module" ID="1809442815">
+<block type="Module" ID="1275043839">
  <ObjName>X3Core</ObjName>
  <ObjContainerID>0</ObjContainerID>
  <IsClass>0</IsClass>
@@ -1135,7 +1151,6 @@
    <SourceLine>Dim currIndex As Integer = -1 ' current material index</SourceLine>
    <SourceLine>Dim texture As X3Core.X3Texture</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>'OpenGL.glDisable OpenGL.GL_COLOR_MATERIAL ' disable overwriting of material properties with vertex colors</SourceLine>
    <SourceLine>OpenGL.glEnable OpenGL.GL_COLOR_MATERIAL ' enable use vertex colors</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>OpenGL.glPushMatrix ' save matrix</SourceLine>
@@ -2057,6 +2072,24 @@
   <ItemParams>model As X3Core.X3Model</ItemParams>
   <ItemResult>String</ItemResult>
  </Method>
+ <Method>
+  <ItemName>X3_RenderScene</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub X3_RenderScene(scene As X3Core.X3Scene)</SourceLine>
+   <SourceLine>// TODO</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>scene As X3Core.X3Scene</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
  <ViewBehavior>
   <ViewProperty>
    <ObjName>Index</ObjName>
@@ -2113,6 +2146,77 @@
   <ItemFlags>0</ItemFlags>
  </Constant>
 </block>
+<block type="Module" ID="625401855">
+ <ObjName>X3Camera</ObjName>
+ <ObjContainerID>1275043839</ObjContainerID>
+ <IsClass>1</IsClass>
+ <ItemFlags>1</ItemFlags>
+ <IsInterface>0</IsInterface>
+ <Compatibility></Compatibility>
+ <Property>
+  <ItemName>Position</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Position As X3Core.X3Vector</SourceLine>
+   <SourceLine></SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <ItemDeclaration>Position As X3Core.X3Vector</ItemDeclaration>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+ </Property>
+ <Property>
+  <ItemName>Rotation</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Rotation As X3Core.X3Quaternion</SourceLine>
+   <SourceLine></SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <ItemDeclaration>Rotation As X3Core.X3Quaternion</ItemDeclaration>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+ </Property>
+ <ViewBehavior>
+  <ViewProperty>
+   <ObjName>Name</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>ID</PropertyGroup>
+   <ItemType>String</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>Index</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>ID</PropertyGroup>
+   <PropertyValue>-2147483648</PropertyValue>
+   <ItemType>Integer</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>Super</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>ID</PropertyGroup>
+   <ItemType>String</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>Left</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>Position</PropertyGroup>
+   <PropertyValue>0</PropertyValue>
+   <ItemType>Integer</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>Top</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>Position</PropertyGroup>
+   <PropertyValue>0</PropertyValue>
+   <ItemType>Integer</ItemType>
+  </ViewProperty>
+ </ViewBehavior>
+</block>
 <block type="BuildAutomation" ID="1587267583">
  <ObjName>Build Automation</ObjName>
  <ObjContainerID>0</ObjContainerID>
@@ -2141,9 +2245,9 @@
  <ObjName>Build</ObjName>
  <ObjContainerID>1656686591</ObjContainerID>
 </block>
-<block type="Module" ID="39086079">
+<block type="Module" ID="1454919679">
  <ObjName>X3Vector</ObjName>
- <ObjContainerID>1809442815</ObjContainerID>
+ <ObjContainerID>1275043839</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -2344,9 +2448,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="1244735487">
+<block type="Module" ID="1316149247">
  <ObjName>X3Color</ObjName>
- <ObjContainerID>1809442815</ObjContainerID>
+ <ObjContainerID>1275043839</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -2540,9 +2644,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="21440511">
+<block type="Module" ID="2027589631">
  <ObjName>X3Polygon</ObjName>
- <ObjContainerID>1809442815</ObjContainerID>
+ <ObjContainerID>1275043839</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -3154,9 +3258,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="220225535">
+<block type="Module" ID="1274544127">
  <ObjName>X3Light</ObjName>
- <ObjContainerID>1809442815</ObjContainerID>
+ <ObjContainerID>1275043839</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -3280,9 +3384,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="1466152959">
+<block type="Module" ID="733429759">
  <ObjName>X3Model</ObjName>
- <ObjContainerID>1809442815</ObjContainerID>
+ <ObjContainerID>1275043839</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -3443,13 +3547,40 @@
    <SourceLine>' www.Xojo3D.com</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim centPos As X3Core.X3Vector</SourceLine>
+   <SourceLine>Dim maxX As Double</SourceLine>
+   <SourceLine>Dim minX As Double</SourceLine>
+   <SourceLine>Dim maxY As Double</SourceLine>
+   <SourceLine>Dim minY As Double</SourceLine>
+   <SourceLine>Dim maxZ As Double</SourceLine>
+   <SourceLine>Dim minZ As Double</SourceLine>
    <SourceLine>Dim i As Integer</SourceLine>
-   <SourceLine>Dim midX As Double</SourceLine>
-   <SourceLine>Dim midY As Double</SourceLine>
-   <SourceLine>Dim midZ As Double</SourceLine>
-   <SourceLine>Dim xStep As Double</SourceLine>
-   <SourceLine>Dim yStep As Double</SourceLine>
-   <SourceLine>Dim zStep As Double</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>maxX = Vertex(i).X</SourceLine>
+   <SourceLine>minX = Vertex(i).X</SourceLine>
+   <SourceLine>maxY = Vertex(i).Y</SourceLine>
+   <SourceLine>minY = Vertex(i).Y</SourceLine>
+   <SourceLine>maxZ = Vertex(i).Z</SourceLine>
+   <SourceLine>minZ = Vertex(i).Z</SourceLine>
+   <SourceLine>for i = 1 to Vertex.Ubound</SourceLine>
+   <SourceLine>if Vertex(i).X &gt; maxX then</SourceLine>
+   <SourceLine>maxX = Vertex(i).X</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine>if Vertex(i).X &lt; minX then</SourceLine>
+   <SourceLine>minX = Vertex(i).X</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine>if Vertex(i).Y &gt; maxY then</SourceLine>
+   <SourceLine>maxY = Vertex(i).Y</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine>if Vertex(i).Y &lt; minY then</SourceLine>
+   <SourceLine>minY = Vertex(i).Y</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine>if Vertex(i).Z &gt; maxZ then</SourceLine>
+   <SourceLine>maxZ = Vertex(i).Z</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine>if Vertex(i).Z &lt; minZ then</SourceLine>
+   <SourceLine>minZ = Vertex(i).Z</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine>next i</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>if pos = nil then</SourceLine>
    <SourceLine>centPos = new X3Core.X3Vector(0, 0, 0)</SourceLine>
@@ -3457,29 +3588,16 @@
    <SourceLine>centPos = pos</SourceLine>
    <SourceLine>end if</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>midX = 0</SourceLine>
-   <SourceLine>midY = 0</SourceLine>
-   <SourceLine>midZ = 0</SourceLine>
+   <SourceLine>MaxX = centPos.X - (MaxX + MinX) / 2</SourceLine>
+   <SourceLine>MaxY = centPos.Y - (MaxY + MinY) / 2</SourceLine>
+   <SourceLine>MaxZ = centPos.Z - (MaxZ + MinZ) / 2</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>for i = 0 to Vertex.Ubound</SourceLine>
-   <SourceLine>midX = midX + Vertex(i).X</SourceLine>
-   <SourceLine>midY = midY + Vertex(i).Y</SourceLine>
-   <SourceLine>midZ = midZ + Vertex(i).Z</SourceLine>
+   <SourceLine>Vertex(i).X = Vertex(i).X + MaxX</SourceLine>
+   <SourceLine>Vertex(i).Y = Vertex(i).Y + MaxY</SourceLine>
+   <SourceLine>Vertex(i).Z = Vertex(i).Z + MaxZ</SourceLine>
    <SourceLine>next i</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>midX = midX / (Vertex.Ubound + 1)</SourceLine>
-   <SourceLine>midY = midY / (Vertex.Ubound + 1)</SourceLine>
-   <SourceLine>midZ = midZ / (Vertex.Ubound + 1)</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>xStep = centPos.X - midX</SourceLine>
-   <SourceLine>yStep = centPos.Y - midY</SourceLine>
-   <SourceLine>zStep = centPos.Z - midZ</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>for i = 0 to Vertex.Ubound</SourceLine>
-   <SourceLine>Vertex(i).X = Vertex(i).X + xStep</SourceLine>
-   <SourceLine>Vertex(i).Y = Vertex(i).Y + yStep</SourceLine>
-   <SourceLine>Vertex(i).Z = Vertex(i).Z + zStep</SourceLine>
-   <SourceLine>next i</SourceLine>
    <SourceLine>End Sub</SourceLine>
   </ItemSource>
   <TextEncoding>134217984</TextEncoding>
@@ -3783,9 +3901,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="158414847">
+<block type="Module" ID="1772863487">
  <ObjName>X3Texture</ObjName>
- <ObjContainerID>1809442815</ObjContainerID>
+ <ObjContainerID>1275043839</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -4066,9 +4184,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="819073023">
+<block type="Module" ID="788971519">
  <ObjName>X3UVCoordinate</ObjName>
- <ObjContainerID>1809442815</ObjContainerID>
+ <ObjContainerID>1275043839</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -4193,9 +4311,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="2053642239">
+<block type="Module" ID="369190911">
  <ObjName>X3Quaternion</ObjName>
- <ObjContainerID>1809442815</ObjContainerID>
+ <ObjContainerID>1275043839</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -4567,9 +4685,94 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="1533130751">
+<block type="Module" ID="388931583">
+ <ObjName>X3Scene</ObjName>
+ <ObjContainerID>1275043839</ObjContainerID>
+ <IsClass>1</IsClass>
+ <ItemFlags>1</ItemFlags>
+ <IsInterface>0</IsInterface>
+ <Compatibility></Compatibility>
+ <Property>
+  <ItemName>Model()</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Model() As X3Core.X3Model</SourceLine>
+   <SourceLine></SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <ItemDeclaration>Model() As X3Core.X3Model</ItemDeclaration>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+ </Property>
+ <Property>
+  <ItemName>Camera()</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Camera() As X3Core.X3Camera</SourceLine>
+   <SourceLine></SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <ItemDeclaration>Camera() As X3Core.X3Camera</ItemDeclaration>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+ </Property>
+ <Property>
+  <ItemName>CameraIndex</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>CameraIndex As Integer</SourceLine>
+   <SourceLine></SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <ItemDeclaration>CameraIndex As Integer</ItemDeclaration>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+ </Property>
+ <ViewBehavior>
+  <ViewProperty>
+   <ObjName>Name</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>ID</PropertyGroup>
+   <ItemType>String</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>Index</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>ID</PropertyGroup>
+   <PropertyValue>-2147483648</PropertyValue>
+   <ItemType>Integer</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>Super</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>ID</PropertyGroup>
+   <ItemType>String</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>Left</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>Position</PropertyGroup>
+   <PropertyValue>0</PropertyValue>
+   <ItemType>Integer</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>Top</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>Position</PropertyGroup>
+   <PropertyValue>0</PropertyValue>
+   <ItemType>Integer</ItemType>
+  </ViewProperty>
+ </ViewBehavior>
+</block>
+<block type="Module" ID="641349631">
  <ObjName>X3Material</ObjName>
- <ObjContainerID>1809442815</ObjContainerID>
+ <ObjContainerID>1275043839</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -4721,9 +4924,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="1436776447">
+<block type="Module" ID="943728639">
  <ObjName>X3Sprite</ObjName>
- <ObjContainerID>1809442815</ObjContainerID>
+ <ObjContainerID>1275043839</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -4912,9 +5115,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="1984657407">
+<block type="Module" ID="1912895487">
  <ObjName>X3SpriteCoordinate</ObjName>
- <ObjContainerID>1809442815</ObjContainerID>
+ <ObjContainerID>1275043839</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -5078,9 +5281,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="482539519">
+<block type="Module" ID="1878820863">
  <ObjName>X3IO</ObjName>
- <ObjContainerID>1809442815</ObjContainerID>
+ <ObjContainerID>1275043839</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -6632,6 +6835,31 @@
   <ItemParams>mp As Ptr, ByRef pos As Integer</ItemParams>
   <ItemResult></ItemResult>
  </Method>
+ <Method>
+  <ItemName>LoadModel</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Function LoadModel(modelJSON As String) As X3Core.X3Model</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>Dim model As X3Core.X3Model</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>Model = modelFromJSON(modelJSON) ' parse data and create X3Model from JSON</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>return model</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Function</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>modelJSON As String</ItemParams>
+  <ItemResult>X3Core.X3Model</ItemResult>
+ </Method>
  <ViewBehavior>
   <ViewProperty>
    <ObjName>Name</ObjName>
@@ -6674,9 +6902,9 @@
    <EditorCount>1</EditorCount>
    <Editor>
     <EditorIndex>0</EditorIndex>
-    <EditorLocation>X3Core.X3_RenderModel</EditorLocation>
+    <EditorLocation>X3Core.X3Model.Center</EditorLocation>
     <EditorPath></EditorPath>
-    <EditingPartID>1809442815</EditingPartID>
+    <EditingPartID>733429759</EditingPartID>
    </Editor>
    <SelectedTab>0</SelectedTab>
   </Editors>
