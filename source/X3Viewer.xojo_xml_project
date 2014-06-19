@@ -17,7 +17,7 @@
  <DefaultLanguage>0</DefaultLanguage>
  <CurrentLanguage>0</CurrentLanguage>
  <DefaultEncoding>0</DefaultEncoding>
- <BuildFlags>29072</BuildFlags>
+ <BuildFlags>20880</BuildFlags>
  <UseBuildsFolder>1</UseBuildsFolder>
  <WebApp>0</WebApp>
  <Icon>
@@ -255,7 +255,7 @@
    <SourceLine></SourceLine>
    <SourceLine>elseif Right(x3File.Name, 4) = ".x3s" then // x3 scene</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>// TODO: load scene</SourceLine>
+   <SourceLine>CurrentScene = io.LoadScene(x3File)</SourceLine>
    <SourceLine>Surface.Render</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>end if</SourceLine>
@@ -6872,6 +6872,37 @@
   <IsShared>0</IsShared>
   <ItemParams>modelJSON As String</ItemParams>
   <ItemResult>X3Core.X3Model</ItemResult>
+ </Method>
+ <Method>
+  <ItemName>LoadScene</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Function LoadScene(sceneFile As FolderItem) As X3Core.X3Scene</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>Dim scene As X3Core.X3Scene</SourceLine>
+   <SourceLine>Dim tin As TextInputStream</SourceLine>
+   <SourceLine>Dim sceneJSON As String</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>tin = TextInputStream.Open(sceneFile) ' open file</SourceLine>
+   <SourceLine>sceneJSON = tin.ReadAll() ' load X3DF JSON from file</SourceLine>
+   <SourceLine>tin.Close ' close file</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>//Scene = sceneFromJSON(sceneJSON) ' parse data and create X3Scene from JSON</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>return scene</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Function</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>sceneFile As FolderItem</ItemParams>
+  <ItemResult>X3Core.X3Scene</ItemResult>
  </Method>
  <ViewBehavior>
   <ViewProperty>
