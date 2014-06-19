@@ -6940,18 +6940,18 @@
    <SourceLine></SourceLine>
    <SourceLine>Dim scene As new X3Core.X3Scene</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>'Dim pos As Integer</SourceLine>
-   <SourceLine>'Dim jsonMB As MemoryBlock</SourceLine>
-   <SourceLine>'Dim result As Boolean</SourceLine>
-   <SourceLine>'Dim mp As Ptr</SourceLine>
-   <SourceLine>'</SourceLine>
-   <SourceLine>'' this method renders X3 Data Format JSON into an X3Model</SourceLine>
-   <SourceLine>'</SourceLine>
-   <SourceLine>'jsonMB = modelJSON</SourceLine>
-   <SourceLine>'pos = 0</SourceLine>
-   <SourceLine>'mp = jsonMB</SourceLine>
-   <SourceLine>'</SourceLine>
-   <SourceLine>'result =matchX3Model(mp, pos, model) ' parse the JSON</SourceLine>
+   <SourceLine>Dim pos As Integer</SourceLine>
+   <SourceLine>Dim jsonMB As MemoryBlock</SourceLine>
+   <SourceLine>Dim result As Boolean</SourceLine>
+   <SourceLine>Dim mp As Ptr</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' this method renders X3 Data Format JSON into an X3Scene</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>jsonMB = sceneJSON</SourceLine>
+   <SourceLine>pos = 0</SourceLine>
+   <SourceLine>mp = jsonMB</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>result = matchX3Scene(mp, pos, scene) ' parse the JSON</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>return scene</SourceLine>
    <SourceLine></SourceLine>
@@ -6963,6 +6963,137 @@
   <IsShared>0</IsShared>
   <ItemParams>sceneJSON As String</ItemParams>
   <ItemResult>X3Core.X3Scene</ItemResult>
+ </Method>
+ <Method>
+  <ItemName>matchX3Scene</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Function matchX3Scene(mp As Ptr, ByRef pos As Integer, ByRef scene As X3Core.X3Scene) As Boolean</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>Dim result As Boolean</SourceLine>
+   <SourceLine>Dim tmpStr As String</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>scene = new X3Core.X3Scene</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>result = false</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>'if mp.Byte(pos) = 123 then ' {</SourceLine>
+   <SourceLine>'</SourceLine>
+   <SourceLine>'pos = pos + 1</SourceLine>
+   <SourceLine>'</SourceLine>
+   <SourceLine>'result = matchString(mp, pos, tmpStr)</SourceLine>
+   <SourceLine>'</SourceLine>
+   <SourceLine>'if tmpStr = "x3model" then</SourceLine>
+   <SourceLine>'</SourceLine>
+   <SourceLine>'' skip white space</SourceLine>
+   <SourceLine>'while mp.Byte(pos) &lt;= 32</SourceLine>
+   <SourceLine>'pos = pos + 1</SourceLine>
+   <SourceLine>'wend</SourceLine>
+   <SourceLine>'</SourceLine>
+   <SourceLine>'if mp.Byte(pos) = 58 then ' :</SourceLine>
+   <SourceLine>'</SourceLine>
+   <SourceLine>'pos = pos + 1</SourceLine>
+   <SourceLine>'</SourceLine>
+   <SourceLine>'if mp.Byte(pos) = 123 then ' {</SourceLine>
+   <SourceLine>'</SourceLine>
+   <SourceLine>'pos = pos + 1</SourceLine>
+   <SourceLine>'</SourceLine>
+   <SourceLine>'' skip white space</SourceLine>
+   <SourceLine>'while mp.Byte(pos) &lt;= 32</SourceLine>
+   <SourceLine>'pos = pos + 1</SourceLine>
+   <SourceLine>'wend</SourceLine>
+   <SourceLine>'</SourceLine>
+   <SourceLine>'result = true</SourceLine>
+   <SourceLine>'</SourceLine>
+   <SourceLine>'do</SourceLine>
+   <SourceLine>'</SourceLine>
+   <SourceLine>'result = matchString(mp, pos, tmpStr)</SourceLine>
+   <SourceLine>'</SourceLine>
+   <SourceLine>'' skip white space</SourceLine>
+   <SourceLine>'while mp.Byte(pos) &lt;= 32</SourceLine>
+   <SourceLine>'pos = pos + 1</SourceLine>
+   <SourceLine>'wend</SourceLine>
+   <SourceLine>'</SourceLine>
+   <SourceLine>'if mp.Byte(pos) = 58 then ' :</SourceLine>
+   <SourceLine>'</SourceLine>
+   <SourceLine>'pos = pos + 1</SourceLine>
+   <SourceLine>'</SourceLine>
+   <SourceLine>'' skip white space</SourceLine>
+   <SourceLine>'while mp.Byte(pos) &lt;= 32</SourceLine>
+   <SourceLine>'pos = pos + 1</SourceLine>
+   <SourceLine>'wend</SourceLine>
+   <SourceLine>'</SourceLine>
+   <SourceLine>'select case tmpStr</SourceLine>
+   <SourceLine>'</SourceLine>
+   <SourceLine>'case "colorpal"</SourceLine>
+   <SourceLine>'result = matchColorPal(mp, pos, model)</SourceLine>
+   <SourceLine>'</SourceLine>
+   <SourceLine>'case "material"</SourceLine>
+   <SourceLine>'result = matchMaterial(mp, pos, model)</SourceLine>
+   <SourceLine>'</SourceLine>
+   <SourceLine>'case "normal"</SourceLine>
+   <SourceLine>'result = matchNormal(mp, pos, model)</SourceLine>
+   <SourceLine>'</SourceLine>
+   <SourceLine>'case "polygon"</SourceLine>
+   <SourceLine>'result = matchPolygon(mp, pos, model)</SourceLine>
+   <SourceLine>'</SourceLine>
+   <SourceLine>'case "vertex"</SourceLine>
+   <SourceLine>'result = matchVertex(mp, pos, model)</SourceLine>
+   <SourceLine>'</SourceLine>
+   <SourceLine>'case "texture"</SourceLine>
+   <SourceLine>'result = matchTexture(mp, pos, model)</SourceLine>
+   <SourceLine>'</SourceLine>
+   <SourceLine>'case "uvmap"</SourceLine>
+   <SourceLine>'result = matchUVMap(mp, pos, model)</SourceLine>
+   <SourceLine>'</SourceLine>
+   <SourceLine>'case else ' unknown tag</SourceLine>
+   <SourceLine>'skipValue(mp, pos)</SourceLine>
+   <SourceLine>'</SourceLine>
+   <SourceLine>'end select</SourceLine>
+   <SourceLine>'</SourceLine>
+   <SourceLine>'' skip white space</SourceLine>
+   <SourceLine>'while mp.Byte(pos) &lt;= 32</SourceLine>
+   <SourceLine>'pos = pos + 1</SourceLine>
+   <SourceLine>'wend</SourceLine>
+   <SourceLine>'</SourceLine>
+   <SourceLine>'if mp.Byte(pos) = 44 then ' ,</SourceLine>
+   <SourceLine>'pos = pos + 1</SourceLine>
+   <SourceLine>'end if</SourceLine>
+   <SourceLine>'</SourceLine>
+   <SourceLine>'' skip white space</SourceLine>
+   <SourceLine>'while mp.Byte(pos) &lt;= 32</SourceLine>
+   <SourceLine>'pos = pos + 1</SourceLine>
+   <SourceLine>'wend</SourceLine>
+   <SourceLine>'</SourceLine>
+   <SourceLine>'else</SourceLine>
+   <SourceLine>'</SourceLine>
+   <SourceLine>'result = false ' malformed JSON</SourceLine>
+   <SourceLine>'</SourceLine>
+   <SourceLine>'end if</SourceLine>
+   <SourceLine>'</SourceLine>
+   <SourceLine>'loop until (mp.Byte(pos) = 125) or not result ' }</SourceLine>
+   <SourceLine>'</SourceLine>
+   <SourceLine>'</SourceLine>
+   <SourceLine>'end if</SourceLine>
+   <SourceLine>'</SourceLine>
+   <SourceLine>'end if</SourceLine>
+   <SourceLine>'</SourceLine>
+   <SourceLine>'end if</SourceLine>
+   <SourceLine>'</SourceLine>
+   <SourceLine>'end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>return result</SourceLine>
+   <SourceLine>End Function</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>33</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>mp As Ptr, ByRef pos As Integer, ByRef scene As X3Core.X3Scene</ItemParams>
+  <ItemResult>Boolean</ItemResult>
  </Method>
  <ViewBehavior>
   <ViewProperty>
@@ -7006,7 +7137,7 @@
    <EditorCount>1</EditorCount>
    <Editor>
     <EditorIndex>0</EditorIndex>
-    <EditorLocation>X3Core.X3IO.sceneFromJSON</EditorLocation>
+    <EditorLocation>X3Core.X3IO.matchX3Scene</EditorLocation>
     <EditorPath></EditorPath>
     <EditingPartID>1878820863</EditingPartID>
    </Editor>
