@@ -6997,11 +6997,17 @@
    <SourceLine></SourceLine>
    <SourceLine>wend</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>if result then</SourceLine>
-   <SourceLine>break</SourceLine>
-   <SourceLine>end if</SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' skip white space</SourceLine>
+   <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
+   <SourceLine>wend</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>case "objects"</SourceLine>
+   <SourceLine>break</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>case else ' unknown tag</SourceLine>
    <SourceLine>skipValue(mp, pos)</SourceLine>
