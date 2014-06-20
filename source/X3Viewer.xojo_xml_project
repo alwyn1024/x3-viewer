@@ -3520,6 +3520,7 @@
    <SourceLine></SourceLine>
    <SourceLine>model.Position = Position.Clone</SourceLine>
    <SourceLine>model.Rotation = Rotation.Clone</SourceLine>
+   <SourceLine>model.Scale = Scale.Clone</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>for i = 0 to Sprite.Ubound</SourceLine>
    <SourceLine>model.Sprite.Append Sprite(i).Clone</SourceLine>
@@ -7685,9 +7686,9 @@
    <EditorCount>1</EditorCount>
    <Editor>
     <EditorIndex>0</EditorIndex>
-    <EditorLocation>X3Core.X3IO.matchX3Scene</EditorLocation>
+    <EditorLocation>X3Core.X3Model.Clone</EditorLocation>
     <EditorPath></EditorPath>
-    <EditingPartID>1878820863</EditingPartID>
+    <EditingPartID>733429759</EditingPartID>
    </Editor>
    <SelectedTab>0</SelectedTab>
   </Editors>
