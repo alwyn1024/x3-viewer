@@ -316,6 +316,12 @@
    <SourceLine></SourceLine>
    <SourceLine>cmdPedestalUp.Enabled = False</SourceLine>
    <SourceLine>cmdPedestalDown.Enabled = False</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>cmdTruckLeft.Enabled = False</SourceLine>
+   <SourceLine>cmdTruckRight.Enabled = False</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>cmdPanLeft.Enabled = False</SourceLine>
+   <SourceLine>cmdPanRight.Enabled = False</SourceLine>
    <SourceLine>End Sub</SourceLine>
   </ItemSource>
   <TextEncoding>134217984</TextEncoding>
@@ -337,6 +343,14 @@
    <SourceLine></SourceLine>
    <SourceLine>cmdPedestalUp.Enabled = True</SourceLine>
    <SourceLine>cmdPedestalDown.Enabled = True</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>cmdTruckLeft.Enabled = True</SourceLine>
+   <SourceLine>cmdTruckRight.Enabled = True</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>cmdPanLeft.Enabled = True</SourceLine>
+   <SourceLine>cmdPanRight.Enabled = True</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>End Sub</SourceLine>
   </ItemSource>
@@ -852,6 +866,82 @@
    </ItemSource>
   </HookInstance>
  </ControlBehavior>
+ <ControlBehavior>
+  <Superclass>PushButton</Superclass>
+  <HookInstance>
+   <ItemName>Action</ItemName>
+   <Compatibility></Compatibility>
+   <Visible>1</Visible>
+   <ItemSource>
+    <TextEncoding>134217984</TextEncoding>
+    <SourceLine>Sub Action()</SourceLine>
+    <SourceLine>if CurrentScene &lt;&gt; nil then</SourceLine>
+    <SourceLine>CurrentScene.TruckLeft 0.5</SourceLine>
+    <SourceLine>Surface.Render</SourceLine>
+    <SourceLine>end if</SourceLine>
+    <SourceLine></SourceLine>
+    <SourceLine></SourceLine>
+    <SourceLine>End Sub</SourceLine>
+   </ItemSource>
+  </HookInstance>
+ </ControlBehavior>
+ <ControlBehavior>
+  <Superclass>PushButton</Superclass>
+  <HookInstance>
+   <ItemName>Action</ItemName>
+   <Compatibility></Compatibility>
+   <Visible>1</Visible>
+   <ItemSource>
+    <TextEncoding>134217984</TextEncoding>
+    <SourceLine>Sub Action()</SourceLine>
+    <SourceLine>if CurrentScene &lt;&gt; nil then</SourceLine>
+    <SourceLine>CurrentScene.TruckRight 0.5</SourceLine>
+    <SourceLine>Surface.Render</SourceLine>
+    <SourceLine>end if</SourceLine>
+    <SourceLine></SourceLine>
+    <SourceLine></SourceLine>
+    <SourceLine></SourceLine>
+    <SourceLine>End Sub</SourceLine>
+   </ItemSource>
+  </HookInstance>
+ </ControlBehavior>
+ <ControlBehavior>
+  <Superclass>PushButton</Superclass>
+  <HookInstance>
+   <ItemName>Action</ItemName>
+   <Compatibility></Compatibility>
+   <Visible>1</Visible>
+   <ItemSource>
+    <TextEncoding>134217984</TextEncoding>
+    <SourceLine>Sub Action()</SourceLine>
+    <SourceLine>if CurrentScene &lt;&gt; nil then</SourceLine>
+    <SourceLine>CurrentScene.PanLeft 2 ' degrees</SourceLine>
+    <SourceLine>Surface.Render</SourceLine>
+    <SourceLine>end if</SourceLine>
+    <SourceLine></SourceLine>
+    <SourceLine></SourceLine>
+    <SourceLine>End Sub</SourceLine>
+   </ItemSource>
+  </HookInstance>
+ </ControlBehavior>
+ <ControlBehavior>
+  <Superclass>PushButton</Superclass>
+  <HookInstance>
+   <ItemName>Action</ItemName>
+   <Compatibility></Compatibility>
+   <Visible>1</Visible>
+   <ItemSource>
+    <TextEncoding>134217984</TextEncoding>
+    <SourceLine>Sub Action()</SourceLine>
+    <SourceLine>if CurrentScene &lt;&gt; nil then</SourceLine>
+    <SourceLine>CurrentScene.PanRight 2 ' degrees</SourceLine>
+    <SourceLine>Surface.Render</SourceLine>
+    <SourceLine>end if</SourceLine>
+    <SourceLine></SourceLine>
+    <SourceLine>End Sub</SourceLine>
+   </ItemSource>
+  </HookInstance>
+ </ControlBehavior>
  <Control>
   <ControlClass>OpenGLSurface</ControlClass>
   <ItemName>OpenGLSurface</ItemName>
@@ -1041,6 +1131,150 @@
   <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">cmdPedestalDown</PropertyVal>
   <ControlIndex>5</ControlIndex>
+  <Locked>0</Locked>
+ </Control>
+ <Control>
+  <ControlClass>PushButton</ControlClass>
+  <ItemName>PushButton</ItemName>
+  <PropertyVal Name="InitialParent"></PropertyVal>
+  <PropertyVal Name="Underline">False</PropertyVal>
+  <PropertyVal Name="Italic">False</PropertyVal>
+  <PropertyVal Name="Bold">False</PropertyVal>
+  <PropertyVal Name="TextUnit">0</PropertyVal>
+  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
+  <PropertyVal Name="TextFont">System</PropertyVal>
+  <PropertyVal Name="ButtonStyle">0</PropertyVal>
+  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
+  <PropertyVal Name="HelpTag"></PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="Enabled">False</PropertyVal>
+  <PropertyVal Name="Cancel">False</PropertyVal>
+  <PropertyVal Name="Default">False</PropertyVal>
+  <PropertyVal Name="Caption">Truck Left</PropertyVal>
+  <PropertyVal Name="TabStop">True</PropertyVal>
+  <PropertyVal Name="TabIndex"><Hex bytes="1">35</Hex></PropertyVal>
+  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="LockBottom">False</PropertyVal>
+  <PropertyVal Name="LockRight">True</PropertyVal>
+  <PropertyVal Name="LockTop">True</PropertyVal>
+  <PropertyVal Name="LockLeft">False</PropertyVal>
+  <PropertyVal Name="Height">22</PropertyVal>
+  <PropertyVal Name="Width">109</PropertyVal>
+  <PropertyVal Name="Top">116</PropertyVal>
+  <PropertyVal Name="Left">471</PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
+  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Name">cmdTruckLeft</PropertyVal>
+  <ControlIndex>6</ControlIndex>
+  <Locked>0</Locked>
+ </Control>
+ <Control>
+  <ControlClass>PushButton</ControlClass>
+  <ItemName>PushButton</ItemName>
+  <PropertyVal Name="InitialParent"></PropertyVal>
+  <PropertyVal Name="Underline">False</PropertyVal>
+  <PropertyVal Name="Italic">False</PropertyVal>
+  <PropertyVal Name="Bold">False</PropertyVal>
+  <PropertyVal Name="TextUnit">0</PropertyVal>
+  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
+  <PropertyVal Name="TextFont">System</PropertyVal>
+  <PropertyVal Name="ButtonStyle">0</PropertyVal>
+  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
+  <PropertyVal Name="HelpTag"></PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="Enabled">False</PropertyVal>
+  <PropertyVal Name="Cancel">False</PropertyVal>
+  <PropertyVal Name="Default">False</PropertyVal>
+  <PropertyVal Name="Caption">Truck Right</PropertyVal>
+  <PropertyVal Name="TabStop">True</PropertyVal>
+  <PropertyVal Name="TabIndex"><Hex bytes="1">36</Hex></PropertyVal>
+  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="LockBottom">False</PropertyVal>
+  <PropertyVal Name="LockRight">True</PropertyVal>
+  <PropertyVal Name="LockTop">True</PropertyVal>
+  <PropertyVal Name="LockLeft">False</PropertyVal>
+  <PropertyVal Name="Height">22</PropertyVal>
+  <PropertyVal Name="Width">109</PropertyVal>
+  <PropertyVal Name="Top">140</PropertyVal>
+  <PropertyVal Name="Left">471</PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
+  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Name">cmdTruckRight</PropertyVal>
+  <ControlIndex>7</ControlIndex>
+  <Locked>0</Locked>
+ </Control>
+ <Control>
+  <ControlClass>PushButton</ControlClass>
+  <ItemName>PushButton</ItemName>
+  <PropertyVal Name="InitialParent"></PropertyVal>
+  <PropertyVal Name="Underline">False</PropertyVal>
+  <PropertyVal Name="Italic">False</PropertyVal>
+  <PropertyVal Name="Bold">False</PropertyVal>
+  <PropertyVal Name="TextUnit">0</PropertyVal>
+  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
+  <PropertyVal Name="TextFont">System</PropertyVal>
+  <PropertyVal Name="ButtonStyle">0</PropertyVal>
+  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
+  <PropertyVal Name="HelpTag"></PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="Enabled">False</PropertyVal>
+  <PropertyVal Name="Cancel">False</PropertyVal>
+  <PropertyVal Name="Default">False</PropertyVal>
+  <PropertyVal Name="Caption">Pan Left</PropertyVal>
+  <PropertyVal Name="TabStop">True</PropertyVal>
+  <PropertyVal Name="TabIndex"><Hex bytes="1">37</Hex></PropertyVal>
+  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="LockBottom">False</PropertyVal>
+  <PropertyVal Name="LockRight">True</PropertyVal>
+  <PropertyVal Name="LockTop">True</PropertyVal>
+  <PropertyVal Name="LockLeft">False</PropertyVal>
+  <PropertyVal Name="Height">22</PropertyVal>
+  <PropertyVal Name="Width">109</PropertyVal>
+  <PropertyVal Name="Top">174</PropertyVal>
+  <PropertyVal Name="Left">471</PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
+  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Name">cmdPanLeft</PropertyVal>
+  <ControlIndex>8</ControlIndex>
+  <Locked>0</Locked>
+ </Control>
+ <Control>
+  <ControlClass>PushButton</ControlClass>
+  <ItemName>PushButton</ItemName>
+  <PropertyVal Name="InitialParent"></PropertyVal>
+  <PropertyVal Name="Underline">False</PropertyVal>
+  <PropertyVal Name="Italic">False</PropertyVal>
+  <PropertyVal Name="Bold">False</PropertyVal>
+  <PropertyVal Name="TextUnit">0</PropertyVal>
+  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
+  <PropertyVal Name="TextFont">System</PropertyVal>
+  <PropertyVal Name="ButtonStyle">0</PropertyVal>
+  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
+  <PropertyVal Name="HelpTag"></PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="Enabled">False</PropertyVal>
+  <PropertyVal Name="Cancel">False</PropertyVal>
+  <PropertyVal Name="Default">False</PropertyVal>
+  <PropertyVal Name="Caption">Pan Right</PropertyVal>
+  <PropertyVal Name="TabStop">True</PropertyVal>
+  <PropertyVal Name="TabIndex"><Hex bytes="1">38</Hex></PropertyVal>
+  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="LockBottom">False</PropertyVal>
+  <PropertyVal Name="LockRight">True</PropertyVal>
+  <PropertyVal Name="LockTop">True</PropertyVal>
+  <PropertyVal Name="LockLeft">False</PropertyVal>
+  <PropertyVal Name="Height">22</PropertyVal>
+  <PropertyVal Name="Width">109</PropertyVal>
+  <PropertyVal Name="Top">198</PropertyVal>
+  <PropertyVal Name="Left">471</PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
+  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Name">cmdPanRight</PropertyVal>
+  <ControlIndex>9</ControlIndex>
   <Locked>0</Locked>
  </Control>
 </block>
@@ -2581,6 +2815,95 @@
   <ItemFlags>0</ItemFlags>
   <IsShared>0</IsShared>
   <ItemParams>distance As Double</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>TruckRight</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub TruckRight(distance As Double)</SourceLine>
+   <SourceLine>Dim rightVec As new X3Core.X3Vector(1, 0, 0) ' right vector of dolly</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>rightVec.Rotate(DollyRotation) ' apply dolly rotation to (1, 0, 0) to determine forward vector</SourceLine>
+   <SourceLine>rightVec.Normalize ' normalize the forward vector</SourceLine>
+   <SourceLine>rightVec.Multiply(Distance) ' calculate the distance to move</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' move the dolly position forward with the given distance</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>DollyPosition.Add(rightVec)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>distance As Double</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>TruckLeft</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub TruckLeft(distance As Double)</SourceLine>
+   <SourceLine>TruckRight(-distance) ' apply truck left using the TruckRight method</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>distance As Double</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>PanLeft</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub PanLeft(angle As Double)</SourceLine>
+   <SourceLine>PanRight(-angle) ' apply pan the DollyRight method</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>angle As Double</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>PanRight</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub PanRight(angle As Double)</SourceLine>
+   <SourceLine>Dim upVec As new X3Core.X3Vector(0, 1, 0) ' up vector of camera</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>upVec.Rotate(CameraRotation) ' apply camera rotation to (0, 1, 0) to determine current up vector</SourceLine>
+   <SourceLine>upVec.Normalize ' normalize the forward vector</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' pan the camera around the up vector</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>CameraRotation.RotateAroundAxis(upVec, angle)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>angle As Double</ItemParams>
   <ItemResult></ItemResult>
  </Method>
  <Property>
@@ -5109,6 +5432,65 @@
   <ItemParams>angle As Double</ItemParams>
   <ItemResult></ItemResult>
  </Method>
+ <Method>
+  <ItemName>RotateAroundAxis</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub RotateAroundAxis(axis As X3Core.X3Vector, angle As Double)</SourceLine>
+   <SourceLine>Dim tmpQuat As new X3Core.X3Quaternion</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' Formula: [new quaternion] = [self] x [rotation]</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' apply rotation around axis</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if angle &lt;&gt; 0 then</SourceLine>
+   <SourceLine>tmpQuat.SetEulerRotation(axis, angle)</SourceLine>
+   <SourceLine>Multiply tmpQuat</SourceLine>
+   <SourceLine>Normalize</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>axis As X3Core.X3Vector, angle As Double</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>SetEulerRotation</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub SetEulerRotation(axis As X3Core.X3Vector, angle As Double)</SourceLine>
+   <SourceLine>Dim norm As X3Core.X3Vector</SourceLine>
+   <SourceLine>Dim halfAngle As Double</SourceLine>
+   <SourceLine>Dim sinAng As Double</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>norm = axis.Clone ' first clone the given axis</SourceLine>
+   <SourceLine>norm.Normalize ' now normalize the axis</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>halfAngle = (angle * X3_PiOver180)  / 2 ' calculate the half angle (convert degrees to radians)</SourceLine>
+   <SourceLine>sinAng = sin(halfAngle) ' calculate sine of half angle</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>X = (norm.x * sinAng)</SourceLine>
+   <SourceLine>Y = (norm.y * sinAng)</SourceLine>
+   <SourceLine>Z = (norm.z * sinAng)</SourceLine>
+   <SourceLine>W = cos(halfAngle)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>axis As X3Core.X3Vector, angle As Double</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
  <Property>
   <ItemName>W</ItemName>
   <Compatibility></Compatibility>
@@ -5326,6 +5708,107 @@
   <ItemFlags>0</ItemFlags>
   <IsShared>0</IsShared>
   <ItemParams>distance As Double</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>TruckLeft</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub TruckLeft(distance As Double)</SourceLine>
+   <SourceLine>Dim activeCam As X3Core.X3Camera</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>activeCam = Camera(CameraIndex)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>activeCam.TruckLeft(distance)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>distance As Double</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>TruckRight</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub TruckRight(distance As Double)</SourceLine>
+   <SourceLine>Dim activeCam As X3Core.X3Camera</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>activeCam = Camera(CameraIndex)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>activeCam.TruckRight(distance)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>distance As Double</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>PanLeft</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub PanLeft(angle As Double)</SourceLine>
+   <SourceLine>Dim activeCam As X3Core.X3Camera</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>activeCam = Camera(CameraIndex)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>activeCam.PanLeft(angle)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>angle As Double</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>PanRight</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub PanRight(angle As Double)</SourceLine>
+   <SourceLine>Dim activeCam As X3Core.X3Camera</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>activeCam = Camera(CameraIndex)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>activeCam.PanRight(angle)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>angle As Double</ItemParams>
   <ItemResult></ItemResult>
  </Method>
  <Property>
@@ -8253,7 +8736,7 @@
    <EditorCount>1</EditorCount>
    <Editor>
     <EditorIndex>0</EditorIndex>
-    <EditorLocation>frmMain.layoutScene</EditorLocation>
+    <EditorLocation>frmMain.Controls.cmdPanLeft.Action</EditorLocation>
     <EditorPath></EditorPath>
     <EditingPartID>893575167</EditingPartID>
    </Editor>
