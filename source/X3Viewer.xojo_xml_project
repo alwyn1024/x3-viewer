@@ -760,7 +760,11 @@
    <ItemSource>
     <TextEncoding>134217984</TextEncoding>
     <SourceLine>Sub MouseDrag(x as Integer, y as Integer)</SourceLine>
-    <SourceLine>if CurrentModel &lt;&gt; nil then</SourceLine>
+    <SourceLine>if CurrentScene &lt;&gt; nil then</SourceLine>
+    <SourceLine>X3_RotateWithXY CurrentScene.Camera(CurrentScene.CameraIndex).DollyRotation, (y - MousePrevY), (x - MousePrevX)</SourceLine>
+    <SourceLine>X3_RotateWithXY CurrentScene.Camera(CurrentScene.CameraIndex).CameraRotation, (y - MousePrevY), (x - MousePrevX)</SourceLine>
+    <SourceLine>Surface.Render</SourceLine>
+    <SourceLine>elseif CurrentModel &lt;&gt; nil then</SourceLine>
     <SourceLine>X3_RotateWithXY CurrentModel.Rotation, (y - MousePrevY), (x - MousePrevX)</SourceLine>
     <SourceLine>Surface.Render</SourceLine>
     <SourceLine>end if</SourceLine>
@@ -1777,11 +1781,12 @@
    <SourceLine></SourceLine>
    <SourceLine>OpenGL.glPushMatrix ' save matrix</SourceLine>
    <SourceLine></SourceLine>
+   <SourceLine>OpenGL.glScalef model.Scale.X, model.Scale.Y, model.Scale.Z ' set the model's scale</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>OpenGL.glTranslatef model.Position.X, model.Position.Y, model.Position.Z ' set the model's position</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>X3_SetRotation(model.Rotation) ' apply the model's rotation</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>OpenGL.glScalef model.Scale.X, model.Scale.Y, model.Scale.Z ' set the model's scale</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' have we rendered this model previous innto an OpenGL display list?</SourceLine>
    <SourceLine>if (model.OGLName &gt; 0) and not model.Invalidate then</SourceLine>
@@ -8947,9 +8952,9 @@
    <EditorCount>1</EditorCount>
    <Editor>
     <EditorIndex>0</EditorIndex>
-    <EditorLocation>X3Core.X3Camera.TurnDollyLeft</EditorLocation>
+    <EditorLocation>frmMain.Controls.Surface.MouseDrag</EditorLocation>
     <EditorPath></EditorPath>
-    <EditingPartID>625401855</EditingPartID>
+    <EditingPartID>893575167</EditingPartID>
    </Editor>
    <SelectedTab>0</SelectedTab>
   </Editors>
