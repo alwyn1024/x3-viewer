@@ -229,8 +229,8 @@
    <SourceLine></SourceLine>
    <SourceLine>layoutModel()</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>allTypes.Name = "All files" ' create X3 Model type</SourceLine>
-   <SourceLine>allTypes.Extensions = ".*"</SourceLine>
+   <SourceLine>allFiles.Name = "All files" ' create X3 Model type</SourceLine>
+   <SourceLine>allFiles.Extensions = ".*"</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>x3mType.Name = "X3 Model" ' create X3 Model type</SourceLine>
    <SourceLine>x3mType.Extensions = ".x3m"</SourceLine>
@@ -238,7 +238,7 @@
    <SourceLine>x3sType.Name = "X3 Scene" ' create X3 Scene type</SourceLine>
    <SourceLine>x3sType.Extensions = ".x3s"</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>dlg.Filter = allTypes + x3mType + x3sType</SourceLine>
+   <SourceLine>dlg.Filter = allFiles + x3mType + x3sType</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>x3File = dlg.ShowModal</SourceLine>
    <SourceLine></SourceLine>
