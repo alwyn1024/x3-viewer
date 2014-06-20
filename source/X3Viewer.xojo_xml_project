@@ -6964,6 +6964,7 @@
    <SourceLine>Dim tmpStr As String</SourceLine>
    <SourceLine>Dim tmpModel As X3Core.X3Model</SourceLine>
    <SourceLine>Dim models() As X3Core.X3Model</SourceLine>
+   <SourceLine>Dim tmpCamera As X3Core.X3Camera</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>scene = new X3Core.X3Scene</SourceLine>
    <SourceLine></SourceLine>
@@ -7149,6 +7150,12 @@
    <SourceLine></SourceLine>
    <SourceLine>end if</SourceLine>
    <SourceLine></SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>// if no cameras were defined for the scene, then we add a default one at position (0, 0, 10)</SourceLine>
+   <SourceLine>if scene.Camera.Ubound &lt; 0 then</SourceLine>
+   <SourceLine>tmpCamera = new X3Core.X3Camera</SourceLine>
+   <SourceLine>tmpCamera.DollyPosition.X = 10</SourceLine>
    <SourceLine>end if</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>return result</SourceLine>
@@ -7678,9 +7685,9 @@
    <EditorCount>1</EditorCount>
    <Editor>
     <EditorIndex>0</EditorIndex>
-    <EditorLocation>X3Core.X3Camera.Constructor</EditorLocation>
+    <EditorLocation>X3Core.X3IO.matchX3Scene</EditorLocation>
     <EditorPath></EditorPath>
-    <EditingPartID>625401855</EditingPartID>
+    <EditingPartID>1878820863</EditingPartID>
    </Editor>
    <SelectedTab>0</SelectedTab>
   </Editors>
