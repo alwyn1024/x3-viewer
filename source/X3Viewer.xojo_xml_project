@@ -194,7 +194,6 @@
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub Open()</SourceLine>
-   <SourceLine>Self.Maximize()</SourceLine>
    <SourceLine>Self.MouseCursor = System.Cursors.StandardPointer</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>loadToolbar</SourceLine>
@@ -215,18 +214,20 @@
   </ItemSource>
  </HookInstance>
  <Method>
-  <ItemName>action_Open</ItemName>
+  <ItemName>actionOpen</ItemName>
   <Compatibility></Compatibility>
   <Visible>1</Visible>
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Sub action_Open()</SourceLine>
+   <SourceLine>Sub actionOpen()</SourceLine>
    <SourceLine>Dim dlg As new OpenDialog</SourceLine>
    <SourceLine>Dim x3File As FolderItem</SourceLine>
    <SourceLine>Dim allTypes As new FileType // All X3 file types</SourceLine>
    <SourceLine>Dim x3mType As new FileType // X3 model files</SourceLine>
    <SourceLine>Dim x3sType As new FileType // X3 scene files</SourceLine>
    <SourceLine>Dim io As new X3Core.X3IO</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>layoutModel()</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>allTypes.Name = "All file types" ' create X3 Model type</SourceLine>
    <SourceLine>allTypes.Extensions = ".*"</SourceLine>
@@ -248,12 +249,16 @@
    <SourceLine></SourceLine>
    <SourceLine>if Right(x3File.Name, 4) = ".x3m" then // x3 model</SourceLine>
    <SourceLine></SourceLine>
+   <SourceLine>layoutModel // set up the user interface to view a scene</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>CurrentModel = io.LoadModel(x3File)</SourceLine>
    <SourceLine>CurrentModel.Unitize()</SourceLine>
    <SourceLine>CurrentModel.Center()</SourceLine>
    <SourceLine>Surface.Render</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>elseif Right(x3File.Name, 4) = ".x3s" then // x3 scene</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>layoutScene // set up the user interface to view a scene</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>CurrentScene = io.LoadScene(x3File)</SourceLine>
    <SourceLine>Surface.Render</SourceLine>
@@ -289,6 +294,44 @@
    <SourceLine>tbMain.Append button</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams></ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>layoutModel</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub layoutModel()</SourceLine>
+   <SourceLine>cmdDollyIn.Enabled = False</SourceLine>
+   <SourceLine>cmdDollyOut.Enabled = False</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams></ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>layoutScene</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub layoutScene()</SourceLine>
+   <SourceLine>cmdDollyIn.Enabled = True</SourceLine>
+   <SourceLine>cmdDollyOut.Enabled = True</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>End Sub</SourceLine>
   </ItemSource>
@@ -375,7 +418,7 @@
  <PropertyVal Name="Frame"><Hex bytes="1">30</Hex></PropertyVal>
  <PropertyVal Name="MaxHeight">32000</PropertyVal>
  <PropertyVal Name="MaxWidth">32000</PropertyVal>
- <PropertyVal Name="MinHeight">64</PropertyVal>
+ <PropertyVal Name="MinHeight">400</PropertyVal>
  <PropertyVal Name="MinWidth">64</PropertyVal>
  <PropertyVal Name="Height">400</PropertyVal>
  <PropertyVal Name="Width">600</PropertyVal>
@@ -718,9 +761,48 @@
     <SourceLine>select case item.Name</SourceLine>
     <SourceLine></SourceLine>
     <SourceLine>case "toolOpen"</SourceLine>
-    <SourceLine>action_Open</SourceLine>
+    <SourceLine>actionOpen</SourceLine>
     <SourceLine></SourceLine>
     <SourceLine>end select</SourceLine>
+    <SourceLine></SourceLine>
+    <SourceLine>End Sub</SourceLine>
+   </ItemSource>
+  </HookInstance>
+ </ControlBehavior>
+ <ControlBehavior>
+  <Superclass>PushButton</Superclass>
+  <HookInstance>
+   <ItemName>Action</ItemName>
+   <Compatibility></Compatibility>
+   <Visible>1</Visible>
+   <ItemSource>
+    <TextEncoding>134217984</TextEncoding>
+    <SourceLine>Sub Action()</SourceLine>
+    <SourceLine>if CurrentScene &lt;&gt; nil then</SourceLine>
+    <SourceLine>CurrentScene.DollyIn 0.5</SourceLine>
+    <SourceLine>Surface.Render</SourceLine>
+    <SourceLine>end if</SourceLine>
+    <SourceLine></SourceLine>
+    <SourceLine></SourceLine>
+    <SourceLine>End Sub</SourceLine>
+   </ItemSource>
+  </HookInstance>
+ </ControlBehavior>
+ <ControlBehavior>
+  <Superclass>PushButton</Superclass>
+  <HookInstance>
+   <ItemName>Action</ItemName>
+   <Compatibility></Compatibility>
+   <Visible>1</Visible>
+   <ItemSource>
+    <TextEncoding>134217984</TextEncoding>
+    <SourceLine>Sub Action()</SourceLine>
+    <SourceLine>if CurrentScene &lt;&gt; nil then</SourceLine>
+    <SourceLine>CurrentScene.DollyOut 0.5</SourceLine>
+    <SourceLine>Surface.Render</SourceLine>
+    <SourceLine>end if</SourceLine>
+    <SourceLine></SourceLine>
+    <SourceLine></SourceLine>
     <SourceLine></SourceLine>
     <SourceLine>End Sub</SourceLine>
    </ItemSource>
@@ -745,7 +827,7 @@
   <PropertyVal Name="LockTop">True</PropertyVal>
   <PropertyVal Name="LockLeft">True</PropertyVal>
   <PropertyVal Name="Height">400</PropertyVal>
-  <PropertyVal Name="Width">600</PropertyVal>
+  <PropertyVal Name="Width">459</PropertyVal>
   <PropertyVal Name="Top"><Hex bytes="1">30</Hex></PropertyVal>
   <PropertyVal Name="Left"><Hex bytes="1">30</Hex></PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
@@ -771,6 +853,78 @@
   <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">tbMain</PropertyVal>
   <ControlIndex>1</ControlIndex>
+  <Locked>0</Locked>
+ </Control>
+ <Control>
+  <ControlClass>PushButton</ControlClass>
+  <ItemName>PushButton</ItemName>
+  <PropertyVal Name="InitialParent"></PropertyVal>
+  <PropertyVal Name="Underline">False</PropertyVal>
+  <PropertyVal Name="Italic">False</PropertyVal>
+  <PropertyVal Name="Bold">False</PropertyVal>
+  <PropertyVal Name="TextUnit">0</PropertyVal>
+  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
+  <PropertyVal Name="TextFont">System</PropertyVal>
+  <PropertyVal Name="ButtonStyle">0</PropertyVal>
+  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
+  <PropertyVal Name="HelpTag"></PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="Enabled">False</PropertyVal>
+  <PropertyVal Name="Cancel">False</PropertyVal>
+  <PropertyVal Name="Default">False</PropertyVal>
+  <PropertyVal Name="Caption">Dolly In</PropertyVal>
+  <PropertyVal Name="TabStop">True</PropertyVal>
+  <PropertyVal Name="TabIndex"><Hex bytes="1">31</Hex></PropertyVal>
+  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="LockBottom">False</PropertyVal>
+  <PropertyVal Name="LockRight">True</PropertyVal>
+  <PropertyVal Name="LockTop">True</PropertyVal>
+  <PropertyVal Name="LockLeft">False</PropertyVal>
+  <PropertyVal Name="Height">22</PropertyVal>
+  <PropertyVal Name="Width">109</PropertyVal>
+  <PropertyVal Name="Top"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="Left">471</PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
+  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Name">cmdDollyIn</PropertyVal>
+  <ControlIndex>2</ControlIndex>
+  <Locked>0</Locked>
+ </Control>
+ <Control>
+  <ControlClass>PushButton</ControlClass>
+  <ItemName>PushButton</ItemName>
+  <PropertyVal Name="InitialParent"></PropertyVal>
+  <PropertyVal Name="Underline">False</PropertyVal>
+  <PropertyVal Name="Italic">False</PropertyVal>
+  <PropertyVal Name="Bold">False</PropertyVal>
+  <PropertyVal Name="TextUnit">0</PropertyVal>
+  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
+  <PropertyVal Name="TextFont">System</PropertyVal>
+  <PropertyVal Name="ButtonStyle">0</PropertyVal>
+  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
+  <PropertyVal Name="HelpTag"></PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="Enabled">False</PropertyVal>
+  <PropertyVal Name="Cancel">False</PropertyVal>
+  <PropertyVal Name="Default">False</PropertyVal>
+  <PropertyVal Name="Caption">Dolly Out</PropertyVal>
+  <PropertyVal Name="TabStop">True</PropertyVal>
+  <PropertyVal Name="TabIndex"><Hex bytes="1">32</Hex></PropertyVal>
+  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="LockBottom">False</PropertyVal>
+  <PropertyVal Name="LockRight">True</PropertyVal>
+  <PropertyVal Name="LockTop">True</PropertyVal>
+  <PropertyVal Name="LockLeft">False</PropertyVal>
+  <PropertyVal Name="Height">22</PropertyVal>
+  <PropertyVal Name="Width">109</PropertyVal>
+  <PropertyVal Name="Top">34</PropertyVal>
+  <PropertyVal Name="Left">471</PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
+  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Name">cmdDollyOut</PropertyVal>
+  <ControlIndex>3</ControlIndex>
   <Locked>0</Locked>
  </Control>
 </block>
@@ -2224,6 +2378,50 @@
   <ItemParams></ItemParams>
   <ItemResult></ItemResult>
  </Method>
+ <Method>
+  <ItemName>DollyIn</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub DollyIn(distance As Double)</SourceLine>
+   <SourceLine>Dim forwardVec As new X3Core.X3Vector(0, 0, -1) ' forward vector of dolly</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>forwardVec.Rotate(DollyRotation) ' apply dolly rotation to (0,0,-1) to determine the forward vector of the dolly</SourceLine>
+   <SourceLine>forwardVec.Normalize ' normalize the forward vector</SourceLine>
+   <SourceLine>forwardVec.Multiply(Distance) ' calculate the distance to move</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' move the dolly position forward with the given distance</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>DollyPosition.Add(forwardVec)</SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>distance As Double</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>DollyOut</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub DollyOut(distance As Double)</SourceLine>
+   <SourceLine>DollyIn(-distance) ' apply dolly out using the DollyIn method</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>distance As Double</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
  <Property>
   <ItemName>DollyPosition</ItemName>
   <Compatibility></Compatibility>
@@ -2438,6 +2636,82 @@
   <ItemFlags>0</ItemFlags>
   <IsShared>0</IsShared>
   <ItemParams></ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>Rotate</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub Rotate(quat As X3Core.X3Quaternion)</SourceLine>
+   <SourceLine>Dim rotX As Double</SourceLine>
+   <SourceLine>Dim rotY As Double</SourceLine>
+   <SourceLine>Dim rotZ As Double</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' rotate vector with quaternion values</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>rotX = (1 - 2 * quat.y^2 - 2 * quat.z^2) * x + 2 * (quat.x * quat.y + quat.w * quat.z) * y + 2 * (quat.x * quat.z - quat.w * quat.y) * z</SourceLine>
+   <SourceLine>rotY = 2 * (quat.x * quat.y - quat.w * quat.z) * x + (1 - 2 * quat.x^2 - 2 * quat.z^2) * y + 2 * (quat.y * quat.z + quat.w * quat.x) * z</SourceLine>
+   <SourceLine>rotZ = 2 * (quat.x * quat.z + quat.w * quat.y) * x + 2 * (quat.y * quat.z - quat.w * quat.x) * y + (1 - 2 * quat.x^2 - 2 * quat.y^2) * z</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' assign result to current values</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>X = rotX</SourceLine>
+   <SourceLine>Y = rotY</SourceLine>
+   <SourceLine>Z = rotZ</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>quat As X3Core.X3Quaternion</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>Multiply</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub Multiply(scalar As Double)</SourceLine>
+   <SourceLine>' multiply the vector with the given scalar value</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>X = X * scalar</SourceLine>
+   <SourceLine>Y = Y * scalar</SourceLine>
+   <SourceLine>Z = Z * scalar</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>scalar As Double</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>Add</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub Add(vec As X3Core.X3Vector)</SourceLine>
+   <SourceLine>' add the given vector to this vector</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>X = X + vec.x</SourceLine>
+   <SourceLine>Y = Y + vec.y</SourceLine>
+   <SourceLine>Z = Z + vec.z</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>vec As X3Core.X3Vector</ItemParams>
   <ItemResult></ItemResult>
  </Method>
  <Property>
@@ -4793,6 +5067,56 @@
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
  <Compatibility></Compatibility>
+ <Method>
+  <ItemName>DollyIn</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub DollyIn(distance As Double)</SourceLine>
+   <SourceLine>Dim activeCam As X3Core.X3Camera</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>activeCam = Camera(CameraIndex)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>activeCam.DollyIn(distance)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>distance As Double</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>DollyOut</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub DollyOut(distance As Double)</SourceLine>
+   <SourceLine>Dim activeCam As X3Core.X3Camera</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>activeCam = Camera(CameraIndex)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>activeCam.DollyOut(distance)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>distance As Double</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
  <Property>
   <ItemName>Model()</ItemName>
   <Compatibility></Compatibility>
@@ -7718,9 +8042,9 @@
    <EditorCount>1</EditorCount>
    <Editor>
     <EditorIndex>0</EditorIndex>
-    <EditorLocation>X3Core.X3_SetCamera</EditorLocation>
+    <EditorLocation>X3Core.X3Scene.DollyOut</EditorLocation>
     <EditorPath></EditorPath>
-    <EditingPartID>1275043839</EditingPartID>
+    <EditingPartID>388931583</EditingPartID>
    </Editor>
    <SelectedTab>0</SelectedTab>
   </Editors>
