@@ -2088,10 +2088,16 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub X3_RenderScene(scene As X3Core.X3Scene)</SourceLine>
    <SourceLine>Dim i As Integer</SourceLine>
+   <SourceLine>Dim activeCam As X3Core.X3Camera</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>OpenGL.glPushMatrix ' save matrix</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>OpenGL.glTranslatef 0, 0, -10</SourceLine>
+   <SourceLine>' select the active camera</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>activeCam = scene.Camera(scene.CameraIndex)</SourceLine>
+   <SourceLine>X3_SetCamera activeCam</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>'OpenGL.glTranslatef 0, 0, -10</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>// render all the models in the scene</SourceLine>
    <SourceLine></SourceLine>
@@ -2107,6 +2113,30 @@
   <ItemFlags>0</ItemFlags>
   <IsShared>0</IsShared>
   <ItemParams>scene As X3Core.X3Scene</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>X3_SetCamera</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub X3_SetCamera(camera As X3Core.X3Camera)</SourceLine>
+   <SourceLine>' set the orientation of the camera</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>X3_SetRotation camera.CameraRotation</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' position the camera</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>OpenGL.glTranslatef -camera.DollyPosition.X, -camera.DollyPosition.Y, -camera.DollyPosition.Z</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>camera As X3Core.X3Camera</ItemParams>
   <ItemResult></ItemResult>
  </Method>
  <ViewBehavior>
@@ -7156,7 +7186,9 @@
    <SourceLine>// if no cameras were defined for the scene, then we add a default one at position (0, 0, 10)</SourceLine>
    <SourceLine>if scene.Camera.Ubound &lt; 0 then</SourceLine>
    <SourceLine>tmpCamera = new X3Core.X3Camera</SourceLine>
-   <SourceLine>tmpCamera.DollyPosition.X = 10</SourceLine>
+   <SourceLine>tmpCamera.DollyPosition.Z = 10</SourceLine>
+   <SourceLine>scene.Camera.Append tmpCamera</SourceLine>
+   <SourceLine>scene.CameraIndex = 0</SourceLine>
    <SourceLine>end if</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>return result</SourceLine>
@@ -7686,9 +7718,9 @@
    <EditorCount>1</EditorCount>
    <Editor>
     <EditorIndex>0</EditorIndex>
-    <EditorLocation>X3Core.X3Model.Clone</EditorLocation>
+    <EditorLocation>X3Core.X3_SetCamera</EditorLocation>
     <EditorPath></EditorPath>
-    <EditingPartID>733429759</EditingPartID>
+    <EditingPartID>1275043839</EditingPartID>
    </Editor>
    <SelectedTab>0</SelectedTab>
   </Editors>
