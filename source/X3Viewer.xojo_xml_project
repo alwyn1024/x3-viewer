@@ -222,14 +222,14 @@
    <SourceLine>Sub actionOpen()</SourceLine>
    <SourceLine>Dim dlg As new OpenDialog</SourceLine>
    <SourceLine>Dim x3File As FolderItem</SourceLine>
-   <SourceLine>Dim allTypes As new FileType // All X3 file types</SourceLine>
+   <SourceLine>Dim allFiles As new FileType // All X3 file types</SourceLine>
    <SourceLine>Dim x3mType As new FileType // X3 model files</SourceLine>
    <SourceLine>Dim x3sType As new FileType // X3 scene files</SourceLine>
    <SourceLine>Dim io As new X3Core.X3IO</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>layoutModel()</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>allTypes.Name = "All file types" ' create X3 Model type</SourceLine>
+   <SourceLine>allTypes.Name = "All files" ' create X3 Model type</SourceLine>
    <SourceLine>allTypes.Extensions = ".*"</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>x3mType.Name = "X3 Model" ' create X3 Model type</SourceLine>
@@ -8952,7 +8952,7 @@
    <EditorCount>1</EditorCount>
    <Editor>
     <EditorIndex>0</EditorIndex>
-    <EditorLocation>frmMain.Controls.Surface.MouseDrag</EditorLocation>
+    <EditorLocation>frmMain.actionOpen</EditorLocation>
     <EditorPath></EditorPath>
     <EditingPartID>893575167</EditingPartID>
    </Editor>
