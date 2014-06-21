@@ -327,6 +327,8 @@
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub layoutModel()</SourceLine>
+   <SourceLine>cmdResetCamera.Enabled = False</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>cmdDollyIn.Enabled = False</SourceLine>
    <SourceLine>cmdDollyOut.Enabled = False</SourceLine>
    <SourceLine></SourceLine>
@@ -347,6 +349,8 @@
    <SourceLine></SourceLine>
    <SourceLine>cmdRollCameraLeft.Enabled = False</SourceLine>
    <SourceLine>cmdRollCameraRight.Enabled = False</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>End Sub</SourceLine>
   </ItemSource>
   <TextEncoding>134217984</TextEncoding>
@@ -363,6 +367,8 @@
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub layoutScene()</SourceLine>
+   <SourceLine>cmdResetCamera.Enabled = True</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>cmdDollyIn.Enabled = True</SourceLine>
    <SourceLine>cmdDollyOut.Enabled = True</SourceLine>
    <SourceLine></SourceLine>
@@ -790,8 +796,8 @@
     <TextEncoding>134217984</TextEncoding>
     <SourceLine>Sub MouseDrag(x as Integer, y as Integer)</SourceLine>
     <SourceLine>if CurrentScene &lt;&gt; nil then</SourceLine>
-    <SourceLine>X3_RotateWithXY CurrentScene.Camera(CurrentScene.CameraIndex).DollyRotation, (y - MousePrevY), (x - MousePrevX)</SourceLine>
-    <SourceLine>X3_RotateWithXY CurrentScene.Camera(CurrentScene.CameraIndex).CameraRotation, (y - MousePrevY), (x - MousePrevX)</SourceLine>
+    <SourceLine>X3_RotateWithXY CurrentScene.Camera(CurrentScene.CameraIndex).DollyRotation, -(y - MousePrevY), -(x - MousePrevX)</SourceLine>
+    <SourceLine>X3_RotateWithXY CurrentScene.Camera(CurrentScene.CameraIndex).CameraRotation, -(y - MousePrevY), -(x - MousePrevX)</SourceLine>
     <SourceLine>Surface.Render</SourceLine>
     <SourceLine>elseif CurrentModel &lt;&gt; nil then</SourceLine>
     <SourceLine>X3_RotateWithXY CurrentModel.Rotation, (y - MousePrevY), (x - MousePrevX)</SourceLine>
@@ -1089,6 +1095,25 @@
    </ItemSource>
   </HookInstance>
  </ControlBehavior>
+ <ControlBehavior>
+  <Superclass>PushButton</Superclass>
+  <HookInstance>
+   <ItemName>Action</ItemName>
+   <Compatibility></Compatibility>
+   <Visible>1</Visible>
+   <ItemSource>
+    <TextEncoding>134217984</TextEncoding>
+    <SourceLine>Sub Action()</SourceLine>
+    <SourceLine>if CurrentScene &lt;&gt; nil then</SourceLine>
+    <SourceLine>CurrentScene.ResetCamera</SourceLine>
+    <SourceLine>Surface.Render</SourceLine>
+    <SourceLine>end if</SourceLine>
+    <SourceLine></SourceLine>
+    <SourceLine></SourceLine>
+    <SourceLine>End Sub</SourceLine>
+   </ItemSource>
+  </HookInstance>
+ </ControlBehavior>
  <Control>
   <ControlClass>OpenGLSurface</ControlClass>
   <ItemName>OpenGLSurface</ItemName>
@@ -1163,7 +1188,7 @@
   <PropertyVal Name="LockLeft">False</PropertyVal>
   <PropertyVal Name="Height"><Hex bytes="2">3232</Hex></PropertyVal>
   <PropertyVal Name="Width"><Hex bytes="3">313039</Hex></PropertyVal>
-  <PropertyVal Name="Top"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="Top"><Hex bytes="2">3235</Hex></PropertyVal>
   <PropertyVal Name="Left"><Hex bytes="3">343731</Hex></PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
   <PropertyVal Name="Super">PushButton</PropertyVal>
@@ -1199,7 +1224,7 @@
   <PropertyVal Name="LockLeft">False</PropertyVal>
   <PropertyVal Name="Height"><Hex bytes="2">3232</Hex></PropertyVal>
   <PropertyVal Name="Width"><Hex bytes="3">313039</Hex></PropertyVal>
-  <PropertyVal Name="Top"><Hex bytes="2">3234</Hex></PropertyVal>
+  <PropertyVal Name="Top"><Hex bytes="2">3439</Hex></PropertyVal>
   <PropertyVal Name="Left"><Hex bytes="3">343731</Hex></PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
   <PropertyVal Name="Super">PushButton</PropertyVal>
@@ -1235,7 +1260,7 @@
   <PropertyVal Name="LockLeft">False</PropertyVal>
   <PropertyVal Name="Height"><Hex bytes="2">3232</Hex></PropertyVal>
   <PropertyVal Name="Width"><Hex bytes="3">313039</Hex></PropertyVal>
-  <PropertyVal Name="Top"><Hex bytes="2">3538</Hex></PropertyVal>
+  <PropertyVal Name="Top"><Hex bytes="2">3733</Hex></PropertyVal>
   <PropertyVal Name="Left"><Hex bytes="3">343731</Hex></PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
   <PropertyVal Name="Super">PushButton</PropertyVal>
@@ -1271,7 +1296,7 @@
   <PropertyVal Name="LockLeft">False</PropertyVal>
   <PropertyVal Name="Height"><Hex bytes="2">3232</Hex></PropertyVal>
   <PropertyVal Name="Width"><Hex bytes="3">313039</Hex></PropertyVal>
-  <PropertyVal Name="Top"><Hex bytes="2">3832</Hex></PropertyVal>
+  <PropertyVal Name="Top"><Hex bytes="2">3937</Hex></PropertyVal>
   <PropertyVal Name="Left"><Hex bytes="3">343731</Hex></PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
   <PropertyVal Name="Super">PushButton</PropertyVal>
@@ -1307,7 +1332,7 @@
   <PropertyVal Name="LockLeft">False</PropertyVal>
   <PropertyVal Name="Height"><Hex bytes="2">3232</Hex></PropertyVal>
   <PropertyVal Name="Width"><Hex bytes="3">313039</Hex></PropertyVal>
-  <PropertyVal Name="Top"><Hex bytes="3">313136</Hex></PropertyVal>
+  <PropertyVal Name="Top"><Hex bytes="3">313231</Hex></PropertyVal>
   <PropertyVal Name="Left"><Hex bytes="3">343731</Hex></PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
   <PropertyVal Name="Super">PushButton</PropertyVal>
@@ -1343,7 +1368,7 @@
   <PropertyVal Name="LockLeft">False</PropertyVal>
   <PropertyVal Name="Height"><Hex bytes="2">3232</Hex></PropertyVal>
   <PropertyVal Name="Width"><Hex bytes="3">313039</Hex></PropertyVal>
-  <PropertyVal Name="Top"><Hex bytes="3">313430</Hex></PropertyVal>
+  <PropertyVal Name="Top"><Hex bytes="3">313435</Hex></PropertyVal>
   <PropertyVal Name="Left"><Hex bytes="3">343731</Hex></PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
   <PropertyVal Name="Super">PushButton</PropertyVal>
@@ -1379,7 +1404,7 @@
   <PropertyVal Name="LockLeft">False</PropertyVal>
   <PropertyVal Name="Height"><Hex bytes="2">3232</Hex></PropertyVal>
   <PropertyVal Name="Width"><Hex bytes="3">313039</Hex></PropertyVal>
-  <PropertyVal Name="Top"><Hex bytes="3">313734</Hex></PropertyVal>
+  <PropertyVal Name="Top"><Hex bytes="3">313639</Hex></PropertyVal>
   <PropertyVal Name="Left"><Hex bytes="3">343731</Hex></PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
   <PropertyVal Name="Super">PushButton</PropertyVal>
@@ -1415,7 +1440,7 @@
   <PropertyVal Name="LockLeft">False</PropertyVal>
   <PropertyVal Name="Height"><Hex bytes="2">3232</Hex></PropertyVal>
   <PropertyVal Name="Width"><Hex bytes="3">313039</Hex></PropertyVal>
-  <PropertyVal Name="Top"><Hex bytes="3">313938</Hex></PropertyVal>
+  <PropertyVal Name="Top"><Hex bytes="3">313933</Hex></PropertyVal>
   <PropertyVal Name="Left"><Hex bytes="3">343731</Hex></PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
   <PropertyVal Name="Super">PushButton</PropertyVal>
@@ -1451,7 +1476,7 @@
   <PropertyVal Name="LockLeft">False</PropertyVal>
   <PropertyVal Name="Height"><Hex bytes="2">3232</Hex></PropertyVal>
   <PropertyVal Name="Width"><Hex bytes="3">313039</Hex></PropertyVal>
-  <PropertyVal Name="Top"><Hex bytes="3">323332</Hex></PropertyVal>
+  <PropertyVal Name="Top"><Hex bytes="3">323137</Hex></PropertyVal>
   <PropertyVal Name="Left"><Hex bytes="3">343731</Hex></PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
   <PropertyVal Name="Super">PushButton</PropertyVal>
@@ -1487,7 +1512,7 @@
   <PropertyVal Name="LockLeft">False</PropertyVal>
   <PropertyVal Name="Height"><Hex bytes="2">3232</Hex></PropertyVal>
   <PropertyVal Name="Width"><Hex bytes="3">313039</Hex></PropertyVal>
-  <PropertyVal Name="Top"><Hex bytes="3">323536</Hex></PropertyVal>
+  <PropertyVal Name="Top"><Hex bytes="3">323431</Hex></PropertyVal>
   <PropertyVal Name="Left"><Hex bytes="3">343731</Hex></PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
   <PropertyVal Name="Super">PushButton</PropertyVal>
@@ -1523,7 +1548,7 @@
   <PropertyVal Name="LockLeft">False</PropertyVal>
   <PropertyVal Name="Height"><Hex bytes="2">3232</Hex></PropertyVal>
   <PropertyVal Name="Width"><Hex bytes="3">313039</Hex></PropertyVal>
-  <PropertyVal Name="Top"><Hex bytes="3">323930</Hex></PropertyVal>
+  <PropertyVal Name="Top"><Hex bytes="3">323635</Hex></PropertyVal>
   <PropertyVal Name="Left"><Hex bytes="3">343731</Hex></PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
   <PropertyVal Name="Super">PushButton</PropertyVal>
@@ -1559,7 +1584,7 @@
   <PropertyVal Name="LockLeft">False</PropertyVal>
   <PropertyVal Name="Height"><Hex bytes="2">3232</Hex></PropertyVal>
   <PropertyVal Name="Width"><Hex bytes="3">313039</Hex></PropertyVal>
-  <PropertyVal Name="Top"><Hex bytes="3">333134</Hex></PropertyVal>
+  <PropertyVal Name="Top"><Hex bytes="3">323839</Hex></PropertyVal>
   <PropertyVal Name="Left"><Hex bytes="3">343731</Hex></PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
   <PropertyVal Name="Super">PushButton</PropertyVal>
@@ -1595,7 +1620,7 @@
   <PropertyVal Name="LockLeft">False</PropertyVal>
   <PropertyVal Name="Height"><Hex bytes="2">3232</Hex></PropertyVal>
   <PropertyVal Name="Width"><Hex bytes="3">313039</Hex></PropertyVal>
-  <PropertyVal Name="Top"><Hex bytes="3">333438</Hex></PropertyVal>
+  <PropertyVal Name="Top"><Hex bytes="3">333133</Hex></PropertyVal>
   <PropertyVal Name="Left"><Hex bytes="3">343731</Hex></PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
   <PropertyVal Name="Super">PushButton</PropertyVal>
@@ -1631,13 +1656,49 @@
   <PropertyVal Name="LockLeft">False</PropertyVal>
   <PropertyVal Name="Height"><Hex bytes="2">3232</Hex></PropertyVal>
   <PropertyVal Name="Width"><Hex bytes="3">313039</Hex></PropertyVal>
-  <PropertyVal Name="Top"><Hex bytes="3">333732</Hex></PropertyVal>
+  <PropertyVal Name="Top"><Hex bytes="3">333337</Hex></PropertyVal>
   <PropertyVal Name="Left"><Hex bytes="3">343731</Hex></PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
   <PropertyVal Name="Super">PushButton</PropertyVal>
   <PropertyVal Name="Index"><Hex bytes="11">2D32313437343833363438</Hex></PropertyVal>
   <PropertyVal Name="Name">cmdRollCameraRight</PropertyVal>
   <ControlIndex>15</ControlIndex>
+  <Locked>0</Locked>
+ </Control>
+ <Control>
+  <ControlClass>PushButton</ControlClass>
+  <ItemName>PushButton</ItemName>
+  <PropertyVal Name="InitialParent"></PropertyVal>
+  <PropertyVal Name="Underline">False</PropertyVal>
+  <PropertyVal Name="Italic">False</PropertyVal>
+  <PropertyVal Name="Bold">False</PropertyVal>
+  <PropertyVal Name="TextUnit">0</PropertyVal>
+  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
+  <PropertyVal Name="TextFont">System</PropertyVal>
+  <PropertyVal Name="ButtonStyle">0</PropertyVal>
+  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
+  <PropertyVal Name="HelpTag"></PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="Enabled">False</PropertyVal>
+  <PropertyVal Name="Cancel">False</PropertyVal>
+  <PropertyVal Name="Default">False</PropertyVal>
+  <PropertyVal Name="Caption">ResetCamera</PropertyVal>
+  <PropertyVal Name="TabStop">True</PropertyVal>
+  <PropertyVal Name="TabIndex"><Hex bytes="2">3135</Hex></PropertyVal>
+  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="LockBottom">False</PropertyVal>
+  <PropertyVal Name="LockRight">True</PropertyVal>
+  <PropertyVal Name="LockTop">True</PropertyVal>
+  <PropertyVal Name="LockLeft">False</PropertyVal>
+  <PropertyVal Name="Height"><Hex bytes="2">3232</Hex></PropertyVal>
+  <PropertyVal Name="Width"><Hex bytes="3">313039</Hex></PropertyVal>
+  <PropertyVal Name="Top"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="Left"><Hex bytes="3">343731</Hex></PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
+  <PropertyVal Name="Index"><Hex bytes="11">2D32313437343833363438</Hex></PropertyVal>
+  <PropertyVal Name="Name">cmdResetCamera</PropertyVal>
+  <ControlIndex>16</ControlIndex>
   <Locked>0</Locked>
  </Control>
 </block>
@@ -3406,6 +3467,24 @@
   <ItemFlags>0</ItemFlags>
   <IsShared>0</IsShared>
   <ItemParams>angle As Double</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>ResetCamera</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub ResetCamera()</SourceLine>
+   <SourceLine>CameraRotation.Assign(DollyRotation) ' align camera with dolly</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams></ItemParams>
   <ItemResult></ItemResult>
  </Method>
  <Property>
@@ -5993,6 +6072,30 @@
   <ItemParams>axis As X3Core.X3Vector, angle As Double</ItemParams>
   <ItemResult></ItemResult>
  </Method>
+ <Method>
+  <ItemName>Assign</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub Assign(quat As X3Core.X3Quaternion)</SourceLine>
+   <SourceLine>' assign given quaternion value to self</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>W = quat.W</SourceLine>
+   <SourceLine>X = quat.X</SourceLine>
+   <SourceLine>Y = quat.Y</SourceLine>
+   <SourceLine>Z = quat.Z</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>quat As X3Core.X3Quaternion</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
  <Property>
   <ItemName>W</ItemName>
   <Compatibility></Compatibility>
@@ -6435,6 +6538,27 @@
   <ItemFlags>0</ItemFlags>
   <IsShared>0</IsShared>
   <ItemParams>angle As Double</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>ResetCamera</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub ResetCamera()</SourceLine>
+   <SourceLine>Dim activeCam As X3Core.X3Camera</SourceLine>
+   <SourceLine>activeCam = Camera(CameraIndex)</SourceLine>
+   <SourceLine>activeCam.ResetCamera()</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams></ItemParams>
   <ItemResult></ItemResult>
  </Method>
  <Property>
@@ -9362,7 +9486,7 @@
    <EditorCount>1</EditorCount>
    <Editor>
     <EditorIndex>0</EditorIndex>
-    <EditorLocation>frmMain.Controls.cmdRollCameraRight.Action</EditorLocation>
+    <EditorLocation>frmMain.Controls.cmdResetCamera.Action</EditorLocation>
     <EditorPath></EditorPath>
     <EditingPartID>893575167</EditingPartID>
    </Editor>
