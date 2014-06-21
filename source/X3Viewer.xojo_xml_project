@@ -6222,9 +6222,9 @@
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub DollyIn(distance As Double)</SourceLine>
-   <SourceLine>Dim activeCam As X3Core.X3Camera</SourceLine>
-   <SourceLine>activeCam = Camera(CameraIndex)</SourceLine>
-   <SourceLine>activeCam.DollyIn(distance)</SourceLine>
+   <SourceLine>if mActiveCamera &lt;&gt; nil then</SourceLine>
+   <SourceLine>mActiveCamera.DollyIn(distance)</SourceLine>
+   <SourceLine>end if</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>End Sub</SourceLine>
   </ItemSource>
@@ -6242,9 +6242,9 @@
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub DollyOut(distance As Double)</SourceLine>
-   <SourceLine>Dim activeCam As X3Core.X3Camera</SourceLine>
-   <SourceLine>activeCam = Camera(CameraIndex)</SourceLine>
-   <SourceLine>activeCam.DollyOut(distance)</SourceLine>
+   <SourceLine>if mActiveCamera &lt;&gt; nil then</SourceLine>
+   <SourceLine>mActiveCamera.DollyOut(distance)</SourceLine>
+   <SourceLine>end if</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine></SourceLine>
    <SourceLine></SourceLine>
@@ -6265,10 +6265,9 @@
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub PedestalUp(distance As Double)</SourceLine>
-   <SourceLine>Dim activeCam As X3Core.X3Camera</SourceLine>
-   <SourceLine>activeCam = Camera(CameraIndex)</SourceLine>
-   <SourceLine>activeCam.PedestalUp(distance)</SourceLine>
-   <SourceLine></SourceLine>
+   <SourceLine>if mActiveCamera &lt;&gt; nil then</SourceLine>
+   <SourceLine>mActiveCamera.PedestalUp(distance)</SourceLine>
+   <SourceLine>end if</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>End Sub</SourceLine>
@@ -6287,10 +6286,9 @@
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub PedestalDown(distance As Double)</SourceLine>
-   <SourceLine>Dim activeCam As X3Core.X3Camera</SourceLine>
-   <SourceLine>activeCam = Camera(CameraIndex)</SourceLine>
-   <SourceLine>activeCam.PedestalDown(distance)</SourceLine>
-   <SourceLine></SourceLine>
+   <SourceLine>if mActiveCamera &lt;&gt; nil then</SourceLine>
+   <SourceLine>mActiveCamera.PedestalDown(distance)</SourceLine>
+   <SourceLine>end if</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine></SourceLine>
    <SourceLine></SourceLine>
@@ -6310,10 +6308,9 @@
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub TruckLeft(distance As Double)</SourceLine>
-   <SourceLine>Dim activeCam As X3Core.X3Camera</SourceLine>
-   <SourceLine>activeCam = Camera(CameraIndex)</SourceLine>
-   <SourceLine>activeCam.TruckLeft(distance)</SourceLine>
-   <SourceLine></SourceLine>
+   <SourceLine>if mActiveCamera &lt;&gt; nil then</SourceLine>
+   <SourceLine>mActiveCamera.TruckLeft(distance)</SourceLine>
+   <SourceLine>end if</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine></SourceLine>
    <SourceLine></SourceLine>
@@ -6333,10 +6330,9 @@
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub TruckRight(distance As Double)</SourceLine>
-   <SourceLine>Dim activeCam As X3Core.X3Camera</SourceLine>
-   <SourceLine>activeCam = Camera(CameraIndex)</SourceLine>
-   <SourceLine>activeCam.TruckRight(distance)</SourceLine>
-   <SourceLine></SourceLine>
+   <SourceLine>if mActiveCamera &lt;&gt; nil then</SourceLine>
+   <SourceLine>mActiveCamera.TruckRight(distance)</SourceLine>
+   <SourceLine>end if</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine></SourceLine>
    <SourceLine></SourceLine>
@@ -6357,10 +6353,9 @@
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub PanLeft(angle As Double)</SourceLine>
-   <SourceLine>Dim activeCam As X3Core.X3Camera</SourceLine>
-   <SourceLine>activeCam = Camera(CameraIndex)</SourceLine>
-   <SourceLine>activeCam.PanLeft(angle)</SourceLine>
-   <SourceLine></SourceLine>
+   <SourceLine>if mActiveCamera &lt;&gt; nil then</SourceLine>
+   <SourceLine>mActiveCamera.PanLeft(angle)</SourceLine>
+   <SourceLine>end if</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine></SourceLine>
    <SourceLine></SourceLine>
@@ -6380,12 +6375,9 @@
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub PanRight(angle As Double)</SourceLine>
-   <SourceLine>Dim activeCam As X3Core.X3Camera</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>activeCam = Camera(CameraIndex)</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>activeCam.PanRight(angle)</SourceLine>
-   <SourceLine></SourceLine>
+   <SourceLine>if mActiveCamera &lt;&gt; nil then</SourceLine>
+   <SourceLine>mActiveCamera.PanRight(angle)</SourceLine>
+   <SourceLine>end if</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine></SourceLine>
    <SourceLine></SourceLine>
@@ -6405,10 +6397,9 @@
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub TurnDollyLeft(angle As Double, Optional lockCamera As Boolean = True)</SourceLine>
-   <SourceLine>Dim activeCam As X3Core.X3Camera</SourceLine>
-   <SourceLine>activeCam = Camera(CameraIndex)</SourceLine>
-   <SourceLine>activeCam.TurnDollyLeft(angle, lockCamera)</SourceLine>
-   <SourceLine></SourceLine>
+   <SourceLine>if mActiveCamera &lt;&gt; nil then</SourceLine>
+   <SourceLine>mActiveCamera.TurnDollyLeft(angle, lockCamera)</SourceLine>
+   <SourceLine>end if</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine></SourceLine>
    <SourceLine></SourceLine>
@@ -6428,10 +6419,9 @@
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub TurnDollyRight(angle As Double, Optional lockCamera As Boolean = True)</SourceLine>
-   <SourceLine>Dim activeCam As X3Core.X3Camera</SourceLine>
-   <SourceLine>activeCam = Camera(CameraIndex)</SourceLine>
-   <SourceLine>activeCam.TurnDollyRight(angle, lockCamera)</SourceLine>
-   <SourceLine></SourceLine>
+   <SourceLine>if mActiveCamera &lt;&gt; nil then</SourceLine>
+   <SourceLine>mActiveCamera.TurnDollyRight(angle, lockCamera)</SourceLine>
+   <SourceLine>end if</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine></SourceLine>
    <SourceLine></SourceLine>
@@ -6451,10 +6441,9 @@
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub TiltCameraUp(angle As Double)</SourceLine>
-   <SourceLine>Dim activeCam As X3Core.X3Camera</SourceLine>
-   <SourceLine>activeCam = Camera(CameraIndex)</SourceLine>
-   <SourceLine>activeCam.TiltCameraUp(angle)</SourceLine>
-   <SourceLine></SourceLine>
+   <SourceLine>if mActiveCamera &lt;&gt; nil then</SourceLine>
+   <SourceLine>mActiveCamera.TiltCameraUp(angle)</SourceLine>
+   <SourceLine>end if</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine></SourceLine>
    <SourceLine></SourceLine>
@@ -6475,10 +6464,9 @@
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub TiltCameraDown(angle As Double)</SourceLine>
-   <SourceLine>Dim activeCam As X3Core.X3Camera</SourceLine>
-   <SourceLine>activeCam = Camera(CameraIndex)</SourceLine>
-   <SourceLine>activeCam.TiltCameraDown(angle)</SourceLine>
-   <SourceLine></SourceLine>
+   <SourceLine>if mActiveCamera &lt;&gt; nil then</SourceLine>
+   <SourceLine>mActiveCamera.TiltCameraDown(angle)</SourceLine>
+   <SourceLine>end if</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine></SourceLine>
    <SourceLine></SourceLine>
@@ -6499,10 +6487,9 @@
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub RollCameraRight(angle As Double)</SourceLine>
-   <SourceLine>Dim activeCam As X3Core.X3Camera</SourceLine>
-   <SourceLine>activeCam = Camera(CameraIndex)</SourceLine>
-   <SourceLine>activeCam.RollCameraRight(angle)</SourceLine>
-   <SourceLine></SourceLine>
+   <SourceLine>if mActiveCamera &lt;&gt; nil then</SourceLine>
+   <SourceLine>mActiveCamera.RollCameraRight(angle)</SourceLine>
+   <SourceLine>end if</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine></SourceLine>
    <SourceLine></SourceLine>
@@ -6523,10 +6510,9 @@
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub RollCameraLeft(angle As Double)</SourceLine>
-   <SourceLine>Dim activeCam As X3Core.X3Camera</SourceLine>
-   <SourceLine>activeCam = Camera(CameraIndex)</SourceLine>
-   <SourceLine>activeCam.RollCameraLeft(angle)</SourceLine>
-   <SourceLine></SourceLine>
+   <SourceLine>if mActiveCamera &lt;&gt; nil then</SourceLine>
+   <SourceLine>mActiveCamera.RollCameraLeft(angle)</SourceLine>
+   <SourceLine>end if</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine></SourceLine>
    <SourceLine></SourceLine>
@@ -6547,10 +6533,9 @@
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub ResetCamera()</SourceLine>
-   <SourceLine>Dim activeCam As X3Core.X3Camera</SourceLine>
-   <SourceLine>activeCam = Camera(CameraIndex)</SourceLine>
-   <SourceLine>activeCam.ResetCamera()</SourceLine>
-   <SourceLine></SourceLine>
+   <SourceLine>if mActiveCamera &lt;&gt; nil then</SourceLine>
+   <SourceLine>mActiveCamera.ResetCamera()</SourceLine>
+   <SourceLine>end if</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>End Sub</SourceLine>
   </ItemSource>
@@ -6590,6 +6575,20 @@
   <IsShared>0</IsShared>
  </Property>
  <Property>
+  <ItemName>mCameraIndex</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>mCameraIndex As Integer</SourceLine>
+   <SourceLine></SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <ItemDeclaration>mCameraIndex As Integer</ItemDeclaration>
+  <ItemFlags>33</ItemFlags>
+  <IsShared>0</IsShared>
+ </Property>
+ <Property>
   <ItemName>CameraIndex</ItemName>
   <Compatibility></Compatibility>
   <Visible>1</Visible>
@@ -6601,6 +6600,38 @@
   <TextEncoding>134217984</TextEncoding>
   <ItemDeclaration>CameraIndex As Integer</ItemDeclaration>
   <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <SetAccessor>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Set</SourceLine>
+   <SourceLine>mCameraIndex = value</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if mCameraIndex &gt;= 0 and mCameraIndex &lt;= Camera.Ubound then</SourceLine>
+   <SourceLine>mActiveCamera = Camera(mCameraIndex)</SourceLine>
+   <SourceLine>else</SourceLine>
+   <SourceLine>mActiveCamera = nil</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine>End Set</SourceLine>
+  </SetAccessor>
+  <GetAccessor>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Get</SourceLine>
+   <SourceLine>return mCameraIndex</SourceLine>
+   <SourceLine>End Get</SourceLine>
+  </GetAccessor>
+ </Property>
+ <Property>
+  <ItemName>mActiveCamera</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>mActiveCamera As X3Core.X3Camera</SourceLine>
+   <SourceLine></SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <ItemDeclaration>mActiveCamera As X3Core.X3Camera</ItemDeclaration>
+  <ItemFlags>33</ItemFlags>
   <IsShared>0</IsShared>
  </Property>
  <ViewBehavior>
@@ -9486,9 +9517,9 @@
    <EditorCount>1</EditorCount>
    <Editor>
     <EditorIndex>0</EditorIndex>
-    <EditorLocation>frmMain.Controls.cmdResetCamera.Action</EditorLocation>
+    <EditorLocation>X3Core.X3Scene.TurnDollyRight</EditorLocation>
     <EditorPath></EditorPath>
-    <EditingPartID>893575167</EditingPartID>
+    <EditingPartID>388931583</EditingPartID>
    </Editor>
    <SelectedTab>0</SelectedTab>
   </Editors>
