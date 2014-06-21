@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<RBProject version="2014r2" FormatVersion="2" MinIDEVersion="20070100">
+<RBProject version="2014r1.1" FormatVersion="2" MinIDEVersion="20070100">
 <block type="Project" ID="0">
- <ProjectSavedInVers>2014.02</ProjectSavedInVers>
+ <ProjectSavedInVers>2014.011</ProjectSavedInVers>
+ <ProjMgrUser></ProjMgrUser>
+ <ProjMgrServer></ProjMgrServer>
  <MajorVersion>0</MajorVersion>
  <MinorVersion>3</MinorVersion>
  <SubVersion>0</SubVersion>
@@ -17,7 +19,7 @@
  <DefaultLanguage>0</DefaultLanguage>
  <CurrentLanguage>0</CurrentLanguage>
  <DefaultEncoding>0</DefaultEncoding>
- <BuildFlags>20880</BuildFlags>
+ <BuildFlags>29072</BuildFlags>
  <UseBuildsFolder>1</UseBuildsFolder>
  <WebApp>0</WebApp>
  <Icon>
@@ -26,6 +28,10 @@
  <BuildCarbonName>X3 Viewer</BuildCarbonName>
  <BuildCarbonMachOName>X3 Viewer</BuildCarbonMachOName>
  <BundleIdentifier>com.xojo3d.x3viewer</BundleIdentifier>
+ <BuildSize>0</BuildSize>
+ <BuildMinSize>0</BuildMinSize>
+ <BuildSizeAsString></BuildSizeAsString>
+ <BuildMinSizeAsString></BuildMinSizeAsString>
  <WinMDICaption></WinMDICaption>
  <BuildWinName>X3 Viewer.exe</BuildWinName>
  <BuildWinMDI>0</BuildWinMDI>
@@ -37,6 +43,16 @@
  <BuildLinuxX86Name>X3 Viewer</BuildLinuxX86Name>
  <BuildCarbonExecutableFormat>1</BuildCarbonExecutableFormat>
  <DebuggerCommandLine></DebuggerCommandLine>
+ <WebPort>0</WebPort>
+ <WebSecurePort>443</WebSecurePort>
+ <WebProtocol>0</WebProtocol>
+ <WebDebugPort>8080</WebDebugPort>
+ <WebUseIntegratedBrowser>0</WebUseIntegratedBrowser>
+ <WebLaunchString>Launching...</WebLaunchString>
+ <WebHTMLHeader></WebHTMLHeader>
+ <WebDisconnectString>The application has gone off-line. Please try again later.</WebDisconnectString>
+ <WebHostingIdentifier></WebHostingIdentifier>
+ <WebHostingAppName>MyApplication</WebHostingAppName>
 </block>
 <block type="Module" ID="1477969919">
  <ObjName>App</ObjName>
@@ -47,7 +63,7 @@
  <IsInterface>0</IsInterface>
  <IsApplicationObject>1</IsApplicationObject>
  <Compatibility></Compatibility>
- <PropertyVal Name="MenuBar">1439348735</PropertyVal>
+ <PropertyVal Name="MenuBar"><Hex bytes="10">31343339333438373335</Hex></PropertyVal>
  <ViewBehavior>
  </ViewBehavior>
  <Constant>
@@ -325,6 +341,9 @@
    <SourceLine></SourceLine>
    <SourceLine>cmdTurnDollyLeft.Enabled = False</SourceLine>
    <SourceLine>cmdTurnDollyRight.Enabled = False</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>cmdTiltCameraUp.Enabled = False</SourceLine>
+   <SourceLine>cmdTiltCameraDown.Enabled = False</SourceLine>
    <SourceLine>End Sub</SourceLine>
   </ItemSource>
   <TextEncoding>134217984</TextEncoding>
@@ -355,6 +374,9 @@
    <SourceLine></SourceLine>
    <SourceLine>cmdTurnDollyLeft.Enabled = True</SourceLine>
    <SourceLine>cmdTurnDollyRight.Enabled = True</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>cmdTiltCameraUp.Enabled = True</SourceLine>
+   <SourceLine>cmdTiltCameraDown.Enabled = True</SourceLine>
    <SourceLine>End Sub</SourceLine>
   </ItemSource>
   <TextEncoding>134217984</TextEncoding>
@@ -434,16 +456,16 @@
  <PropertyVal Name="Visible">True</PropertyVal>
  <PropertyVal Name="Title">X3 Viewer</PropertyVal>
  <PropertyVal Name="Backdrop">0</PropertyVal>
- <PropertyVal Name="BackColor">16777215</PropertyVal>
+ <PropertyVal Name="BackColor"><Hex bytes="8">3136373737323135</Hex></PropertyVal>
  <PropertyVal Name="HasBackColor">False</PropertyVal>
  <PropertyVal Name="Composite">False</PropertyVal>
  <PropertyVal Name="Frame"><Hex bytes="1">30</Hex></PropertyVal>
- <PropertyVal Name="MaxHeight">32000</PropertyVal>
- <PropertyVal Name="MaxWidth">32000</PropertyVal>
- <PropertyVal Name="MinHeight">400</PropertyVal>
- <PropertyVal Name="MinWidth">64</PropertyVal>
- <PropertyVal Name="Height">400</PropertyVal>
- <PropertyVal Name="Width">600</PropertyVal>
+ <PropertyVal Name="MaxHeight"><Hex bytes="5">3332303030</Hex></PropertyVal>
+ <PropertyVal Name="MaxWidth"><Hex bytes="5">3332303030</Hex></PropertyVal>
+ <PropertyVal Name="MinHeight"><Hex bytes="3">343030</Hex></PropertyVal>
+ <PropertyVal Name="MinWidth"><Hex bytes="2">3634</Hex></PropertyVal>
+ <PropertyVal Name="Height"><Hex bytes="3">343030</Hex></PropertyVal>
+ <PropertyVal Name="Width"><Hex bytes="3">363030</Hex></PropertyVal>
  <PropertyVal Name="Placement"><Hex bytes="1">30</Hex></PropertyVal>
  <ViewBehavior>
   <ViewProperty>
@@ -986,12 +1008,49 @@
    </ItemSource>
   </HookInstance>
  </ControlBehavior>
+ <ControlBehavior>
+  <Superclass>PushButton</Superclass>
+  <HookInstance>
+   <ItemName>Action</ItemName>
+   <Compatibility></Compatibility>
+   <Visible>1</Visible>
+   <ItemSource>
+    <TextEncoding>134217984</TextEncoding>
+    <SourceLine>Sub Action()</SourceLine>
+    <SourceLine>if CurrentScene &lt;&gt; nil then</SourceLine>
+    <SourceLine>CurrentScene.TiltCameraUp 2 ' degrees</SourceLine>
+    <SourceLine>Surface.Render</SourceLine>
+    <SourceLine>end if</SourceLine>
+    <SourceLine></SourceLine>
+    <SourceLine></SourceLine>
+    <SourceLine>End Sub</SourceLine>
+   </ItemSource>
+  </HookInstance>
+ </ControlBehavior>
+ <ControlBehavior>
+  <Superclass>PushButton</Superclass>
+  <HookInstance>
+   <ItemName>Action</ItemName>
+   <Compatibility></Compatibility>
+   <Visible>1</Visible>
+   <ItemSource>
+    <TextEncoding>134217984</TextEncoding>
+    <SourceLine>Sub Action()</SourceLine>
+    <SourceLine>if CurrentScene &lt;&gt; nil then</SourceLine>
+    <SourceLine>CurrentScene.TiltCameraDown 2 ' degrees</SourceLine>
+    <SourceLine>Surface.Render</SourceLine>
+    <SourceLine>end if</SourceLine>
+    <SourceLine></SourceLine>
+    <SourceLine>End Sub</SourceLine>
+   </ItemSource>
+  </HookInstance>
+ </ControlBehavior>
  <Control>
   <ControlClass>OpenGLSurface</ControlClass>
   <ItemName>OpenGLSurface</ItemName>
   <PropertyVal Name="DoubleBuffer">True</PropertyVal>
-  <PropertyVal Name="DepthBits">24</PropertyVal>
-  <PropertyVal Name="ColorBits">24</PropertyVal>
+  <PropertyVal Name="DepthBits"><Hex bytes="2">3234</Hex></PropertyVal>
+  <PropertyVal Name="ColorBits"><Hex bytes="2">3234</Hex></PropertyVal>
   <PropertyVal Name="Enabled">True</PropertyVal>
   <PropertyVal Name="AutoDeactivate">True</PropertyVal>
   <PropertyVal Name="HelpTag"></PropertyVal>
@@ -1004,13 +1063,13 @@
   <PropertyVal Name="LockRight">True</PropertyVal>
   <PropertyVal Name="LockTop">True</PropertyVal>
   <PropertyVal Name="LockLeft">True</PropertyVal>
-  <PropertyVal Name="Height">400</PropertyVal>
-  <PropertyVal Name="Width">459</PropertyVal>
+  <PropertyVal Name="Height"><Hex bytes="3">343030</Hex></PropertyVal>
+  <PropertyVal Name="Width"><Hex bytes="3">343539</Hex></PropertyVal>
   <PropertyVal Name="Top"><Hex bytes="1">30</Hex></PropertyVal>
   <PropertyVal Name="Left"><Hex bytes="1">30</Hex></PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
   <PropertyVal Name="Super">OpenGLSurface</PropertyVal>
-  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Index"><Hex bytes="11">2D32313437343833363438</Hex></PropertyVal>
   <PropertyVal Name="Name">Surface</PropertyVal>
   <ControlIndex>0</ControlIndex>
   <Locked>0</Locked>
@@ -1022,13 +1081,13 @@
   <PropertyVal Name="InitialParent"></PropertyVal>
   <PropertyVal Name="Enabled">True</PropertyVal>
   <PropertyVal Name="Visible">True</PropertyVal>
-  <PropertyVal Name="Height">32</PropertyVal>
-  <PropertyVal Name="Width">100</PropertyVal>
-  <PropertyVal Name="Top">20</PropertyVal>
-  <PropertyVal Name="Left">20</PropertyVal>
+  <PropertyVal Name="Height"><Hex bytes="2">3332</Hex></PropertyVal>
+  <PropertyVal Name="Width"><Hex bytes="3">313030</Hex></PropertyVal>
+  <PropertyVal Name="Top"><Hex bytes="2">3230</Hex></PropertyVal>
+  <PropertyVal Name="Left"><Hex bytes="2">3230</Hex></PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
   <PropertyVal Name="Super">MainToolbar</PropertyVal>
-  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Index"><Hex bytes="11">2D32313437343833363438</Hex></PropertyVal>
   <PropertyVal Name="Name">tbMain</PropertyVal>
   <ControlIndex>1</ControlIndex>
   <Locked>0</Locked>
@@ -1058,13 +1117,13 @@
   <PropertyVal Name="LockRight">True</PropertyVal>
   <PropertyVal Name="LockTop">True</PropertyVal>
   <PropertyVal Name="LockLeft">False</PropertyVal>
-  <PropertyVal Name="Height">22</PropertyVal>
-  <PropertyVal Name="Width">109</PropertyVal>
+  <PropertyVal Name="Height"><Hex bytes="2">3232</Hex></PropertyVal>
+  <PropertyVal Name="Width"><Hex bytes="3">313039</Hex></PropertyVal>
   <PropertyVal Name="Top"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="Left">471</PropertyVal>
+  <PropertyVal Name="Left"><Hex bytes="3">343731</Hex></PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
   <PropertyVal Name="Super">PushButton</PropertyVal>
-  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Index"><Hex bytes="11">2D32313437343833363438</Hex></PropertyVal>
   <PropertyVal Name="Name">cmdDollyIn</PropertyVal>
   <ControlIndex>2</ControlIndex>
   <Locked>0</Locked>
@@ -1094,13 +1153,13 @@
   <PropertyVal Name="LockRight">True</PropertyVal>
   <PropertyVal Name="LockTop">True</PropertyVal>
   <PropertyVal Name="LockLeft">False</PropertyVal>
-  <PropertyVal Name="Height">22</PropertyVal>
-  <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">24</PropertyVal>
-  <PropertyVal Name="Left">471</PropertyVal>
+  <PropertyVal Name="Height"><Hex bytes="2">3232</Hex></PropertyVal>
+  <PropertyVal Name="Width"><Hex bytes="3">313039</Hex></PropertyVal>
+  <PropertyVal Name="Top"><Hex bytes="2">3234</Hex></PropertyVal>
+  <PropertyVal Name="Left"><Hex bytes="3">343731</Hex></PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
   <PropertyVal Name="Super">PushButton</PropertyVal>
-  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Index"><Hex bytes="11">2D32313437343833363438</Hex></PropertyVal>
   <PropertyVal Name="Name">cmdDollyOut</PropertyVal>
   <ControlIndex>3</ControlIndex>
   <Locked>0</Locked>
@@ -1130,13 +1189,13 @@
   <PropertyVal Name="LockRight">True</PropertyVal>
   <PropertyVal Name="LockTop">True</PropertyVal>
   <PropertyVal Name="LockLeft">False</PropertyVal>
-  <PropertyVal Name="Height">22</PropertyVal>
-  <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">58</PropertyVal>
-  <PropertyVal Name="Left">471</PropertyVal>
+  <PropertyVal Name="Height"><Hex bytes="2">3232</Hex></PropertyVal>
+  <PropertyVal Name="Width"><Hex bytes="3">313039</Hex></PropertyVal>
+  <PropertyVal Name="Top"><Hex bytes="2">3538</Hex></PropertyVal>
+  <PropertyVal Name="Left"><Hex bytes="3">343731</Hex></PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
   <PropertyVal Name="Super">PushButton</PropertyVal>
-  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Index"><Hex bytes="11">2D32313437343833363438</Hex></PropertyVal>
   <PropertyVal Name="Name">cmdPedestalUp</PropertyVal>
   <ControlIndex>4</ControlIndex>
   <Locked>0</Locked>
@@ -1166,13 +1225,13 @@
   <PropertyVal Name="LockRight">True</PropertyVal>
   <PropertyVal Name="LockTop">True</PropertyVal>
   <PropertyVal Name="LockLeft">False</PropertyVal>
-  <PropertyVal Name="Height">22</PropertyVal>
-  <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">82</PropertyVal>
-  <PropertyVal Name="Left">471</PropertyVal>
+  <PropertyVal Name="Height"><Hex bytes="2">3232</Hex></PropertyVal>
+  <PropertyVal Name="Width"><Hex bytes="3">313039</Hex></PropertyVal>
+  <PropertyVal Name="Top"><Hex bytes="2">3832</Hex></PropertyVal>
+  <PropertyVal Name="Left"><Hex bytes="3">343731</Hex></PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
   <PropertyVal Name="Super">PushButton</PropertyVal>
-  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Index"><Hex bytes="11">2D32313437343833363438</Hex></PropertyVal>
   <PropertyVal Name="Name">cmdPedestalDown</PropertyVal>
   <ControlIndex>5</ControlIndex>
   <Locked>0</Locked>
@@ -1202,13 +1261,13 @@
   <PropertyVal Name="LockRight">True</PropertyVal>
   <PropertyVal Name="LockTop">True</PropertyVal>
   <PropertyVal Name="LockLeft">False</PropertyVal>
-  <PropertyVal Name="Height">22</PropertyVal>
-  <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">116</PropertyVal>
-  <PropertyVal Name="Left">471</PropertyVal>
+  <PropertyVal Name="Height"><Hex bytes="2">3232</Hex></PropertyVal>
+  <PropertyVal Name="Width"><Hex bytes="3">313039</Hex></PropertyVal>
+  <PropertyVal Name="Top"><Hex bytes="3">313136</Hex></PropertyVal>
+  <PropertyVal Name="Left"><Hex bytes="3">343731</Hex></PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
   <PropertyVal Name="Super">PushButton</PropertyVal>
-  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Index"><Hex bytes="11">2D32313437343833363438</Hex></PropertyVal>
   <PropertyVal Name="Name">cmdTruckLeft</PropertyVal>
   <ControlIndex>6</ControlIndex>
   <Locked>0</Locked>
@@ -1238,13 +1297,13 @@
   <PropertyVal Name="LockRight">True</PropertyVal>
   <PropertyVal Name="LockTop">True</PropertyVal>
   <PropertyVal Name="LockLeft">False</PropertyVal>
-  <PropertyVal Name="Height">22</PropertyVal>
-  <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">140</PropertyVal>
-  <PropertyVal Name="Left">471</PropertyVal>
+  <PropertyVal Name="Height"><Hex bytes="2">3232</Hex></PropertyVal>
+  <PropertyVal Name="Width"><Hex bytes="3">313039</Hex></PropertyVal>
+  <PropertyVal Name="Top"><Hex bytes="3">313430</Hex></PropertyVal>
+  <PropertyVal Name="Left"><Hex bytes="3">343731</Hex></PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
   <PropertyVal Name="Super">PushButton</PropertyVal>
-  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Index"><Hex bytes="11">2D32313437343833363438</Hex></PropertyVal>
   <PropertyVal Name="Name">cmdTruckRight</PropertyVal>
   <ControlIndex>7</ControlIndex>
   <Locked>0</Locked>
@@ -1274,13 +1333,13 @@
   <PropertyVal Name="LockRight">True</PropertyVal>
   <PropertyVal Name="LockTop">True</PropertyVal>
   <PropertyVal Name="LockLeft">False</PropertyVal>
-  <PropertyVal Name="Height">22</PropertyVal>
-  <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">174</PropertyVal>
-  <PropertyVal Name="Left">471</PropertyVal>
+  <PropertyVal Name="Height"><Hex bytes="2">3232</Hex></PropertyVal>
+  <PropertyVal Name="Width"><Hex bytes="3">313039</Hex></PropertyVal>
+  <PropertyVal Name="Top"><Hex bytes="3">313734</Hex></PropertyVal>
+  <PropertyVal Name="Left"><Hex bytes="3">343731</Hex></PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
   <PropertyVal Name="Super">PushButton</PropertyVal>
-  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Index"><Hex bytes="11">2D32313437343833363438</Hex></PropertyVal>
   <PropertyVal Name="Name">cmdPanLeft</PropertyVal>
   <ControlIndex>8</ControlIndex>
   <Locked>0</Locked>
@@ -1310,13 +1369,13 @@
   <PropertyVal Name="LockRight">True</PropertyVal>
   <PropertyVal Name="LockTop">True</PropertyVal>
   <PropertyVal Name="LockLeft">False</PropertyVal>
-  <PropertyVal Name="Height">22</PropertyVal>
-  <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">198</PropertyVal>
-  <PropertyVal Name="Left">471</PropertyVal>
+  <PropertyVal Name="Height"><Hex bytes="2">3232</Hex></PropertyVal>
+  <PropertyVal Name="Width"><Hex bytes="3">313039</Hex></PropertyVal>
+  <PropertyVal Name="Top"><Hex bytes="3">313938</Hex></PropertyVal>
+  <PropertyVal Name="Left"><Hex bytes="3">343731</Hex></PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
   <PropertyVal Name="Super">PushButton</PropertyVal>
-  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Index"><Hex bytes="11">2D32313437343833363438</Hex></PropertyVal>
   <PropertyVal Name="Name">cmdPanRight</PropertyVal>
   <ControlIndex>9</ControlIndex>
   <Locked>0</Locked>
@@ -1346,13 +1405,13 @@
   <PropertyVal Name="LockRight">True</PropertyVal>
   <PropertyVal Name="LockTop">True</PropertyVal>
   <PropertyVal Name="LockLeft">False</PropertyVal>
-  <PropertyVal Name="Height">22</PropertyVal>
-  <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">232</PropertyVal>
-  <PropertyVal Name="Left">471</PropertyVal>
+  <PropertyVal Name="Height"><Hex bytes="2">3232</Hex></PropertyVal>
+  <PropertyVal Name="Width"><Hex bytes="3">313039</Hex></PropertyVal>
+  <PropertyVal Name="Top"><Hex bytes="3">323332</Hex></PropertyVal>
+  <PropertyVal Name="Left"><Hex bytes="3">343731</Hex></PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
   <PropertyVal Name="Super">PushButton</PropertyVal>
-  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Index"><Hex bytes="11">2D32313437343833363438</Hex></PropertyVal>
   <PropertyVal Name="Name">cmdTurnDollyLeft</PropertyVal>
   <ControlIndex>10</ControlIndex>
   <Locked>0</Locked>
@@ -1376,21 +1435,93 @@
   <PropertyVal Name="Default">False</PropertyVal>
   <PropertyVal Name="Caption">Turn Dolly Right</PropertyVal>
   <PropertyVal Name="TabStop">True</PropertyVal>
-  <PropertyVal Name="TabIndex">10</PropertyVal>
+  <PropertyVal Name="TabIndex"><Hex bytes="2">3130</Hex></PropertyVal>
   <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
   <PropertyVal Name="LockBottom">False</PropertyVal>
   <PropertyVal Name="LockRight">True</PropertyVal>
   <PropertyVal Name="LockTop">True</PropertyVal>
   <PropertyVal Name="LockLeft">False</PropertyVal>
-  <PropertyVal Name="Height">22</PropertyVal>
-  <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">256</PropertyVal>
-  <PropertyVal Name="Left">471</PropertyVal>
+  <PropertyVal Name="Height"><Hex bytes="2">3232</Hex></PropertyVal>
+  <PropertyVal Name="Width"><Hex bytes="3">313039</Hex></PropertyVal>
+  <PropertyVal Name="Top"><Hex bytes="3">323536</Hex></PropertyVal>
+  <PropertyVal Name="Left"><Hex bytes="3">343731</Hex></PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
   <PropertyVal Name="Super">PushButton</PropertyVal>
-  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Index"><Hex bytes="11">2D32313437343833363438</Hex></PropertyVal>
   <PropertyVal Name="Name">cmdTurnDollyRight</PropertyVal>
   <ControlIndex>11</ControlIndex>
+  <Locked>0</Locked>
+ </Control>
+ <Control>
+  <ControlClass>PushButton</ControlClass>
+  <ItemName>PushButton</ItemName>
+  <PropertyVal Name="InitialParent"></PropertyVal>
+  <PropertyVal Name="Underline">False</PropertyVal>
+  <PropertyVal Name="Italic">False</PropertyVal>
+  <PropertyVal Name="Bold">False</PropertyVal>
+  <PropertyVal Name="TextUnit">0</PropertyVal>
+  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
+  <PropertyVal Name="TextFont">System</PropertyVal>
+  <PropertyVal Name="ButtonStyle">0</PropertyVal>
+  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
+  <PropertyVal Name="HelpTag"></PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="Enabled">False</PropertyVal>
+  <PropertyVal Name="Cancel">False</PropertyVal>
+  <PropertyVal Name="Default">False</PropertyVal>
+  <PropertyVal Name="Caption">Tilt Camera Up</PropertyVal>
+  <PropertyVal Name="TabStop">True</PropertyVal>
+  <PropertyVal Name="TabIndex"><Hex bytes="2">3131</Hex></PropertyVal>
+  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="LockBottom">False</PropertyVal>
+  <PropertyVal Name="LockRight">True</PropertyVal>
+  <PropertyVal Name="LockTop">True</PropertyVal>
+  <PropertyVal Name="LockLeft">False</PropertyVal>
+  <PropertyVal Name="Height"><Hex bytes="2">3232</Hex></PropertyVal>
+  <PropertyVal Name="Width"><Hex bytes="3">313039</Hex></PropertyVal>
+  <PropertyVal Name="Top"><Hex bytes="3">323930</Hex></PropertyVal>
+  <PropertyVal Name="Left"><Hex bytes="3">343731</Hex></PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
+  <PropertyVal Name="Index"><Hex bytes="11">2D32313437343833363438</Hex></PropertyVal>
+  <PropertyVal Name="Name">cmdTiltCameraUp</PropertyVal>
+  <ControlIndex>12</ControlIndex>
+  <Locked>0</Locked>
+ </Control>
+ <Control>
+  <ControlClass>PushButton</ControlClass>
+  <ItemName>PushButton</ItemName>
+  <PropertyVal Name="InitialParent"></PropertyVal>
+  <PropertyVal Name="Underline">False</PropertyVal>
+  <PropertyVal Name="Italic">False</PropertyVal>
+  <PropertyVal Name="Bold">False</PropertyVal>
+  <PropertyVal Name="TextUnit">0</PropertyVal>
+  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
+  <PropertyVal Name="TextFont">System</PropertyVal>
+  <PropertyVal Name="ButtonStyle">0</PropertyVal>
+  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
+  <PropertyVal Name="HelpTag"></PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="Enabled">False</PropertyVal>
+  <PropertyVal Name="Cancel">False</PropertyVal>
+  <PropertyVal Name="Default">False</PropertyVal>
+  <PropertyVal Name="Caption">Tilt Camera Down</PropertyVal>
+  <PropertyVal Name="TabStop">True</PropertyVal>
+  <PropertyVal Name="TabIndex"><Hex bytes="2">3132</Hex></PropertyVal>
+  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="LockBottom">False</PropertyVal>
+  <PropertyVal Name="LockRight">True</PropertyVal>
+  <PropertyVal Name="LockTop">True</PropertyVal>
+  <PropertyVal Name="LockLeft">False</PropertyVal>
+  <PropertyVal Name="Height"><Hex bytes="2">3232</Hex></PropertyVal>
+  <PropertyVal Name="Width"><Hex bytes="3">313039</Hex></PropertyVal>
+  <PropertyVal Name="Top"><Hex bytes="3">333134</Hex></PropertyVal>
+  <PropertyVal Name="Left"><Hex bytes="3">343731</Hex></PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
+  <PropertyVal Name="Index"><Hex bytes="11">2D32313437343833363438</Hex></PropertyVal>
+  <PropertyVal Name="Name">cmdTiltCameraDown</PropertyVal>
+  <ControlIndex>13</ControlIndex>
   <Locked>0</Locked>
  </Control>
 </block>
@@ -3070,6 +3201,50 @@
   <ItemFlags>0</ItemFlags>
   <IsShared>0</IsShared>
   <ItemParams>angle As Double, Optional lockCamera As Boolean = True</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>TiltCameraUp</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub TiltCameraUp(angle As Double)</SourceLine>
+   <SourceLine>TiltCameraDown(-angle) ' apply tilt using the TiltCameraDown method</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>angle As Double</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>TiltCameraDown</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub TiltCameraDown(angle As Double)</SourceLine>
+   <SourceLine>Dim rightVec As new X3Core.X3Vector(1, 0, 0) ' right vector of camera</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>rightVec.Rotate(CameraRotation) ' apply camera rotation to (0, 0, 1) to determine current right vector</SourceLine>
+   <SourceLine>rightVec.Normalize ' normalize the forward vector</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' tilt the camera around the right vector</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>CameraRotation.RotateAroundAxis(rightVec, angle)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>angle As Double</ItemParams>
   <ItemResult></ItemResult>
  </Method>
  <Property>
@@ -5784,13 +5959,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub DollyIn(distance As Double)</SourceLine>
    <SourceLine>Dim activeCam As X3Core.X3Camera</SourceLine>
-   <SourceLine></SourceLine>
    <SourceLine>activeCam = Camera(CameraIndex)</SourceLine>
-   <SourceLine></SourceLine>
    <SourceLine>activeCam.DollyIn(distance)</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine></SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>End Sub</SourceLine>
   </ItemSource>
@@ -5809,9 +5979,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub DollyOut(distance As Double)</SourceLine>
    <SourceLine>Dim activeCam As X3Core.X3Camera</SourceLine>
-   <SourceLine></SourceLine>
    <SourceLine>activeCam = Camera(CameraIndex)</SourceLine>
-   <SourceLine></SourceLine>
    <SourceLine>activeCam.DollyOut(distance)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine></SourceLine>
@@ -5834,11 +6002,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub PedestalUp(distance As Double)</SourceLine>
    <SourceLine>Dim activeCam As X3Core.X3Camera</SourceLine>
-   <SourceLine></SourceLine>
    <SourceLine>activeCam = Camera(CameraIndex)</SourceLine>
-   <SourceLine></SourceLine>
    <SourceLine>activeCam.PedestalUp(distance)</SourceLine>
-   <SourceLine></SourceLine>
    <SourceLine></SourceLine>
    <SourceLine></SourceLine>
    <SourceLine></SourceLine>
@@ -5859,9 +6024,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub PedestalDown(distance As Double)</SourceLine>
    <SourceLine>Dim activeCam As X3Core.X3Camera</SourceLine>
-   <SourceLine></SourceLine>
    <SourceLine>activeCam = Camera(CameraIndex)</SourceLine>
-   <SourceLine></SourceLine>
    <SourceLine>activeCam.PedestalDown(distance)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine></SourceLine>
@@ -5884,9 +6047,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub TruckLeft(distance As Double)</SourceLine>
    <SourceLine>Dim activeCam As X3Core.X3Camera</SourceLine>
-   <SourceLine></SourceLine>
    <SourceLine>activeCam = Camera(CameraIndex)</SourceLine>
-   <SourceLine></SourceLine>
    <SourceLine>activeCam.TruckLeft(distance)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine></SourceLine>
@@ -5909,9 +6070,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub TruckRight(distance As Double)</SourceLine>
    <SourceLine>Dim activeCam As X3Core.X3Camera</SourceLine>
-   <SourceLine></SourceLine>
    <SourceLine>activeCam = Camera(CameraIndex)</SourceLine>
-   <SourceLine></SourceLine>
    <SourceLine>activeCam.TruckRight(distance)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine></SourceLine>
@@ -5935,9 +6094,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub PanLeft(angle As Double)</SourceLine>
    <SourceLine>Dim activeCam As X3Core.X3Camera</SourceLine>
-   <SourceLine></SourceLine>
    <SourceLine>activeCam = Camera(CameraIndex)</SourceLine>
-   <SourceLine></SourceLine>
    <SourceLine>activeCam.PanLeft(angle)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine></SourceLine>
@@ -5985,9 +6142,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub TurnDollyLeft(angle As Double, Optional lockCamera As Boolean = True)</SourceLine>
    <SourceLine>Dim activeCam As X3Core.X3Camera</SourceLine>
-   <SourceLine></SourceLine>
    <SourceLine>activeCam = Camera(CameraIndex)</SourceLine>
-   <SourceLine></SourceLine>
    <SourceLine>activeCam.TurnDollyLeft(angle, lockCamera)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine></SourceLine>
@@ -6010,9 +6165,7 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub TurnDollyRight(angle As Double, Optional lockCamera As Boolean = True)</SourceLine>
    <SourceLine>Dim activeCam As X3Core.X3Camera</SourceLine>
-   <SourceLine></SourceLine>
    <SourceLine>activeCam = Camera(CameraIndex)</SourceLine>
-   <SourceLine></SourceLine>
    <SourceLine>activeCam.TurnDollyRight(angle, lockCamera)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine></SourceLine>
@@ -6025,6 +6178,54 @@
   <ItemFlags>0</ItemFlags>
   <IsShared>0</IsShared>
   <ItemParams>angle As Double, Optional lockCamera As Boolean = True</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>TiltCameraUp</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub TiltCameraUp(angle As Double)</SourceLine>
+   <SourceLine>Dim activeCam As X3Core.X3Camera</SourceLine>
+   <SourceLine>activeCam = Camera(CameraIndex)</SourceLine>
+   <SourceLine>activeCam.TiltCameraUp(angle)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>angle As Double</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>TiltCameraDown</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub TiltCameraDown(angle As Double)</SourceLine>
+   <SourceLine>Dim activeCam As X3Core.X3Camera</SourceLine>
+   <SourceLine>activeCam = Camera(CameraIndex)</SourceLine>
+   <SourceLine>activeCam.TiltCameraDown(angle)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>angle As Double</ItemParams>
   <ItemResult></ItemResult>
  </Method>
  <Property>
@@ -8952,7 +9153,7 @@
    <EditorCount>1</EditorCount>
    <Editor>
     <EditorIndex>0</EditorIndex>
-    <EditorLocation>frmMain.actionOpen</EditorLocation>
+    <EditorLocation>frmMain.Controls.cmdTiltCameraDown.Action</EditorLocation>
     <EditorPath></EditorPath>
     <EditingPartID>893575167</EditingPartID>
    </Editor>
