@@ -1913,1431 +1913,37 @@
   <Locked>0</Locked>
  </Control>
 </block>
-<block type="Module" ID="1275043839">
- <ObjName>X3Core</ObjName>
+<block type="BuildAutomation" ID="1587267583">
+ <ObjName>Build Automation</ObjName>
  <ObjContainerID>0</ObjContainerID>
- <IsClass>0</IsClass>
- <ItemFlags>1</ItemFlags>
- <IsInterface>0</IsInterface>
- <Compatibility></Compatibility>
- <Method>
-  <ItemName>renderPolygon</ItemName>
-  <Compatibility></Compatibility>
-  <Visible>1</Visible>
-  <ItemSource>
-   <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Sub renderPolygon(poly As X3Core.X3Polygon, ByRef currMat As Integer, ByRef currIndex As Integer)</SourceLine>
-   <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>Dim model As X3Core.X3Model</SourceLine>
-   <SourceLine>Dim n As X3Core.X3Vector</SourceLine>
-   <SourceLine>Dim j As Integer</SourceLine>
-   <SourceLine>Dim col As X3Core.X3Color</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>model = poly.ParentModel</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' is this polygon mapped with a texture, and if so, is the UV coordinates configured?</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if ((poly.TIndex &gt;= 0) and (poly.UVIndex.Ubound &gt;= poly.VIndex.Ubound)) or (poly.SIndex &gt;= 0) then</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' loop through all the vertexes of the polygon</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if poly.VNIndex.Ubound = poly.VIndex.Ubound then ' normal per vertex?</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' yes</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>for j = 0 to poly.VIndex.Ubound</SourceLine>
-   <SourceLine>n = model.Normal(poly.VNIndex(j))</SourceLine>
-   <SourceLine>OpenGL.glNormal3d n.X, n.Y, n.Z</SourceLine>
-   <SourceLine>OpenGL.glTexCoord2d model.UVMap(poly.UVIndex(j)).U, model.UVMap(poly.UVIndex(j)).V ' set the texture UV-coordinates for next vertex</SourceLine>
-   <SourceLine>OpenGL.glVertex3d model.Vertex(poly.VIndex(j)).X, model.Vertex(poly.VIndex(j)).Y, model.Vertex(poly.VIndex(j)).Z ' add the vertex to the OpenGL vertex list</SourceLine>
-   <SourceLine>next j</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>else</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' set normal for whole polygon</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>n = model.Normal(poly.NIndex)</SourceLine>
-   <SourceLine>OpenGL.glNormal3d n.X, n.Y, n.Z</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' render vertices</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>for j = 0 to poly.VIndex.Ubound</SourceLine>
-   <SourceLine>OpenGL.glTexCoord2d model.UVMap(poly.UVIndex(j)).U, model.UVMap(poly.UVIndex(j)).V ' set the texture UV-coordinates for next vertex</SourceLine>
-   <SourceLine>OpenGL.glVertex3d model.Vertex(poly.VIndex(j)).X, model.Vertex(poly.VIndex(j)).Y, model.Vertex(poly.VIndex(j)).Z ' add the vertex to the OpenGL vertex list</SourceLine>
-   <SourceLine>next j</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>elseif poly.MIndex &gt;= 0 then</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' this polygon uses material settings</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if currMat &lt;&gt; 2 then ' currently using materials?</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>currMat = 2</SourceLine>
-   <SourceLine>currIndex = -1</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if currIndex &lt;&gt; poly.MIndex then ' still using same material?</SourceLine>
-   <SourceLine>' no, so set new material</SourceLine>
-   <SourceLine>X3_SetMaterial model.Material(poly.MIndex)</SourceLine>
-   <SourceLine>currIndex = poly.MIndex</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' loop through all the vertexes of the polygon</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if poly.VNIndex.Ubound = poly.VIndex.Ubound then ' normal per vertex?</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' yes</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>for j = 0 to poly.VIndex.Ubound</SourceLine>
-   <SourceLine>n = model.Normal(poly.VNIndex(j))</SourceLine>
-   <SourceLine>OpenGL.glNormal3d n.X, n.Y, n.Z</SourceLine>
-   <SourceLine>OpenGL.glVertex3d model.Vertex(poly.VIndex(j)).X, model.Vertex(poly.VIndex(j)).Y, model.Vertex(poly.VIndex(j)).Z</SourceLine>
-   <SourceLine>next j</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>else</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' set normal for whole polygon</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>n = model.Normal(poly.NIndex)</SourceLine>
-   <SourceLine>OpenGL.glNormal3d n.X, n.Y, n.Z</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' render vertices</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>for j = 0 to poly.VIndex.Ubound</SourceLine>
-   <SourceLine>OpenGL.glVertex3d model.Vertex(poly.VIndex(j)).X, model.Vertex(poly.VIndex(j)).Y, model.Vertex(poly.VIndex(j)).Z</SourceLine>
-   <SourceLine>next j</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>else</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' this polygon uses a normal RGBA color</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if currMat &lt;&gt; 0 then ' currently using RGBA?</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>currMat = 0</SourceLine>
-   <SourceLine>currIndex = -1</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if currIndex &lt;&gt; poly.CIndex then ' still using same RGBA color?</SourceLine>
-   <SourceLine>' no, so set new RGBA color</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if poly.CIndex &gt;= 0 then ' is the color index pointing to a color?</SourceLine>
-   <SourceLine>' yes, so set the color</SourceLine>
-   <SourceLine>col = model.ColorPal(poly.CIndex)</SourceLine>
-   <SourceLine>OpenGL.glColor4d(col.Red, col.Green, col.Blue, col.Alpha)</SourceLine>
-   <SourceLine>else</SourceLine>
-   <SourceLine>' no, so make the fill color opague white</SourceLine>
-   <SourceLine>OpenGL.glColor4d(1, 1, 1, 1)</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' loop through all the vertexes of the polygon</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if poly.VNIndex.Ubound = poly.VIndex.Ubound then ' normal per vertex?</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' yes</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>for j = 0 to poly.VIndex.Ubound</SourceLine>
-   <SourceLine>n = model.Normal(poly.VNIndex(j))</SourceLine>
-   <SourceLine>OpenGL.glNormal3d n.X, n.Y, n.Z</SourceLine>
-   <SourceLine>OpenGL.glVertex3d model.Vertex(poly.VIndex(j)).X, model.Vertex(poly.VIndex(j)).Y, model.Vertex(poly.VIndex(j)).Z</SourceLine>
-   <SourceLine>next j</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>else</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' set normal for whole polygon</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>n = model.Normal(poly.NIndex)</SourceLine>
-   <SourceLine>OpenGL.glNormal3d n.X, n.Y, n.Z</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' render vertices</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>for j = 0 to poly.VIndex.Ubound</SourceLine>
-   <SourceLine>OpenGL.glVertex3d model.Vertex(poly.VIndex(j)).X, model.Vertex(poly.VIndex(j)).Y, model.Vertex(poly.VIndex(j)).Z</SourceLine>
-   <SourceLine>next j</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine>End Sub</SourceLine>
-  </ItemSource>
-  <TextEncoding>134217984</TextEncoding>
-  <AliasName></AliasName>
-  <ItemFlags>33</ItemFlags>
-  <IsShared>0</IsShared>
-  <ItemParams>poly As X3Core.X3Polygon, ByRef currMat As Integer, ByRef currIndex As Integer</ItemParams>
-  <ItemResult></ItemResult>
- </Method>
- <Method>
-  <ItemName>X3_CreateSprite</ItemName>
-  <Compatibility></Compatibility>
-  <Visible>1</Visible>
-  <ItemSource>
-   <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Function X3_CreateSprite(initSheet As Picture, spriteWidth As Integer, spriteHeight As Integer, imageCount As Integer) As X3Core.X3Model</SourceLine>
-   <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>Dim model As X3Core.X3Model</SourceLine>
-   <SourceLine>Dim p As X3Core.X3Polygon</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' create a new model</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>model = new X3Core.X3Model</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' instantiate a sprite from our sprite sheet, and add it to the model</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>Model.Sprite.Append new X3Core.X3Sprite(initSheet, spriteWidth, spriteHeight, imageCount)</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' add vertices to the model</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>Model.Vertex.Append new X3Core.X3Vector(-1, 1, 0)</SourceLine>
-   <SourceLine>Model.Vertex.Append new X3Core.X3Vector(-1, -1, 0)</SourceLine>
-   <SourceLine>Model.Vertex.Append new X3Core.X3Vector(1, -1, 0)</SourceLine>
-   <SourceLine>Model.Vertex.Append new X3Core.X3Vector(1, 1, 0)</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' add the normal to the model</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>Model.Normal.Append new X3Core.X3Vector(0, 0, 1)</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' create and add a sprite polygon to the model</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>p = new X3Core.X3Polygon</SourceLine>
-   <SourceLine>p.VIndex.Append 0 ' vertices</SourceLine>
-   <SourceLine>p.VIndex.Append 1</SourceLine>
-   <SourceLine>p.VIndex.Append 2</SourceLine>
-   <SourceLine>p.VIndex.Append 3</SourceLine>
-   <SourceLine>p.NIndex = 0 ' normal</SourceLine>
-   <SourceLine>p.SIndex = 0 ' point to sprite</SourceLine>
-   <SourceLine>model.AppendPolygon p</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>return model</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>End Function</SourceLine>
-  </ItemSource>
-  <TextEncoding>134217984</TextEncoding>
-  <AliasName></AliasName>
-  <ItemFlags>0</ItemFlags>
-  <IsShared>0</IsShared>
-  <ItemParams>initSheet As Picture, spriteWidth As Integer, spriteHeight As Integer, imageCount As Integer</ItemParams>
-  <ItemResult>X3Core.X3Model</ItemResult>
- </Method>
- <Method>
-  <ItemName>X3_EnableLight</ItemName>
-  <Compatibility></Compatibility>
-  <Visible>1</Visible>
-  <ItemSource>
-   <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Sub X3_EnableLight(lightIndex As Integer, light As X3Core.X3Light)</SourceLine>
-   <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>OpenGL.glLightfv lightIndex, OpenGL.GL_POSITION, light.Position.GetMemoryBlock ' set position</SourceLine>
-   <SourceLine>OpenGL.glLightfv lightIndex, OpenGL.GL_AMBIENT, light.Ambient.GetMemoryBlock ' set ambience</SourceLine>
-   <SourceLine>OpenGL.glLightfv lightIndex, OpenGL.GL_DIFFUSE, light.Diffuse.GetMemoryBlock ' set diffuse</SourceLine>
-   <SourceLine>OpenGL.glLightfv lightIndex, OpenGL.GL_SPECULAR, light.Specular.GetMemoryBlock ' set specular</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>OpenGL.glEnable lightIndex ' enable the light</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>End Sub</SourceLine>
-  </ItemSource>
-  <TextEncoding>134217984</TextEncoding>
-  <AliasName></AliasName>
-  <ItemFlags>0</ItemFlags>
-  <IsShared>0</IsShared>
-  <ItemParams>lightIndex As Integer, light As X3Core.X3Light</ItemParams>
-  <ItemResult></ItemResult>
- </Method>
- <Method>
-  <ItemName>X3_Initialize</ItemName>
-  <Compatibility></Compatibility>
-  <Visible>1</Visible>
-  <ItemSource>
-   <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Sub X3_Initialize()</SourceLine>
-   <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' enable depth buffer to ensure objects in distance is not drawn over objects closer to us</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>OpenGL.glEnable OpenGL.GL_DEPTH_TEST</SourceLine>
-   <SourceLine>OpenGL.glDepthMask OpenGL.GL_TRUE</SourceLine>
-   <SourceLine>OpenGL.glDepthFunc OpenGL.GL_LEQUAL ' set the depth buffer function to "less"</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' make sure only back faces are culled and enable culling</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>OpenGL.glCullFace OpenGL.GL_BACK</SourceLine>
-   <SourceLine>OpenGL.glEnable OpenGL.GL_CULL_FACE</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' enable OpenGL lighing</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>OpenGL.glEnable OpenGL.GL_LIGHTING</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' enable blending for transparent models</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>OpenGL.glEnable OpenGL.GL_BLEND</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' set the blending function for alpha colors</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>OpenGL.glBlendFunc OpenGL.GL_SRC_ALPHA, OpenGL.GL_ONE_MINUS_SRC_ALPHA</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>End Sub</SourceLine>
-  </ItemSource>
-  <TextEncoding>134217984</TextEncoding>
-  <AliasName></AliasName>
-  <ItemFlags>0</ItemFlags>
-  <IsShared>0</IsShared>
-  <ItemParams></ItemParams>
-  <ItemResult></ItemResult>
- </Method>
- <Method>
-  <ItemName>X3_LoadRGBATexture</ItemName>
-  <Compatibility></Compatibility>
-  <Visible>1</Visible>
-  <ItemSource>
-   <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Function X3_LoadRGBATexture(RGBABitmap As MemoryBlock, width As Integer, height As Integer) As Integer</SourceLine>
-   <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>Dim idMB As MemoryBlock</SourceLine>
-   <SourceLine>Dim oglName As Integer</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' ask OpenGL for an ID that we can use for our texture</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>idMB = new MemoryBlock(8) ' create a memory block into which OpenGL will store the ID value</SourceLine>
-   <SourceLine>OpenGL.glGenTextures(1, idMB) ' get the ID from OpenGL</SourceLine>
-   <SourceLine>oglName = idMB.Long(0) ' store the value returned by OpenGL in an integer</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' specify to OpenGL how this texture should be rendered</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>OpenGL.glBindTexture(OpenGL.GL_TEXTURE_2D, OGLName) ' select the texture id that OpenGL allocated for our texture</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>OpenGL.glTexParameteri(OpenGL.GL_TEXTURE_2D, OpenGL.GL_TEXTURE_MIN_FILTER, OpenGL.GL_LINEAR) // set up settings</SourceLine>
-   <SourceLine>OpenGL.glTexParameteri(OpenGL.GL_TEXTURE_2D, OpenGL.GL_TEXTURE_MAG_FILTER, OpenGL.GL_LINEAR) // set up some more settings</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' now we load the image bitmap</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>OpenGL.glTexImage2d(OpenGL.GL_TEXTURE_2D, 0, 4, width, height , 0, OpenGL.GL_RGBA, OpenGL.GL_UNSIGNED_BYTE, RGBABitmap)</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>return oglName</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>End Function</SourceLine>
-  </ItemSource>
-  <TextEncoding>134217984</TextEncoding>
-  <AliasName></AliasName>
-  <ItemFlags>0</ItemFlags>
-  <IsShared>0</IsShared>
-  <ItemParams>RGBABitmap As MemoryBlock, width As Integer, height As Integer</ItemParams>
-  <ItemResult>Integer</ItemResult>
- </Method>
- <Method>
-  <ItemName>X3_PictureFromTexture</ItemName>
-  <Compatibility></Compatibility>
-  <Visible>1</Visible>
-  <ItemSource>
-   <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Function X3_PictureFromTexture(text As X3Core.X3Texture) As Picture</SourceLine>
-   <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>Dim pic as new Picture(text.Width, text.height, 32)</SourceLine>
-   <SourceLine>Dim i As Integer</SourceLine>
-   <SourceLine>Dim j As Integer</SourceLine>
-   <SourceLine>Dim pixIndex As Integer</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>pixIndex = 0</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>j = 0</SourceLine>
-   <SourceLine>while j &lt; text.height</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>i = 0</SourceLine>
-   <SourceLine>while i &lt; text.width</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>pic.RGBSurface.Pixel(i, j) = RGB(text.RGBABitmap.UInt8Value(pixIndex), text.RGBABitmap.UInt8Value(pixIndex + 1), text.RGBABitmap.UInt8Value(pixIndex + 2), text.RGBABitmap.UInt8Value(pixIndex + 3))</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>pixIndex = pixIndex + 4</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>i = i + 1</SourceLine>
-   <SourceLine>wend</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>j = j + 1</SourceLine>
-   <SourceLine>wend</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>return pic</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>End Function</SourceLine>
-  </ItemSource>
-  <TextEncoding>134217984</TextEncoding>
-  <AliasName></AliasName>
-  <ItemFlags>0</ItemFlags>
-  <IsShared>0</IsShared>
-  <ItemParams>text As X3Core.X3Texture</ItemParams>
-  <ItemResult>Picture</ItemResult>
- </Method>
- <Method>
-  <ItemName>X3_RenderModel</ItemName>
-  <Compatibility></Compatibility>
-  <Visible>1</Visible>
-  <ItemSource>
-   <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Sub X3_RenderModel(model As X3Core.X3Model)</SourceLine>
-   <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>Dim i As Integer</SourceLine>
-   <SourceLine>Dim j As Integer</SourceLine>
-   <SourceLine>Dim poly As X3Core.X3Polygon</SourceLine>
-   <SourceLine>Dim prevUB As Integer</SourceLine>
-   <SourceLine>Dim bDrawing As Boolean</SourceLine>
-   <SourceLine>Dim prevTIndex As Integer = -1</SourceLine>
-   <SourceLine>Dim prevSIndex As Integer = -1</SourceLine>
-   <SourceLine>Dim transPoly() As X3Core.X3Polygon</SourceLine>
-   <SourceLine>Dim currMat As Integer = - 1 ' current material type used for polygon: 0=RGBA, 1=Texture, 2=Material</SourceLine>
-   <SourceLine>Dim currIndex As Integer = -1 ' current material index</SourceLine>
-   <SourceLine>Dim texture As X3Core.X3Texture</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>OpenGL.glEnable OpenGL.GL_COLOR_MATERIAL ' enable use vertex colors</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>OpenGL.glPushMatrix ' save matrix</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>OpenGL.glScalef model.Scale.X, model.Scale.Y, model.Scale.Z ' set the model's scale</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>OpenGL.glTranslatef model.Position.X, model.Position.Y, model.Position.Z ' set the model's position</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>X3_SetRotation(model.Rotation) ' apply the model's rotation</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' have we rendered this model previous innto an OpenGL display list?</SourceLine>
-   <SourceLine>if (model.OGLName &gt; 0) and not model.Invalidate then</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>OpenGL.glCallList model.OGLName 'yes, so render this existing list</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>else</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>Redim model.SpritePolygons(-1)</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' is the model loaded in OpenGL memory and invalid?</SourceLine>
-   <SourceLine>if (model.OGLName &gt; 0) and model.Invalidate then</SourceLine>
-   <SourceLine>' yes, so first remove the model from OpenGL memory</SourceLine>
-   <SourceLine>OpenGL.glDeleteLists(model.OGLName, 1)</SourceLine>
-   <SourceLine>model.OGLName = 0</SourceLine>
-   <SourceLine>model.Invalidate = false</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' create a new OpenGL display list</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>model.OGLName = OpenGL.glGenLists(1)</SourceLine>
-   <SourceLine>OpenGL.glNewList model.OGLName, OpenGL.GL_COMPILE</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' draw polygons</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' FIRST WE DRAW THE OPAQUE POLYGONS</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>prevUB = -1</SourceLine>
-   <SourceLine>bDrawing = false</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>for i = 0 to model.Polygon.Ubound ' loop through all the polygons</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>poly = model.Polygon(i) ' get the next polygon</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' only draw if opaque</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if ((poly.TIndex &gt;= 0) and  model.Texture(poly.TIndex).Transparent)  then ' transparent texture?</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' this is a polygon with a transparent texture, so store for later rendering</SourceLine>
-   <SourceLine>transPoly.Append poly</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>elseif (poly.MIndex &gt;= 0) and (model.Material(poly.MIndex).Ambient.Alpha &lt; 1) then ' transparent material?</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' this is a polygon with a transparent material, so store for later rendering</SourceLine>
-   <SourceLine>transPoly.Append poly</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>elseif (poly.CIndex &gt;= 0) and (model.ColorPal(poly.CIndex).Alpha &lt; 1) then ' transparent color?</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' this is a polygon with a transparent color, so store for later rendering</SourceLine>
-   <SourceLine>transPoly.Append poly</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>elseif (poly.SIndex &gt;= 0) then ' sprite?</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' this is a polygon with a sprite, so store for later rendering</SourceLine>
-   <SourceLine>' sprites are not rendered as part of the display list because it is almost always invalidated</SourceLine>
-   <SourceLine>model.SpritePolygons.Append poly</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>else</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if (poly.VIndex.Ubound &lt;&gt; prevUB) or (prevTIndex &lt;&gt; poly.TIndex) then</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if bDrawing then</SourceLine>
-   <SourceLine>OpenGL.glEnd ' end drawing polygons</SourceLine>
-   <SourceLine>bDrawing = false</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' bind to texture if needed BEFORE calling glBegin</SourceLine>
-   <SourceLine>if (poly.TIndex &gt;= 0) and (poly.UVIndex.Ubound &gt;= poly.VIndex.Ubound) then</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' first set up OpenGL for textures</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>OpenGL.glEnable OpenGL.GL_TEXTURE_2D ' enable the use of textures</SourceLine>
-   <SourceLine>OpenGL.glEnable OpenGL.GL_COLOR_MATERIAL ' enable use vertex colors</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>X3_SetMaterial new X3Core.X3Material ' reset OpenGL's material settings</SourceLine>
-   <SourceLine>OpenGL.glColor4d(1, 1, 1, 1) ' reset color to pure white</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>currMat = 1</SourceLine>
-   <SourceLine>currIndex = -1</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' now bind to texture</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>texture = model.Texture(poly.TIndex)</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' if texture not already loaded into OpenGL, let's first load the texture into OpenGL</SourceLine>
-   <SourceLine>if texture.OGLName &lt;= 0 then</SourceLine>
-   <SourceLine>texture.OGLName = X3_LoadRGBATexture(texture.RGBABitmap, texture.Width, texture.Height)</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>OpenGL.glBindTexture(OpenGL.GL_TEXTURE_2D, texture.OGLName) ' bind to the polygon's texture</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>elseif (poly.MIndex &gt;= 0) then</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' set up OpenGL for materials</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>OpenGL.glDisable OpenGL.GL_TEXTURE_2D ' disable the use of textures</SourceLine>
-   <SourceLine>OpenGL.glDisable OpenGL.GL_COLOR_MATERIAL ' disable overwriting of material properties with vertex colors</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>else</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' set up OpenGL for RGBA colors</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>OpenGL.glDisable OpenGL.GL_TEXTURE_2D ' disable the use of textures</SourceLine>
-   <SourceLine>OpenGL.glEnable OpenGL.GL_COLOR_MATERIAL ' disable overwriting of material properties with vertex colors</SourceLine>
-   <SourceLine>X3_SetMaterial new X3Core.X3Material ' reset OpenGL's material settings</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>select case poly.VIndex.Ubound</SourceLine>
-   <SourceLine>case 2</SourceLine>
-   <SourceLine>OpenGL.glBegin OpenGL.GL_TRIANGLES ' start drawing triangle polygons</SourceLine>
-   <SourceLine>bDrawing = true</SourceLine>
-   <SourceLine>case 3</SourceLine>
-   <SourceLine>OpenGL.glBegin OpenGL.GL_QUADS ' start drawing quad polygons</SourceLine>
-   <SourceLine>bDrawing = true</SourceLine>
-   <SourceLine>end select</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>prevUB = poly.VIndex.Ubound</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if poly.VIndex.Ubound &gt; 3 then</SourceLine>
-   <SourceLine>OpenGL.glBegin OpenGL.GL_POLYGON ' start drawing quad polygons</SourceLine>
-   <SourceLine>bDrawing = true</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>renderPolygon poly, currMat, currIndex</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if poly.VIndex.Ubound &gt; 3 then</SourceLine>
-   <SourceLine>OpenGL.glEnd ' end drawing polygons</SourceLine>
-   <SourceLine>bDrawing = false</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>prevTIndex = poly.TIndex ' store texture ID for next iteration</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>next i</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if bDrawing then</SourceLine>
-   <SourceLine>OpenGL.glEnd ' end drawing polygons</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' NOW WE DRAW THE TRANSPARENT POLYGONS</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>prevUB = -1</SourceLine>
-   <SourceLine>bDrawing = false</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>for i = 0 to transPoly.Ubound ' loop through all the transparent polygons</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>poly = transPoly(i) ' get the next polygon</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if (poly.VIndex.Ubound &lt;&gt; prevUB) or (prevTIndex &lt;&gt; poly.TIndex) then</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if bDrawing then</SourceLine>
-   <SourceLine>OpenGL.glEnd ' end drawing polygons</SourceLine>
-   <SourceLine>bDrawing = false</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' bind to texture if needed BEFORE calling glBegin</SourceLine>
-   <SourceLine>if (poly.TIndex &gt;= 0) and (poly.UVIndex.Ubound &gt;= poly.VIndex.Ubound) then</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' first set up OpenGL for textures</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>OpenGL.glEnable OpenGL.GL_TEXTURE_2D ' enable the use of textures</SourceLine>
-   <SourceLine>OpenGL.glEnable OpenGL.GL_COLOR_MATERIAL ' enable use vertex colors</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>X3_SetMaterial new X3Core.X3Material ' reset OpenGL's material settings</SourceLine>
-   <SourceLine>OpenGL.glColor4d(1, 1, 1, 1) ' reset color to pure white</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>currMat = 1</SourceLine>
-   <SourceLine>currIndex = -1</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' now bind to texture</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>texture = model.Texture(poly.TIndex)</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' if texture not already loaded into OpenGL, let's first load the texture into OpenGL</SourceLine>
-   <SourceLine>if texture.OGLName &lt;= 0 then</SourceLine>
-   <SourceLine>texture.OGLName = X3_LoadRGBATexture(texture.RGBABitmap, texture.Width, texture.Height)</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>OpenGL.glBindTexture(OpenGL.GL_TEXTURE_2D, model.Texture(poly.TIndex).OGLName) ' bind to the polygon's texture</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>elseif (poly.MIndex &gt;= 0) then</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' set up OpenGL for materials</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>OpenGL.glDisable OpenGL.GL_TEXTURE_2D ' disable the use of textures</SourceLine>
-   <SourceLine>OpenGL.glDisable OpenGL.GL_COLOR_MATERIAL ' disable overwriting of material properties with vertex colors</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>else</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' set up OpenGL for RGBA colors</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>OpenGL.glDisable OpenGL.GL_TEXTURE_2D ' disable the use of textures</SourceLine>
-   <SourceLine>OpenGL.glEnable OpenGL.GL_COLOR_MATERIAL ' disable overwriting of material properties with vertex colors</SourceLine>
-   <SourceLine>X3_SetMaterial new X3Core.X3Material ' reset OpenGL's material settings</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>select case poly.VIndex.Ubound</SourceLine>
-   <SourceLine>case 2</SourceLine>
-   <SourceLine>OpenGL.glBegin OpenGL.GL_TRIANGLES ' start drawing triangle polygons</SourceLine>
-   <SourceLine>bDrawing = true</SourceLine>
-   <SourceLine>case 3</SourceLine>
-   <SourceLine>OpenGL.glBegin OpenGL.GL_QUADS ' start drawing quad polygons</SourceLine>
-   <SourceLine>bDrawing = true</SourceLine>
-   <SourceLine>end select</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>prevUB = poly.VIndex.Ubound</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if poly.VIndex.Ubound &gt; 3 then</SourceLine>
-   <SourceLine>OpenGL.glBegin OpenGL.GL_POLYGON ' start drawing quad polygons</SourceLine>
-   <SourceLine>bDrawing = true</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>renderPolygon poly, currMat, currIndex</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if poly.VIndex.Ubound &gt; 3 then</SourceLine>
-   <SourceLine>OpenGL.glEnd ' end drawing polygons</SourceLine>
-   <SourceLine>bDrawing = false</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>prevTIndex = poly.TIndex ' store texture ID for next iteration</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>next i</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if bDrawing then</SourceLine>
-   <SourceLine>OpenGL.glEnd ' end drawing polygons</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>OpenGL.glEndList ' end of display list</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>OpenGL.glCallList model.OGLName ' render the display  list</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' NOW WE DRAW THE SPRITE POLYGONS</SourceLine>
-   <SourceLine>' because sprites change all the time and invalidates the polygons linked to them, so there is no point in rendering them as part of the display list</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if model.SpritePolygons.Ubound &gt;= 0 then</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if currMat &lt;&gt; 1 then ' currently using textures?</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' no, so set up OpenGL for textures</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>OpenGL.glEnable OpenGL.GL_TEXTURE_2D ' enable the use of textures</SourceLine>
-   <SourceLine>OpenGL.glEnable OpenGL.GL_COLOR_MATERIAL ' enable use vertex colors</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>X3_SetMaterial new X3Core.X3Material ' reset OpenGL's material settings</SourceLine>
-   <SourceLine>OpenGL.glColor4d(1, 1, 1, 1) ' reset color to pure white</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>prevSIndex = -1</SourceLine>
-   <SourceLine>bDrawing = false</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>for i = 0 to model.SpritePolygons.Ubound ' loop through all the transparent polygons</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>poly = model.SpritePolygons(i) ' get the next polygon</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' bind to sprite sheet of the sprite</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if prevSIndex &lt;&gt; poly.SIndex then</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if bDrawing then</SourceLine>
-   <SourceLine>OpenGL.glEnd ' end drawing polygons</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' load spritesheet into OpenGL memory</SourceLine>
-   <SourceLine>if model.Sprite(poly.SIndex).SpriteSheet.OGLName &lt;= 0 then</SourceLine>
-   <SourceLine>model.Sprite(poly.SIndex).SpriteSheet.OGLName = X3_LoadRGBATexture(model.Sprite(poly.SIndex).SpriteSheet.RGBABitmap, model.Sprite(poly.SIndex).SpriteSheet.Width, model.Sprite(poly.SIndex).SpriteSheet.Height)</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>OpenGL.glBindTexture(OpenGL.GL_TEXTURE_2D, model.Sprite(poly.SIndex).SpriteSheet.OGLName) ' bind to the polygon's texture</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>OpenGL.glBegin OpenGL.GL_QUADS ' start drawing quad polygons</SourceLine>
-   <SourceLine>bDrawing = true</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>for j = 0 to poly.VIndex.Ubound</SourceLine>
-   <SourceLine>OpenGL.glTexCoord2d model.UVMap(poly.UVIndex(j)).U, model.UVMap(poly.UVIndex(j)).V ' set the texture UV-coordinates for next vertex</SourceLine>
-   <SourceLine>OpenGL.glVertex3d model.Vertex(poly.VIndex(j)).X, model.Vertex(poly.VIndex(j)).Y, model.Vertex(poly.VIndex(j)).Z ' add the vertex to the OpenGL vertex list</SourceLine>
-   <SourceLine>next j</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>prevSIndex = poly.SIndex ' store sprite ID for next iteration</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>next i</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if bDrawing then</SourceLine>
-   <SourceLine>OpenGL.glEnd ' end drawing polygons</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>OpenGL.glPopMatrix ' restore matrix</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>End Sub</SourceLine>
-  </ItemSource>
-  <TextEncoding>134217984</TextEncoding>
-  <AliasName></AliasName>
-  <ItemFlags>0</ItemFlags>
-  <IsShared>0</IsShared>
-  <ItemParams>model As X3Core.X3Model</ItemParams>
-  <ItemResult></ItemResult>
- </Method>
- <Method>
-  <ItemName>X3_RotateWithXY</ItemName>
-  <Compatibility></Compatibility>
-  <Visible>1</Visible>
-  <ItemSource>
-   <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Sub X3_RotateWithXY(q As X3Quaternion, xAngle As Double, yAngle As Double)</SourceLine>
-   <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>Dim result As new X3Quaternion</SourceLine>
-   <SourceLine>Dim tmpQuat As new X3Quaternion</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' Formula: [new quaternion] = [x-axis rotation quaternion] x [y-axis rotation quaternion] x [self]</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' apply pitch rotation (around x-axis)</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if xAngle &lt;&gt; 0 then</SourceLine>
-   <SourceLine>tmpQuat.FromEulerRotation(1, 0, 0, xAngle)</SourceLine>
-   <SourceLine>result.Multiply(tmpQuat)</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' apply yaw rotation (around y-axis)</SourceLine>
-   <SourceLine>'</SourceLine>
-   <SourceLine>if yAngle &lt;&gt; 0 then</SourceLine>
-   <SourceLine>tmpQuat.FromEulerRotation(0, 1, 0, yAngle)</SourceLine>
-   <SourceLine>result.Multiply(tmpQuat)</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>result.Multiply(q) ' multiply result rotation quaternion with give quaternion</SourceLine>
-   <SourceLine>result.Normalize ' normalize result</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' assign result to given quaternion</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>q.W = result.W</SourceLine>
-   <SourceLine>q.X = result.X</SourceLine>
-   <SourceLine>q.Y = result.Y</SourceLine>
-   <SourceLine>q.Z = result.Z</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>End Sub</SourceLine>
-  </ItemSource>
-  <TextEncoding>134217984</TextEncoding>
-  <AliasName></AliasName>
-  <ItemFlags>0</ItemFlags>
-  <IsShared>0</IsShared>
-  <ItemParams>q As X3Quaternion, xAngle As Double, yAngle As Double</ItemParams>
-  <ItemResult></ItemResult>
- </Method>
- <Method>
-  <ItemName>X3_SetMaterial</ItemName>
-  <Compatibility></Compatibility>
-  <Visible>1</Visible>
-  <ItemSource>
-   <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Sub X3_SetMaterial(material As X3Core.X3Material)</SourceLine>
-   <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>Dim matMB As MemoryBlock</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' set ambient values</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>matMB = material.Ambient.GetMemoryBlock()</SourceLine>
-   <SourceLine>OpenGL.glMaterialfv(OpenGL.GL_FRONT, OpenGL.GL_AMBIENT, matMB) ' apply ambient values</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' set diffuse values</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>matMB = material.Diffuse.GetMemoryBlock()</SourceLine>
-   <SourceLine>OpenGL.glMaterialfv(OpenGL.GL_FRONT, OpenGL.GL_DIFFUSE, matMB) ' apply diffuse values</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' set specular values</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>matMB = material.Specular.GetMemoryBlock()</SourceLine>
-   <SourceLine>OpenGL.glMaterialfv(OpenGL.GL_FRONT, OpenGL.GL_SPECULAR, matMB) ' apply specular values</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' set shininess value</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>OpenGL.glMaterialf(OpenGL.GL_FRONT_AND_BACK, OpenGL.GL_SHININESS, material.Shininess) ' apply shininess values</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>End Sub</SourceLine>
-  </ItemSource>
-  <TextEncoding>134217984</TextEncoding>
-  <AliasName></AliasName>
-  <ItemFlags>0</ItemFlags>
-  <IsShared>0</IsShared>
-  <ItemParams>material As X3Core.X3Material</ItemParams>
-  <ItemResult></ItemResult>
- </Method>
- <Method>
-  <ItemName>X3_SetPerspective</ItemName>
-  <Compatibility></Compatibility>
-  <Visible>1</Visible>
-  <ItemSource>
-   <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Sub X3_SetPerspective(Surface As OpenGLSurface, fov As Double = 60.0, zNear As Double = 1, zFar As Double = 100)</SourceLine>
-   <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>OpenGL.glViewport 0, 0, Surface.Width, Surface.Height ' set the viewport rectangle</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' set up the perspective projection settings</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>OpenGL.glMatrixMode OpenGL.GL_PROJECTION ' select the projection matrix</SourceLine>
-   <SourceLine>OpenGL.glLoadIdentity ' clear the projection matrix</SourceLine>
-   <SourceLine>OpenGL.gluPerspective fov, Surface.Width / Surface.Height, zNear, zFar ' set up our own custom projection matrix</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' select and reset the modelview matrix</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>OpenGL.glMatrixMode OpenGL.GL_MODELVIEW ' select the modelview matrix</SourceLine>
-   <SourceLine>OpenGL.glLoadIdentity ' clear the modelview matrix</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>End Sub</SourceLine>
-  </ItemSource>
-  <TextEncoding>134217984</TextEncoding>
-  <AliasName></AliasName>
-  <ItemFlags>0</ItemFlags>
-  <IsShared>0</IsShared>
-  <ItemParams>Surface As OpenGLSurface, fov As Double = 60.0, zNear As Double = 1, zFar As Double = 100</ItemParams>
-  <ItemResult></ItemResult>
- </Method>
- <Method>
-  <ItemName>X3_SetRotation</ItemName>
-  <Compatibility></Compatibility>
-  <Visible>1</Visible>
-  <ItemSource>
-   <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Sub X3_SetRotation(rotation As X3Quaternion)</SourceLine>
-   <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>Dim angle As Double ' Euler angle of rotation</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>angle = ACos(rotation.w) * 2 * X3_180OverPi ' calculate angle from quaternion</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>OpenGL.glRotated angle, rotation.x, rotation.y, rotation.z ' apply Euler rotation with OpenGL</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>End Sub</SourceLine>
-  </ItemSource>
-  <TextEncoding>134217984</TextEncoding>
-  <AliasName></AliasName>
-  <ItemFlags>0</ItemFlags>
-  <IsShared>0</IsShared>
-  <ItemParams>rotation As X3Quaternion</ItemParams>
-  <ItemResult></ItemResult>
- </Method>
- <Method>
-  <ItemName>X3_Str</ItemName>
-  <Compatibility></Compatibility>
-  <Visible>1</Visible>
-  <ItemSource>
-   <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Function X3_Str(d As Double) As String</SourceLine>
-   <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if (d \ 1) = d then // whole number?</SourceLine>
-   <SourceLine>return Str(d, "-0")</SourceLine>
-   <SourceLine>else</SourceLine>
-   <SourceLine>return Str(d, "-0.#######")</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine>End Function</SourceLine>
-  </ItemSource>
-  <TextEncoding>134217984</TextEncoding>
-  <AliasName></AliasName>
-  <ItemFlags>0</ItemFlags>
-  <IsShared>0</IsShared>
-  <ItemParams>d As Double</ItemParams>
-  <ItemResult>String</ItemResult>
- </Method>
- <Method>
-  <ItemName>X3_PickPolygon</ItemName>
-  <Compatibility></Compatibility>
-  <Visible>1</Visible>
-  <ItemSource>
-   <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Function X3_PickPolygon(model As X3Core.X3Model, x As Integer, y As Integer) As X3Core.X3Polygon</SourceLine>
-   <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>Dim i As Integer</SourceLine>
-   <SourceLine>Dim j As Integer</SourceLine>
-   <SourceLine>Dim pixelData As New MemoryBlock(4)</SourceLine>
-   <SourceLine>Dim pickIndex As Integer</SourceLine>
-   <SourceLine>Dim poly As X3Core.X3Polygon</SourceLine>
-   <SourceLine>Dim colMB As new MemoryBlock(4)</SourceLine>
-   <SourceLine>Dim result As X3Core.X3Polygon</SourceLine>
-   <SourceLine>Dim prevUB As Integer</SourceLine>
-   <SourceLine>Dim bDrawing As Boolean</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>result = nil</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>OpenGL.glDisable OpenGL.GL_LIGHTING ' disable lighting</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>OpenGL.glPushMatrix ' save matrix</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' apply the model's rotation</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>X3_SetRotation(model.Rotation)</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' clear the background and depth buffer</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>OpenGL.glClearColor(0, 0, 0, 1)</SourceLine>
-   <SourceLine>OpenGL.glClear(OpenGL.GL_COLOR_BUFFER_BIT + OpenGL.GL_DEPTH_BUFFER_BIT)</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>OpenGL.glPolygonMode(OpenGL.GL_FRONT, OpenGL.GL_FILL) ' draw filled polygons</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' render the polygon map</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>prevUB = -1</SourceLine>
-   <SourceLine>bDrawing = false</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>for i = 0 to model.Polygon.Ubound ' loop through all the polygons</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>poly = model.Polygon(i) ' get the next polygon</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if (poly.VIndex.Ubound &lt;&gt; prevUB) then</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if bDrawing then</SourceLine>
-   <SourceLine>OpenGL.glEnd ' end drawing polygons</SourceLine>
-   <SourceLine>bDrawing = false</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>select case poly.VIndex.Ubound</SourceLine>
-   <SourceLine>case 2</SourceLine>
-   <SourceLine>OpenGL.glBegin OpenGL.GL_TRIANGLES ' start drawing triangle polygons</SourceLine>
-   <SourceLine>bDrawing = true</SourceLine>
-   <SourceLine>case 3</SourceLine>
-   <SourceLine>OpenGL.glBegin OpenGL.GL_QUADS ' start drawing quad polygons</SourceLine>
-   <SourceLine>bDrawing = true</SourceLine>
-   <SourceLine>end select</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>prevUB = poly.VIndex.Ubound</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if poly.VIndex.Ubound &gt; 3 then</SourceLine>
-   <SourceLine>OpenGL.glBegin OpenGL.GL_POLYGON ' start drawing quad polygons</SourceLine>
-   <SourceLine>bDrawing = true</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' set the map color of the polygon</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>colMB.UInt32Value(0) = i + 1</SourceLine>
-   <SourceLine>OpenGL.glColor3ub(colMB.UInt8Value(0), colMB.UInt8Value(1), colMB.UInt8Value(2))</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' add the vertexes of the polygon</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>for j = 0 to poly.VIndex.Ubound</SourceLine>
-   <SourceLine>OpenGL.glVertex3d model.Vertex(poly.VIndex(j)).X, model.Vertex(poly.VIndex(j)).Y, model.Vertex(poly.VIndex(j)).Z</SourceLine>
-   <SourceLine>next j</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if poly.VIndex.Ubound &gt; 3 then</SourceLine>
-   <SourceLine>OpenGL.glEnd ' end drawing polygons</SourceLine>
-   <SourceLine>bDrawing = false</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>next i</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if bDrawing then</SourceLine>
-   <SourceLine>OpenGL.glEnd ' end drawing polygons</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' get the pixel value at the given (x, y) position</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>OpenGL.glReadPixels(x, y, 1, 1, OpenGL.GL_RGB, OpenGL.GL_UNSIGNED_BYTE, pixelData)</SourceLine>
-   <SourceLine>pickIndex = pixelData.UInt32Value(0)</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' did we get a pixel at (x, y) other than black?</SourceLine>
-   <SourceLine>if pickIndex &gt; 0 then</SourceLine>
-   <SourceLine>result = model.Polygon(pickIndex - 1)</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>OpenGL.glPopMatrix ' restore matrix</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>OpenGL.glEnable OpenGL.GL_LIGHTING ' enable lighting</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>return result</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>End Function</SourceLine>
-  </ItemSource>
-  <TextEncoding>134217984</TextEncoding>
-  <AliasName></AliasName>
-  <ItemFlags>0</ItemFlags>
-  <IsShared>0</IsShared>
-  <ItemParams>model As X3Core.X3Model, x As Integer, y As Integer</ItemParams>
-  <ItemResult>X3Core.X3Polygon</ItemResult>
- </Method>
- <Method>
-  <ItemName>X3_ModelToJSON</ItemName>
-  <Compatibility></Compatibility>
-  <Visible>1</Visible>
-  <ItemSource>
-   <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Function X3_ModelToJSON(model As X3Core.X3Model) As String</SourceLine>
-   <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>Dim addedChild As Boolean</SourceLine>
-   <SourceLine>Dim i As Integer</SourceLine>
-   <SourceLine>Dim j As Integer</SourceLine>
-   <SourceLine>Dim poly As X3Core.X3Polygon</SourceLine>
-   <SourceLine>Dim text As X3Core.X3Texture</SourceLine>
-   <SourceLine>Dim pic As Picture</SourceLine>
-   <SourceLine>Dim firstValue As Boolean</SourceLine>
-   <SourceLine>Dim modelJSON() As String</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' this method generates X3 Data Format JSON from an X3Model</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>addedChild = false</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>modelJSON.Append "{"</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>modelJSON.Append """x3model"":{"</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' colorpal</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if model.ColorPal.Ubound &gt;= 0 then</SourceLine>
-   <SourceLine>modelJSON.Append """colorpal"":["</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>modelJSON.Append X3_Str(model.ColorPal(0).Red)</SourceLine>
-   <SourceLine>modelJSON.Append ","</SourceLine>
-   <SourceLine>modelJSON.Append X3_Str(model.ColorPal(0).Green)</SourceLine>
-   <SourceLine>modelJSON.Append ","</SourceLine>
-   <SourceLine>modelJSON.Append X3_Str(model.ColorPal(0).Blue)</SourceLine>
-   <SourceLine>modelJSON.Append ","</SourceLine>
-   <SourceLine>modelJSON.Append X3_Str(model.ColorPal(0).Alpha)</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>for i = 1 to model.ColorPal.Ubound</SourceLine>
-   <SourceLine>modelJSON.Append ","</SourceLine>
-   <SourceLine>modelJSON.Append X3_Str(model.ColorPal(i).Red)</SourceLine>
-   <SourceLine>modelJSON.Append ","</SourceLine>
-   <SourceLine>modelJSON.Append X3_Str(model.ColorPal(i).Green)</SourceLine>
-   <SourceLine>modelJSON.Append ","</SourceLine>
-   <SourceLine>modelJSON.Append X3_Str(model.ColorPal(i).Blue)</SourceLine>
-   <SourceLine>modelJSON.Append ","</SourceLine>
-   <SourceLine>modelJSON.Append X3_Str(model.ColorPal(i).Alpha)</SourceLine>
-   <SourceLine>next i</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>modelJSON.Append "]" ' vertex</SourceLine>
-   <SourceLine>addedChild = true</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' material</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if model.Material.Ubound &gt;= 0 then</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if addedChild then</SourceLine>
-   <SourceLine>modelJSON.Append ","</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>modelJSON.Append """material"":["</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>for i = 0 to model.Material.Ubound</SourceLine>
-   <SourceLine>if i &gt; 0 then</SourceLine>
-   <SourceLine>modelJSON.Append ","</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine>modelJSON.Append X3_Str(model.Material(i).Ambient.Red)</SourceLine>
-   <SourceLine>modelJSON.Append ","</SourceLine>
-   <SourceLine>modelJSON.Append X3_Str(model.Material(i).Ambient.Green)</SourceLine>
-   <SourceLine>modelJSON.Append ","</SourceLine>
-   <SourceLine>modelJSON.Append X3_Str(model.Material(i).Ambient.Blue)</SourceLine>
-   <SourceLine>modelJSON.Append ","</SourceLine>
-   <SourceLine>modelJSON.Append X3_Str(model.Material(i).Ambient.Alpha)</SourceLine>
-   <SourceLine>modelJSON.Append ","</SourceLine>
-   <SourceLine>modelJSON.Append X3_Str(model.Material(i).Diffuse.Red)</SourceLine>
-   <SourceLine>modelJSON.Append ","</SourceLine>
-   <SourceLine>modelJSON.Append X3_Str(model.Material(i).Diffuse.Green)</SourceLine>
-   <SourceLine>modelJSON.Append ","</SourceLine>
-   <SourceLine>modelJSON.Append X3_Str(model.Material(i).Diffuse.Blue)</SourceLine>
-   <SourceLine>modelJSON.Append ","</SourceLine>
-   <SourceLine>modelJSON.Append X3_Str(model.Material(i).Diffuse.Alpha)</SourceLine>
-   <SourceLine>modelJSON.Append ","</SourceLine>
-   <SourceLine>modelJSON.Append X3_Str(model.Material(i).Specular.Red)</SourceLine>
-   <SourceLine>modelJSON.Append ","</SourceLine>
-   <SourceLine>modelJSON.Append X3_Str(model.Material(i).Specular.Green)</SourceLine>
-   <SourceLine>modelJSON.Append ","</SourceLine>
-   <SourceLine>modelJSON.Append X3_Str(model.Material(i).Specular.Blue)</SourceLine>
-   <SourceLine>modelJSON.Append ","</SourceLine>
-   <SourceLine>modelJSON.Append X3_Str(model.Material(i).Specular.Alpha)</SourceLine>
-   <SourceLine>modelJSON.Append ","</SourceLine>
-   <SourceLine>modelJSON.Append X3_Str(model.Material(i).Shininess)</SourceLine>
-   <SourceLine>next i</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>modelJSON.Append "]" ' vertex</SourceLine>
-   <SourceLine>addedChild = true</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' vertex</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if model.Vertex.Ubound &gt;= 0 then</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if addedChild then</SourceLine>
-   <SourceLine>modelJSON.Append ","</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>modelJSON.Append """vertex"":["</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>modelJSON.Append X3_Str(model.Vertex(0).X)</SourceLine>
-   <SourceLine>modelJSON.Append ","</SourceLine>
-   <SourceLine>modelJSON.Append X3_Str(model.Vertex(0).Y)</SourceLine>
-   <SourceLine>modelJSON.Append ","</SourceLine>
-   <SourceLine>modelJSON.Append X3_Str(model.Vertex(0).Z)</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>for i = 1 to model.Vertex.Ubound</SourceLine>
-   <SourceLine>modelJSON.Append ","</SourceLine>
-   <SourceLine>modelJSON.Append X3_Str(model.Vertex(i).X)</SourceLine>
-   <SourceLine>modelJSON.Append ","</SourceLine>
-   <SourceLine>modelJSON.Append X3_Str(model.Vertex(i).Y)</SourceLine>
-   <SourceLine>modelJSON.Append ","</SourceLine>
-   <SourceLine>modelJSON.Append X3_Str(model.Vertex(i).Z)</SourceLine>
-   <SourceLine>next i</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>modelJSON.Append "]" ' vertex</SourceLine>
-   <SourceLine>addedChild = true</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' uvmap</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if model.UVMap.Ubound &gt;= 0 then</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if addedChild then</SourceLine>
-   <SourceLine>modelJSON.Append ","</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>modelJSON.Append """uvmap"":["</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>modelJSON.Append X3_Str(model.UVMap(0).U)</SourceLine>
-   <SourceLine>modelJSON.Append ","</SourceLine>
-   <SourceLine>modelJSON.Append X3_Str(model.UVMap(0).V)</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>for i = 1 to model.UVMap.Ubound</SourceLine>
-   <SourceLine>modelJSON.Append ","</SourceLine>
-   <SourceLine>modelJSON.Append X3_Str(model.UVMap(i).U)</SourceLine>
-   <SourceLine>modelJSON.Append ","</SourceLine>
-   <SourceLine>modelJSON.Append X3_Str(model.UVMap(i).V)</SourceLine>
-   <SourceLine>next i</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>modelJSON.Append "]" ' vertex</SourceLine>
-   <SourceLine>addedChild = true</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' normal</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if model.Normal.Ubound &gt;= 0 then</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if addedChild then</SourceLine>
-   <SourceLine>modelJSON.Append ","</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>modelJSON.Append """normal"":["</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>modelJSON.Append X3_Str(model.Normal(0).X)</SourceLine>
-   <SourceLine>modelJSON.Append ","</SourceLine>
-   <SourceLine>modelJSON.Append X3_Str(model.Normal(0).Y)</SourceLine>
-   <SourceLine>modelJSON.Append ","</SourceLine>
-   <SourceLine>modelJSON.Append X3_Str(model.Normal(0).Z)</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>for i = 1 to model.Normal.Ubound</SourceLine>
-   <SourceLine>modelJSON.Append ","</SourceLine>
-   <SourceLine>modelJSON.Append X3_Str(model.Normal(i).X)</SourceLine>
-   <SourceLine>modelJSON.Append ","</SourceLine>
-   <SourceLine>modelJSON.Append X3_Str(model.Normal(i).Y)</SourceLine>
-   <SourceLine>modelJSON.Append ","</SourceLine>
-   <SourceLine>modelJSON.Append X3_Str(model.Normal(i).Z)</SourceLine>
-   <SourceLine>next i</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>modelJSON.Append "]" ' normal</SourceLine>
-   <SourceLine>addedChild = true</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' polygon</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if model.Polygon.Ubound &gt;= 0 then</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if addedChild then</SourceLine>
-   <SourceLine>modelJSON.Append ","</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>modelJSON.Append """polygon"":["</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>for i = 0 to model.Polygon.Ubound</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>poly = model.Polygon(i)</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if i &gt; 0 then</SourceLine>
-   <SourceLine>modelJSON.Append ","</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>modelJSON.Append "{" ' polygon</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>firstValue = true</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if poly.TIndex &gt;= 0 then</SourceLine>
-   <SourceLine>modelJSON.Append """ti"":" + Str(poly.TIndex)</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>modelJSON.Append ","</SourceLine>
-   <SourceLine>modelJSON.Append """uvi"":["</SourceLine>
-   <SourceLine>modelJSON.Append Str(poly.UVIndex(0))</SourceLine>
-   <SourceLine>for j = 1 to poly.UVIndex.Ubound</SourceLine>
-   <SourceLine>modelJSON.Append ","</SourceLine>
-   <SourceLine>modelJSON.Append Str(poly.UVIndex(j))</SourceLine>
-   <SourceLine>next j</SourceLine>
-   <SourceLine>modelJSON.Append "]"</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>firstValue = false</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>elseif poly.MIndex &gt;= 0 then</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>modelJSON.Append """mi"":" + Str(poly.MIndex)</SourceLine>
-   <SourceLine>firstValue = false</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>elseif poly.CIndex &gt;= 0 then</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>modelJSON.Append """ci"":" + Str(poly.CIndex)</SourceLine>
-   <SourceLine>firstValue = false</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if poly.NIndex &gt;= 0 then</SourceLine>
-   <SourceLine>if not firstValue then</SourceLine>
-   <SourceLine>modelJSON.Append ","</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine>modelJSON.Append """ni"":" + Str(poly.NIndex)</SourceLine>
-   <SourceLine>firstValue = false</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if not firstValue then</SourceLine>
-   <SourceLine>modelJSON.Append ","</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine>modelJSON.Append """vi"":["</SourceLine>
-   <SourceLine>modelJSON.Append Str(poly.VIndex(0))</SourceLine>
-   <SourceLine>for j = 1 to poly.VIndex.Ubound</SourceLine>
-   <SourceLine>modelJSON.Append ","</SourceLine>
-   <SourceLine>modelJSON.Append Str(poly.VIndex(j))</SourceLine>
-   <SourceLine>next j</SourceLine>
-   <SourceLine>modelJSON.Append "]"</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if poly.VNIndex.Ubound &gt;= 0 then</SourceLine>
-   <SourceLine>modelJSON.Append ","</SourceLine>
-   <SourceLine>modelJSON.Append """vni"":["</SourceLine>
-   <SourceLine>modelJSON.Append Str(poly.VNIndex(0))</SourceLine>
-   <SourceLine>for j = 1 to poly.VNIndex.Ubound</SourceLine>
-   <SourceLine>modelJSON.Append ","</SourceLine>
-   <SourceLine>modelJSON.Append Str(poly.VNIndex(j))</SourceLine>
-   <SourceLine>next j</SourceLine>
-   <SourceLine>modelJSON.Append "]"</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>modelJSON.Append "}"</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>next i</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>modelJSON.Append "]" ' vertex</SourceLine>
-   <SourceLine>addedChild = true</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' texture</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if model.Texture.Ubound &gt;= 0 then</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if addedChild then</SourceLine>
-   <SourceLine>modelJSON.Append ","</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>modelJSON.Append """texture"":["</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>for i = 0 to model.Texture.Ubound</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>text = model.Texture(i)</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if i &gt; 0 then</SourceLine>
-   <SourceLine>modelJSON.Append ","</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>pic = X3_PictureFromTexture(text)</SourceLine>
-   <SourceLine>modelJSON.Append """" + EncodeBase64(pic.GetData(Picture.FormatPNG), 0) + """"</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>next i</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>modelJSON.Append "]" ' vertex</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>addedChild = true</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>modelJSON.Append "}" ' x3model</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>modelJSON.Append "}" ' root</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>return Join(modelJSON, "")</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>End Function</SourceLine>
-  </ItemSource>
-  <TextEncoding>134217984</TextEncoding>
-  <AliasName></AliasName>
-  <ItemFlags>0</ItemFlags>
-  <IsShared>0</IsShared>
-  <ItemParams>model As X3Core.X3Model</ItemParams>
-  <ItemResult>String</ItemResult>
- </Method>
- <Method>
-  <ItemName>X3_RenderScene</ItemName>
-  <Compatibility></Compatibility>
-  <Visible>1</Visible>
-  <ItemSource>
-   <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Sub X3_RenderScene(scene As X3Core.X3Scene)</SourceLine>
-   <SourceLine>Dim i As Integer</SourceLine>
-   <SourceLine>Dim activeCam As X3Core.X3Camera</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>OpenGL.glPushMatrix ' save matrix</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' select the active camera</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>activeCam = scene.Camera(scene.CameraIndex)</SourceLine>
-   <SourceLine>X3_SetCamera activeCam</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>'OpenGL.glTranslatef 0, 0, -10</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>// render all the models in the scene</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>for i = 0 to scene.Model.Ubound</SourceLine>
-   <SourceLine>X3_RenderModel(scene.Model(i))</SourceLine>
-   <SourceLine>next i </SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>OpenGL.glPopMatrix ' restore matrix</SourceLine>
-   <SourceLine>End Sub</SourceLine>
-  </ItemSource>
-  <TextEncoding>134217984</TextEncoding>
-  <AliasName></AliasName>
-  <ItemFlags>0</ItemFlags>
-  <IsShared>0</IsShared>
-  <ItemParams>scene As X3Core.X3Scene</ItemParams>
-  <ItemResult></ItemResult>
- </Method>
- <Method>
-  <ItemName>X3_SetCamera</ItemName>
-  <Compatibility></Compatibility>
-  <Visible>1</Visible>
-  <ItemSource>
-   <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Sub X3_SetCamera(camera As X3Core.X3Camera)</SourceLine>
-   <SourceLine>' set the orientation of the camera</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>X3_SetRotation camera.CameraRotation</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' position the camera</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>OpenGL.glTranslatef -camera.DollyPosition.X, -camera.DollyPosition.Y, -camera.DollyPosition.Z</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>End Sub</SourceLine>
-  </ItemSource>
-  <TextEncoding>134217984</TextEncoding>
-  <AliasName></AliasName>
-  <ItemFlags>0</ItemFlags>
-  <IsShared>0</IsShared>
-  <ItemParams>camera As X3Core.X3Camera</ItemParams>
-  <ItemResult></ItemResult>
- </Method>
- <ViewBehavior>
-  <ViewProperty>
-   <ObjName>Index</ObjName>
-   <Visible>1</Visible>
-   <PropertyGroup>ID</PropertyGroup>
-   <PropertyValue>-2147483648</PropertyValue>
-   <ItemType>Integer</ItemType>
-  </ViewProperty>
-  <ViewProperty>
-   <ObjName>Left</ObjName>
-   <Visible>1</Visible>
-   <PropertyGroup>Position</PropertyGroup>
-   <PropertyValue>0</PropertyValue>
-   <ItemType>Integer</ItemType>
-  </ViewProperty>
-  <ViewProperty>
-   <ObjName>Name</ObjName>
-   <Visible>1</Visible>
-   <PropertyGroup>ID</PropertyGroup>
-   <ItemType>String</ItemType>
-  </ViewProperty>
-  <ViewProperty>
-   <ObjName>Super</ObjName>
-   <Visible>1</Visible>
-   <PropertyGroup>ID</PropertyGroup>
-   <ItemType>String</ItemType>
-  </ViewProperty>
-  <ViewProperty>
-   <ObjName>Top</ObjName>
-   <Visible>1</Visible>
-   <PropertyGroup>Position</PropertyGroup>
-   <PropertyValue>0</PropertyValue>
-   <ItemType>Integer</ItemType>
-  </ViewProperty>
- </ViewBehavior>
- <Constant>
-  <ItemName>X3_180OverPi</ItemName>
-  <Compatibility></Compatibility>
-  <Visible>1</Visible>
-  <TextEncoding>134217984</TextEncoding>
-  <ItemName>X3_180OverPi</ItemName>
-  <ItemType>2</ItemType>
-  <ItemDef>57.295779513082321</ItemDef>
-  <ItemFlags>0</ItemFlags>
- </Constant>
- <Constant>
-  <ItemName>X3_PiOver180</ItemName>
-  <Compatibility></Compatibility>
-  <Visible>1</Visible>
-  <TextEncoding>134217984</TextEncoding>
-  <ItemName>X3_PiOver180</ItemName>
-  <ItemType>2</ItemType>
-  <ItemDef>0.017453292519943</ItemDef>
-  <ItemFlags>0</ItemFlags>
- </Constant>
 </block>
-<block type="Module" ID="625401855">
+<block type="BuildStepsList" ID="1666613247">
+ <ObjName>Linux</ObjName>
+ <ObjContainerID>1587267583</ObjContainerID>
+</block>
+<block type="BuildProjectStep" ID="1704052735">
+ <ObjName>Build</ObjName>
+ <ObjContainerID>1666613247</ObjContainerID>
+</block>
+<block type="BuildStepsList" ID="2112894975">
+ <ObjName>Mac OS X</ObjName>
+ <ObjContainerID>1587267583</ObjContainerID>
+</block>
+<block type="BuildProjectStep" ID="2103564287">
+ <ObjName>Build</ObjName>
+ <ObjContainerID>2112894975</ObjContainerID>
+</block>
+<block type="BuildStepsList" ID="1656686591">
+ <ObjName>Windows</ObjName>
+ <ObjContainerID>1587267583</ObjContainerID>
+</block>
+<block type="BuildProjectStep" ID="1417129983">
+ <ObjName>Build</ObjName>
+ <ObjContainerID>1656686591</ObjContainerID>
+</block>
+<block type="Module" ID="467773439">
  <ObjName>X3Camera</ObjName>
- <ObjContainerID>1275043839</ObjContainerID>
+ <ObjContainerID>1524205567</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -3776,37 +2382,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="BuildAutomation" ID="1587267583">
- <ObjName>Build Automation</ObjName>
- <ObjContainerID>0</ObjContainerID>
-</block>
-<block type="BuildStepsList" ID="1666613247">
- <ObjName>Linux</ObjName>
- <ObjContainerID>1587267583</ObjContainerID>
-</block>
-<block type="BuildProjectStep" ID="1704052735">
- <ObjName>Build</ObjName>
- <ObjContainerID>1666613247</ObjContainerID>
-</block>
-<block type="BuildStepsList" ID="2112894975">
- <ObjName>Mac OS X</ObjName>
- <ObjContainerID>1587267583</ObjContainerID>
-</block>
-<block type="BuildProjectStep" ID="2103564287">
- <ObjName>Build</ObjName>
- <ObjContainerID>2112894975</ObjContainerID>
-</block>
-<block type="BuildStepsList" ID="1656686591">
- <ObjName>Windows</ObjName>
- <ObjContainerID>1587267583</ObjContainerID>
-</block>
-<block type="BuildProjectStep" ID="1417129983">
- <ObjName>Build</ObjName>
- <ObjContainerID>1656686591</ObjContainerID>
-</block>
-<block type="Module" ID="1454919679">
+<block type="Module" ID="540704767">
  <ObjName>X3Vector</ObjName>
- <ObjContainerID>1275043839</ObjContainerID>
+ <ObjContainerID>1524205567</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -4083,9 +2661,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="1316149247">
+<block type="Module" ID="2114097151">
  <ObjName>X3Color</ObjName>
- <ObjContainerID>1275043839</ObjContainerID>
+ <ObjContainerID>1524205567</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -4279,9 +2857,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="2027589631">
+<block type="Module" ID="277561343">
  <ObjName>X3Polygon</ObjName>
- <ObjContainerID>1275043839</ObjContainerID>
+ <ObjContainerID>1524205567</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -4893,9 +3471,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="1274544127">
+<block type="Module" ID="2078078975">
  <ObjName>X3Light</ObjName>
- <ObjContainerID>1275043839</ObjContainerID>
+ <ObjContainerID>1524205567</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -5019,9 +3597,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="733429759">
+<block type="Module" ID="1013198847">
  <ObjName>X3Model</ObjName>
- <ObjContainerID>1275043839</ObjContainerID>
+ <ObjContainerID>1524205567</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -5555,9 +4133,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="1772863487">
+<block type="Module" ID="1038022655">
  <ObjName>X3Texture</ObjName>
- <ObjContainerID>1275043839</ObjContainerID>
+ <ObjContainerID>1524205567</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -5838,9 +4416,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="788971519">
+<block type="Module" ID="877813759">
  <ObjName>X3UVCoordinate</ObjName>
- <ObjContainerID>1275043839</ObjContainerID>
+ <ObjContainerID>1524205567</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -5965,9 +4543,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="369190911">
+<block type="Module" ID="826169343">
  <ObjName>X3Quaternion</ObjName>
- <ObjContainerID>1275043839</ObjContainerID>
+ <ObjContainerID>1524205567</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -6422,9 +5000,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="388931583">
+<block type="Module" ID="884885503">
  <ObjName>X3Scene</ObjName>
- <ObjContainerID>1275043839</ObjContainerID>
+ <ObjContainerID>1524205567</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -6889,9 +5467,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="641349631">
+<block type="Module" ID="2120617983">
  <ObjName>X3Material</ObjName>
- <ObjContainerID>1275043839</ObjContainerID>
+ <ObjContainerID>1524205567</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -7043,9 +5621,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="943728639">
+<block type="Module" ID="447174655">
  <ObjName>X3Sprite</ObjName>
- <ObjContainerID>1275043839</ObjContainerID>
+ <ObjContainerID>1524205567</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -7234,9 +5812,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="1912895487">
+<block type="Module" ID="1318109183">
  <ObjName>X3SpriteCoordinate</ObjName>
- <ObjContainerID>1275043839</ObjContainerID>
+ <ObjContainerID>1524205567</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -7400,9 +5978,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="1878820863">
+<block type="Module" ID="1421578239">
  <ObjName>X3IO</ObjName>
- <ObjContainerID>1275043839</ObjContainerID>
+ <ObjContainerID>1524205567</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -9724,15 +8302,1437 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
+<block type="Module" ID="1524205567">
+ <ObjName>X3Core</ObjName>
+ <ObjContainerID>0</ObjContainerID>
+ <IsClass>0</IsClass>
+ <ItemFlags>1</ItemFlags>
+ <IsInterface>0</IsInterface>
+ <Compatibility></Compatibility>
+ <Method>
+  <ItemName>renderPolygon</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub renderPolygon(poly As X3Core.X3Polygon, ByRef currMat As Integer, ByRef currIndex As Integer)</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>Dim model As X3Core.X3Model</SourceLine>
+   <SourceLine>Dim n As X3Core.X3Vector</SourceLine>
+   <SourceLine>Dim j As Integer</SourceLine>
+   <SourceLine>Dim col As X3Core.X3Color</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>model = poly.ParentModel</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' is this polygon mapped with a texture, and if so, is the UV coordinates configured?</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if ((poly.TIndex &gt;= 0) and (poly.UVIndex.Ubound &gt;= poly.VIndex.Ubound)) or (poly.SIndex &gt;= 0) then</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' loop through all the vertexes of the polygon</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if poly.VNIndex.Ubound = poly.VIndex.Ubound then ' normal per vertex?</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' yes</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>for j = 0 to poly.VIndex.Ubound</SourceLine>
+   <SourceLine>n = model.Normal(poly.VNIndex(j))</SourceLine>
+   <SourceLine>OpenGL.glNormal3d n.X, n.Y, n.Z</SourceLine>
+   <SourceLine>OpenGL.glTexCoord2d model.UVMap(poly.UVIndex(j)).U, model.UVMap(poly.UVIndex(j)).V ' set the texture UV-coordinates for next vertex</SourceLine>
+   <SourceLine>OpenGL.glVertex3d model.Vertex(poly.VIndex(j)).X, model.Vertex(poly.VIndex(j)).Y, model.Vertex(poly.VIndex(j)).Z ' add the vertex to the OpenGL vertex list</SourceLine>
+   <SourceLine>next j</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>else</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' set normal for whole polygon</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>n = model.Normal(poly.NIndex)</SourceLine>
+   <SourceLine>OpenGL.glNormal3d n.X, n.Y, n.Z</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' render vertices</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>for j = 0 to poly.VIndex.Ubound</SourceLine>
+   <SourceLine>OpenGL.glTexCoord2d model.UVMap(poly.UVIndex(j)).U, model.UVMap(poly.UVIndex(j)).V ' set the texture UV-coordinates for next vertex</SourceLine>
+   <SourceLine>OpenGL.glVertex3d model.Vertex(poly.VIndex(j)).X, model.Vertex(poly.VIndex(j)).Y, model.Vertex(poly.VIndex(j)).Z ' add the vertex to the OpenGL vertex list</SourceLine>
+   <SourceLine>next j</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>elseif poly.MIndex &gt;= 0 then</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' this polygon uses material settings</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if currMat &lt;&gt; 2 then ' currently using materials?</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>currMat = 2</SourceLine>
+   <SourceLine>currIndex = -1</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if currIndex &lt;&gt; poly.MIndex then ' still using same material?</SourceLine>
+   <SourceLine>' no, so set new material</SourceLine>
+   <SourceLine>X3_SetMaterial model.Material(poly.MIndex)</SourceLine>
+   <SourceLine>currIndex = poly.MIndex</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' loop through all the vertexes of the polygon</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if poly.VNIndex.Ubound = poly.VIndex.Ubound then ' normal per vertex?</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' yes</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>for j = 0 to poly.VIndex.Ubound</SourceLine>
+   <SourceLine>n = model.Normal(poly.VNIndex(j))</SourceLine>
+   <SourceLine>OpenGL.glNormal3d n.X, n.Y, n.Z</SourceLine>
+   <SourceLine>OpenGL.glVertex3d model.Vertex(poly.VIndex(j)).X, model.Vertex(poly.VIndex(j)).Y, model.Vertex(poly.VIndex(j)).Z</SourceLine>
+   <SourceLine>next j</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>else</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' set normal for whole polygon</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>n = model.Normal(poly.NIndex)</SourceLine>
+   <SourceLine>OpenGL.glNormal3d n.X, n.Y, n.Z</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' render vertices</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>for j = 0 to poly.VIndex.Ubound</SourceLine>
+   <SourceLine>OpenGL.glVertex3d model.Vertex(poly.VIndex(j)).X, model.Vertex(poly.VIndex(j)).Y, model.Vertex(poly.VIndex(j)).Z</SourceLine>
+   <SourceLine>next j</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>else</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' this polygon uses a normal RGBA color</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if currMat &lt;&gt; 0 then ' currently using RGBA?</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>currMat = 0</SourceLine>
+   <SourceLine>currIndex = -1</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if currIndex &lt;&gt; poly.CIndex then ' still using same RGBA color?</SourceLine>
+   <SourceLine>' no, so set new RGBA color</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if poly.CIndex &gt;= 0 then ' is the color index pointing to a color?</SourceLine>
+   <SourceLine>' yes, so set the color</SourceLine>
+   <SourceLine>col = model.ColorPal(poly.CIndex)</SourceLine>
+   <SourceLine>OpenGL.glColor4d(col.Red, col.Green, col.Blue, col.Alpha)</SourceLine>
+   <SourceLine>else</SourceLine>
+   <SourceLine>' no, so make the fill color opague white</SourceLine>
+   <SourceLine>OpenGL.glColor4d(1, 1, 1, 1)</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' loop through all the vertexes of the polygon</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if poly.VNIndex.Ubound = poly.VIndex.Ubound then ' normal per vertex?</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' yes</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>for j = 0 to poly.VIndex.Ubound</SourceLine>
+   <SourceLine>n = model.Normal(poly.VNIndex(j))</SourceLine>
+   <SourceLine>OpenGL.glNormal3d n.X, n.Y, n.Z</SourceLine>
+   <SourceLine>OpenGL.glVertex3d model.Vertex(poly.VIndex(j)).X, model.Vertex(poly.VIndex(j)).Y, model.Vertex(poly.VIndex(j)).Z</SourceLine>
+   <SourceLine>next j</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>else</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' set normal for whole polygon</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>n = model.Normal(poly.NIndex)</SourceLine>
+   <SourceLine>OpenGL.glNormal3d n.X, n.Y, n.Z</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' render vertices</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>for j = 0 to poly.VIndex.Ubound</SourceLine>
+   <SourceLine>OpenGL.glVertex3d model.Vertex(poly.VIndex(j)).X, model.Vertex(poly.VIndex(j)).Y, model.Vertex(poly.VIndex(j)).Z</SourceLine>
+   <SourceLine>next j</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>33</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>poly As X3Core.X3Polygon, ByRef currMat As Integer, ByRef currIndex As Integer</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>X3_CreateSprite</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Function X3_CreateSprite(initSheet As Picture, spriteWidth As Integer, spriteHeight As Integer, imageCount As Integer) As X3Core.X3Model</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>Dim model As X3Core.X3Model</SourceLine>
+   <SourceLine>Dim p As X3Core.X3Polygon</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' create a new model</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>model = new X3Core.X3Model</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' instantiate a sprite from our sprite sheet, and add it to the model</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>Model.Sprite.Append new X3Core.X3Sprite(initSheet, spriteWidth, spriteHeight, imageCount)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' add vertices to the model</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>Model.Vertex.Append new X3Core.X3Vector(-1, 1, 0)</SourceLine>
+   <SourceLine>Model.Vertex.Append new X3Core.X3Vector(-1, -1, 0)</SourceLine>
+   <SourceLine>Model.Vertex.Append new X3Core.X3Vector(1, -1, 0)</SourceLine>
+   <SourceLine>Model.Vertex.Append new X3Core.X3Vector(1, 1, 0)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' add the normal to the model</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>Model.Normal.Append new X3Core.X3Vector(0, 0, 1)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' create and add a sprite polygon to the model</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>p = new X3Core.X3Polygon</SourceLine>
+   <SourceLine>p.VIndex.Append 0 ' vertices</SourceLine>
+   <SourceLine>p.VIndex.Append 1</SourceLine>
+   <SourceLine>p.VIndex.Append 2</SourceLine>
+   <SourceLine>p.VIndex.Append 3</SourceLine>
+   <SourceLine>p.NIndex = 0 ' normal</SourceLine>
+   <SourceLine>p.SIndex = 0 ' point to sprite</SourceLine>
+   <SourceLine>model.AppendPolygon p</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>return model</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Function</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>initSheet As Picture, spriteWidth As Integer, spriteHeight As Integer, imageCount As Integer</ItemParams>
+  <ItemResult>X3Core.X3Model</ItemResult>
+ </Method>
+ <Method>
+  <ItemName>X3_EnableLight</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub X3_EnableLight(lightIndex As Integer, light As X3Core.X3Light)</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>OpenGL.glLightfv lightIndex, OpenGL.GL_POSITION, light.Position.GetMemoryBlock ' set position</SourceLine>
+   <SourceLine>OpenGL.glLightfv lightIndex, OpenGL.GL_AMBIENT, light.Ambient.GetMemoryBlock ' set ambience</SourceLine>
+   <SourceLine>OpenGL.glLightfv lightIndex, OpenGL.GL_DIFFUSE, light.Diffuse.GetMemoryBlock ' set diffuse</SourceLine>
+   <SourceLine>OpenGL.glLightfv lightIndex, OpenGL.GL_SPECULAR, light.Specular.GetMemoryBlock ' set specular</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>OpenGL.glEnable lightIndex ' enable the light</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>lightIndex As Integer, light As X3Core.X3Light</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>X3_Initialize</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub X3_Initialize()</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' enable depth buffer to ensure objects in distance is not drawn over objects closer to us</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>OpenGL.glEnable OpenGL.GL_DEPTH_TEST</SourceLine>
+   <SourceLine>OpenGL.glDepthMask OpenGL.GL_TRUE</SourceLine>
+   <SourceLine>OpenGL.glDepthFunc OpenGL.GL_LEQUAL ' set the depth buffer function to "less"</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' make sure only back faces are culled and enable culling</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>OpenGL.glCullFace OpenGL.GL_BACK</SourceLine>
+   <SourceLine>OpenGL.glEnable OpenGL.GL_CULL_FACE</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' enable OpenGL lighing</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>OpenGL.glEnable OpenGL.GL_LIGHTING</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' enable blending for transparent models</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>OpenGL.glEnable OpenGL.GL_BLEND</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' set the blending function for alpha colors</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>OpenGL.glBlendFunc OpenGL.GL_SRC_ALPHA, OpenGL.GL_ONE_MINUS_SRC_ALPHA</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams></ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>X3_LoadRGBATexture</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Function X3_LoadRGBATexture(RGBABitmap As MemoryBlock, width As Integer, height As Integer) As Integer</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>Dim idMB As MemoryBlock</SourceLine>
+   <SourceLine>Dim oglName As Integer</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' ask OpenGL for an ID that we can use for our texture</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>idMB = new MemoryBlock(8) ' create a memory block into which OpenGL will store the ID value</SourceLine>
+   <SourceLine>OpenGL.glGenTextures(1, idMB) ' get the ID from OpenGL</SourceLine>
+   <SourceLine>oglName = idMB.Long(0) ' store the value returned by OpenGL in an integer</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' specify to OpenGL how this texture should be rendered</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>OpenGL.glBindTexture(OpenGL.GL_TEXTURE_2D, OGLName) ' select the texture id that OpenGL allocated for our texture</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>OpenGL.glTexParameteri(OpenGL.GL_TEXTURE_2D, OpenGL.GL_TEXTURE_MIN_FILTER, OpenGL.GL_LINEAR) // set up settings</SourceLine>
+   <SourceLine>OpenGL.glTexParameteri(OpenGL.GL_TEXTURE_2D, OpenGL.GL_TEXTURE_MAG_FILTER, OpenGL.GL_LINEAR) // set up some more settings</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' now we load the image bitmap</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>OpenGL.glTexImage2d(OpenGL.GL_TEXTURE_2D, 0, 4, width, height , 0, OpenGL.GL_RGBA, OpenGL.GL_UNSIGNED_BYTE, RGBABitmap)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>return oglName</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Function</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>RGBABitmap As MemoryBlock, width As Integer, height As Integer</ItemParams>
+  <ItemResult>Integer</ItemResult>
+ </Method>
+ <Method>
+  <ItemName>X3_PictureFromTexture</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Function X3_PictureFromTexture(text As X3Core.X3Texture) As Picture</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>Dim pic as new Picture(text.Width, text.height, 32)</SourceLine>
+   <SourceLine>Dim i As Integer</SourceLine>
+   <SourceLine>Dim j As Integer</SourceLine>
+   <SourceLine>Dim pixIndex As Integer</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>pixIndex = 0</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>j = 0</SourceLine>
+   <SourceLine>while j &lt; text.height</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>i = 0</SourceLine>
+   <SourceLine>while i &lt; text.width</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>pic.RGBSurface.Pixel(i, j) = RGB(text.RGBABitmap.UInt8Value(pixIndex), text.RGBABitmap.UInt8Value(pixIndex + 1), text.RGBABitmap.UInt8Value(pixIndex + 2), text.RGBABitmap.UInt8Value(pixIndex + 3))</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>pixIndex = pixIndex + 4</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>i = i + 1</SourceLine>
+   <SourceLine>wend</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>j = j + 1</SourceLine>
+   <SourceLine>wend</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>return pic</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Function</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>text As X3Core.X3Texture</ItemParams>
+  <ItemResult>Picture</ItemResult>
+ </Method>
+ <Method>
+  <ItemName>X3_RenderModel</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub X3_RenderModel(model As X3Core.X3Model)</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>Dim i As Integer</SourceLine>
+   <SourceLine>Dim j As Integer</SourceLine>
+   <SourceLine>Dim poly As X3Core.X3Polygon</SourceLine>
+   <SourceLine>Dim prevUB As Integer</SourceLine>
+   <SourceLine>Dim bDrawing As Boolean</SourceLine>
+   <SourceLine>Dim prevTIndex As Integer = -1</SourceLine>
+   <SourceLine>Dim prevSIndex As Integer = -1</SourceLine>
+   <SourceLine>Dim transPoly() As X3Core.X3Polygon</SourceLine>
+   <SourceLine>Dim currMat As Integer = - 1 ' current material type used for polygon: 0=RGBA, 1=Texture, 2=Material</SourceLine>
+   <SourceLine>Dim currIndex As Integer = -1 ' current material index</SourceLine>
+   <SourceLine>Dim texture As X3Core.X3Texture</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>OpenGL.glEnable OpenGL.GL_COLOR_MATERIAL ' enable use vertex colors</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>OpenGL.glPushMatrix ' save matrix</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>OpenGL.glScalef model.Scale.X, model.Scale.Y, model.Scale.Z ' set the model's scale</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>OpenGL.glTranslatef model.Position.X, model.Position.Y, model.Position.Z ' set the model's position</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>X3_SetRotation(model.Rotation) ' apply the model's rotation</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' have we rendered this model previous innto an OpenGL display list?</SourceLine>
+   <SourceLine>if (model.OGLName &gt; 0) and not model.Invalidate then</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>OpenGL.glCallList model.OGLName 'yes, so render this existing list</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>else</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>Redim model.SpritePolygons(-1)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' is the model loaded in OpenGL memory and invalid?</SourceLine>
+   <SourceLine>if (model.OGLName &gt; 0) and model.Invalidate then</SourceLine>
+   <SourceLine>' yes, so first remove the model from OpenGL memory</SourceLine>
+   <SourceLine>OpenGL.glDeleteLists(model.OGLName, 1)</SourceLine>
+   <SourceLine>model.OGLName = 0</SourceLine>
+   <SourceLine>model.Invalidate = false</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' create a new OpenGL display list</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>model.OGLName = OpenGL.glGenLists(1)</SourceLine>
+   <SourceLine>OpenGL.glNewList model.OGLName, OpenGL.GL_COMPILE</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' draw polygons</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' FIRST WE DRAW THE OPAQUE POLYGONS</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>prevUB = -1</SourceLine>
+   <SourceLine>bDrawing = false</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>for i = 0 to model.Polygon.Ubound ' loop through all the polygons</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>poly = model.Polygon(i) ' get the next polygon</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' only draw if opaque</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if ((poly.TIndex &gt;= 0) and  model.Texture(poly.TIndex).Transparent)  then ' transparent texture?</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' this is a polygon with a transparent texture, so store for later rendering</SourceLine>
+   <SourceLine>transPoly.Append poly</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>elseif (poly.MIndex &gt;= 0) and (model.Material(poly.MIndex).Ambient.Alpha &lt; 1) then ' transparent material?</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' this is a polygon with a transparent material, so store for later rendering</SourceLine>
+   <SourceLine>transPoly.Append poly</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>elseif (poly.CIndex &gt;= 0) and (model.ColorPal(poly.CIndex).Alpha &lt; 1) then ' transparent color?</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' this is a polygon with a transparent color, so store for later rendering</SourceLine>
+   <SourceLine>transPoly.Append poly</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>elseif (poly.SIndex &gt;= 0) then ' sprite?</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' this is a polygon with a sprite, so store for later rendering</SourceLine>
+   <SourceLine>' sprites are not rendered as part of the display list because it is almost always invalidated</SourceLine>
+   <SourceLine>model.SpritePolygons.Append poly</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>else</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if (poly.VIndex.Ubound &lt;&gt; prevUB) or (prevTIndex &lt;&gt; poly.TIndex) then</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if bDrawing then</SourceLine>
+   <SourceLine>OpenGL.glEnd ' end drawing polygons</SourceLine>
+   <SourceLine>bDrawing = false</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' bind to texture if needed BEFORE calling glBegin</SourceLine>
+   <SourceLine>if (poly.TIndex &gt;= 0) and (poly.UVIndex.Ubound &gt;= poly.VIndex.Ubound) then</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' first set up OpenGL for textures</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>OpenGL.glEnable OpenGL.GL_TEXTURE_2D ' enable the use of textures</SourceLine>
+   <SourceLine>OpenGL.glEnable OpenGL.GL_COLOR_MATERIAL ' enable use vertex colors</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>X3_SetMaterial new X3Core.X3Material ' reset OpenGL's material settings</SourceLine>
+   <SourceLine>OpenGL.glColor4d(1, 1, 1, 1) ' reset color to pure white</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>currMat = 1</SourceLine>
+   <SourceLine>currIndex = -1</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' now bind to texture</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>texture = model.Texture(poly.TIndex)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' if texture not already loaded into OpenGL, let's first load the texture into OpenGL</SourceLine>
+   <SourceLine>if texture.OGLName &lt;= 0 then</SourceLine>
+   <SourceLine>texture.OGLName = X3_LoadRGBATexture(texture.RGBABitmap, texture.Width, texture.Height)</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>OpenGL.glBindTexture(OpenGL.GL_TEXTURE_2D, texture.OGLName) ' bind to the polygon's texture</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>elseif (poly.MIndex &gt;= 0) then</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' set up OpenGL for materials</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>OpenGL.glDisable OpenGL.GL_TEXTURE_2D ' disable the use of textures</SourceLine>
+   <SourceLine>OpenGL.glDisable OpenGL.GL_COLOR_MATERIAL ' disable overwriting of material properties with vertex colors</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>else</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' set up OpenGL for RGBA colors</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>OpenGL.glDisable OpenGL.GL_TEXTURE_2D ' disable the use of textures</SourceLine>
+   <SourceLine>OpenGL.glEnable OpenGL.GL_COLOR_MATERIAL ' disable overwriting of material properties with vertex colors</SourceLine>
+   <SourceLine>X3_SetMaterial new X3Core.X3Material ' reset OpenGL's material settings</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>select case poly.VIndex.Ubound</SourceLine>
+   <SourceLine>case 2</SourceLine>
+   <SourceLine>OpenGL.glBegin OpenGL.GL_TRIANGLES ' start drawing triangle polygons</SourceLine>
+   <SourceLine>bDrawing = true</SourceLine>
+   <SourceLine>case 3</SourceLine>
+   <SourceLine>OpenGL.glBegin OpenGL.GL_QUADS ' start drawing quad polygons</SourceLine>
+   <SourceLine>bDrawing = true</SourceLine>
+   <SourceLine>end select</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>prevUB = poly.VIndex.Ubound</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if poly.VIndex.Ubound &gt; 3 then</SourceLine>
+   <SourceLine>OpenGL.glBegin OpenGL.GL_POLYGON ' start drawing quad polygons</SourceLine>
+   <SourceLine>bDrawing = true</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>renderPolygon poly, currMat, currIndex</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if poly.VIndex.Ubound &gt; 3 then</SourceLine>
+   <SourceLine>OpenGL.glEnd ' end drawing polygons</SourceLine>
+   <SourceLine>bDrawing = false</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>prevTIndex = poly.TIndex ' store texture ID for next iteration</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>next i</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if bDrawing then</SourceLine>
+   <SourceLine>OpenGL.glEnd ' end drawing polygons</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' NOW WE DRAW THE TRANSPARENT POLYGONS</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>prevUB = -1</SourceLine>
+   <SourceLine>bDrawing = false</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>for i = 0 to transPoly.Ubound ' loop through all the transparent polygons</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>poly = transPoly(i) ' get the next polygon</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if (poly.VIndex.Ubound &lt;&gt; prevUB) or (prevTIndex &lt;&gt; poly.TIndex) then</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if bDrawing then</SourceLine>
+   <SourceLine>OpenGL.glEnd ' end drawing polygons</SourceLine>
+   <SourceLine>bDrawing = false</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' bind to texture if needed BEFORE calling glBegin</SourceLine>
+   <SourceLine>if (poly.TIndex &gt;= 0) and (poly.UVIndex.Ubound &gt;= poly.VIndex.Ubound) then</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' first set up OpenGL for textures</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>OpenGL.glEnable OpenGL.GL_TEXTURE_2D ' enable the use of textures</SourceLine>
+   <SourceLine>OpenGL.glEnable OpenGL.GL_COLOR_MATERIAL ' enable use vertex colors</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>X3_SetMaterial new X3Core.X3Material ' reset OpenGL's material settings</SourceLine>
+   <SourceLine>OpenGL.glColor4d(1, 1, 1, 1) ' reset color to pure white</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>currMat = 1</SourceLine>
+   <SourceLine>currIndex = -1</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' now bind to texture</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>texture = model.Texture(poly.TIndex)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' if texture not already loaded into OpenGL, let's first load the texture into OpenGL</SourceLine>
+   <SourceLine>if texture.OGLName &lt;= 0 then</SourceLine>
+   <SourceLine>texture.OGLName = X3_LoadRGBATexture(texture.RGBABitmap, texture.Width, texture.Height)</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>OpenGL.glBindTexture(OpenGL.GL_TEXTURE_2D, model.Texture(poly.TIndex).OGLName) ' bind to the polygon's texture</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>elseif (poly.MIndex &gt;= 0) then</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' set up OpenGL for materials</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>OpenGL.glDisable OpenGL.GL_TEXTURE_2D ' disable the use of textures</SourceLine>
+   <SourceLine>OpenGL.glDisable OpenGL.GL_COLOR_MATERIAL ' disable overwriting of material properties with vertex colors</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>else</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' set up OpenGL for RGBA colors</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>OpenGL.glDisable OpenGL.GL_TEXTURE_2D ' disable the use of textures</SourceLine>
+   <SourceLine>OpenGL.glEnable OpenGL.GL_COLOR_MATERIAL ' disable overwriting of material properties with vertex colors</SourceLine>
+   <SourceLine>X3_SetMaterial new X3Core.X3Material ' reset OpenGL's material settings</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>select case poly.VIndex.Ubound</SourceLine>
+   <SourceLine>case 2</SourceLine>
+   <SourceLine>OpenGL.glBegin OpenGL.GL_TRIANGLES ' start drawing triangle polygons</SourceLine>
+   <SourceLine>bDrawing = true</SourceLine>
+   <SourceLine>case 3</SourceLine>
+   <SourceLine>OpenGL.glBegin OpenGL.GL_QUADS ' start drawing quad polygons</SourceLine>
+   <SourceLine>bDrawing = true</SourceLine>
+   <SourceLine>end select</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>prevUB = poly.VIndex.Ubound</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if poly.VIndex.Ubound &gt; 3 then</SourceLine>
+   <SourceLine>OpenGL.glBegin OpenGL.GL_POLYGON ' start drawing quad polygons</SourceLine>
+   <SourceLine>bDrawing = true</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>renderPolygon poly, currMat, currIndex</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if poly.VIndex.Ubound &gt; 3 then</SourceLine>
+   <SourceLine>OpenGL.glEnd ' end drawing polygons</SourceLine>
+   <SourceLine>bDrawing = false</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>prevTIndex = poly.TIndex ' store texture ID for next iteration</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>next i</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if bDrawing then</SourceLine>
+   <SourceLine>OpenGL.glEnd ' end drawing polygons</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>OpenGL.glEndList ' end of display list</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>OpenGL.glCallList model.OGLName ' render the display  list</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' NOW WE DRAW THE SPRITE POLYGONS</SourceLine>
+   <SourceLine>' because sprites change all the time and invalidates the polygons linked to them, so there is no point in rendering them as part of the display list</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if model.SpritePolygons.Ubound &gt;= 0 then</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if currMat &lt;&gt; 1 then ' currently using textures?</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' no, so set up OpenGL for textures</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>OpenGL.glEnable OpenGL.GL_TEXTURE_2D ' enable the use of textures</SourceLine>
+   <SourceLine>OpenGL.glEnable OpenGL.GL_COLOR_MATERIAL ' enable use vertex colors</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>X3_SetMaterial new X3Core.X3Material ' reset OpenGL's material settings</SourceLine>
+   <SourceLine>OpenGL.glColor4d(1, 1, 1, 1) ' reset color to pure white</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>prevSIndex = -1</SourceLine>
+   <SourceLine>bDrawing = false</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>for i = 0 to model.SpritePolygons.Ubound ' loop through all the transparent polygons</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>poly = model.SpritePolygons(i) ' get the next polygon</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' bind to sprite sheet of the sprite</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if prevSIndex &lt;&gt; poly.SIndex then</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if bDrawing then</SourceLine>
+   <SourceLine>OpenGL.glEnd ' end drawing polygons</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' load spritesheet into OpenGL memory</SourceLine>
+   <SourceLine>if model.Sprite(poly.SIndex).SpriteSheet.OGLName &lt;= 0 then</SourceLine>
+   <SourceLine>model.Sprite(poly.SIndex).SpriteSheet.OGLName = X3_LoadRGBATexture(model.Sprite(poly.SIndex).SpriteSheet.RGBABitmap, model.Sprite(poly.SIndex).SpriteSheet.Width, model.Sprite(poly.SIndex).SpriteSheet.Height)</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>OpenGL.glBindTexture(OpenGL.GL_TEXTURE_2D, model.Sprite(poly.SIndex).SpriteSheet.OGLName) ' bind to the polygon's texture</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>OpenGL.glBegin OpenGL.GL_QUADS ' start drawing quad polygons</SourceLine>
+   <SourceLine>bDrawing = true</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>for j = 0 to poly.VIndex.Ubound</SourceLine>
+   <SourceLine>OpenGL.glTexCoord2d model.UVMap(poly.UVIndex(j)).U, model.UVMap(poly.UVIndex(j)).V ' set the texture UV-coordinates for next vertex</SourceLine>
+   <SourceLine>OpenGL.glVertex3d model.Vertex(poly.VIndex(j)).X, model.Vertex(poly.VIndex(j)).Y, model.Vertex(poly.VIndex(j)).Z ' add the vertex to the OpenGL vertex list</SourceLine>
+   <SourceLine>next j</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>prevSIndex = poly.SIndex ' store sprite ID for next iteration</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>next i</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if bDrawing then</SourceLine>
+   <SourceLine>OpenGL.glEnd ' end drawing polygons</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>OpenGL.glPopMatrix ' restore matrix</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>model As X3Core.X3Model</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>X3_RotateWithXY</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub X3_RotateWithXY(q As X3Quaternion, xAngle As Double, yAngle As Double)</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>Dim result As new X3Quaternion</SourceLine>
+   <SourceLine>Dim tmpQuat As new X3Quaternion</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' Formula: [new quaternion] = [x-axis rotation quaternion] x [y-axis rotation quaternion] x [self]</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' apply pitch rotation (around x-axis)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if xAngle &lt;&gt; 0 then</SourceLine>
+   <SourceLine>tmpQuat.FromEulerRotation(1, 0, 0, xAngle)</SourceLine>
+   <SourceLine>result.Multiply(tmpQuat)</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' apply yaw rotation (around y-axis)</SourceLine>
+   <SourceLine>'</SourceLine>
+   <SourceLine>if yAngle &lt;&gt; 0 then</SourceLine>
+   <SourceLine>tmpQuat.FromEulerRotation(0, 1, 0, yAngle)</SourceLine>
+   <SourceLine>result.Multiply(tmpQuat)</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>result.Multiply(q) ' multiply result rotation quaternion with give quaternion</SourceLine>
+   <SourceLine>result.Normalize ' normalize result</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' assign result to given quaternion</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>q.W = result.W</SourceLine>
+   <SourceLine>q.X = result.X</SourceLine>
+   <SourceLine>q.Y = result.Y</SourceLine>
+   <SourceLine>q.Z = result.Z</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>q As X3Quaternion, xAngle As Double, yAngle As Double</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>X3_SetMaterial</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub X3_SetMaterial(material As X3Core.X3Material)</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>Dim matMB As MemoryBlock</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' set ambient values</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>matMB = material.Ambient.GetMemoryBlock()</SourceLine>
+   <SourceLine>OpenGL.glMaterialfv(OpenGL.GL_FRONT, OpenGL.GL_AMBIENT, matMB) ' apply ambient values</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' set diffuse values</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>matMB = material.Diffuse.GetMemoryBlock()</SourceLine>
+   <SourceLine>OpenGL.glMaterialfv(OpenGL.GL_FRONT, OpenGL.GL_DIFFUSE, matMB) ' apply diffuse values</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' set specular values</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>matMB = material.Specular.GetMemoryBlock()</SourceLine>
+   <SourceLine>OpenGL.glMaterialfv(OpenGL.GL_FRONT, OpenGL.GL_SPECULAR, matMB) ' apply specular values</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' set shininess value</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>OpenGL.glMaterialf(OpenGL.GL_FRONT_AND_BACK, OpenGL.GL_SHININESS, material.Shininess) ' apply shininess values</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>material As X3Core.X3Material</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>X3_SetPerspective</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub X3_SetPerspective(Surface As OpenGLSurface, fov As Double = 60.0, zNear As Double = 1, zFar As Double = 100)</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>OpenGL.glViewport 0, 0, Surface.Width, Surface.Height ' set the viewport rectangle</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' set up the perspective projection settings</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>OpenGL.glMatrixMode OpenGL.GL_PROJECTION ' select the projection matrix</SourceLine>
+   <SourceLine>OpenGL.glLoadIdentity ' clear the projection matrix</SourceLine>
+   <SourceLine>OpenGL.gluPerspective fov, Surface.Width / Surface.Height, zNear, zFar ' set up our own custom projection matrix</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' select and reset the modelview matrix</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>OpenGL.glMatrixMode OpenGL.GL_MODELVIEW ' select the modelview matrix</SourceLine>
+   <SourceLine>OpenGL.glLoadIdentity ' clear the modelview matrix</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>Surface As OpenGLSurface, fov As Double = 60.0, zNear As Double = 1, zFar As Double = 100</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>X3_SetRotation</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub X3_SetRotation(rotation As X3Quaternion)</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>Dim angle As Double ' Euler angle of rotation</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>angle = ACos(rotation.w) * 2 * X3_180OverPi ' calculate angle from quaternion</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>OpenGL.glRotated angle, rotation.x, rotation.y, rotation.z ' apply Euler rotation with OpenGL</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>rotation As X3Quaternion</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>X3_Str</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Function X3_Str(d As Double) As String</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if (d \ 1) = d then // whole number?</SourceLine>
+   <SourceLine>return Str(d, "-0")</SourceLine>
+   <SourceLine>else</SourceLine>
+   <SourceLine>return Str(d, "-0.#######")</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine>End Function</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>d As Double</ItemParams>
+  <ItemResult>String</ItemResult>
+ </Method>
+ <Method>
+  <ItemName>X3_PickPolygon</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Function X3_PickPolygon(model As X3Core.X3Model, x As Integer, y As Integer) As X3Core.X3Polygon</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>Dim i As Integer</SourceLine>
+   <SourceLine>Dim j As Integer</SourceLine>
+   <SourceLine>Dim pixelData As New MemoryBlock(4)</SourceLine>
+   <SourceLine>Dim pickIndex As Integer</SourceLine>
+   <SourceLine>Dim poly As X3Core.X3Polygon</SourceLine>
+   <SourceLine>Dim colMB As new MemoryBlock(4)</SourceLine>
+   <SourceLine>Dim result As X3Core.X3Polygon</SourceLine>
+   <SourceLine>Dim prevUB As Integer</SourceLine>
+   <SourceLine>Dim bDrawing As Boolean</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>result = nil</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>OpenGL.glDisable OpenGL.GL_LIGHTING ' disable lighting</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>OpenGL.glPushMatrix ' save matrix</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' apply the model's rotation</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>X3_SetRotation(model.Rotation)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' clear the background and depth buffer</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>OpenGL.glClearColor(0, 0, 0, 1)</SourceLine>
+   <SourceLine>OpenGL.glClear(OpenGL.GL_COLOR_BUFFER_BIT + OpenGL.GL_DEPTH_BUFFER_BIT)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>OpenGL.glPolygonMode(OpenGL.GL_FRONT, OpenGL.GL_FILL) ' draw filled polygons</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' render the polygon map</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>prevUB = -1</SourceLine>
+   <SourceLine>bDrawing = false</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>for i = 0 to model.Polygon.Ubound ' loop through all the polygons</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>poly = model.Polygon(i) ' get the next polygon</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if (poly.VIndex.Ubound &lt;&gt; prevUB) then</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if bDrawing then</SourceLine>
+   <SourceLine>OpenGL.glEnd ' end drawing polygons</SourceLine>
+   <SourceLine>bDrawing = false</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>select case poly.VIndex.Ubound</SourceLine>
+   <SourceLine>case 2</SourceLine>
+   <SourceLine>OpenGL.glBegin OpenGL.GL_TRIANGLES ' start drawing triangle polygons</SourceLine>
+   <SourceLine>bDrawing = true</SourceLine>
+   <SourceLine>case 3</SourceLine>
+   <SourceLine>OpenGL.glBegin OpenGL.GL_QUADS ' start drawing quad polygons</SourceLine>
+   <SourceLine>bDrawing = true</SourceLine>
+   <SourceLine>end select</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>prevUB = poly.VIndex.Ubound</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if poly.VIndex.Ubound &gt; 3 then</SourceLine>
+   <SourceLine>OpenGL.glBegin OpenGL.GL_POLYGON ' start drawing quad polygons</SourceLine>
+   <SourceLine>bDrawing = true</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' set the map color of the polygon</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>colMB.UInt32Value(0) = i + 1</SourceLine>
+   <SourceLine>OpenGL.glColor3ub(colMB.UInt8Value(0), colMB.UInt8Value(1), colMB.UInt8Value(2))</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' add the vertexes of the polygon</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>for j = 0 to poly.VIndex.Ubound</SourceLine>
+   <SourceLine>OpenGL.glVertex3d model.Vertex(poly.VIndex(j)).X, model.Vertex(poly.VIndex(j)).Y, model.Vertex(poly.VIndex(j)).Z</SourceLine>
+   <SourceLine>next j</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if poly.VIndex.Ubound &gt; 3 then</SourceLine>
+   <SourceLine>OpenGL.glEnd ' end drawing polygons</SourceLine>
+   <SourceLine>bDrawing = false</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>next i</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if bDrawing then</SourceLine>
+   <SourceLine>OpenGL.glEnd ' end drawing polygons</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' get the pixel value at the given (x, y) position</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>OpenGL.glReadPixels(x, y, 1, 1, OpenGL.GL_RGB, OpenGL.GL_UNSIGNED_BYTE, pixelData)</SourceLine>
+   <SourceLine>pickIndex = pixelData.UInt32Value(0)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' did we get a pixel at (x, y) other than black?</SourceLine>
+   <SourceLine>if pickIndex &gt; 0 then</SourceLine>
+   <SourceLine>result = model.Polygon(pickIndex - 1)</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>OpenGL.glPopMatrix ' restore matrix</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>OpenGL.glEnable OpenGL.GL_LIGHTING ' enable lighting</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>return result</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Function</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>model As X3Core.X3Model, x As Integer, y As Integer</ItemParams>
+  <ItemResult>X3Core.X3Polygon</ItemResult>
+ </Method>
+ <Method>
+  <ItemName>X3_ModelToJSON</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Function X3_ModelToJSON(model As X3Core.X3Model) As String</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>Dim addedChild As Boolean</SourceLine>
+   <SourceLine>Dim i As Integer</SourceLine>
+   <SourceLine>Dim j As Integer</SourceLine>
+   <SourceLine>Dim poly As X3Core.X3Polygon</SourceLine>
+   <SourceLine>Dim text As X3Core.X3Texture</SourceLine>
+   <SourceLine>Dim pic As Picture</SourceLine>
+   <SourceLine>Dim firstValue As Boolean</SourceLine>
+   <SourceLine>Dim modelJSON() As String</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' this method generates X3 Data Format JSON from an X3Model</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>addedChild = false</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>modelJSON.Append "{"</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>modelJSON.Append """x3model"":{"</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' colorpal</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if model.ColorPal.Ubound &gt;= 0 then</SourceLine>
+   <SourceLine>modelJSON.Append """colorpal"":["</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>modelJSON.Append X3_Str(model.ColorPal(0).Red)</SourceLine>
+   <SourceLine>modelJSON.Append ","</SourceLine>
+   <SourceLine>modelJSON.Append X3_Str(model.ColorPal(0).Green)</SourceLine>
+   <SourceLine>modelJSON.Append ","</SourceLine>
+   <SourceLine>modelJSON.Append X3_Str(model.ColorPal(0).Blue)</SourceLine>
+   <SourceLine>modelJSON.Append ","</SourceLine>
+   <SourceLine>modelJSON.Append X3_Str(model.ColorPal(0).Alpha)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>for i = 1 to model.ColorPal.Ubound</SourceLine>
+   <SourceLine>modelJSON.Append ","</SourceLine>
+   <SourceLine>modelJSON.Append X3_Str(model.ColorPal(i).Red)</SourceLine>
+   <SourceLine>modelJSON.Append ","</SourceLine>
+   <SourceLine>modelJSON.Append X3_Str(model.ColorPal(i).Green)</SourceLine>
+   <SourceLine>modelJSON.Append ","</SourceLine>
+   <SourceLine>modelJSON.Append X3_Str(model.ColorPal(i).Blue)</SourceLine>
+   <SourceLine>modelJSON.Append ","</SourceLine>
+   <SourceLine>modelJSON.Append X3_Str(model.ColorPal(i).Alpha)</SourceLine>
+   <SourceLine>next i</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>modelJSON.Append "]" ' vertex</SourceLine>
+   <SourceLine>addedChild = true</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' material</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if model.Material.Ubound &gt;= 0 then</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if addedChild then</SourceLine>
+   <SourceLine>modelJSON.Append ","</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>modelJSON.Append """material"":["</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>for i = 0 to model.Material.Ubound</SourceLine>
+   <SourceLine>if i &gt; 0 then</SourceLine>
+   <SourceLine>modelJSON.Append ","</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine>modelJSON.Append X3_Str(model.Material(i).Ambient.Red)</SourceLine>
+   <SourceLine>modelJSON.Append ","</SourceLine>
+   <SourceLine>modelJSON.Append X3_Str(model.Material(i).Ambient.Green)</SourceLine>
+   <SourceLine>modelJSON.Append ","</SourceLine>
+   <SourceLine>modelJSON.Append X3_Str(model.Material(i).Ambient.Blue)</SourceLine>
+   <SourceLine>modelJSON.Append ","</SourceLine>
+   <SourceLine>modelJSON.Append X3_Str(model.Material(i).Ambient.Alpha)</SourceLine>
+   <SourceLine>modelJSON.Append ","</SourceLine>
+   <SourceLine>modelJSON.Append X3_Str(model.Material(i).Diffuse.Red)</SourceLine>
+   <SourceLine>modelJSON.Append ","</SourceLine>
+   <SourceLine>modelJSON.Append X3_Str(model.Material(i).Diffuse.Green)</SourceLine>
+   <SourceLine>modelJSON.Append ","</SourceLine>
+   <SourceLine>modelJSON.Append X3_Str(model.Material(i).Diffuse.Blue)</SourceLine>
+   <SourceLine>modelJSON.Append ","</SourceLine>
+   <SourceLine>modelJSON.Append X3_Str(model.Material(i).Diffuse.Alpha)</SourceLine>
+   <SourceLine>modelJSON.Append ","</SourceLine>
+   <SourceLine>modelJSON.Append X3_Str(model.Material(i).Specular.Red)</SourceLine>
+   <SourceLine>modelJSON.Append ","</SourceLine>
+   <SourceLine>modelJSON.Append X3_Str(model.Material(i).Specular.Green)</SourceLine>
+   <SourceLine>modelJSON.Append ","</SourceLine>
+   <SourceLine>modelJSON.Append X3_Str(model.Material(i).Specular.Blue)</SourceLine>
+   <SourceLine>modelJSON.Append ","</SourceLine>
+   <SourceLine>modelJSON.Append X3_Str(model.Material(i).Specular.Alpha)</SourceLine>
+   <SourceLine>modelJSON.Append ","</SourceLine>
+   <SourceLine>modelJSON.Append X3_Str(model.Material(i).Shininess)</SourceLine>
+   <SourceLine>next i</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>modelJSON.Append "]" ' vertex</SourceLine>
+   <SourceLine>addedChild = true</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' vertex</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if model.Vertex.Ubound &gt;= 0 then</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if addedChild then</SourceLine>
+   <SourceLine>modelJSON.Append ","</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>modelJSON.Append """vertex"":["</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>modelJSON.Append X3_Str(model.Vertex(0).X)</SourceLine>
+   <SourceLine>modelJSON.Append ","</SourceLine>
+   <SourceLine>modelJSON.Append X3_Str(model.Vertex(0).Y)</SourceLine>
+   <SourceLine>modelJSON.Append ","</SourceLine>
+   <SourceLine>modelJSON.Append X3_Str(model.Vertex(0).Z)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>for i = 1 to model.Vertex.Ubound</SourceLine>
+   <SourceLine>modelJSON.Append ","</SourceLine>
+   <SourceLine>modelJSON.Append X3_Str(model.Vertex(i).X)</SourceLine>
+   <SourceLine>modelJSON.Append ","</SourceLine>
+   <SourceLine>modelJSON.Append X3_Str(model.Vertex(i).Y)</SourceLine>
+   <SourceLine>modelJSON.Append ","</SourceLine>
+   <SourceLine>modelJSON.Append X3_Str(model.Vertex(i).Z)</SourceLine>
+   <SourceLine>next i</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>modelJSON.Append "]" ' vertex</SourceLine>
+   <SourceLine>addedChild = true</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' uvmap</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if model.UVMap.Ubound &gt;= 0 then</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if addedChild then</SourceLine>
+   <SourceLine>modelJSON.Append ","</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>modelJSON.Append """uvmap"":["</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>modelJSON.Append X3_Str(model.UVMap(0).U)</SourceLine>
+   <SourceLine>modelJSON.Append ","</SourceLine>
+   <SourceLine>modelJSON.Append X3_Str(model.UVMap(0).V)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>for i = 1 to model.UVMap.Ubound</SourceLine>
+   <SourceLine>modelJSON.Append ","</SourceLine>
+   <SourceLine>modelJSON.Append X3_Str(model.UVMap(i).U)</SourceLine>
+   <SourceLine>modelJSON.Append ","</SourceLine>
+   <SourceLine>modelJSON.Append X3_Str(model.UVMap(i).V)</SourceLine>
+   <SourceLine>next i</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>modelJSON.Append "]" ' vertex</SourceLine>
+   <SourceLine>addedChild = true</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' normal</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if model.Normal.Ubound &gt;= 0 then</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if addedChild then</SourceLine>
+   <SourceLine>modelJSON.Append ","</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>modelJSON.Append """normal"":["</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>modelJSON.Append X3_Str(model.Normal(0).X)</SourceLine>
+   <SourceLine>modelJSON.Append ","</SourceLine>
+   <SourceLine>modelJSON.Append X3_Str(model.Normal(0).Y)</SourceLine>
+   <SourceLine>modelJSON.Append ","</SourceLine>
+   <SourceLine>modelJSON.Append X3_Str(model.Normal(0).Z)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>for i = 1 to model.Normal.Ubound</SourceLine>
+   <SourceLine>modelJSON.Append ","</SourceLine>
+   <SourceLine>modelJSON.Append X3_Str(model.Normal(i).X)</SourceLine>
+   <SourceLine>modelJSON.Append ","</SourceLine>
+   <SourceLine>modelJSON.Append X3_Str(model.Normal(i).Y)</SourceLine>
+   <SourceLine>modelJSON.Append ","</SourceLine>
+   <SourceLine>modelJSON.Append X3_Str(model.Normal(i).Z)</SourceLine>
+   <SourceLine>next i</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>modelJSON.Append "]" ' normal</SourceLine>
+   <SourceLine>addedChild = true</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' polygon</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if model.Polygon.Ubound &gt;= 0 then</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if addedChild then</SourceLine>
+   <SourceLine>modelJSON.Append ","</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>modelJSON.Append """polygon"":["</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>for i = 0 to model.Polygon.Ubound</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>poly = model.Polygon(i)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if i &gt; 0 then</SourceLine>
+   <SourceLine>modelJSON.Append ","</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>modelJSON.Append "{" ' polygon</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>firstValue = true</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if poly.TIndex &gt;= 0 then</SourceLine>
+   <SourceLine>modelJSON.Append """ti"":" + Str(poly.TIndex)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>modelJSON.Append ","</SourceLine>
+   <SourceLine>modelJSON.Append """uvi"":["</SourceLine>
+   <SourceLine>modelJSON.Append Str(poly.UVIndex(0))</SourceLine>
+   <SourceLine>for j = 1 to poly.UVIndex.Ubound</SourceLine>
+   <SourceLine>modelJSON.Append ","</SourceLine>
+   <SourceLine>modelJSON.Append Str(poly.UVIndex(j))</SourceLine>
+   <SourceLine>next j</SourceLine>
+   <SourceLine>modelJSON.Append "]"</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>firstValue = false</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>elseif poly.MIndex &gt;= 0 then</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>modelJSON.Append """mi"":" + Str(poly.MIndex)</SourceLine>
+   <SourceLine>firstValue = false</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>elseif poly.CIndex &gt;= 0 then</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>modelJSON.Append """ci"":" + Str(poly.CIndex)</SourceLine>
+   <SourceLine>firstValue = false</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if poly.NIndex &gt;= 0 then</SourceLine>
+   <SourceLine>if not firstValue then</SourceLine>
+   <SourceLine>modelJSON.Append ","</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine>modelJSON.Append """ni"":" + Str(poly.NIndex)</SourceLine>
+   <SourceLine>firstValue = false</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if not firstValue then</SourceLine>
+   <SourceLine>modelJSON.Append ","</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine>modelJSON.Append """vi"":["</SourceLine>
+   <SourceLine>modelJSON.Append Str(poly.VIndex(0))</SourceLine>
+   <SourceLine>for j = 1 to poly.VIndex.Ubound</SourceLine>
+   <SourceLine>modelJSON.Append ","</SourceLine>
+   <SourceLine>modelJSON.Append Str(poly.VIndex(j))</SourceLine>
+   <SourceLine>next j</SourceLine>
+   <SourceLine>modelJSON.Append "]"</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if poly.VNIndex.Ubound &gt;= 0 then</SourceLine>
+   <SourceLine>modelJSON.Append ","</SourceLine>
+   <SourceLine>modelJSON.Append """vni"":["</SourceLine>
+   <SourceLine>modelJSON.Append Str(poly.VNIndex(0))</SourceLine>
+   <SourceLine>for j = 1 to poly.VNIndex.Ubound</SourceLine>
+   <SourceLine>modelJSON.Append ","</SourceLine>
+   <SourceLine>modelJSON.Append Str(poly.VNIndex(j))</SourceLine>
+   <SourceLine>next j</SourceLine>
+   <SourceLine>modelJSON.Append "]"</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>modelJSON.Append "}"</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>next i</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>modelJSON.Append "]" ' vertex</SourceLine>
+   <SourceLine>addedChild = true</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' texture</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if model.Texture.Ubound &gt;= 0 then</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if addedChild then</SourceLine>
+   <SourceLine>modelJSON.Append ","</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>modelJSON.Append """texture"":["</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>for i = 0 to model.Texture.Ubound</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>text = model.Texture(i)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if i &gt; 0 then</SourceLine>
+   <SourceLine>modelJSON.Append ","</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>pic = X3_PictureFromTexture(text)</SourceLine>
+   <SourceLine>modelJSON.Append """" + EncodeBase64(pic.GetData(Picture.FormatPNG), 0) + """"</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>next i</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>modelJSON.Append "]" ' vertex</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>addedChild = true</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>modelJSON.Append "}" ' x3model</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>modelJSON.Append "}" ' root</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>return Join(modelJSON, "")</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Function</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>model As X3Core.X3Model</ItemParams>
+  <ItemResult>String</ItemResult>
+ </Method>
+ <Method>
+  <ItemName>X3_RenderScene</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub X3_RenderScene(scene As X3Core.X3Scene)</SourceLine>
+   <SourceLine>Dim i As Integer</SourceLine>
+   <SourceLine>Dim activeCam As X3Core.X3Camera</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>OpenGL.glPushMatrix ' save matrix</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' select the active camera</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>activeCam = scene.Camera(scene.CameraIndex)</SourceLine>
+   <SourceLine>X3_SetCamera activeCam</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>'OpenGL.glTranslatef 0, 0, -10</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>// render all the models in the scene</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>for i = 0 to scene.Model.Ubound</SourceLine>
+   <SourceLine>X3_RenderModel(scene.Model(i))</SourceLine>
+   <SourceLine>next i </SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>OpenGL.glPopMatrix ' restore matrix</SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>scene As X3Core.X3Scene</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>X3_SetCamera</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub X3_SetCamera(camera As X3Core.X3Camera)</SourceLine>
+   <SourceLine>' set the orientation of the camera</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>X3_SetRotation camera.CameraRotation</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' position the camera</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>OpenGL.glTranslatef -camera.DollyPosition.X, -camera.DollyPosition.Y, -camera.DollyPosition.Z</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>camera As X3Core.X3Camera</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <ViewBehavior>
+  <ViewProperty>
+   <ObjName>Index</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>ID</PropertyGroup>
+   <PropertyValue>-2147483648</PropertyValue>
+   <ItemType>Integer</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>Left</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>Position</PropertyGroup>
+   <PropertyValue>0</PropertyValue>
+   <ItemType>Integer</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>Name</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>ID</PropertyGroup>
+   <ItemType>String</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>Super</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>ID</PropertyGroup>
+   <ItemType>String</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>Top</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>Position</PropertyGroup>
+   <PropertyValue>0</PropertyValue>
+   <ItemType>Integer</ItemType>
+  </ViewProperty>
+ </ViewBehavior>
+ <Constant>
+  <ItemName>X3_180OverPi</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <TextEncoding>134217984</TextEncoding>
+  <ItemName>X3_180OverPi</ItemName>
+  <ItemType>2</ItemType>
+  <ItemDef>57.295779513082321</ItemDef>
+  <ItemFlags>0</ItemFlags>
+ </Constant>
+ <Constant>
+  <ItemName>X3_PiOver180</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <TextEncoding>134217984</TextEncoding>
+  <ItemName>X3_PiOver180</ItemName>
+  <ItemType>2</ItemType>
+  <ItemDef>0.017453292519943</ItemDef>
+  <ItemFlags>0</ItemFlags>
+ </Constant>
+</block>
 <block type="UIState" ID="0">
  <StudioWindowState>
   <Editors>
    <EditorCount>1</EditorCount>
    <Editor>
     <EditorIndex>0</EditorIndex>
-    <EditorLocation>X3Core.X3IO.LoadModel</EditorLocation>
+    <EditorLocation>X3Core</EditorLocation>
     <EditorPath></EditorPath>
-    <EditingPartID>1878820863</EditingPartID>
+    <EditingPartID>1524205567</EditingPartID>
    </Editor>
    <SelectedTab>0</SelectedTab>
   </Editors>
