@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<RBProject version="2014r2" FormatVersion="2" MinIDEVersion="20070100">
+<RBProject version="2014r1.1" FormatVersion="2" MinIDEVersion="20070100">
 <block type="Project" ID="0">
- <ProjectSavedInVers>2014.02</ProjectSavedInVers>
+ <ProjectSavedInVers>2014.011</ProjectSavedInVers>
+ <ProjMgrUser></ProjMgrUser>
+ <ProjMgrServer></ProjMgrServer>
  <MajorVersion>0</MajorVersion>
  <MinorVersion>3</MinorVersion>
  <SubVersion>0</SubVersion>
@@ -26,6 +28,10 @@
  <BuildCarbonName>X3 Viewer</BuildCarbonName>
  <BuildCarbonMachOName>X3 Viewer</BuildCarbonMachOName>
  <BundleIdentifier>com.xojo3d.x3viewer</BundleIdentifier>
+ <BuildSize>0</BuildSize>
+ <BuildMinSize>0</BuildMinSize>
+ <BuildSizeAsString></BuildSizeAsString>
+ <BuildMinSizeAsString></BuildMinSizeAsString>
  <WinMDICaption></WinMDICaption>
  <BuildWinName>X3 Viewer.exe</BuildWinName>
  <BuildWinMDI>0</BuildWinMDI>
@@ -37,6 +43,16 @@
  <BuildLinuxX86Name>X3 Viewer</BuildLinuxX86Name>
  <BuildCarbonExecutableFormat>1</BuildCarbonExecutableFormat>
  <DebuggerCommandLine></DebuggerCommandLine>
+ <WebPort>0</WebPort>
+ <WebSecurePort>443</WebSecurePort>
+ <WebProtocol>0</WebProtocol>
+ <WebDebugPort>8080</WebDebugPort>
+ <WebUseIntegratedBrowser>0</WebUseIntegratedBrowser>
+ <WebLaunchString>Launching...</WebLaunchString>
+ <WebHTMLHeader></WebHTMLHeader>
+ <WebDisconnectString>The application has gone off-line. Please try again later.</WebDisconnectString>
+ <WebHostingIdentifier></WebHostingIdentifier>
+ <WebHostingAppName>MyApplication</WebHostingAppName>
 </block>
 <block type="Module" ID="1477969919">
  <ObjName>App</ObjName>
@@ -47,7 +63,7 @@
  <IsInterface>0</IsInterface>
  <IsApplicationObject>1</IsApplicationObject>
  <Compatibility></Compatibility>
- <PropertyVal Name="MenuBar">1439348735</PropertyVal>
+ <PropertyVal Name="MenuBar"><Hex bytes="10">31343339333438373335</Hex></PropertyVal>
  <ViewBehavior>
  </ViewBehavior>
  <Constant>
@@ -201,16 +217,16 @@
  <PropertyVal Name="Visible">True</PropertyVal>
  <PropertyVal Name="Title">Camera</PropertyVal>
  <PropertyVal Name="Backdrop">0</PropertyVal>
- <PropertyVal Name="BackColor">16777215</PropertyVal>
+ <PropertyVal Name="BackColor"><Hex bytes="8">3136373737323135</Hex></PropertyVal>
  <PropertyVal Name="HasBackColor">False</PropertyVal>
  <PropertyVal Name="Composite">False</PropertyVal>
  <PropertyVal Name="Frame"><Hex bytes="1">33</Hex></PropertyVal>
- <PropertyVal Name="MaxHeight">32000</PropertyVal>
- <PropertyVal Name="MaxWidth">32000</PropertyVal>
- <PropertyVal Name="MinHeight">64</PropertyVal>
- <PropertyVal Name="MinWidth">64</PropertyVal>
- <PropertyVal Name="Height">393</PropertyVal>
- <PropertyVal Name="Width">149</PropertyVal>
+ <PropertyVal Name="MaxHeight"><Hex bytes="5">3332303030</Hex></PropertyVal>
+ <PropertyVal Name="MaxWidth"><Hex bytes="5">3332303030</Hex></PropertyVal>
+ <PropertyVal Name="MinHeight"><Hex bytes="2">3634</Hex></PropertyVal>
+ <PropertyVal Name="MinWidth"><Hex bytes="2">3634</Hex></PropertyVal>
+ <PropertyVal Name="Height"><Hex bytes="3">333933</Hex></PropertyVal>
+ <PropertyVal Name="Width"><Hex bytes="3">313439</Hex></PropertyVal>
  <PropertyVal Name="Placement"><Hex bytes="1">30</Hex></PropertyVal>
  <ViewBehavior>
   <ViewProperty>
@@ -747,14 +763,14 @@
   <PropertyVal Name="LockRight">False</PropertyVal>
   <PropertyVal Name="LockTop">True</PropertyVal>
   <PropertyVal Name="LockLeft">True</PropertyVal>
-  <PropertyVal Name="Height">22</PropertyVal>
-  <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">39</PropertyVal>
-  <PropertyVal Name="Left">20</PropertyVal>
+  <PropertyVal Name="Height"><Hex bytes="2">3232</Hex></PropertyVal>
+  <PropertyVal Name="Width"><Hex bytes="3">313039</Hex></PropertyVal>
+  <PropertyVal Name="Top"><Hex bytes="2">3339</Hex></PropertyVal>
+  <PropertyVal Name="Left"><Hex bytes="2">3230</Hex></PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
-  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Index"><Hex bytes="11">2D32313437343833363438</Hex></PropertyVal>
   <PropertyVal Name="Name">cmdDollyIn</PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>0</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -783,14 +799,14 @@
   <PropertyVal Name="LockRight">False</PropertyVal>
   <PropertyVal Name="LockTop">True</PropertyVal>
   <PropertyVal Name="LockLeft">True</PropertyVal>
-  <PropertyVal Name="Height">22</PropertyVal>
-  <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">63</PropertyVal>
-  <PropertyVal Name="Left">20</PropertyVal>
+  <PropertyVal Name="Height"><Hex bytes="2">3232</Hex></PropertyVal>
+  <PropertyVal Name="Width"><Hex bytes="3">313039</Hex></PropertyVal>
+  <PropertyVal Name="Top"><Hex bytes="2">3633</Hex></PropertyVal>
+  <PropertyVal Name="Left"><Hex bytes="2">3230</Hex></PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
-  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Index"><Hex bytes="11">2D32313437343833363438</Hex></PropertyVal>
   <PropertyVal Name="Name">cmdDollyOut</PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>1</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -819,14 +835,14 @@
   <PropertyVal Name="LockRight">False</PropertyVal>
   <PropertyVal Name="LockTop">True</PropertyVal>
   <PropertyVal Name="LockLeft">True</PropertyVal>
-  <PropertyVal Name="Height">22</PropertyVal>
-  <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">87</PropertyVal>
-  <PropertyVal Name="Left">20</PropertyVal>
+  <PropertyVal Name="Height"><Hex bytes="2">3232</Hex></PropertyVal>
+  <PropertyVal Name="Width"><Hex bytes="3">313039</Hex></PropertyVal>
+  <PropertyVal Name="Top"><Hex bytes="2">3837</Hex></PropertyVal>
+  <PropertyVal Name="Left"><Hex bytes="2">3230</Hex></PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
-  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Index"><Hex bytes="11">2D32313437343833363438</Hex></PropertyVal>
   <PropertyVal Name="Name">cmdPedestalUp</PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>2</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -855,14 +871,14 @@
   <PropertyVal Name="LockRight">False</PropertyVal>
   <PropertyVal Name="LockTop">True</PropertyVal>
   <PropertyVal Name="LockLeft">True</PropertyVal>
-  <PropertyVal Name="Height">22</PropertyVal>
-  <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">111</PropertyVal>
-  <PropertyVal Name="Left">20</PropertyVal>
+  <PropertyVal Name="Height"><Hex bytes="2">3232</Hex></PropertyVal>
+  <PropertyVal Name="Width"><Hex bytes="3">313039</Hex></PropertyVal>
+  <PropertyVal Name="Top"><Hex bytes="3">313131</Hex></PropertyVal>
+  <PropertyVal Name="Left"><Hex bytes="2">3230</Hex></PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
-  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Index"><Hex bytes="11">2D32313437343833363438</Hex></PropertyVal>
   <PropertyVal Name="Name">cmdPedestalDown</PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>3</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -891,14 +907,14 @@
   <PropertyVal Name="LockRight">False</PropertyVal>
   <PropertyVal Name="LockTop">True</PropertyVal>
   <PropertyVal Name="LockLeft">True</PropertyVal>
-  <PropertyVal Name="Height">22</PropertyVal>
-  <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">135</PropertyVal>
-  <PropertyVal Name="Left">20</PropertyVal>
+  <PropertyVal Name="Height"><Hex bytes="2">3232</Hex></PropertyVal>
+  <PropertyVal Name="Width"><Hex bytes="3">313039</Hex></PropertyVal>
+  <PropertyVal Name="Top"><Hex bytes="3">313335</Hex></PropertyVal>
+  <PropertyVal Name="Left"><Hex bytes="2">3230</Hex></PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
-  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Index"><Hex bytes="11">2D32313437343833363438</Hex></PropertyVal>
   <PropertyVal Name="Name">cmdTruckLeft</PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>4</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -927,14 +943,14 @@
   <PropertyVal Name="LockRight">False</PropertyVal>
   <PropertyVal Name="LockTop">True</PropertyVal>
   <PropertyVal Name="LockLeft">True</PropertyVal>
-  <PropertyVal Name="Height">22</PropertyVal>
-  <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">159</PropertyVal>
-  <PropertyVal Name="Left">20</PropertyVal>
+  <PropertyVal Name="Height"><Hex bytes="2">3232</Hex></PropertyVal>
+  <PropertyVal Name="Width"><Hex bytes="3">313039</Hex></PropertyVal>
+  <PropertyVal Name="Top"><Hex bytes="3">313539</Hex></PropertyVal>
+  <PropertyVal Name="Left"><Hex bytes="2">3230</Hex></PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
-  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Index"><Hex bytes="11">2D32313437343833363438</Hex></PropertyVal>
   <PropertyVal Name="Name">cmdTruckRight</PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>5</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -963,14 +979,14 @@
   <PropertyVal Name="LockRight">False</PropertyVal>
   <PropertyVal Name="LockTop">True</PropertyVal>
   <PropertyVal Name="LockLeft">True</PropertyVal>
-  <PropertyVal Name="Height">22</PropertyVal>
-  <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">183</PropertyVal>
-  <PropertyVal Name="Left">20</PropertyVal>
+  <PropertyVal Name="Height"><Hex bytes="2">3232</Hex></PropertyVal>
+  <PropertyVal Name="Width"><Hex bytes="3">313039</Hex></PropertyVal>
+  <PropertyVal Name="Top"><Hex bytes="3">313833</Hex></PropertyVal>
+  <PropertyVal Name="Left"><Hex bytes="2">3230</Hex></PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
-  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Index"><Hex bytes="11">2D32313437343833363438</Hex></PropertyVal>
   <PropertyVal Name="Name">cmdPanLeft</PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>6</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -999,14 +1015,14 @@
   <PropertyVal Name="LockRight">False</PropertyVal>
   <PropertyVal Name="LockTop">True</PropertyVal>
   <PropertyVal Name="LockLeft">True</PropertyVal>
-  <PropertyVal Name="Height">22</PropertyVal>
-  <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">207</PropertyVal>
-  <PropertyVal Name="Left">20</PropertyVal>
+  <PropertyVal Name="Height"><Hex bytes="2">3232</Hex></PropertyVal>
+  <PropertyVal Name="Width"><Hex bytes="3">313039</Hex></PropertyVal>
+  <PropertyVal Name="Top"><Hex bytes="3">323037</Hex></PropertyVal>
+  <PropertyVal Name="Left"><Hex bytes="2">3230</Hex></PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
-  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Index"><Hex bytes="11">2D32313437343833363438</Hex></PropertyVal>
   <PropertyVal Name="Name">cmdPanRight</PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>7</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -1035,14 +1051,14 @@
   <PropertyVal Name="LockRight">False</PropertyVal>
   <PropertyVal Name="LockTop">True</PropertyVal>
   <PropertyVal Name="LockLeft">True</PropertyVal>
-  <PropertyVal Name="Height">22</PropertyVal>
-  <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">231</PropertyVal>
-  <PropertyVal Name="Left">20</PropertyVal>
+  <PropertyVal Name="Height"><Hex bytes="2">3232</Hex></PropertyVal>
+  <PropertyVal Name="Width"><Hex bytes="3">313039</Hex></PropertyVal>
+  <PropertyVal Name="Top"><Hex bytes="3">323331</Hex></PropertyVal>
+  <PropertyVal Name="Left"><Hex bytes="2">3230</Hex></PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
-  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Index"><Hex bytes="11">2D32313437343833363438</Hex></PropertyVal>
   <PropertyVal Name="Name">cmdTurnDollyLeft</PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>8</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -1071,14 +1087,14 @@
   <PropertyVal Name="LockRight">False</PropertyVal>
   <PropertyVal Name="LockTop">True</PropertyVal>
   <PropertyVal Name="LockLeft">True</PropertyVal>
-  <PropertyVal Name="Height">22</PropertyVal>
-  <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">255</PropertyVal>
-  <PropertyVal Name="Left">20</PropertyVal>
+  <PropertyVal Name="Height"><Hex bytes="2">3232</Hex></PropertyVal>
+  <PropertyVal Name="Width"><Hex bytes="3">313039</Hex></PropertyVal>
+  <PropertyVal Name="Top"><Hex bytes="3">323535</Hex></PropertyVal>
+  <PropertyVal Name="Left"><Hex bytes="2">3230</Hex></PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
-  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Index"><Hex bytes="11">2D32313437343833363438</Hex></PropertyVal>
   <PropertyVal Name="Name">cmdTurnDollyRight</PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>9</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -1101,20 +1117,20 @@
   <PropertyVal Name="Default">False</PropertyVal>
   <PropertyVal Name="Caption">Tilt Camera Up</PropertyVal>
   <PropertyVal Name="TabStop">True</PropertyVal>
-  <PropertyVal Name="TabIndex">10</PropertyVal>
+  <PropertyVal Name="TabIndex"><Hex bytes="2">3130</Hex></PropertyVal>
   <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
   <PropertyVal Name="LockBottom">False</PropertyVal>
   <PropertyVal Name="LockRight">False</PropertyVal>
   <PropertyVal Name="LockTop">True</PropertyVal>
   <PropertyVal Name="LockLeft">True</PropertyVal>
-  <PropertyVal Name="Height">22</PropertyVal>
-  <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">279</PropertyVal>
-  <PropertyVal Name="Left">20</PropertyVal>
+  <PropertyVal Name="Height"><Hex bytes="2">3232</Hex></PropertyVal>
+  <PropertyVal Name="Width"><Hex bytes="3">313039</Hex></PropertyVal>
+  <PropertyVal Name="Top"><Hex bytes="3">323739</Hex></PropertyVal>
+  <PropertyVal Name="Left"><Hex bytes="2">3230</Hex></PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
-  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Index"><Hex bytes="11">2D32313437343833363438</Hex></PropertyVal>
   <PropertyVal Name="Name">cmdTiltCameraUp</PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>10</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -1137,20 +1153,20 @@
   <PropertyVal Name="Default">False</PropertyVal>
   <PropertyVal Name="Caption">Tilt Camera Down</PropertyVal>
   <PropertyVal Name="TabStop">True</PropertyVal>
-  <PropertyVal Name="TabIndex">11</PropertyVal>
+  <PropertyVal Name="TabIndex"><Hex bytes="2">3131</Hex></PropertyVal>
   <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
   <PropertyVal Name="LockBottom">False</PropertyVal>
   <PropertyVal Name="LockRight">False</PropertyVal>
   <PropertyVal Name="LockTop">True</PropertyVal>
   <PropertyVal Name="LockLeft">True</PropertyVal>
-  <PropertyVal Name="Height">22</PropertyVal>
-  <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">303</PropertyVal>
-  <PropertyVal Name="Left">20</PropertyVal>
+  <PropertyVal Name="Height"><Hex bytes="2">3232</Hex></PropertyVal>
+  <PropertyVal Name="Width"><Hex bytes="3">313039</Hex></PropertyVal>
+  <PropertyVal Name="Top"><Hex bytes="3">333033</Hex></PropertyVal>
+  <PropertyVal Name="Left"><Hex bytes="2">3230</Hex></PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
-  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Index"><Hex bytes="11">2D32313437343833363438</Hex></PropertyVal>
   <PropertyVal Name="Name">cmdTiltCameraDown</PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>11</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -1173,20 +1189,20 @@
   <PropertyVal Name="Default">False</PropertyVal>
   <PropertyVal Name="Caption">Roll Camera Left</PropertyVal>
   <PropertyVal Name="TabStop">True</PropertyVal>
-  <PropertyVal Name="TabIndex">12</PropertyVal>
+  <PropertyVal Name="TabIndex"><Hex bytes="2">3132</Hex></PropertyVal>
   <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
   <PropertyVal Name="LockBottom">False</PropertyVal>
   <PropertyVal Name="LockRight">False</PropertyVal>
   <PropertyVal Name="LockTop">True</PropertyVal>
   <PropertyVal Name="LockLeft">True</PropertyVal>
-  <PropertyVal Name="Height">22</PropertyVal>
-  <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">327</PropertyVal>
-  <PropertyVal Name="Left">20</PropertyVal>
+  <PropertyVal Name="Height"><Hex bytes="2">3232</Hex></PropertyVal>
+  <PropertyVal Name="Width"><Hex bytes="3">313039</Hex></PropertyVal>
+  <PropertyVal Name="Top"><Hex bytes="3">333237</Hex></PropertyVal>
+  <PropertyVal Name="Left"><Hex bytes="2">3230</Hex></PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
-  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Index"><Hex bytes="11">2D32313437343833363438</Hex></PropertyVal>
   <PropertyVal Name="Name">cmdRollCameraLeft</PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>12</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -1209,20 +1225,20 @@
   <PropertyVal Name="Default">False</PropertyVal>
   <PropertyVal Name="Caption">Roll Camera Right</PropertyVal>
   <PropertyVal Name="TabStop">True</PropertyVal>
-  <PropertyVal Name="TabIndex">13</PropertyVal>
+  <PropertyVal Name="TabIndex"><Hex bytes="2">3133</Hex></PropertyVal>
   <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
   <PropertyVal Name="LockBottom">False</PropertyVal>
   <PropertyVal Name="LockRight">False</PropertyVal>
   <PropertyVal Name="LockTop">True</PropertyVal>
   <PropertyVal Name="LockLeft">True</PropertyVal>
-  <PropertyVal Name="Height">22</PropertyVal>
-  <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">351</PropertyVal>
-  <PropertyVal Name="Left">20</PropertyVal>
+  <PropertyVal Name="Height"><Hex bytes="2">3232</Hex></PropertyVal>
+  <PropertyVal Name="Width"><Hex bytes="3">313039</Hex></PropertyVal>
+  <PropertyVal Name="Top"><Hex bytes="3">333531</Hex></PropertyVal>
+  <PropertyVal Name="Left"><Hex bytes="2">3230</Hex></PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
-  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Index"><Hex bytes="11">2D32313437343833363438</Hex></PropertyVal>
   <PropertyVal Name="Name">cmdRollCameraRight</PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>13</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -1245,20 +1261,20 @@
   <PropertyVal Name="Default">False</PropertyVal>
   <PropertyVal Name="Caption">ResetCamera</PropertyVal>
   <PropertyVal Name="TabStop">True</PropertyVal>
-  <PropertyVal Name="TabIndex">14</PropertyVal>
+  <PropertyVal Name="TabIndex"><Hex bytes="2">3134</Hex></PropertyVal>
   <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
   <PropertyVal Name="LockBottom">False</PropertyVal>
   <PropertyVal Name="LockRight">False</PropertyVal>
   <PropertyVal Name="LockTop">True</PropertyVal>
   <PropertyVal Name="LockLeft">True</PropertyVal>
-  <PropertyVal Name="Height">22</PropertyVal>
-  <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">14</PropertyVal>
-  <PropertyVal Name="Left">20</PropertyVal>
+  <PropertyVal Name="Height"><Hex bytes="2">3232</Hex></PropertyVal>
+  <PropertyVal Name="Width"><Hex bytes="3">313039</Hex></PropertyVal>
+  <PropertyVal Name="Top"><Hex bytes="2">3134</Hex></PropertyVal>
+  <PropertyVal Name="Left"><Hex bytes="2">3230</Hex></PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
-  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Index"><Hex bytes="11">2D32313437343833363438</Hex></PropertyVal>
   <PropertyVal Name="Name">cmdResetCamera</PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>14</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -1485,16 +1501,16 @@
  <PropertyVal Name="Visible">True</PropertyVal>
  <PropertyVal Name="Title">X3 Viewer</PropertyVal>
  <PropertyVal Name="Backdrop">0</PropertyVal>
- <PropertyVal Name="BackColor">16777215</PropertyVal>
+ <PropertyVal Name="BackColor"><Hex bytes="8">3136373737323135</Hex></PropertyVal>
  <PropertyVal Name="HasBackColor">False</PropertyVal>
  <PropertyVal Name="Composite">False</PropertyVal>
  <PropertyVal Name="Frame"><Hex bytes="1">30</Hex></PropertyVal>
- <PropertyVal Name="MaxHeight">32000</PropertyVal>
- <PropertyVal Name="MaxWidth">32000</PropertyVal>
- <PropertyVal Name="MinHeight">400</PropertyVal>
- <PropertyVal Name="MinWidth">64</PropertyVal>
- <PropertyVal Name="Height">400</PropertyVal>
- <PropertyVal Name="Width">600</PropertyVal>
+ <PropertyVal Name="MaxHeight"><Hex bytes="5">3332303030</Hex></PropertyVal>
+ <PropertyVal Name="MaxWidth"><Hex bytes="5">3332303030</Hex></PropertyVal>
+ <PropertyVal Name="MinHeight"><Hex bytes="3">343030</Hex></PropertyVal>
+ <PropertyVal Name="MinWidth"><Hex bytes="2">3634</Hex></PropertyVal>
+ <PropertyVal Name="Height"><Hex bytes="3">343030</Hex></PropertyVal>
+ <PropertyVal Name="Width"><Hex bytes="3">363030</Hex></PropertyVal>
  <PropertyVal Name="Placement"><Hex bytes="1">30</Hex></PropertyVal>
  <ViewBehavior>
   <ViewProperty>
@@ -1853,8 +1869,8 @@
   <ControlClass>OpenGLSurface</ControlClass>
   <ItemName>OpenGLSurface</ItemName>
   <PropertyVal Name="DoubleBuffer">True</PropertyVal>
-  <PropertyVal Name="DepthBits">24</PropertyVal>
-  <PropertyVal Name="ColorBits">24</PropertyVal>
+  <PropertyVal Name="DepthBits"><Hex bytes="2">3234</Hex></PropertyVal>
+  <PropertyVal Name="ColorBits"><Hex bytes="2">3234</Hex></PropertyVal>
   <PropertyVal Name="Enabled">True</PropertyVal>
   <PropertyVal Name="AutoDeactivate">True</PropertyVal>
   <PropertyVal Name="HelpTag"></PropertyVal>
@@ -1867,14 +1883,14 @@
   <PropertyVal Name="LockRight">True</PropertyVal>
   <PropertyVal Name="LockTop">True</PropertyVal>
   <PropertyVal Name="LockLeft">True</PropertyVal>
-  <PropertyVal Name="Height">400</PropertyVal>
-  <PropertyVal Name="Width">600</PropertyVal>
+  <PropertyVal Name="Height"><Hex bytes="3">343030</Hex></PropertyVal>
+  <PropertyVal Name="Width"><Hex bytes="3">363030</Hex></PropertyVal>
   <PropertyVal Name="Top"><Hex bytes="1">30</Hex></PropertyVal>
   <PropertyVal Name="Left"><Hex bytes="1">30</Hex></PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Super">OpenGLSurface</PropertyVal>
-  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Index"><Hex bytes="11">2D32313437343833363438</Hex></PropertyVal>
   <PropertyVal Name="Name">Surface</PropertyVal>
+  <PropertyVal Name="Super">OpenGLSurface</PropertyVal>
   <ControlIndex>0</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -1885,14 +1901,14 @@
   <PropertyVal Name="InitialParent"></PropertyVal>
   <PropertyVal Name="Enabled">True</PropertyVal>
   <PropertyVal Name="Visible">True</PropertyVal>
-  <PropertyVal Name="Height">32</PropertyVal>
-  <PropertyVal Name="Width">100</PropertyVal>
-  <PropertyVal Name="Top">20</PropertyVal>
-  <PropertyVal Name="Left">20</PropertyVal>
+  <PropertyVal Name="Height"><Hex bytes="2">3332</Hex></PropertyVal>
+  <PropertyVal Name="Width"><Hex bytes="3">313030</Hex></PropertyVal>
+  <PropertyVal Name="Top"><Hex bytes="2">3230</Hex></PropertyVal>
+  <PropertyVal Name="Left"><Hex bytes="2">3230</Hex></PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Super">MainToolbar</PropertyVal>
-  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Index"><Hex bytes="11">2D32313437343833363438</Hex></PropertyVal>
   <PropertyVal Name="Name">tbMain</PropertyVal>
+  <PropertyVal Name="Super">MainToolbar</PropertyVal>
   <ControlIndex>1</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -5176,12 +5192,14 @@
    <SourceLine>Dim minZ As Double</SourceLine>
    <SourceLine>Dim i As Integer</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>maxX = Vertex(i).X</SourceLine>
-   <SourceLine>minX = Vertex(i).X</SourceLine>
-   <SourceLine>maxY = Vertex(i).Y</SourceLine>
-   <SourceLine>minY = Vertex(i).Y</SourceLine>
-   <SourceLine>maxZ = Vertex(i).Z</SourceLine>
-   <SourceLine>minZ = Vertex(i).Z</SourceLine>
+   <SourceLine>if Vertex.Ubound &gt;= 0 then</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>maxX = Vertex(0).X</SourceLine>
+   <SourceLine>minX = Vertex(0).X</SourceLine>
+   <SourceLine>maxY = Vertex(0).Y</SourceLine>
+   <SourceLine>minY = Vertex(0).Y</SourceLine>
+   <SourceLine>maxZ = Vertex(0).Z</SourceLine>
+   <SourceLine>minZ = Vertex(0).Z</SourceLine>
    <SourceLine>for i = 1 to Vertex.Ubound</SourceLine>
    <SourceLine>if Vertex(i).X &gt; maxX then</SourceLine>
    <SourceLine>maxX = Vertex(i).X</SourceLine>
@@ -5219,6 +5237,7 @@
    <SourceLine>Vertex(i).Z = Vertex(i).Z + MaxZ</SourceLine>
    <SourceLine>next i</SourceLine>
    <SourceLine></SourceLine>
+   <SourceLine>end if</SourceLine>
    <SourceLine>End Sub</SourceLine>
   </ItemSource>
   <TextEncoding>134217984</TextEncoding>
@@ -8162,7 +8181,6 @@
    <SourceLine>Dim tmpG As Double</SourceLine>
    <SourceLine>Dim tmpB As Double</SourceLine>
    <SourceLine>Dim tmpA As Double</SourceLine>
-   <SourceLine>Dim c As X3Core.X3Color</SourceLine>
    <SourceLine>Dim m As X3Core.X3Material</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>result = false</SourceLine>
@@ -9712,9 +9730,9 @@
    <EditorCount>1</EditorCount>
    <Editor>
     <EditorIndex>0</EditorIndex>
-    <EditorLocation>frmMain.Controls.tbMain.Action</EditorLocation>
+    <EditorLocation>X3Core.X3IO.LoadModel</EditorLocation>
     <EditorPath></EditorPath>
-    <EditingPartID>893575167</EditingPartID>
+    <EditingPartID>1878820863</EditingPartID>
    </Editor>
    <SelectedTab>0</SelectedTab>
   </Editors>
