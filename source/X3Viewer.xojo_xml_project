@@ -1432,10 +1432,16 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub actionSnapshot()</SourceLine>
    <SourceLine>Dim ss As Picture</SourceLine>
+   <SourceLine>'Dim f As FolderItem</SourceLine>
+   <SourceLine>'Dim dlg As new SaveAsDialog</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Surface.MakeCurrent()</SourceLine>
    <SourceLine>ss = X3_Snapshot(0, 0, Surface.Width, Surface.Height)</SourceLine>
    <SourceLine></SourceLine>
+   <SourceLine>'f = dlg.ShowModal</SourceLine>
+   <SourceLine>'if f &lt;&gt; nil then</SourceLine>
+   <SourceLine>'ss.Save f, Picture.FormatPNG</SourceLine>
+   <SourceLine>'end if</SourceLine>
    <SourceLine>End Sub</SourceLine>
   </ItemSource>
   <TextEncoding>134217984</TextEncoding>
@@ -1798,8 +1804,7 @@
    <ItemSource>
     <TextEncoding>134217984</TextEncoding>
     <SourceLine>Function Render() As Boolean</SourceLine>
-    <SourceLine>//OpenGL.glClearColor(0.2, 0.2, 0.2, 1) ' set the background color</SourceLine>
-    <SourceLine>OpenGL.glClearColor(0, 0, 0, 0) ' set the background color</SourceLine>
+    <SourceLine>OpenGL.glClearColor(0.2, 0.2, 0.2, 0) ' set the background color</SourceLine>
     <SourceLine>OpenGL.glClear(OpenGL.GL_COLOR_BUFFER_BIT + OpenGL.GL_DEPTH_BUFFER_BIT)</SourceLine>
     <SourceLine></SourceLine>
     <SourceLine>if CurrentScene &lt;&gt; nil then</SourceLine>
@@ -8584,6 +8589,7 @@
    <SourceLine></SourceLine>
    <SourceLine>OpenGL.glBlendFunc OpenGL.GL_SRC_ALPHA, OpenGL.GL_ONE_MINUS_SRC_ALPHA</SourceLine>
    <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>End Sub</SourceLine>
   </ItemSource>
   <TextEncoding>134217984</TextEncoding>
@@ -9704,7 +9710,6 @@
    <SourceLine>i = 0</SourceLine>
    <SourceLine>while i &lt; width</SourceLine>
    <SourceLine>rgbMain.Pixel(i, j) = pixelData.ColorValue(((heightMinOne - j) * width + i) * 4, 32)</SourceLine>
-   <SourceLineBreakpoint>19</SourceLineBreakpoint>
    <SourceLine>i = i + 1</SourceLine>
    <SourceLine>wend</SourceLine>
    <SourceLine>j = j + 1</SourceLine>
@@ -9783,9 +9788,9 @@
    <EditorCount>1</EditorCount>
    <Editor>
     <EditorIndex>0</EditorIndex>
-    <EditorLocation>X3Core.X3_Snapshot</EditorLocation>
+    <EditorLocation>frmMain.actionSnapshot</EditorLocation>
     <EditorPath></EditorPath>
-    <EditingPartID>1524205567</EditingPartID>
+    <EditingPartID>893575167</EditingPartID>
    </Editor>
    <SelectedTab>0</SelectedTab>
   </Editors>
