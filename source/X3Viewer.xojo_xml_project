@@ -1799,7 +1799,7 @@
     <TextEncoding>134217984</TextEncoding>
     <SourceLine>Sub Resized()</SourceLine>
     <SourceLine>if CurrentScene &lt;&gt; nil then</SourceLine>
-    <SourceLine></SourceLine>
+    <SourceLine>CurrentScene.SetViewport 0, 0, Surface.Width, Surface.Height</SourceLine>
     <SourceLine>else</SourceLine>
     <SourceLine>X3_SetPerspective 0, 0, Surface.Width, Surface.Height, 60.0, 0.01</SourceLine>
     <SourceLine>end if</SourceLine>
@@ -9803,6 +9803,10 @@
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub X3_SetCamera(camera As X3Core.X3Camera)</SourceLine>
+   <SourceLine>' apply the perspective settings of the camera</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>X3_SetPerspective camera.ViewportX, camera.ViewportY, camera.ViewportWidth, camera.ViewportHeight, 60.0, 0.01</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>' set the orientation of the camera</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>X3_SetRotation camera.CameraRotation</SourceLine>
@@ -9924,7 +9928,7 @@
    <EditorCount>1</EditorCount>
    <Editor>
     <EditorIndex>0</EditorIndex>
-    <EditorLocation>X3Core.X3_Snapshot</EditorLocation>
+    <EditorLocation>X3Core.X3_SetCamera</EditorLocation>
     <EditorPath></EditorPath>
     <EditingPartID>1524205567</EditingPartID>
    </Editor>
