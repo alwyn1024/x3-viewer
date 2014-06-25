@@ -17,7 +17,7 @@
  <DefaultLanguage>0</DefaultLanguage>
  <CurrentLanguage>0</CurrentLanguage>
  <DefaultEncoding>0</DefaultEncoding>
- <BuildFlags>20880</BuildFlags>
+ <BuildFlags>29072</BuildFlags>
  <UseBuildsFolder>1</UseBuildsFolder>
  <WebApp>0</WebApp>
  <Icon>
@@ -725,540 +725,540 @@
  <Control>
   <ControlClass>PushButton</ControlClass>
   <ItemName>PushButton</ItemName>
-  <PropertyVal Name="InitialParent"></PropertyVal>
-  <PropertyVal Name="Underline">False</PropertyVal>
-  <PropertyVal Name="Italic">False</PropertyVal>
-  <PropertyVal Name="Bold">False</PropertyVal>
-  <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
-  <PropertyVal Name="TextFont">System</PropertyVal>
-  <PropertyVal Name="ButtonStyle">0</PropertyVal>
-  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
-  <PropertyVal Name="HelpTag"></PropertyVal>
-  <PropertyVal Name="Visible">True</PropertyVal>
-  <PropertyVal Name="Enabled">True</PropertyVal>
-  <PropertyVal Name="Cancel">False</PropertyVal>
-  <PropertyVal Name="Default">False</PropertyVal>
-  <PropertyVal Name="Caption">Dolly In</PropertyVal>
-  <PropertyVal Name="TabStop">True</PropertyVal>
-  <PropertyVal Name="TabIndex"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="LockBottom">False</PropertyVal>
-  <PropertyVal Name="LockRight">False</PropertyVal>
-  <PropertyVal Name="LockTop">True</PropertyVal>
-  <PropertyVal Name="LockLeft">True</PropertyVal>
-  <PropertyVal Name="Height">22</PropertyVal>
-  <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">39</PropertyVal>
-  <PropertyVal Name="Left">20</PropertyVal>
-  <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
-  <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">cmdDollyIn</PropertyVal>
+  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Left">20</PropertyVal>
+  <PropertyVal Name="Top">39</PropertyVal>
+  <PropertyVal Name="Width">109</PropertyVal>
+  <PropertyVal Name="Height">22</PropertyVal>
+  <PropertyVal Name="LockLeft">True</PropertyVal>
+  <PropertyVal Name="LockTop">True</PropertyVal>
+  <PropertyVal Name="LockRight">False</PropertyVal>
+  <PropertyVal Name="LockBottom">False</PropertyVal>
+  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="TabIndex"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="TabStop">True</PropertyVal>
+  <PropertyVal Name="Caption">Dolly In</PropertyVal>
+  <PropertyVal Name="Default">False</PropertyVal>
+  <PropertyVal Name="Cancel">False</PropertyVal>
+  <PropertyVal Name="Enabled">True</PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="HelpTag"></PropertyVal>
+  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
+  <PropertyVal Name="ButtonStyle">0</PropertyVal>
+  <PropertyVal Name="TextFont">System</PropertyVal>
+  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
+  <PropertyVal Name="TextUnit">0</PropertyVal>
+  <PropertyVal Name="Bold">False</PropertyVal>
+  <PropertyVal Name="Italic">False</PropertyVal>
+  <PropertyVal Name="Underline">False</PropertyVal>
+  <PropertyVal Name="InitialParent"></PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>0</ControlIndex>
   <Locked>0</Locked>
  </Control>
  <Control>
   <ControlClass>PushButton</ControlClass>
   <ItemName>PushButton</ItemName>
-  <PropertyVal Name="InitialParent"></PropertyVal>
-  <PropertyVal Name="Underline">False</PropertyVal>
-  <PropertyVal Name="Italic">False</PropertyVal>
-  <PropertyVal Name="Bold">False</PropertyVal>
-  <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
-  <PropertyVal Name="TextFont">System</PropertyVal>
-  <PropertyVal Name="ButtonStyle">0</PropertyVal>
-  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
-  <PropertyVal Name="HelpTag"></PropertyVal>
-  <PropertyVal Name="Visible">True</PropertyVal>
-  <PropertyVal Name="Enabled">True</PropertyVal>
-  <PropertyVal Name="Cancel">False</PropertyVal>
-  <PropertyVal Name="Default">False</PropertyVal>
-  <PropertyVal Name="Caption">Dolly Out</PropertyVal>
-  <PropertyVal Name="TabStop">True</PropertyVal>
-  <PropertyVal Name="TabIndex"><Hex bytes="1">31</Hex></PropertyVal>
-  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="LockBottom">False</PropertyVal>
-  <PropertyVal Name="LockRight">False</PropertyVal>
-  <PropertyVal Name="LockTop">True</PropertyVal>
-  <PropertyVal Name="LockLeft">True</PropertyVal>
-  <PropertyVal Name="Height">22</PropertyVal>
-  <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">63</PropertyVal>
-  <PropertyVal Name="Left">20</PropertyVal>
-  <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
-  <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">cmdDollyOut</PropertyVal>
+  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Left">20</PropertyVal>
+  <PropertyVal Name="Top">63</PropertyVal>
+  <PropertyVal Name="Width">109</PropertyVal>
+  <PropertyVal Name="Height">22</PropertyVal>
+  <PropertyVal Name="LockLeft">True</PropertyVal>
+  <PropertyVal Name="LockTop">True</PropertyVal>
+  <PropertyVal Name="LockRight">False</PropertyVal>
+  <PropertyVal Name="LockBottom">False</PropertyVal>
+  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="TabIndex"><Hex bytes="1">31</Hex></PropertyVal>
+  <PropertyVal Name="TabStop">True</PropertyVal>
+  <PropertyVal Name="Caption">Dolly Out</PropertyVal>
+  <PropertyVal Name="Default">False</PropertyVal>
+  <PropertyVal Name="Cancel">False</PropertyVal>
+  <PropertyVal Name="Enabled">True</PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="HelpTag"></PropertyVal>
+  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
+  <PropertyVal Name="ButtonStyle">0</PropertyVal>
+  <PropertyVal Name="TextFont">System</PropertyVal>
+  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
+  <PropertyVal Name="TextUnit">0</PropertyVal>
+  <PropertyVal Name="Bold">False</PropertyVal>
+  <PropertyVal Name="Italic">False</PropertyVal>
+  <PropertyVal Name="Underline">False</PropertyVal>
+  <PropertyVal Name="InitialParent"></PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>1</ControlIndex>
   <Locked>0</Locked>
  </Control>
  <Control>
   <ControlClass>PushButton</ControlClass>
   <ItemName>PushButton</ItemName>
-  <PropertyVal Name="InitialParent"></PropertyVal>
-  <PropertyVal Name="Underline">False</PropertyVal>
-  <PropertyVal Name="Italic">False</PropertyVal>
-  <PropertyVal Name="Bold">False</PropertyVal>
-  <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
-  <PropertyVal Name="TextFont">System</PropertyVal>
-  <PropertyVal Name="ButtonStyle">0</PropertyVal>
-  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
-  <PropertyVal Name="HelpTag"></PropertyVal>
-  <PropertyVal Name="Visible">True</PropertyVal>
-  <PropertyVal Name="Enabled">True</PropertyVal>
-  <PropertyVal Name="Cancel">False</PropertyVal>
-  <PropertyVal Name="Default">False</PropertyVal>
-  <PropertyVal Name="Caption">Pedestal Up</PropertyVal>
-  <PropertyVal Name="TabStop">True</PropertyVal>
-  <PropertyVal Name="TabIndex"><Hex bytes="1">32</Hex></PropertyVal>
-  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="LockBottom">False</PropertyVal>
-  <PropertyVal Name="LockRight">False</PropertyVal>
-  <PropertyVal Name="LockTop">True</PropertyVal>
-  <PropertyVal Name="LockLeft">True</PropertyVal>
-  <PropertyVal Name="Height">22</PropertyVal>
-  <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">87</PropertyVal>
-  <PropertyVal Name="Left">20</PropertyVal>
-  <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
-  <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">cmdPedestalUp</PropertyVal>
+  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Left">20</PropertyVal>
+  <PropertyVal Name="Top">87</PropertyVal>
+  <PropertyVal Name="Width">109</PropertyVal>
+  <PropertyVal Name="Height">22</PropertyVal>
+  <PropertyVal Name="LockLeft">True</PropertyVal>
+  <PropertyVal Name="LockTop">True</PropertyVal>
+  <PropertyVal Name="LockRight">False</PropertyVal>
+  <PropertyVal Name="LockBottom">False</PropertyVal>
+  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="TabIndex"><Hex bytes="1">32</Hex></PropertyVal>
+  <PropertyVal Name="TabStop">True</PropertyVal>
+  <PropertyVal Name="Caption">Pedestal Up</PropertyVal>
+  <PropertyVal Name="Default">False</PropertyVal>
+  <PropertyVal Name="Cancel">False</PropertyVal>
+  <PropertyVal Name="Enabled">True</PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="HelpTag"></PropertyVal>
+  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
+  <PropertyVal Name="ButtonStyle">0</PropertyVal>
+  <PropertyVal Name="TextFont">System</PropertyVal>
+  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
+  <PropertyVal Name="TextUnit">0</PropertyVal>
+  <PropertyVal Name="Bold">False</PropertyVal>
+  <PropertyVal Name="Italic">False</PropertyVal>
+  <PropertyVal Name="Underline">False</PropertyVal>
+  <PropertyVal Name="InitialParent"></PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>2</ControlIndex>
   <Locked>0</Locked>
  </Control>
  <Control>
   <ControlClass>PushButton</ControlClass>
   <ItemName>PushButton</ItemName>
-  <PropertyVal Name="InitialParent"></PropertyVal>
-  <PropertyVal Name="Underline">False</PropertyVal>
-  <PropertyVal Name="Italic">False</PropertyVal>
-  <PropertyVal Name="Bold">False</PropertyVal>
-  <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
-  <PropertyVal Name="TextFont">System</PropertyVal>
-  <PropertyVal Name="ButtonStyle">0</PropertyVal>
-  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
-  <PropertyVal Name="HelpTag"></PropertyVal>
-  <PropertyVal Name="Visible">True</PropertyVal>
-  <PropertyVal Name="Enabled">True</PropertyVal>
-  <PropertyVal Name="Cancel">False</PropertyVal>
-  <PropertyVal Name="Default">False</PropertyVal>
-  <PropertyVal Name="Caption">Pedestal Down</PropertyVal>
-  <PropertyVal Name="TabStop">True</PropertyVal>
-  <PropertyVal Name="TabIndex"><Hex bytes="1">33</Hex></PropertyVal>
-  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="LockBottom">False</PropertyVal>
-  <PropertyVal Name="LockRight">False</PropertyVal>
-  <PropertyVal Name="LockTop">True</PropertyVal>
-  <PropertyVal Name="LockLeft">True</PropertyVal>
-  <PropertyVal Name="Height">22</PropertyVal>
-  <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">111</PropertyVal>
-  <PropertyVal Name="Left">20</PropertyVal>
-  <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
-  <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">cmdPedestalDown</PropertyVal>
+  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Left">20</PropertyVal>
+  <PropertyVal Name="Top">111</PropertyVal>
+  <PropertyVal Name="Width">109</PropertyVal>
+  <PropertyVal Name="Height">22</PropertyVal>
+  <PropertyVal Name="LockLeft">True</PropertyVal>
+  <PropertyVal Name="LockTop">True</PropertyVal>
+  <PropertyVal Name="LockRight">False</PropertyVal>
+  <PropertyVal Name="LockBottom">False</PropertyVal>
+  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="TabIndex"><Hex bytes="1">33</Hex></PropertyVal>
+  <PropertyVal Name="TabStop">True</PropertyVal>
+  <PropertyVal Name="Caption">Pedestal Down</PropertyVal>
+  <PropertyVal Name="Default">False</PropertyVal>
+  <PropertyVal Name="Cancel">False</PropertyVal>
+  <PropertyVal Name="Enabled">True</PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="HelpTag"></PropertyVal>
+  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
+  <PropertyVal Name="ButtonStyle">0</PropertyVal>
+  <PropertyVal Name="TextFont">System</PropertyVal>
+  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
+  <PropertyVal Name="TextUnit">0</PropertyVal>
+  <PropertyVal Name="Bold">False</PropertyVal>
+  <PropertyVal Name="Italic">False</PropertyVal>
+  <PropertyVal Name="Underline">False</PropertyVal>
+  <PropertyVal Name="InitialParent"></PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>3</ControlIndex>
   <Locked>0</Locked>
  </Control>
  <Control>
   <ControlClass>PushButton</ControlClass>
   <ItemName>PushButton</ItemName>
-  <PropertyVal Name="InitialParent"></PropertyVal>
-  <PropertyVal Name="Underline">False</PropertyVal>
-  <PropertyVal Name="Italic">False</PropertyVal>
-  <PropertyVal Name="Bold">False</PropertyVal>
-  <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
-  <PropertyVal Name="TextFont">System</PropertyVal>
-  <PropertyVal Name="ButtonStyle">0</PropertyVal>
-  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
-  <PropertyVal Name="HelpTag"></PropertyVal>
-  <PropertyVal Name="Visible">True</PropertyVal>
-  <PropertyVal Name="Enabled">True</PropertyVal>
-  <PropertyVal Name="Cancel">False</PropertyVal>
-  <PropertyVal Name="Default">False</PropertyVal>
-  <PropertyVal Name="Caption">Truck Left</PropertyVal>
-  <PropertyVal Name="TabStop">True</PropertyVal>
-  <PropertyVal Name="TabIndex"><Hex bytes="1">34</Hex></PropertyVal>
-  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="LockBottom">False</PropertyVal>
-  <PropertyVal Name="LockRight">False</PropertyVal>
-  <PropertyVal Name="LockTop">True</PropertyVal>
-  <PropertyVal Name="LockLeft">True</PropertyVal>
-  <PropertyVal Name="Height">22</PropertyVal>
-  <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">135</PropertyVal>
-  <PropertyVal Name="Left">20</PropertyVal>
-  <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
-  <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">cmdTruckLeft</PropertyVal>
+  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Left">20</PropertyVal>
+  <PropertyVal Name="Top">135</PropertyVal>
+  <PropertyVal Name="Width">109</PropertyVal>
+  <PropertyVal Name="Height">22</PropertyVal>
+  <PropertyVal Name="LockLeft">True</PropertyVal>
+  <PropertyVal Name="LockTop">True</PropertyVal>
+  <PropertyVal Name="LockRight">False</PropertyVal>
+  <PropertyVal Name="LockBottom">False</PropertyVal>
+  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="TabIndex"><Hex bytes="1">34</Hex></PropertyVal>
+  <PropertyVal Name="TabStop">True</PropertyVal>
+  <PropertyVal Name="Caption">Truck Left</PropertyVal>
+  <PropertyVal Name="Default">False</PropertyVal>
+  <PropertyVal Name="Cancel">False</PropertyVal>
+  <PropertyVal Name="Enabled">True</PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="HelpTag"></PropertyVal>
+  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
+  <PropertyVal Name="ButtonStyle">0</PropertyVal>
+  <PropertyVal Name="TextFont">System</PropertyVal>
+  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
+  <PropertyVal Name="TextUnit">0</PropertyVal>
+  <PropertyVal Name="Bold">False</PropertyVal>
+  <PropertyVal Name="Italic">False</PropertyVal>
+  <PropertyVal Name="Underline">False</PropertyVal>
+  <PropertyVal Name="InitialParent"></PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>4</ControlIndex>
   <Locked>0</Locked>
  </Control>
  <Control>
   <ControlClass>PushButton</ControlClass>
   <ItemName>PushButton</ItemName>
-  <PropertyVal Name="InitialParent"></PropertyVal>
-  <PropertyVal Name="Underline">False</PropertyVal>
-  <PropertyVal Name="Italic">False</PropertyVal>
-  <PropertyVal Name="Bold">False</PropertyVal>
-  <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
-  <PropertyVal Name="TextFont">System</PropertyVal>
-  <PropertyVal Name="ButtonStyle">0</PropertyVal>
-  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
-  <PropertyVal Name="HelpTag"></PropertyVal>
-  <PropertyVal Name="Visible">True</PropertyVal>
-  <PropertyVal Name="Enabled">True</PropertyVal>
-  <PropertyVal Name="Cancel">False</PropertyVal>
-  <PropertyVal Name="Default">False</PropertyVal>
-  <PropertyVal Name="Caption">Truck Right</PropertyVal>
-  <PropertyVal Name="TabStop">True</PropertyVal>
-  <PropertyVal Name="TabIndex"><Hex bytes="1">35</Hex></PropertyVal>
-  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="LockBottom">False</PropertyVal>
-  <PropertyVal Name="LockRight">False</PropertyVal>
-  <PropertyVal Name="LockTop">True</PropertyVal>
-  <PropertyVal Name="LockLeft">True</PropertyVal>
-  <PropertyVal Name="Height">22</PropertyVal>
-  <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">159</PropertyVal>
-  <PropertyVal Name="Left">20</PropertyVal>
-  <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
-  <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">cmdTruckRight</PropertyVal>
+  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Left">20</PropertyVal>
+  <PropertyVal Name="Top">159</PropertyVal>
+  <PropertyVal Name="Width">109</PropertyVal>
+  <PropertyVal Name="Height">22</PropertyVal>
+  <PropertyVal Name="LockLeft">True</PropertyVal>
+  <PropertyVal Name="LockTop">True</PropertyVal>
+  <PropertyVal Name="LockRight">False</PropertyVal>
+  <PropertyVal Name="LockBottom">False</PropertyVal>
+  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="TabIndex"><Hex bytes="1">35</Hex></PropertyVal>
+  <PropertyVal Name="TabStop">True</PropertyVal>
+  <PropertyVal Name="Caption">Truck Right</PropertyVal>
+  <PropertyVal Name="Default">False</PropertyVal>
+  <PropertyVal Name="Cancel">False</PropertyVal>
+  <PropertyVal Name="Enabled">True</PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="HelpTag"></PropertyVal>
+  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
+  <PropertyVal Name="ButtonStyle">0</PropertyVal>
+  <PropertyVal Name="TextFont">System</PropertyVal>
+  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
+  <PropertyVal Name="TextUnit">0</PropertyVal>
+  <PropertyVal Name="Bold">False</PropertyVal>
+  <PropertyVal Name="Italic">False</PropertyVal>
+  <PropertyVal Name="Underline">False</PropertyVal>
+  <PropertyVal Name="InitialParent"></PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>5</ControlIndex>
   <Locked>0</Locked>
  </Control>
  <Control>
   <ControlClass>PushButton</ControlClass>
   <ItemName>PushButton</ItemName>
-  <PropertyVal Name="InitialParent"></PropertyVal>
-  <PropertyVal Name="Underline">False</PropertyVal>
-  <PropertyVal Name="Italic">False</PropertyVal>
-  <PropertyVal Name="Bold">False</PropertyVal>
-  <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
-  <PropertyVal Name="TextFont">System</PropertyVal>
-  <PropertyVal Name="ButtonStyle">0</PropertyVal>
-  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
-  <PropertyVal Name="HelpTag"></PropertyVal>
-  <PropertyVal Name="Visible">True</PropertyVal>
-  <PropertyVal Name="Enabled">True</PropertyVal>
-  <PropertyVal Name="Cancel">False</PropertyVal>
-  <PropertyVal Name="Default">False</PropertyVal>
-  <PropertyVal Name="Caption">Pan Left</PropertyVal>
-  <PropertyVal Name="TabStop">True</PropertyVal>
-  <PropertyVal Name="TabIndex"><Hex bytes="1">36</Hex></PropertyVal>
-  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="LockBottom">False</PropertyVal>
-  <PropertyVal Name="LockRight">False</PropertyVal>
-  <PropertyVal Name="LockTop">True</PropertyVal>
-  <PropertyVal Name="LockLeft">True</PropertyVal>
-  <PropertyVal Name="Height">22</PropertyVal>
-  <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">183</PropertyVal>
-  <PropertyVal Name="Left">20</PropertyVal>
-  <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
-  <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">cmdPanLeft</PropertyVal>
+  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Left">20</PropertyVal>
+  <PropertyVal Name="Top">183</PropertyVal>
+  <PropertyVal Name="Width">109</PropertyVal>
+  <PropertyVal Name="Height">22</PropertyVal>
+  <PropertyVal Name="LockLeft">True</PropertyVal>
+  <PropertyVal Name="LockTop">True</PropertyVal>
+  <PropertyVal Name="LockRight">False</PropertyVal>
+  <PropertyVal Name="LockBottom">False</PropertyVal>
+  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="TabIndex"><Hex bytes="1">36</Hex></PropertyVal>
+  <PropertyVal Name="TabStop">True</PropertyVal>
+  <PropertyVal Name="Caption">Pan Left</PropertyVal>
+  <PropertyVal Name="Default">False</PropertyVal>
+  <PropertyVal Name="Cancel">False</PropertyVal>
+  <PropertyVal Name="Enabled">True</PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="HelpTag"></PropertyVal>
+  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
+  <PropertyVal Name="ButtonStyle">0</PropertyVal>
+  <PropertyVal Name="TextFont">System</PropertyVal>
+  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
+  <PropertyVal Name="TextUnit">0</PropertyVal>
+  <PropertyVal Name="Bold">False</PropertyVal>
+  <PropertyVal Name="Italic">False</PropertyVal>
+  <PropertyVal Name="Underline">False</PropertyVal>
+  <PropertyVal Name="InitialParent"></PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>6</ControlIndex>
   <Locked>0</Locked>
  </Control>
  <Control>
   <ControlClass>PushButton</ControlClass>
   <ItemName>PushButton</ItemName>
-  <PropertyVal Name="InitialParent"></PropertyVal>
-  <PropertyVal Name="Underline">False</PropertyVal>
-  <PropertyVal Name="Italic">False</PropertyVal>
-  <PropertyVal Name="Bold">False</PropertyVal>
-  <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
-  <PropertyVal Name="TextFont">System</PropertyVal>
-  <PropertyVal Name="ButtonStyle">0</PropertyVal>
-  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
-  <PropertyVal Name="HelpTag"></PropertyVal>
-  <PropertyVal Name="Visible">True</PropertyVal>
-  <PropertyVal Name="Enabled">True</PropertyVal>
-  <PropertyVal Name="Cancel">False</PropertyVal>
-  <PropertyVal Name="Default">False</PropertyVal>
-  <PropertyVal Name="Caption">Pan Right</PropertyVal>
-  <PropertyVal Name="TabStop">True</PropertyVal>
-  <PropertyVal Name="TabIndex"><Hex bytes="1">37</Hex></PropertyVal>
-  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="LockBottom">False</PropertyVal>
-  <PropertyVal Name="LockRight">False</PropertyVal>
-  <PropertyVal Name="LockTop">True</PropertyVal>
-  <PropertyVal Name="LockLeft">True</PropertyVal>
-  <PropertyVal Name="Height">22</PropertyVal>
-  <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">207</PropertyVal>
-  <PropertyVal Name="Left">20</PropertyVal>
-  <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
-  <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">cmdPanRight</PropertyVal>
+  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Left">20</PropertyVal>
+  <PropertyVal Name="Top">207</PropertyVal>
+  <PropertyVal Name="Width">109</PropertyVal>
+  <PropertyVal Name="Height">22</PropertyVal>
+  <PropertyVal Name="LockLeft">True</PropertyVal>
+  <PropertyVal Name="LockTop">True</PropertyVal>
+  <PropertyVal Name="LockRight">False</PropertyVal>
+  <PropertyVal Name="LockBottom">False</PropertyVal>
+  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="TabIndex"><Hex bytes="1">37</Hex></PropertyVal>
+  <PropertyVal Name="TabStop">True</PropertyVal>
+  <PropertyVal Name="Caption">Pan Right</PropertyVal>
+  <PropertyVal Name="Default">False</PropertyVal>
+  <PropertyVal Name="Cancel">False</PropertyVal>
+  <PropertyVal Name="Enabled">True</PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="HelpTag"></PropertyVal>
+  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
+  <PropertyVal Name="ButtonStyle">0</PropertyVal>
+  <PropertyVal Name="TextFont">System</PropertyVal>
+  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
+  <PropertyVal Name="TextUnit">0</PropertyVal>
+  <PropertyVal Name="Bold">False</PropertyVal>
+  <PropertyVal Name="Italic">False</PropertyVal>
+  <PropertyVal Name="Underline">False</PropertyVal>
+  <PropertyVal Name="InitialParent"></PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>7</ControlIndex>
   <Locked>0</Locked>
  </Control>
  <Control>
   <ControlClass>PushButton</ControlClass>
   <ItemName>PushButton</ItemName>
-  <PropertyVal Name="InitialParent"></PropertyVal>
-  <PropertyVal Name="Underline">False</PropertyVal>
-  <PropertyVal Name="Italic">False</PropertyVal>
-  <PropertyVal Name="Bold">False</PropertyVal>
-  <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
-  <PropertyVal Name="TextFont">System</PropertyVal>
-  <PropertyVal Name="ButtonStyle">0</PropertyVal>
-  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
-  <PropertyVal Name="HelpTag"></PropertyVal>
-  <PropertyVal Name="Visible">True</PropertyVal>
-  <PropertyVal Name="Enabled">True</PropertyVal>
-  <PropertyVal Name="Cancel">False</PropertyVal>
-  <PropertyVal Name="Default">False</PropertyVal>
-  <PropertyVal Name="Caption">Turn Dolly Left</PropertyVal>
-  <PropertyVal Name="TabStop">True</PropertyVal>
-  <PropertyVal Name="TabIndex"><Hex bytes="1">38</Hex></PropertyVal>
-  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="LockBottom">False</PropertyVal>
-  <PropertyVal Name="LockRight">False</PropertyVal>
-  <PropertyVal Name="LockTop">True</PropertyVal>
-  <PropertyVal Name="LockLeft">True</PropertyVal>
-  <PropertyVal Name="Height">22</PropertyVal>
-  <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">231</PropertyVal>
-  <PropertyVal Name="Left">20</PropertyVal>
-  <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
-  <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">cmdTurnDollyLeft</PropertyVal>
+  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Left">20</PropertyVal>
+  <PropertyVal Name="Top">231</PropertyVal>
+  <PropertyVal Name="Width">109</PropertyVal>
+  <PropertyVal Name="Height">22</PropertyVal>
+  <PropertyVal Name="LockLeft">True</PropertyVal>
+  <PropertyVal Name="LockTop">True</PropertyVal>
+  <PropertyVal Name="LockRight">False</PropertyVal>
+  <PropertyVal Name="LockBottom">False</PropertyVal>
+  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="TabIndex"><Hex bytes="1">38</Hex></PropertyVal>
+  <PropertyVal Name="TabStop">True</PropertyVal>
+  <PropertyVal Name="Caption">Turn Dolly Left</PropertyVal>
+  <PropertyVal Name="Default">False</PropertyVal>
+  <PropertyVal Name="Cancel">False</PropertyVal>
+  <PropertyVal Name="Enabled">True</PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="HelpTag"></PropertyVal>
+  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
+  <PropertyVal Name="ButtonStyle">0</PropertyVal>
+  <PropertyVal Name="TextFont">System</PropertyVal>
+  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
+  <PropertyVal Name="TextUnit">0</PropertyVal>
+  <PropertyVal Name="Bold">False</PropertyVal>
+  <PropertyVal Name="Italic">False</PropertyVal>
+  <PropertyVal Name="Underline">False</PropertyVal>
+  <PropertyVal Name="InitialParent"></PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>8</ControlIndex>
   <Locked>0</Locked>
  </Control>
  <Control>
   <ControlClass>PushButton</ControlClass>
   <ItemName>PushButton</ItemName>
-  <PropertyVal Name="InitialParent"></PropertyVal>
-  <PropertyVal Name="Underline">False</PropertyVal>
-  <PropertyVal Name="Italic">False</PropertyVal>
-  <PropertyVal Name="Bold">False</PropertyVal>
-  <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
-  <PropertyVal Name="TextFont">System</PropertyVal>
-  <PropertyVal Name="ButtonStyle">0</PropertyVal>
-  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
-  <PropertyVal Name="HelpTag"></PropertyVal>
-  <PropertyVal Name="Visible">True</PropertyVal>
-  <PropertyVal Name="Enabled">True</PropertyVal>
-  <PropertyVal Name="Cancel">False</PropertyVal>
-  <PropertyVal Name="Default">False</PropertyVal>
-  <PropertyVal Name="Caption">Turn Dolly Right</PropertyVal>
-  <PropertyVal Name="TabStop">True</PropertyVal>
-  <PropertyVal Name="TabIndex"><Hex bytes="1">39</Hex></PropertyVal>
-  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="LockBottom">False</PropertyVal>
-  <PropertyVal Name="LockRight">False</PropertyVal>
-  <PropertyVal Name="LockTop">True</PropertyVal>
-  <PropertyVal Name="LockLeft">True</PropertyVal>
-  <PropertyVal Name="Height">22</PropertyVal>
-  <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">255</PropertyVal>
-  <PropertyVal Name="Left">20</PropertyVal>
-  <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
-  <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">cmdTurnDollyRight</PropertyVal>
+  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Left">20</PropertyVal>
+  <PropertyVal Name="Top">255</PropertyVal>
+  <PropertyVal Name="Width">109</PropertyVal>
+  <PropertyVal Name="Height">22</PropertyVal>
+  <PropertyVal Name="LockLeft">True</PropertyVal>
+  <PropertyVal Name="LockTop">True</PropertyVal>
+  <PropertyVal Name="LockRight">False</PropertyVal>
+  <PropertyVal Name="LockBottom">False</PropertyVal>
+  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="TabIndex"><Hex bytes="1">39</Hex></PropertyVal>
+  <PropertyVal Name="TabStop">True</PropertyVal>
+  <PropertyVal Name="Caption">Turn Dolly Right</PropertyVal>
+  <PropertyVal Name="Default">False</PropertyVal>
+  <PropertyVal Name="Cancel">False</PropertyVal>
+  <PropertyVal Name="Enabled">True</PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="HelpTag"></PropertyVal>
+  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
+  <PropertyVal Name="ButtonStyle">0</PropertyVal>
+  <PropertyVal Name="TextFont">System</PropertyVal>
+  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
+  <PropertyVal Name="TextUnit">0</PropertyVal>
+  <PropertyVal Name="Bold">False</PropertyVal>
+  <PropertyVal Name="Italic">False</PropertyVal>
+  <PropertyVal Name="Underline">False</PropertyVal>
+  <PropertyVal Name="InitialParent"></PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>9</ControlIndex>
   <Locked>0</Locked>
  </Control>
  <Control>
   <ControlClass>PushButton</ControlClass>
   <ItemName>PushButton</ItemName>
-  <PropertyVal Name="InitialParent"></PropertyVal>
-  <PropertyVal Name="Underline">False</PropertyVal>
-  <PropertyVal Name="Italic">False</PropertyVal>
-  <PropertyVal Name="Bold">False</PropertyVal>
-  <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
-  <PropertyVal Name="TextFont">System</PropertyVal>
-  <PropertyVal Name="ButtonStyle">0</PropertyVal>
-  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
-  <PropertyVal Name="HelpTag"></PropertyVal>
-  <PropertyVal Name="Visible">True</PropertyVal>
-  <PropertyVal Name="Enabled">True</PropertyVal>
-  <PropertyVal Name="Cancel">False</PropertyVal>
-  <PropertyVal Name="Default">False</PropertyVal>
-  <PropertyVal Name="Caption">Tilt Camera Up</PropertyVal>
-  <PropertyVal Name="TabStop">True</PropertyVal>
-  <PropertyVal Name="TabIndex">10</PropertyVal>
-  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="LockBottom">False</PropertyVal>
-  <PropertyVal Name="LockRight">False</PropertyVal>
-  <PropertyVal Name="LockTop">True</PropertyVal>
-  <PropertyVal Name="LockLeft">True</PropertyVal>
-  <PropertyVal Name="Height">22</PropertyVal>
-  <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">279</PropertyVal>
-  <PropertyVal Name="Left">20</PropertyVal>
-  <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
-  <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">cmdTiltCameraUp</PropertyVal>
+  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Left">20</PropertyVal>
+  <PropertyVal Name="Top">279</PropertyVal>
+  <PropertyVal Name="Width">109</PropertyVal>
+  <PropertyVal Name="Height">22</PropertyVal>
+  <PropertyVal Name="LockLeft">True</PropertyVal>
+  <PropertyVal Name="LockTop">True</PropertyVal>
+  <PropertyVal Name="LockRight">False</PropertyVal>
+  <PropertyVal Name="LockBottom">False</PropertyVal>
+  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="TabIndex">10</PropertyVal>
+  <PropertyVal Name="TabStop">True</PropertyVal>
+  <PropertyVal Name="Caption">Tilt Camera Up</PropertyVal>
+  <PropertyVal Name="Default">False</PropertyVal>
+  <PropertyVal Name="Cancel">False</PropertyVal>
+  <PropertyVal Name="Enabled">True</PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="HelpTag"></PropertyVal>
+  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
+  <PropertyVal Name="ButtonStyle">0</PropertyVal>
+  <PropertyVal Name="TextFont">System</PropertyVal>
+  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
+  <PropertyVal Name="TextUnit">0</PropertyVal>
+  <PropertyVal Name="Bold">False</PropertyVal>
+  <PropertyVal Name="Italic">False</PropertyVal>
+  <PropertyVal Name="Underline">False</PropertyVal>
+  <PropertyVal Name="InitialParent"></PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>10</ControlIndex>
   <Locked>0</Locked>
  </Control>
  <Control>
   <ControlClass>PushButton</ControlClass>
   <ItemName>PushButton</ItemName>
-  <PropertyVal Name="InitialParent"></PropertyVal>
-  <PropertyVal Name="Underline">False</PropertyVal>
-  <PropertyVal Name="Italic">False</PropertyVal>
-  <PropertyVal Name="Bold">False</PropertyVal>
-  <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
-  <PropertyVal Name="TextFont">System</PropertyVal>
-  <PropertyVal Name="ButtonStyle">0</PropertyVal>
-  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
-  <PropertyVal Name="HelpTag"></PropertyVal>
-  <PropertyVal Name="Visible">True</PropertyVal>
-  <PropertyVal Name="Enabled">True</PropertyVal>
-  <PropertyVal Name="Cancel">False</PropertyVal>
-  <PropertyVal Name="Default">False</PropertyVal>
-  <PropertyVal Name="Caption">Tilt Camera Down</PropertyVal>
-  <PropertyVal Name="TabStop">True</PropertyVal>
-  <PropertyVal Name="TabIndex">11</PropertyVal>
-  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="LockBottom">False</PropertyVal>
-  <PropertyVal Name="LockRight">False</PropertyVal>
-  <PropertyVal Name="LockTop">True</PropertyVal>
-  <PropertyVal Name="LockLeft">True</PropertyVal>
-  <PropertyVal Name="Height">22</PropertyVal>
-  <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">303</PropertyVal>
-  <PropertyVal Name="Left">20</PropertyVal>
-  <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
-  <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">cmdTiltCameraDown</PropertyVal>
+  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Left">20</PropertyVal>
+  <PropertyVal Name="Top">303</PropertyVal>
+  <PropertyVal Name="Width">109</PropertyVal>
+  <PropertyVal Name="Height">22</PropertyVal>
+  <PropertyVal Name="LockLeft">True</PropertyVal>
+  <PropertyVal Name="LockTop">True</PropertyVal>
+  <PropertyVal Name="LockRight">False</PropertyVal>
+  <PropertyVal Name="LockBottom">False</PropertyVal>
+  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="TabIndex">11</PropertyVal>
+  <PropertyVal Name="TabStop">True</PropertyVal>
+  <PropertyVal Name="Caption">Tilt Camera Down</PropertyVal>
+  <PropertyVal Name="Default">False</PropertyVal>
+  <PropertyVal Name="Cancel">False</PropertyVal>
+  <PropertyVal Name="Enabled">True</PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="HelpTag"></PropertyVal>
+  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
+  <PropertyVal Name="ButtonStyle">0</PropertyVal>
+  <PropertyVal Name="TextFont">System</PropertyVal>
+  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
+  <PropertyVal Name="TextUnit">0</PropertyVal>
+  <PropertyVal Name="Bold">False</PropertyVal>
+  <PropertyVal Name="Italic">False</PropertyVal>
+  <PropertyVal Name="Underline">False</PropertyVal>
+  <PropertyVal Name="InitialParent"></PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>11</ControlIndex>
   <Locked>0</Locked>
  </Control>
  <Control>
   <ControlClass>PushButton</ControlClass>
   <ItemName>PushButton</ItemName>
-  <PropertyVal Name="InitialParent"></PropertyVal>
-  <PropertyVal Name="Underline">False</PropertyVal>
-  <PropertyVal Name="Italic">False</PropertyVal>
-  <PropertyVal Name="Bold">False</PropertyVal>
-  <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
-  <PropertyVal Name="TextFont">System</PropertyVal>
-  <PropertyVal Name="ButtonStyle">0</PropertyVal>
-  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
-  <PropertyVal Name="HelpTag"></PropertyVal>
-  <PropertyVal Name="Visible">True</PropertyVal>
-  <PropertyVal Name="Enabled">True</PropertyVal>
-  <PropertyVal Name="Cancel">False</PropertyVal>
-  <PropertyVal Name="Default">False</PropertyVal>
-  <PropertyVal Name="Caption">Roll Camera Left</PropertyVal>
-  <PropertyVal Name="TabStop">True</PropertyVal>
-  <PropertyVal Name="TabIndex">12</PropertyVal>
-  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="LockBottom">False</PropertyVal>
-  <PropertyVal Name="LockRight">False</PropertyVal>
-  <PropertyVal Name="LockTop">True</PropertyVal>
-  <PropertyVal Name="LockLeft">True</PropertyVal>
-  <PropertyVal Name="Height">22</PropertyVal>
-  <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">327</PropertyVal>
-  <PropertyVal Name="Left">20</PropertyVal>
-  <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
-  <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">cmdRollCameraLeft</PropertyVal>
+  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Left">20</PropertyVal>
+  <PropertyVal Name="Top">327</PropertyVal>
+  <PropertyVal Name="Width">109</PropertyVal>
+  <PropertyVal Name="Height">22</PropertyVal>
+  <PropertyVal Name="LockLeft">True</PropertyVal>
+  <PropertyVal Name="LockTop">True</PropertyVal>
+  <PropertyVal Name="LockRight">False</PropertyVal>
+  <PropertyVal Name="LockBottom">False</PropertyVal>
+  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="TabIndex">12</PropertyVal>
+  <PropertyVal Name="TabStop">True</PropertyVal>
+  <PropertyVal Name="Caption">Roll Camera Left</PropertyVal>
+  <PropertyVal Name="Default">False</PropertyVal>
+  <PropertyVal Name="Cancel">False</PropertyVal>
+  <PropertyVal Name="Enabled">True</PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="HelpTag"></PropertyVal>
+  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
+  <PropertyVal Name="ButtonStyle">0</PropertyVal>
+  <PropertyVal Name="TextFont">System</PropertyVal>
+  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
+  <PropertyVal Name="TextUnit">0</PropertyVal>
+  <PropertyVal Name="Bold">False</PropertyVal>
+  <PropertyVal Name="Italic">False</PropertyVal>
+  <PropertyVal Name="Underline">False</PropertyVal>
+  <PropertyVal Name="InitialParent"></PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>12</ControlIndex>
   <Locked>0</Locked>
  </Control>
  <Control>
   <ControlClass>PushButton</ControlClass>
   <ItemName>PushButton</ItemName>
-  <PropertyVal Name="InitialParent"></PropertyVal>
-  <PropertyVal Name="Underline">False</PropertyVal>
-  <PropertyVal Name="Italic">False</PropertyVal>
-  <PropertyVal Name="Bold">False</PropertyVal>
-  <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
-  <PropertyVal Name="TextFont">System</PropertyVal>
-  <PropertyVal Name="ButtonStyle">0</PropertyVal>
-  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
-  <PropertyVal Name="HelpTag"></PropertyVal>
-  <PropertyVal Name="Visible">True</PropertyVal>
-  <PropertyVal Name="Enabled">True</PropertyVal>
-  <PropertyVal Name="Cancel">False</PropertyVal>
-  <PropertyVal Name="Default">False</PropertyVal>
-  <PropertyVal Name="Caption">Roll Camera Right</PropertyVal>
-  <PropertyVal Name="TabStop">True</PropertyVal>
-  <PropertyVal Name="TabIndex">13</PropertyVal>
-  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="LockBottom">False</PropertyVal>
-  <PropertyVal Name="LockRight">False</PropertyVal>
-  <PropertyVal Name="LockTop">True</PropertyVal>
-  <PropertyVal Name="LockLeft">True</PropertyVal>
-  <PropertyVal Name="Height">22</PropertyVal>
-  <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">351</PropertyVal>
-  <PropertyVal Name="Left">20</PropertyVal>
-  <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
-  <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">cmdRollCameraRight</PropertyVal>
+  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Left">20</PropertyVal>
+  <PropertyVal Name="Top">351</PropertyVal>
+  <PropertyVal Name="Width">109</PropertyVal>
+  <PropertyVal Name="Height">22</PropertyVal>
+  <PropertyVal Name="LockLeft">True</PropertyVal>
+  <PropertyVal Name="LockTop">True</PropertyVal>
+  <PropertyVal Name="LockRight">False</PropertyVal>
+  <PropertyVal Name="LockBottom">False</PropertyVal>
+  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="TabIndex">13</PropertyVal>
+  <PropertyVal Name="TabStop">True</PropertyVal>
+  <PropertyVal Name="Caption">Roll Camera Right</PropertyVal>
+  <PropertyVal Name="Default">False</PropertyVal>
+  <PropertyVal Name="Cancel">False</PropertyVal>
+  <PropertyVal Name="Enabled">True</PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="HelpTag"></PropertyVal>
+  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
+  <PropertyVal Name="ButtonStyle">0</PropertyVal>
+  <PropertyVal Name="TextFont">System</PropertyVal>
+  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
+  <PropertyVal Name="TextUnit">0</PropertyVal>
+  <PropertyVal Name="Bold">False</PropertyVal>
+  <PropertyVal Name="Italic">False</PropertyVal>
+  <PropertyVal Name="Underline">False</PropertyVal>
+  <PropertyVal Name="InitialParent"></PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>13</ControlIndex>
   <Locked>0</Locked>
  </Control>
  <Control>
   <ControlClass>PushButton</ControlClass>
   <ItemName>PushButton</ItemName>
-  <PropertyVal Name="InitialParent"></PropertyVal>
-  <PropertyVal Name="Underline">False</PropertyVal>
-  <PropertyVal Name="Italic">False</PropertyVal>
-  <PropertyVal Name="Bold">False</PropertyVal>
-  <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
-  <PropertyVal Name="TextFont">System</PropertyVal>
-  <PropertyVal Name="ButtonStyle">0</PropertyVal>
-  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
-  <PropertyVal Name="HelpTag"></PropertyVal>
-  <PropertyVal Name="Visible">True</PropertyVal>
-  <PropertyVal Name="Enabled">True</PropertyVal>
-  <PropertyVal Name="Cancel">False</PropertyVal>
-  <PropertyVal Name="Default">False</PropertyVal>
-  <PropertyVal Name="Caption">ResetCamera</PropertyVal>
-  <PropertyVal Name="TabStop">True</PropertyVal>
-  <PropertyVal Name="TabIndex">14</PropertyVal>
-  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="LockBottom">False</PropertyVal>
-  <PropertyVal Name="LockRight">False</PropertyVal>
-  <PropertyVal Name="LockTop">True</PropertyVal>
-  <PropertyVal Name="LockLeft">True</PropertyVal>
-  <PropertyVal Name="Height">22</PropertyVal>
-  <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">14</PropertyVal>
-  <PropertyVal Name="Left">20</PropertyVal>
-  <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
-  <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">cmdResetCamera</PropertyVal>
+  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Left">20</PropertyVal>
+  <PropertyVal Name="Top">14</PropertyVal>
+  <PropertyVal Name="Width">109</PropertyVal>
+  <PropertyVal Name="Height">22</PropertyVal>
+  <PropertyVal Name="LockLeft">True</PropertyVal>
+  <PropertyVal Name="LockTop">True</PropertyVal>
+  <PropertyVal Name="LockRight">False</PropertyVal>
+  <PropertyVal Name="LockBottom">False</PropertyVal>
+  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="TabIndex">14</PropertyVal>
+  <PropertyVal Name="TabStop">True</PropertyVal>
+  <PropertyVal Name="Caption">ResetCamera</PropertyVal>
+  <PropertyVal Name="Default">False</PropertyVal>
+  <PropertyVal Name="Cancel">False</PropertyVal>
+  <PropertyVal Name="Enabled">True</PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="HelpTag"></PropertyVal>
+  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
+  <PropertyVal Name="ButtonStyle">0</PropertyVal>
+  <PropertyVal Name="TextFont">System</PropertyVal>
+  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
+  <PropertyVal Name="TextUnit">0</PropertyVal>
+  <PropertyVal Name="Bold">False</PropertyVal>
+  <PropertyVal Name="Italic">False</PropertyVal>
+  <PropertyVal Name="Underline">False</PropertyVal>
+  <PropertyVal Name="InitialParent"></PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>14</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -1432,16 +1432,22 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub actionSnapshot()</SourceLine>
    <SourceLine>Dim ss As Picture</SourceLine>
-   <SourceLine>'Dim f As FolderItem</SourceLine>
-   <SourceLine>'Dim dlg As new SaveAsDialog</SourceLine>
+   <SourceLine>Dim f As FolderItem</SourceLine>
+   <SourceLine>Dim dlg As new SaveAsDialog</SourceLine>
+   <SourceLine>Dim pngType As new FileType // PNG files</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Surface.MakeCurrent()</SourceLine>
    <SourceLine>ss = X3_Snapshot(0, 0, Surface.Width, Surface.Height)</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>'f = dlg.ShowModal</SourceLine>
-   <SourceLine>'if f &lt;&gt; nil then</SourceLine>
+   <SourceLine>pngType.Name = "Portable Network Graphics" </SourceLine>
+   <SourceLine>pngType.Extensions = ".png"</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>dlg.Filter = pngType</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>f = dlg.ShowModal()</SourceLine>
+   <SourceLine>if f &lt;&gt; nil then</SourceLine>
    <SourceLine>'ss.Save f, Picture.FormatPNG</SourceLine>
-   <SourceLine>'end if</SourceLine>
+   <SourceLine>end if</SourceLine>
    <SourceLine>End Sub</SourceLine>
   </ItemSource>
   <TextEncoding>134217984</TextEncoding>
