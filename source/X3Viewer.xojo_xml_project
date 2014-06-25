@@ -1346,6 +1346,7 @@
    <SourceLine>frmCamera.Show()</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>CurrentScene = io.LoadScene(x3File)</SourceLine>
+   <SourceLine>CurrentScene.SetViewport 0, 0, Surface.Width, Surface.Height</SourceLine>
    <SourceLine>Surface.Render</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>end if</SourceLine>
@@ -9928,9 +9929,9 @@
    <EditorCount>1</EditorCount>
    <Editor>
     <EditorIndex>0</EditorIndex>
-    <EditorLocation>X3Core.X3_SetCamera</EditorLocation>
+    <EditorLocation>frmMain.actionOpen</EditorLocation>
     <EditorPath></EditorPath>
-    <EditingPartID>1524205567</EditingPartID>
+    <EditingPartID>893575167</EditingPartID>
    </Editor>
    <SelectedTab>0</SelectedTab>
   </Editors>
