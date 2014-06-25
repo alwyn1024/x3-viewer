@@ -1446,7 +1446,7 @@
    <SourceLine></SourceLine>
    <SourceLine>f = dlg.ShowModal()</SourceLine>
    <SourceLine>if f &lt;&gt; nil then</SourceLine>
-   <SourceLine>'ss.Save f, Picture.FormatPNG</SourceLine>
+   <SourceLine>ss.Save f, Picture.SaveAsPNG</SourceLine>
    <SourceLine>end if</SourceLine>
    <SourceLine>End Sub</SourceLine>
   </ItemSource>
@@ -9702,6 +9702,7 @@
    <SourceLine>Dim i As Integer</SourceLine>
    <SourceLine>Dim j As Integer</SourceLine>
    <SourceLine>Dim heightMinOne As Integer</SourceLine>
+   <SourceLine>Dim widthMinOne As Integer</SourceLine>
    <SourceLine>Dim rgbMain As RGBSurface</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>OpenGL.glReadPixels(x, y, width, height, OpenGL.GL_RGBA, OpenGL.GL_UNSIGNED_BYTE, pixelData)</SourceLine>
@@ -9711,11 +9712,12 @@
    <SourceLine>rgbMain = result.RGBSurface</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>heightMinOne = height - 1</SourceLine>
+   <SourceLine>widthMinOne = width - 1</SourceLine>
    <SourceLine>j = 0</SourceLine>
    <SourceLine>while j &lt; height</SourceLine>
    <SourceLine>i = 0</SourceLine>
    <SourceLine>while i &lt; width</SourceLine>
-   <SourceLine>rgbMain.Pixel(i, j) = pixelData.ColorValue(((heightMinOne - j) * width + i) * 4, 32)</SourceLine>
+   <SourceLine>rgbMain.Pixel(widthMinOne - i, j) = pixelData.ColorValue(((heightMinOne - j) * width + i) * 4, 32)</SourceLine>
    <SourceLine>i = i + 1</SourceLine>
    <SourceLine>wend</SourceLine>
    <SourceLine>j = j + 1</SourceLine>
@@ -9794,9 +9796,9 @@
    <EditorCount>1</EditorCount>
    <Editor>
     <EditorIndex>0</EditorIndex>
-    <EditorLocation>frmMain.actionSnapshot</EditorLocation>
+    <EditorLocation>X3Core.X3_Snapshot</EditorLocation>
     <EditorPath></EditorPath>
-    <EditingPartID>893575167</EditingPartID>
+    <EditingPartID>1524205567</EditingPartID>
    </Editor>
    <SelectedTab>0</SelectedTab>
   </Editors>
