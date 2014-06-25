@@ -1798,7 +1798,7 @@
    <ItemSource>
     <TextEncoding>134217984</TextEncoding>
     <SourceLine>Sub Resized()</SourceLine>
-    <SourceLine>X3_SetPerspective Surface, 60.0, 0.01</SourceLine>
+    <SourceLine>X3_SetPerspective 0, 0, Surface.Width, Surface.Height, 60.0, 0.01</SourceLine>
     <SourceLine></SourceLine>
     <SourceLine>End Sub</SourceLine>
    </ItemSource>
@@ -9220,16 +9220,16 @@
   <Visible>1</Visible>
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Sub X3_SetPerspective(Surface As OpenGLSurface, fov As Double = 60.0, zNear As Double = 1, zFar As Double = 100)</SourceLine>
+   <SourceLine>Sub X3_SetPerspective(x As Double, y As Double, width As Double, height As Double, fov As Double = 60.0, zNear As Double = 1, zFar As Double = 100)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>OpenGL.glViewport 0, 0, Surface.Width, Surface.Height ' set the viewport rectangle</SourceLine>
+   <SourceLine>OpenGL.glViewport x, y, width, height ' set the viewport rectangle</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' set up the perspective projection settings</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>OpenGL.glMatrixMode OpenGL.GL_PROJECTION ' select the projection matrix</SourceLine>
    <SourceLine>OpenGL.glLoadIdentity ' clear the projection matrix</SourceLine>
-   <SourceLine>OpenGL.gluPerspective fov, Surface.Width / Surface.Height, zNear, zFar ' set up our own custom projection matrix</SourceLine>
+   <SourceLine>OpenGL.gluPerspective fov, width / height, zNear, zFar ' set up our own custom projection matrix</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' select and reset the modelview matrix</SourceLine>
    <SourceLine></SourceLine>
@@ -9243,7 +9243,7 @@
   <AliasName></AliasName>
   <ItemFlags>0</ItemFlags>
   <IsShared>0</IsShared>
-  <ItemParams>Surface As OpenGLSurface, fov As Double = 60.0, zNear As Double = 1, zFar As Double = 100</ItemParams>
+  <ItemParams>x As Double, y As Double, width As Double, height As Double, fov As Double = 60.0, zNear As Double = 1, zFar As Double = 100</ItemParams>
   <ItemResult></ItemResult>
  </Method>
  <Method>
@@ -9894,9 +9894,9 @@
    <EditorCount>1</EditorCount>
    <Editor>
     <EditorIndex>0</EditorIndex>
-    <EditorLocation>X3Core.X3Camera.ViewportHeight</EditorLocation>
+    <EditorLocation>frmMain.Controls.Surface.Resized</EditorLocation>
     <EditorPath></EditorPath>
-    <EditingPartID>467773439</EditingPartID>
+    <EditingPartID>893575167</EditingPartID>
    </Editor>
    <SelectedTab>0</SelectedTab>
   </Editors>
