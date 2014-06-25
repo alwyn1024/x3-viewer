@@ -1798,7 +1798,11 @@
    <ItemSource>
     <TextEncoding>134217984</TextEncoding>
     <SourceLine>Sub Resized()</SourceLine>
+    <SourceLine>if CurrentScene &lt;&gt; nil then</SourceLine>
+    <SourceLine></SourceLine>
+    <SourceLine>else</SourceLine>
     <SourceLine>X3_SetPerspective 0, 0, Surface.Width, Surface.Height, 60.0, 0.01</SourceLine>
+    <SourceLine>end if</SourceLine>
     <SourceLine></SourceLine>
     <SourceLine>End Sub</SourceLine>
    </ItemSource>
@@ -5457,6 +5461,34 @@
   <ItemFlags>0</ItemFlags>
   <IsShared>0</IsShared>
   <ItemParams></ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>SetViewport</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub SetViewport(x As Double, y As Double, width As Double, height As Double)</SourceLine>
+   <SourceLine>Dim i as Integer</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' loop through all cameras and configure them with the given viewport settings</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>for i = 0 to Camera.Ubound</SourceLine>
+   <SourceLine>Camera(i).ViewportX = x</SourceLine>
+   <SourceLine>Camera(i).ViewportY = y</SourceLine>
+   <SourceLine>Camera(i).ViewportWidth = width</SourceLine>
+   <SourceLine>Camera(i).ViewportHeight = height</SourceLine>
+   <SourceLine>next i </SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>x As Double, y As Double, width As Double, height As Double</ItemParams>
   <ItemResult></ItemResult>
  </Method>
  <Property>
@@ -9800,7 +9832,6 @@
    <SourceLine>Dim i As Integer</SourceLine>
    <SourceLine>Dim j As Integer</SourceLine>
    <SourceLine>Dim heightMinOne As Integer</SourceLine>
-   <SourceLine>Dim widthMinOne As Integer</SourceLine>
    <SourceLine>Dim rgbMain As RGBSurface</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>OpenGL.glReadPixels(x, y, width, height, OpenGL.GL_RGBA, OpenGL.GL_UNSIGNED_BYTE, pixelData)</SourceLine>
@@ -9810,12 +9841,11 @@
    <SourceLine>rgbMain = result.RGBSurface</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>heightMinOne = height - 1</SourceLine>
-   <SourceLine>widthMinOne = width - 1</SourceLine>
    <SourceLine>j = 0</SourceLine>
    <SourceLine>while j &lt; height</SourceLine>
    <SourceLine>i = 0</SourceLine>
    <SourceLine>while i &lt; width</SourceLine>
-   <SourceLine>rgbMain.Pixel(widthMinOne - i, j) = pixelData.ColorValue(((heightMinOne - j) * width + i) * 4, 32)</SourceLine>
+   <SourceLine>rgbMain.Pixel(i, j) = pixelData.ColorValue(((heightMinOne - j) * width + i) * 4, 32)</SourceLine>
    <SourceLine>i = i + 1</SourceLine>
    <SourceLine>wend</SourceLine>
    <SourceLine>j = j + 1</SourceLine>
@@ -9894,9 +9924,9 @@
    <EditorCount>1</EditorCount>
    <Editor>
     <EditorIndex>0</EditorIndex>
-    <EditorLocation>frmMain.Controls.Surface.Resized</EditorLocation>
+    <EditorLocation>X3Core.X3_Snapshot</EditorLocation>
     <EditorPath></EditorPath>
-    <EditingPartID>893575167</EditingPartID>
+    <EditingPartID>1524205567</EditingPartID>
    </Editor>
    <SelectedTab>0</SelectedTab>
   </Editors>
