@@ -2967,11 +2967,11 @@
   <Visible>1</Visible>
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
-   <SourceLine>FieldOfView As Double</SourceLine>
+   <SourceLine>FieldOfView As Double = 45.0</SourceLine>
    <SourceLine></SourceLine>
   </ItemSource>
   <TextEncoding>134217984</TextEncoding>
-  <ItemDeclaration>FieldOfView As Double = 60.0</ItemDeclaration>
+  <ItemDeclaration>FieldOfView As Double = 45.0</ItemDeclaration>
   <ItemFlags>0</ItemFlags>
   <IsShared>0</IsShared>
  </Property>
@@ -10632,7 +10632,7 @@
    <EditorCount>1</EditorCount>
    <Editor>
     <EditorIndex>0</EditorIndex>
-    <EditorLocation>X3Core.X3Camera.zNear</EditorLocation>
+    <EditorLocation>X3Core.X3Camera.FieldOfView</EditorLocation>
     <EditorPath></EditorPath>
     <EditingPartID>467773439</EditingPartID>
    </Editor>
