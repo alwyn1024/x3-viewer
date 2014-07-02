@@ -812,6 +812,44 @@
    </ItemSource>
   </HookInstance>
  </ControlBehavior>
+ <ControlBehavior>
+  <Superclass>PushButton</Superclass>
+  <HookInstance>
+   <ItemName>Action</ItemName>
+   <Compatibility></Compatibility>
+   <Visible>1</Visible>
+   <ItemSource>
+    <TextEncoding>134217984</TextEncoding>
+    <SourceLine>Sub Action()</SourceLine>
+    <SourceLine>if frmMain.CurrentScene &lt;&gt; nil then</SourceLine>
+    <SourceLine>frmMain.CurrentScene.TiltDollyUp 2 ' degrees</SourceLine>
+    <SourceLine>frmMain.Surface.Render</SourceLine>
+    <SourceLine>end if</SourceLine>
+    <SourceLine></SourceLine>
+    <SourceLine></SourceLine>
+    <SourceLine>End Sub</SourceLine>
+   </ItemSource>
+  </HookInstance>
+ </ControlBehavior>
+ <ControlBehavior>
+  <Superclass>PushButton</Superclass>
+  <HookInstance>
+   <ItemName>Action</ItemName>
+   <Compatibility></Compatibility>
+   <Visible>1</Visible>
+   <ItemSource>
+    <TextEncoding>134217984</TextEncoding>
+    <SourceLine>Sub Action()</SourceLine>
+    <SourceLine>if frmMain.CurrentScene &lt;&gt; nil then</SourceLine>
+    <SourceLine>frmMain.CurrentScene.TiltDollyDown 2 ' degrees</SourceLine>
+    <SourceLine>frmMain.Surface.Render</SourceLine>
+    <SourceLine>end if</SourceLine>
+    <SourceLine></SourceLine>
+    <SourceLine></SourceLine>
+    <SourceLine>End Sub</SourceLine>
+   </ItemSource>
+  </HookInstance>
+ </ControlBehavior>
  <Control>
   <ControlClass>PushButton</ControlClass>
   <ItemName>PushButton</ItemName>
@@ -1382,7 +1420,7 @@
   <PropertyVal Name="LockLeft">True</PropertyVal>
   <PropertyVal Name="Height">20</PropertyVal>
   <PropertyVal Name="Width">100</PropertyVal>
-  <PropertyVal Name="Top">15</PropertyVal>
+  <PropertyVal Name="Top">112</PropertyVal>
   <PropertyVal Name="Left">141</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
   <PropertyVal Name="Super">Label</PropertyVal>
@@ -1429,7 +1467,7 @@
   <PropertyVal Name="LockLeft">True</PropertyVal>
   <PropertyVal Name="Height">22</PropertyVal>
   <PropertyVal Name="Width">80</PropertyVal>
-  <PropertyVal Name="Top">39</PropertyVal>
+  <PropertyVal Name="Top">136</PropertyVal>
   <PropertyVal Name="Left">161</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
   <PropertyVal Name="Super">TextField</PropertyVal>
@@ -1468,7 +1506,7 @@
   <PropertyVal Name="LockLeft">True</PropertyVal>
   <PropertyVal Name="Height">20</PropertyVal>
   <PropertyVal Name="Width">100</PropertyVal>
-  <PropertyVal Name="Top">73</PropertyVal>
+  <PropertyVal Name="Top">170</PropertyVal>
   <PropertyVal Name="Left">141</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
   <PropertyVal Name="Super">Label</PropertyVal>
@@ -1515,7 +1553,7 @@
   <PropertyVal Name="LockLeft">True</PropertyVal>
   <PropertyVal Name="Height">22</PropertyVal>
   <PropertyVal Name="Width">80</PropertyVal>
-  <PropertyVal Name="Top">97</PropertyVal>
+  <PropertyVal Name="Top">194</PropertyVal>
   <PropertyVal Name="Left">161</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
   <PropertyVal Name="Super">TextField</PropertyVal>
@@ -1554,7 +1592,7 @@
   <PropertyVal Name="LockLeft">True</PropertyVal>
   <PropertyVal Name="Height">20</PropertyVal>
   <PropertyVal Name="Width">100</PropertyVal>
-  <PropertyVal Name="Top">131</PropertyVal>
+  <PropertyVal Name="Top">228</PropertyVal>
   <PropertyVal Name="Left">141</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
   <PropertyVal Name="Super">Label</PropertyVal>
@@ -1601,13 +1639,85 @@
   <PropertyVal Name="LockLeft">True</PropertyVal>
   <PropertyVal Name="Height">22</PropertyVal>
   <PropertyVal Name="Width">80</PropertyVal>
-  <PropertyVal Name="Top">155</PropertyVal>
+  <PropertyVal Name="Top">252</PropertyVal>
   <PropertyVal Name="Left">161</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
   <PropertyVal Name="Super">TextField</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">txtZFar</PropertyVal>
   <ControlIndex>20</ControlIndex>
+  <Locked>0</Locked>
+ </Control>
+ <Control>
+  <ControlClass>PushButton</ControlClass>
+  <ItemName>PushButton</ItemName>
+  <PropertyVal Name="InitialParent"></PropertyVal>
+  <PropertyVal Name="Underline">False</PropertyVal>
+  <PropertyVal Name="Italic">False</PropertyVal>
+  <PropertyVal Name="Bold">False</PropertyVal>
+  <PropertyVal Name="TextUnit">0</PropertyVal>
+  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
+  <PropertyVal Name="TextFont">System</PropertyVal>
+  <PropertyVal Name="ButtonStyle">0</PropertyVal>
+  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
+  <PropertyVal Name="HelpTag"></PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="Enabled">True</PropertyVal>
+  <PropertyVal Name="Cancel">False</PropertyVal>
+  <PropertyVal Name="Default">False</PropertyVal>
+  <PropertyVal Name="Caption">Tilt Dolly Up</PropertyVal>
+  <PropertyVal Name="TabStop">True</PropertyVal>
+  <PropertyVal Name="TabIndex">21</PropertyVal>
+  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="LockBottom">False</PropertyVal>
+  <PropertyVal Name="LockRight">False</PropertyVal>
+  <PropertyVal Name="LockTop">True</PropertyVal>
+  <PropertyVal Name="LockLeft">True</PropertyVal>
+  <PropertyVal Name="Height">22</PropertyVal>
+  <PropertyVal Name="Width">109</PropertyVal>
+  <PropertyVal Name="Top">14</PropertyVal>
+  <PropertyVal Name="Left">141</PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
+  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Name">cmdTiltDollyUp</PropertyVal>
+  <ControlIndex>21</ControlIndex>
+  <Locked>0</Locked>
+ </Control>
+ <Control>
+  <ControlClass>PushButton</ControlClass>
+  <ItemName>PushButton</ItemName>
+  <PropertyVal Name="InitialParent"></PropertyVal>
+  <PropertyVal Name="Underline">False</PropertyVal>
+  <PropertyVal Name="Italic">False</PropertyVal>
+  <PropertyVal Name="Bold">False</PropertyVal>
+  <PropertyVal Name="TextUnit">0</PropertyVal>
+  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
+  <PropertyVal Name="TextFont">System</PropertyVal>
+  <PropertyVal Name="ButtonStyle">0</PropertyVal>
+  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
+  <PropertyVal Name="HelpTag"></PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="Enabled">True</PropertyVal>
+  <PropertyVal Name="Cancel">False</PropertyVal>
+  <PropertyVal Name="Default">False</PropertyVal>
+  <PropertyVal Name="Caption">Tilt Dolly Down</PropertyVal>
+  <PropertyVal Name="TabStop">True</PropertyVal>
+  <PropertyVal Name="TabIndex">22</PropertyVal>
+  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="LockBottom">False</PropertyVal>
+  <PropertyVal Name="LockRight">False</PropertyVal>
+  <PropertyVal Name="LockTop">True</PropertyVal>
+  <PropertyVal Name="LockLeft">True</PropertyVal>
+  <PropertyVal Name="Height">22</PropertyVal>
+  <PropertyVal Name="Width">109</PropertyVal>
+  <PropertyVal Name="Top">38</PropertyVal>
+  <PropertyVal Name="Left">141</PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
+  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Name">cmdTiltDollyDown</PropertyVal>
+  <ControlIndex>22</ControlIndex>
   <Locked>0</Locked>
  </Control>
 </block>
@@ -1858,10 +1968,10 @@
    <SourceLine>CurrentScene.TruckRight 0.2</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>case 119 // w</SourceLine>
-   <SourceLine>// TODO:  CurrentScene.TiltDollyUp 1.5</SourceLine>
+   <SourceLine>CurrentScene.TiltDollyUp 1.5</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>case 115 // s</SourceLine>
-   <SourceLine>// TODO:  CurrentScene.TiltDollyDown 1.5</SourceLine>
+   <SourceLine>CurrentScene.TiltDollyDown 1.5</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>case else</SourceLine>
    <SourceLine>MsgBox Str(Asc(Key))</SourceLine>
@@ -2759,6 +2869,54 @@
   <ItemFlags>0</ItemFlags>
   <IsShared>0</IsShared>
   <ItemParams></ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>TiltDollyDown</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub TiltDollyDown(angle As Double, Optional lockCamera As Boolean = True)</SourceLine>
+   <SourceLine>Dim rightVec As new X3Core.X3Vector(1, 0, 0) ' right vector of dolly</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>rightVec.Rotate(DollyRotation) ' apply dolly rotation to (0, 0, 1) to determine current right vector</SourceLine>
+   <SourceLine>rightVec.Normalize ' normalize the forward vector</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' tilt the dolly around the right vector</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>DollyRotation.RotateAroundAxis(rightVec, angle)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' is the camera locked to the rotation of the dolly?</SourceLine>
+   <SourceLine>if lockCamera then</SourceLine>
+   <SourceLine>' yes, so we need to rotate the camera as well</SourceLine>
+   <SourceLine>CameraRotation.RotateAroundAxis(rightVec, angle)</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>angle As Double, Optional lockCamera As Boolean = True</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>TiltDollyUp</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub TiltDollyUp(angle As Double, Optional lockCamera As Boolean = True)</SourceLine>
+   <SourceLine>TiltDollyDown(-angle, lockCamera) ' apply action with the inverse method</SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>angle As Double, Optional lockCamera As Boolean = True</ItemParams>
   <ItemResult></ItemResult>
  </Method>
  <Property>
@@ -5955,6 +6113,52 @@
   <ItemFlags>0</ItemFlags>
   <IsShared>0</IsShared>
   <ItemParams>x As Double, y As Double, width As Double, height As Double</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>TiltDollyDown</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub TiltDollyDown(angle As Double)</SourceLine>
+   <SourceLine>if mActiveCamera &lt;&gt; nil then</SourceLine>
+   <SourceLine>mActiveCamera.TiltDollyDown(angle)</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>angle As Double</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>TiltDollyUp</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub TiltDollyUp(angle As Double)</SourceLine>
+   <SourceLine>if mActiveCamera &lt;&gt; nil then</SourceLine>
+   <SourceLine>mActiveCamera.TiltDollyUp(angle)</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>angle As Double</ItemParams>
   <ItemResult></ItemResult>
  </Method>
  <Property>
@@ -10428,9 +10632,9 @@
    <EditorCount>1</EditorCount>
    <Editor>
     <EditorIndex>0</EditorIndex>
-    <EditorLocation>frmCamera.KeyDown</EditorLocation>
+    <EditorLocation>frmMain.handleKey</EditorLocation>
     <EditorPath></EditorPath>
-    <EditingPartID>2112952319</EditingPartID>
+    <EditingPartID>893575167</EditingPartID>
    </Editor>
    <SelectedTab>0</SelectedTab>
   </Editors>
