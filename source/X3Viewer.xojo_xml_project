@@ -2981,11 +2981,11 @@
   <Visible>1</Visible>
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
-   <SourceLine>zNear As Double</SourceLine>
+   <SourceLine>zNear As Double = 0.01</SourceLine>
    <SourceLine></SourceLine>
   </ItemSource>
   <TextEncoding>134217984</TextEncoding>
-  <ItemDeclaration>zNear As Double = 1.0</ItemDeclaration>
+  <ItemDeclaration>zNear As Double = 0.01</ItemDeclaration>
   <ItemFlags>0</ItemFlags>
   <IsShared>0</IsShared>
  </Property>
@@ -10632,9 +10632,9 @@
    <EditorCount>1</EditorCount>
    <Editor>
     <EditorIndex>0</EditorIndex>
-    <EditorLocation>frmMain.handleKey</EditorLocation>
+    <EditorLocation>X3Core.X3Camera.zNear</EditorLocation>
     <EditorPath></EditorPath>
-    <EditingPartID>893575167</EditingPartID>
+    <EditingPartID>467773439</EditingPartID>
    </Editor>
    <SelectedTab>0</SelectedTab>
   </Editors>
