@@ -194,7 +194,20 @@
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub Open()</SourceLine>
+   <SourceLine>Dim i As Integer</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>if frmMain.CurrentScene &lt;&gt; nil then</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>// populate cameras</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>comCamera.DeleteAllRows</SourceLine>
+   <SourceLine>for i = 0 to frmMain.CurrentScene.Camera.Ubound</SourceLine>
+   <SourceLine>comCamera.AddRow "Camera " + Str(i + 1)</SourceLine>
+   <SourceLine>next i </SourceLine>
+   <SourceLine>comCamera.ListIndex = frmMain.CurrentScene.CameraIndex</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>// set active camera fields</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>txtFOV.Text = X3_Str(frmMain.CurrentScene.ActiveCamera.FieldOfView)</SourceLine>
    <SourceLine>txtZNear.Text = X3_Str(frmMain.CurrentScene.ActiveCamera.zNear)</SourceLine>
    <SourceLine>txtZFar.Text = X3_Str(frmMain.CurrentScene.ActiveCamera.zFar)</SourceLine>
@@ -237,7 +250,7 @@
  <PropertyVal Name="MaxWidth">32000</PropertyVal>
  <PropertyVal Name="MinHeight">64</PropertyVal>
  <PropertyVal Name="MinWidth">64</PropertyVal>
- <PropertyVal Name="Height">393</PropertyVal>
+ <PropertyVal Name="Height">380</PropertyVal>
  <PropertyVal Name="Width">269</PropertyVal>
  <PropertyVal Name="Placement"><Hex bytes="1">30</Hex></PropertyVal>
  <ViewBehavior>
@@ -850,6 +863,24 @@
    </ItemSource>
   </HookInstance>
  </ControlBehavior>
+ <ControlBehavior>
+  <Superclass>PopupMenu</Superclass>
+  <HookInstance>
+   <ItemName>Change</ItemName>
+   <Compatibility></Compatibility>
+   <Visible>1</Visible>
+   <ItemSource>
+    <TextEncoding>134217984</TextEncoding>
+    <SourceLine>Sub Change()</SourceLine>
+    <SourceLine>if frmMain.CurrentScene &lt;&gt; nil then</SourceLine>
+    <SourceLine>frmMain.CurrentScene.CameraIndex = Me.ListIndex</SourceLine>
+    <SourceLine>frmMain.Surface.Render</SourceLine>
+    <SourceLine>end if</SourceLine>
+    <SourceLine></SourceLine>
+    <SourceLine>End Sub</SourceLine>
+   </ItemSource>
+  </HookInstance>
+ </ControlBehavior>
  <Control>
   <ControlClass>PushButton</ControlClass>
   <ItemName>PushButton</ItemName>
@@ -877,12 +908,12 @@
   <PropertyVal Name="LockLeft">True</PropertyVal>
   <PropertyVal Name="Height">22</PropertyVal>
   <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">39</PropertyVal>
+  <PropertyVal Name="Top">73</PropertyVal>
   <PropertyVal Name="Left">20</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">cmdDollyIn</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>0</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -913,12 +944,12 @@
   <PropertyVal Name="LockLeft">True</PropertyVal>
   <PropertyVal Name="Height">22</PropertyVal>
   <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">63</PropertyVal>
+  <PropertyVal Name="Top">97</PropertyVal>
   <PropertyVal Name="Left">20</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">cmdDollyOut</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>1</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -949,12 +980,12 @@
   <PropertyVal Name="LockLeft">True</PropertyVal>
   <PropertyVal Name="Height">22</PropertyVal>
   <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">87</PropertyVal>
+  <PropertyVal Name="Top">121</PropertyVal>
   <PropertyVal Name="Left">20</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">cmdPedestalUp</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>2</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -985,12 +1016,12 @@
   <PropertyVal Name="LockLeft">True</PropertyVal>
   <PropertyVal Name="Height">22</PropertyVal>
   <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">111</PropertyVal>
+  <PropertyVal Name="Top">145</PropertyVal>
   <PropertyVal Name="Left">20</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">cmdPedestalDown</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>3</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -1021,12 +1052,12 @@
   <PropertyVal Name="LockLeft">True</PropertyVal>
   <PropertyVal Name="Height">22</PropertyVal>
   <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">135</PropertyVal>
+  <PropertyVal Name="Top">169</PropertyVal>
   <PropertyVal Name="Left">20</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">cmdTruckLeft</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>4</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -1057,12 +1088,12 @@
   <PropertyVal Name="LockLeft">True</PropertyVal>
   <PropertyVal Name="Height">22</PropertyVal>
   <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">159</PropertyVal>
+  <PropertyVal Name="Top">193</PropertyVal>
   <PropertyVal Name="Left">20</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">cmdTruckRight</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>5</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -1093,12 +1124,12 @@
   <PropertyVal Name="LockLeft">True</PropertyVal>
   <PropertyVal Name="Height">22</PropertyVal>
   <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">183</PropertyVal>
+  <PropertyVal Name="Top">217</PropertyVal>
   <PropertyVal Name="Left">20</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">cmdPanLeft</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>6</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -1129,12 +1160,12 @@
   <PropertyVal Name="LockLeft">True</PropertyVal>
   <PropertyVal Name="Height">22</PropertyVal>
   <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">207</PropertyVal>
+  <PropertyVal Name="Top">241</PropertyVal>
   <PropertyVal Name="Left">20</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">cmdPanRight</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>7</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -1165,12 +1196,12 @@
   <PropertyVal Name="LockLeft">True</PropertyVal>
   <PropertyVal Name="Height">22</PropertyVal>
   <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">231</PropertyVal>
+  <PropertyVal Name="Top">265</PropertyVal>
   <PropertyVal Name="Left">20</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">cmdTurnDollyLeft</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>8</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -1201,12 +1232,12 @@
   <PropertyVal Name="LockLeft">True</PropertyVal>
   <PropertyVal Name="Height">22</PropertyVal>
   <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">255</PropertyVal>
+  <PropertyVal Name="Top">289</PropertyVal>
   <PropertyVal Name="Left">20</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">cmdTurnDollyRight</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>9</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -1237,12 +1268,12 @@
   <PropertyVal Name="LockLeft">True</PropertyVal>
   <PropertyVal Name="Height">22</PropertyVal>
   <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">279</PropertyVal>
+  <PropertyVal Name="Top">314</PropertyVal>
   <PropertyVal Name="Left">20</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">cmdTiltCameraUp</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>10</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -1273,12 +1304,12 @@
   <PropertyVal Name="LockLeft">True</PropertyVal>
   <PropertyVal Name="Height">22</PropertyVal>
   <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">303</PropertyVal>
+  <PropertyVal Name="Top">338</PropertyVal>
   <PropertyVal Name="Left">20</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">cmdTiltCameraDown</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>11</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -1309,12 +1340,12 @@
   <PropertyVal Name="LockLeft">True</PropertyVal>
   <PropertyVal Name="Height">22</PropertyVal>
   <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">327</PropertyVal>
-  <PropertyVal Name="Left">20</PropertyVal>
+  <PropertyVal Name="Top">48</PropertyVal>
+  <PropertyVal Name="Left">140</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">cmdRollCameraLeft</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>12</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -1345,12 +1376,12 @@
   <PropertyVal Name="LockLeft">True</PropertyVal>
   <PropertyVal Name="Height">22</PropertyVal>
   <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">351</PropertyVal>
-  <PropertyVal Name="Left">20</PropertyVal>
+  <PropertyVal Name="Top">72</PropertyVal>
+  <PropertyVal Name="Left">140</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">cmdRollCameraRight</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>13</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -1381,12 +1412,12 @@
   <PropertyVal Name="LockLeft">True</PropertyVal>
   <PropertyVal Name="Height">22</PropertyVal>
   <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">14</PropertyVal>
+  <PropertyVal Name="Top">48</PropertyVal>
   <PropertyVal Name="Left">20</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">cmdResetCamera</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>14</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -1420,13 +1451,12 @@
   <PropertyVal Name="LockLeft">True</PropertyVal>
   <PropertyVal Name="Height">20</PropertyVal>
   <PropertyVal Name="Width">100</PropertyVal>
-  <PropertyVal Name="Top">112</PropertyVal>
+  <PropertyVal Name="Top">145</PropertyVal>
   <PropertyVal Name="Left">141</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">Label</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">lblFOV</PropertyVal>
-  <PropertyVal Name="TabStop">True</PropertyVal>
-  <PropertyVal Name="Super">Label</PropertyVal>
   <ControlIndex>15</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -1468,12 +1498,12 @@
   <PropertyVal Name="LockLeft">True</PropertyVal>
   <PropertyVal Name="Height">22</PropertyVal>
   <PropertyVal Name="Width">80</PropertyVal>
-  <PropertyVal Name="Top">136</PropertyVal>
+  <PropertyVal Name="Top">169</PropertyVal>
   <PropertyVal Name="Left">161</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">TextField</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">txtFOV</PropertyVal>
-  <PropertyVal Name="Super">TextField</PropertyVal>
   <ControlIndex>16</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -1507,13 +1537,12 @@
   <PropertyVal Name="LockLeft">True</PropertyVal>
   <PropertyVal Name="Height">20</PropertyVal>
   <PropertyVal Name="Width">100</PropertyVal>
-  <PropertyVal Name="Top">170</PropertyVal>
+  <PropertyVal Name="Top">203</PropertyVal>
   <PropertyVal Name="Left">141</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">Label</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">lblZNear</PropertyVal>
-  <PropertyVal Name="TabStop">True</PropertyVal>
-  <PropertyVal Name="Super">Label</PropertyVal>
   <ControlIndex>17</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -1555,12 +1584,12 @@
   <PropertyVal Name="LockLeft">True</PropertyVal>
   <PropertyVal Name="Height">22</PropertyVal>
   <PropertyVal Name="Width">80</PropertyVal>
-  <PropertyVal Name="Top">194</PropertyVal>
+  <PropertyVal Name="Top">227</PropertyVal>
   <PropertyVal Name="Left">161</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">TextField</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">txtZNear</PropertyVal>
-  <PropertyVal Name="Super">TextField</PropertyVal>
   <ControlIndex>18</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -1594,13 +1623,12 @@
   <PropertyVal Name="LockLeft">True</PropertyVal>
   <PropertyVal Name="Height">20</PropertyVal>
   <PropertyVal Name="Width">100</PropertyVal>
-  <PropertyVal Name="Top">228</PropertyVal>
+  <PropertyVal Name="Top">261</PropertyVal>
   <PropertyVal Name="Left">141</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">Label</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">lblZFar</PropertyVal>
-  <PropertyVal Name="TabStop">True</PropertyVal>
-  <PropertyVal Name="Super">Label</PropertyVal>
   <ControlIndex>19</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -1642,12 +1670,12 @@
   <PropertyVal Name="LockLeft">True</PropertyVal>
   <PropertyVal Name="Height">22</PropertyVal>
   <PropertyVal Name="Width">80</PropertyVal>
-  <PropertyVal Name="Top">252</PropertyVal>
+  <PropertyVal Name="Top">285</PropertyVal>
   <PropertyVal Name="Left">161</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">TextField</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">txtZFar</PropertyVal>
-  <PropertyVal Name="Super">TextField</PropertyVal>
   <ControlIndex>20</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -1678,12 +1706,12 @@
   <PropertyVal Name="LockLeft">True</PropertyVal>
   <PropertyVal Name="Height">22</PropertyVal>
   <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">14</PropertyVal>
-  <PropertyVal Name="Left">141</PropertyVal>
+  <PropertyVal Name="Top">96</PropertyVal>
+  <PropertyVal Name="Left">140</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">cmdTiltDollyUp</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>21</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -1714,13 +1742,49 @@
   <PropertyVal Name="LockLeft">True</PropertyVal>
   <PropertyVal Name="Height">22</PropertyVal>
   <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">38</PropertyVal>
-  <PropertyVal Name="Left">141</PropertyVal>
+  <PropertyVal Name="Top">120</PropertyVal>
+  <PropertyVal Name="Left">140</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">cmdTiltDollyDown</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>22</ControlIndex>
+  <Locked>0</Locked>
+ </Control>
+ <Control>
+  <ControlClass>PopupMenu</ControlClass>
+  <ItemName>PopupMenu</ItemName>
+  <PropertyVal Name="InitialParent"></PropertyVal>
+  <PropertyVal Name="DataField"></PropertyVal>
+  <PropertyVal Name="DataSource"></PropertyVal>
+  <PropertyVal Name="Underline">False</PropertyVal>
+  <PropertyVal Name="Italic">False</PropertyVal>
+  <PropertyVal Name="Bold">False</PropertyVal>
+  <PropertyVal Name="TextUnit">0</PropertyVal>
+  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
+  <PropertyVal Name="TextFont">System</PropertyVal>
+  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
+  <PropertyVal Name="HelpTag"></PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="ListIndex"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="InitialValue"></PropertyVal>
+  <PropertyVal Name="Enabled">True</PropertyVal>
+  <PropertyVal Name="TabStop">True</PropertyVal>
+  <PropertyVal Name="TabIndex">23</PropertyVal>
+  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="LockBottom">False</PropertyVal>
+  <PropertyVal Name="LockRight">False</PropertyVal>
+  <PropertyVal Name="LockTop">True</PropertyVal>
+  <PropertyVal Name="LockLeft">True</PropertyVal>
+  <PropertyVal Name="Height">22</PropertyVal>
+  <PropertyVal Name="Width">229</PropertyVal>
+  <PropertyVal Name="Top">14</PropertyVal>
+  <PropertyVal Name="Left">20</PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">PopupMenu</PropertyVal>
+  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Name">comCamera</PropertyVal>
+  <ControlIndex>23</ControlIndex>
   <Locked>0</Locked>
  </Control>
 </block>
@@ -10486,9 +10550,9 @@
    <EditorCount>1</EditorCount>
    <Editor>
     <EditorIndex>0</EditorIndex>
-    <EditorLocation>X3Core.X3IO.skipComma</EditorLocation>
+    <EditorLocation>frmCamera.Change</EditorLocation>
     <EditorPath></EditorPath>
-    <EditingPartID>1421578239</EditingPartID>
+    <EditingPartID>2112952319</EditingPartID>
    </Editor>
    <SelectedTab>0</SelectedTab>
   </Editors>
