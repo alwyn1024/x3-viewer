@@ -7461,27 +7461,15 @@
    <SourceLine></SourceLine>
    <SourceLine>result = matchDouble(mp, pos, tmpR)</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>skipWhitespace mp, pos</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>pos = pos + 1 ' skip past comma</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>skipWhitespace mp, pos</SourceLine>
+   <SourceLine>skipComma mp, pos</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>result = matchDouble(mp, pos, tmpG)</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>skipWhitespace mp, pos</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>pos = pos + 1 ' skip past comma</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>skipWhitespace mp, pos</SourceLine>
+   <SourceLine>skipComma mp, pos</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>result = matchDouble(mp, pos, tmpB)</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>skipWhitespace mp, pos</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>pos = pos + 1 ' skip past comma</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>skipWhitespace mp, pos</SourceLine>
+   <SourceLine>skipComma mp, pos</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>result = matchDouble(mp, pos, tmpA)</SourceLine>
    <SourceLine></SourceLine>
@@ -7545,26 +7533,19 @@
    <SourceLine></SourceLine>
    <SourceLine>result = matchDouble(mp, pos, tmpR)</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>skipWhitespace mp, pos</SourceLine>
-   <SourceLine>pos = pos + 1 ' skip past comma</SourceLine>
-   <SourceLine>skipWhitespace mp, pos</SourceLine>
+   <SourceLine>skipComma mp, pos</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>result = matchDouble(mp, pos, tmpG)</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>skipWhitespace mp, pos</SourceLine>
-   <SourceLine>pos = pos + 1 ' skip past comma</SourceLine>
-   <SourceLine>skipWhitespace mp, pos</SourceLine>
+   <SourceLine>skipComma mp, pos</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>result = matchDouble(mp, pos, tmpB)</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>skipWhitespace mp, pos</SourceLine>
-   <SourceLine>pos = pos + 1 ' skip past comma</SourceLine>
-   <SourceLine>skipWhitespace mp, pos</SourceLine>
+   <SourceLine>skipComma mp, pos</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>result = matchDouble(mp, pos, tmpA)</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>skipWhitespace mp, pos</SourceLine>
-   <SourceLine>pos = pos + 1 ' skip past comma</SourceLine>
+   <SourceLine>skipComma mp, pos</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>m.Ambient.Red = tmpR</SourceLine>
    <SourceLine>m.Ambient.Green = tmpG</SourceLine>
@@ -7575,26 +7556,19 @@
    <SourceLine></SourceLine>
    <SourceLine>result = matchDouble(mp, pos, tmpR)</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>skipWhitespace mp, pos</SourceLine>
-   <SourceLine>pos = pos + 1 ' skip past comma</SourceLine>
-   <SourceLine>skipWhitespace mp, pos</SourceLine>
+   <SourceLine>skipComma mp, pos</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>result = matchDouble(mp, pos, tmpG)</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>skipWhitespace mp, pos</SourceLine>
-   <SourceLine>pos = pos + 1 ' skip past comma</SourceLine>
-   <SourceLine>skipWhitespace mp, pos</SourceLine>
+   <SourceLine>skipComma mp, pos</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>result = matchDouble(mp, pos, tmpB)</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>skipWhitespace mp, pos</SourceLine>
-   <SourceLine>pos = pos + 1 ' skip past comma</SourceLine>
-   <SourceLine>skipWhitespace mp, pos</SourceLine>
+   <SourceLine>skipComma mp, pos</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>result = matchDouble(mp, pos, tmpA)</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>skipWhitespace mp, pos</SourceLine>
-   <SourceLine>pos = pos + 1 ' skip past comma</SourceLine>
+   <SourceLine>skipComma mp, pos</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>m.Diffuse.Red = tmpR</SourceLine>
    <SourceLine>m.Diffuse.Green = tmpG</SourceLine>
@@ -7605,26 +7579,19 @@
    <SourceLine></SourceLine>
    <SourceLine>result = matchDouble(mp, pos, tmpR)</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>skipWhitespace mp, pos</SourceLine>
-   <SourceLine>pos = pos + 1 ' skip past comma</SourceLine>
-   <SourceLine>skipWhitespace mp, pos</SourceLine>
+   <SourceLine>skipComma mp, pos</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>result = matchDouble(mp, pos, tmpG)</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>skipWhitespace mp, pos</SourceLine>
-   <SourceLine>pos = pos + 1 ' skip past comma</SourceLine>
-   <SourceLine>skipWhitespace mp, pos</SourceLine>
+   <SourceLine>skipComma mp, pos</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>result = matchDouble(mp, pos, tmpB)</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>skipWhitespace mp, pos</SourceLine>
-   <SourceLine>pos = pos + 1 ' skip past comma</SourceLine>
-   <SourceLine>skipWhitespace mp, pos</SourceLine>
+   <SourceLine>skipComma mp, pos</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>result = matchDouble(mp, pos, tmpA)</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>skipWhitespace mp, pos</SourceLine>
-   <SourceLine>pos = pos + 1 ' skip past comma</SourceLine>
+   <SourceLine>skipComma mp, pos</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>m.Specular.Red = tmpR</SourceLine>
    <SourceLine>m.Specular.Green = tmpG</SourceLine>
@@ -7735,15 +7702,11 @@
    <SourceLine></SourceLine>
    <SourceLine>result = matchDouble(mp, pos, tmpX)</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>skipWhitespace mp, pos</SourceLine>
-   <SourceLine>pos = pos + 1 ' skip past comma</SourceLine>
-   <SourceLine>skipWhitespace mp, pos</SourceLine>
+   <SourceLine>skipComma mp, pos</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>result = matchDouble(mp, pos, tmpY)</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>skipWhitespace mp, pos</SourceLine>
-   <SourceLine>pos = pos + 1 ' skip past comma</SourceLine>
-   <SourceLine>skipWhitespace mp, pos</SourceLine>
+   <SourceLine>skipComma mp, pos</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>result = matchDouble(mp, pos, tmpZ)</SourceLine>
    <SourceLine></SourceLine>
@@ -7801,9 +7764,7 @@
    <SourceLine></SourceLine>
    <SourceLine>result = matchDouble(mp, pos, tmpU)</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>skipWhitespace mp, pos</SourceLine>
-   <SourceLine>pos = pos + 1 ' skip past comma</SourceLine>
-   <SourceLine>skipWhitespace mp, pos</SourceLine>
+   <SourceLine>skipComma mp, pos</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>result = matchDouble(mp, pos, tmpV)</SourceLine>
    <SourceLine></SourceLine>
@@ -7862,15 +7823,11 @@
    <SourceLine></SourceLine>
    <SourceLine>result = matchDouble(mp, pos, tmpX)</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>skipWhitespace mp, pos</SourceLine>
-   <SourceLine>pos = pos + 1 ' skip past comma</SourceLine>
-   <SourceLine>skipWhitespace mp, pos</SourceLine>
+   <SourceLine>skipComma mp, pos</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>result = matchDouble(mp, pos, tmpY)</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>skipWhitespace mp, pos</SourceLine>
-   <SourceLine>pos = pos + 1 ' skip past comma</SourceLine>
-   <SourceLine>skipWhitespace mp, pos</SourceLine>
+   <SourceLine>skipComma mp, pos</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>result = matchDouble(mp, pos, tmpZ)</SourceLine>
    <SourceLine></SourceLine>
@@ -8579,15 +8536,11 @@
    <SourceLine></SourceLine>
    <SourceLine>result = matchDouble(mp, pos, tmpX)</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>skipWhitespace mp, pos</SourceLine>
-   <SourceLine>pos = pos + 1 ' skip past comma</SourceLine>
-   <SourceLine>skipWhitespace mp, pos</SourceLine>
+   <SourceLine>skipComma mp, pos</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>result = matchDouble(mp, pos, tmpY)</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>skipWhitespace mp, pos</SourceLine>
-   <SourceLine>pos = pos + 1 ' skip past comma</SourceLine>
-   <SourceLine>skipWhitespace mp, pos</SourceLine>
+   <SourceLine>skipComma mp, pos</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>result = matchDouble(mp, pos, tmpZ)</SourceLine>
    <SourceLine></SourceLine>
@@ -8636,29 +8589,19 @@
    <SourceLine></SourceLine>
    <SourceLine>result = matchDouble(mp, pos, tmpW)</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>skipWhitespace mp, pos</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>pos = pos + 1 ' skip past comma</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>skipWhitespace mp, pos</SourceLine>
+   <SourceLine>skipComma mp, pos</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>result = matchDouble(mp, pos, tmpX)</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>skipWhitespace mp, pos</SourceLine>
-   <SourceLine>pos = pos + 1 ' skip past comma</SourceLine>
-   <SourceLine>skipWhitespace mp, pos</SourceLine>
+   <SourceLine>skipComma mp, pos</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>result = matchDouble(mp, pos, tmpY)</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>skipWhitespace mp, pos</SourceLine>
-   <SourceLine>pos = pos + 1 ' skip past comma</SourceLine>
-   <SourceLine>skipWhitespace mp, pos</SourceLine>
+   <SourceLine>skipComma mp, pos</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>result = matchDouble(mp, pos, tmpZ)</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>skipWhitespace mp, pos</SourceLine>
-   <SourceLine>pos = pos + 1 ' skip past comma</SourceLine>
-   <SourceLine>skipWhitespace mp, pos</SourceLine>
+   <SourceLine>skipComma mp, pos</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>model.Rotation.W = tmpW</SourceLine>
    <SourceLine>model.Rotation.X = tmpX</SourceLine>
@@ -8701,21 +8644,15 @@
    <SourceLine></SourceLine>
    <SourceLine>result = matchDouble(mp, pos, tmpX)</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>skipWhitespace mp, pos</SourceLine>
-   <SourceLine>pos = pos + 1 ' skip past comma</SourceLine>
-   <SourceLine>skipWhitespace mp, pos</SourceLine>
+   <SourceLine>skipComma mp, pos</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>result = matchDouble(mp, pos, tmpY)</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>skipWhitespace mp, pos</SourceLine>
-   <SourceLine>pos = pos + 1 ' skip past comma</SourceLine>
-   <SourceLine>skipWhitespace mp, pos</SourceLine>
+   <SourceLine>skipComma mp, pos</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>result = matchDouble(mp, pos, tmpZ)</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>skipWhitespace mp, pos</SourceLine>
-   <SourceLine>pos = pos + 1 ' skip past closing bracket</SourceLine>
-   <SourceLine>skipWhitespace mp, pos</SourceLine>
+   <SourceLine>skipComma mp, pos</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>model.Scale.X = tmpX</SourceLine>
    <SourceLine>model.Scale.Y = tmpY</SourceLine>
@@ -8997,6 +8934,32 @@
    <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
    <SourceLine>pos = pos + 1</SourceLine>
    <SourceLine>wend</SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>33</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>mp As Ptr, ByRef pos As Integer</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>skipComma</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub skipComma(mp As Ptr, ByRef pos As Integer)</SourceLine>
+   <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
+   <SourceLine>wend</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>pos = pos + 1 ' skip past comma</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>while mp.Byte(pos) &lt;= 32</SourceLine>
+   <SourceLine>pos = pos + 1</SourceLine>
+   <SourceLine>wend</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>End Sub</SourceLine>
   </ItemSource>
   <TextEncoding>134217984</TextEncoding>
@@ -10523,7 +10486,7 @@
    <EditorCount>1</EditorCount>
    <Editor>
     <EditorIndex>0</EditorIndex>
-    <EditorLocation>X3Core.X3IO.matchX3Scene</EditorLocation>
+    <EditorLocation>X3Core.X3IO.skipComma</EditorLocation>
     <EditorPath></EditorPath>
     <EditingPartID>1421578239</EditingPartID>
    </Editor>
