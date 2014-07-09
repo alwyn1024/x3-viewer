@@ -889,7 +889,7 @@
   <PropertyVal Name="Italic">False</PropertyVal>
   <PropertyVal Name="Bold">False</PropertyVal>
   <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0</PropertyVal>
+  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
   <PropertyVal Name="TextFont">System</PropertyVal>
   <PropertyVal Name="ButtonStyle">0</PropertyVal>
   <PropertyVal Name="AutoDeactivate">True</PropertyVal>
@@ -925,7 +925,7 @@
   <PropertyVal Name="Italic">False</PropertyVal>
   <PropertyVal Name="Bold">False</PropertyVal>
   <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0</PropertyVal>
+  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
   <PropertyVal Name="TextFont">System</PropertyVal>
   <PropertyVal Name="ButtonStyle">0</PropertyVal>
   <PropertyVal Name="AutoDeactivate">True</PropertyVal>
@@ -961,7 +961,7 @@
   <PropertyVal Name="Italic">False</PropertyVal>
   <PropertyVal Name="Bold">False</PropertyVal>
   <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0</PropertyVal>
+  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
   <PropertyVal Name="TextFont">System</PropertyVal>
   <PropertyVal Name="ButtonStyle">0</PropertyVal>
   <PropertyVal Name="AutoDeactivate">True</PropertyVal>
@@ -997,7 +997,7 @@
   <PropertyVal Name="Italic">False</PropertyVal>
   <PropertyVal Name="Bold">False</PropertyVal>
   <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0</PropertyVal>
+  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
   <PropertyVal Name="TextFont">System</PropertyVal>
   <PropertyVal Name="ButtonStyle">0</PropertyVal>
   <PropertyVal Name="AutoDeactivate">True</PropertyVal>
@@ -1033,7 +1033,7 @@
   <PropertyVal Name="Italic">False</PropertyVal>
   <PropertyVal Name="Bold">False</PropertyVal>
   <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0</PropertyVal>
+  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
   <PropertyVal Name="TextFont">System</PropertyVal>
   <PropertyVal Name="ButtonStyle">0</PropertyVal>
   <PropertyVal Name="AutoDeactivate">True</PropertyVal>
@@ -1069,7 +1069,7 @@
   <PropertyVal Name="Italic">False</PropertyVal>
   <PropertyVal Name="Bold">False</PropertyVal>
   <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0</PropertyVal>
+  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
   <PropertyVal Name="TextFont">System</PropertyVal>
   <PropertyVal Name="ButtonStyle">0</PropertyVal>
   <PropertyVal Name="AutoDeactivate">True</PropertyVal>
@@ -1105,7 +1105,7 @@
   <PropertyVal Name="Italic">False</PropertyVal>
   <PropertyVal Name="Bold">False</PropertyVal>
   <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0</PropertyVal>
+  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
   <PropertyVal Name="TextFont">System</PropertyVal>
   <PropertyVal Name="ButtonStyle">0</PropertyVal>
   <PropertyVal Name="AutoDeactivate">True</PropertyVal>
@@ -1141,7 +1141,7 @@
   <PropertyVal Name="Italic">False</PropertyVal>
   <PropertyVal Name="Bold">False</PropertyVal>
   <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0</PropertyVal>
+  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
   <PropertyVal Name="TextFont">System</PropertyVal>
   <PropertyVal Name="ButtonStyle">0</PropertyVal>
   <PropertyVal Name="AutoDeactivate">True</PropertyVal>
@@ -1177,7 +1177,7 @@
   <PropertyVal Name="Italic">False</PropertyVal>
   <PropertyVal Name="Bold">False</PropertyVal>
   <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0</PropertyVal>
+  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
   <PropertyVal Name="TextFont">System</PropertyVal>
   <PropertyVal Name="ButtonStyle">0</PropertyVal>
   <PropertyVal Name="AutoDeactivate">True</PropertyVal>
@@ -1213,7 +1213,7 @@
   <PropertyVal Name="Italic">False</PropertyVal>
   <PropertyVal Name="Bold">False</PropertyVal>
   <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0</PropertyVal>
+  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
   <PropertyVal Name="TextFont">System</PropertyVal>
   <PropertyVal Name="ButtonStyle">0</PropertyVal>
   <PropertyVal Name="AutoDeactivate">True</PropertyVal>
@@ -1249,7 +1249,7 @@
   <PropertyVal Name="Italic">False</PropertyVal>
   <PropertyVal Name="Bold">False</PropertyVal>
   <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0</PropertyVal>
+  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
   <PropertyVal Name="TextFont">System</PropertyVal>
   <PropertyVal Name="ButtonStyle">0</PropertyVal>
   <PropertyVal Name="AutoDeactivate">True</PropertyVal>
@@ -1285,7 +1285,7 @@
   <PropertyVal Name="Italic">False</PropertyVal>
   <PropertyVal Name="Bold">False</PropertyVal>
   <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0</PropertyVal>
+  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
   <PropertyVal Name="TextFont">System</PropertyVal>
   <PropertyVal Name="ButtonStyle">0</PropertyVal>
   <PropertyVal Name="AutoDeactivate">True</PropertyVal>
@@ -1321,7 +1321,7 @@
   <PropertyVal Name="Italic">False</PropertyVal>
   <PropertyVal Name="Bold">False</PropertyVal>
   <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0</PropertyVal>
+  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
   <PropertyVal Name="TextFont">System</PropertyVal>
   <PropertyVal Name="ButtonStyle">0</PropertyVal>
   <PropertyVal Name="AutoDeactivate">True</PropertyVal>
@@ -1357,7 +1357,7 @@
   <PropertyVal Name="Italic">False</PropertyVal>
   <PropertyVal Name="Bold">False</PropertyVal>
   <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0</PropertyVal>
+  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
   <PropertyVal Name="TextFont">System</PropertyVal>
   <PropertyVal Name="ButtonStyle">0</PropertyVal>
   <PropertyVal Name="AutoDeactivate">True</PropertyVal>
@@ -1393,7 +1393,7 @@
   <PropertyVal Name="Italic">False</PropertyVal>
   <PropertyVal Name="Bold">False</PropertyVal>
   <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0</PropertyVal>
+  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
   <PropertyVal Name="TextFont">System</PropertyVal>
   <PropertyVal Name="ButtonStyle">0</PropertyVal>
   <PropertyVal Name="AutoDeactivate">True</PropertyVal>
@@ -1431,7 +1431,7 @@
   <PropertyVal Name="Italic">False</PropertyVal>
   <PropertyVal Name="Bold">False</PropertyVal>
   <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0</PropertyVal>
+  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
   <PropertyVal Name="TextFont">System</PropertyVal>
   <PropertyVal Name="AutoDeactivate">True</PropertyVal>
   <PropertyVal Name="HelpTag"></PropertyVal>
@@ -1477,7 +1477,7 @@
   <PropertyVal Name="Italic">False</PropertyVal>
   <PropertyVal Name="Bold">False</PropertyVal>
   <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0</PropertyVal>
+  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
   <PropertyVal Name="TextFont">System</PropertyVal>
   <PropertyVal Name="AutoDeactivate">True</PropertyVal>
   <PropertyVal Name="HelpTag"></PropertyVal>
@@ -1517,7 +1517,7 @@
   <PropertyVal Name="Italic">False</PropertyVal>
   <PropertyVal Name="Bold">False</PropertyVal>
   <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0</PropertyVal>
+  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
   <PropertyVal Name="TextFont">System</PropertyVal>
   <PropertyVal Name="AutoDeactivate">True</PropertyVal>
   <PropertyVal Name="HelpTag"></PropertyVal>
@@ -1563,7 +1563,7 @@
   <PropertyVal Name="Italic">False</PropertyVal>
   <PropertyVal Name="Bold">False</PropertyVal>
   <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0</PropertyVal>
+  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
   <PropertyVal Name="TextFont">System</PropertyVal>
   <PropertyVal Name="AutoDeactivate">True</PropertyVal>
   <PropertyVal Name="HelpTag"></PropertyVal>
@@ -1603,7 +1603,7 @@
   <PropertyVal Name="Italic">False</PropertyVal>
   <PropertyVal Name="Bold">False</PropertyVal>
   <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0</PropertyVal>
+  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
   <PropertyVal Name="TextFont">System</PropertyVal>
   <PropertyVal Name="AutoDeactivate">True</PropertyVal>
   <PropertyVal Name="HelpTag"></PropertyVal>
@@ -1649,7 +1649,7 @@
   <PropertyVal Name="Italic">False</PropertyVal>
   <PropertyVal Name="Bold">False</PropertyVal>
   <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0</PropertyVal>
+  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
   <PropertyVal Name="TextFont">System</PropertyVal>
   <PropertyVal Name="AutoDeactivate">True</PropertyVal>
   <PropertyVal Name="HelpTag"></PropertyVal>
@@ -1687,7 +1687,7 @@
   <PropertyVal Name="Italic">False</PropertyVal>
   <PropertyVal Name="Bold">False</PropertyVal>
   <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0</PropertyVal>
+  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
   <PropertyVal Name="TextFont">System</PropertyVal>
   <PropertyVal Name="ButtonStyle">0</PropertyVal>
   <PropertyVal Name="AutoDeactivate">True</PropertyVal>
@@ -1723,7 +1723,7 @@
   <PropertyVal Name="Italic">False</PropertyVal>
   <PropertyVal Name="Bold">False</PropertyVal>
   <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0</PropertyVal>
+  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
   <PropertyVal Name="TextFont">System</PropertyVal>
   <PropertyVal Name="ButtonStyle">0</PropertyVal>
   <PropertyVal Name="AutoDeactivate">True</PropertyVal>
@@ -1761,7 +1761,7 @@
   <PropertyVal Name="Italic">False</PropertyVal>
   <PropertyVal Name="Bold">False</PropertyVal>
   <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0</PropertyVal>
+  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
   <PropertyVal Name="TextFont">System</PropertyVal>
   <PropertyVal Name="AutoDeactivate">True</PropertyVal>
   <PropertyVal Name="HelpTag"></PropertyVal>
@@ -1871,6 +1871,7 @@
    <SourceLine></SourceLine>
    <SourceLine>Surface.MakeCurrent</SourceLine>
    <SourceLine>X3_EnableLight OpenGL.GL_LIGHT0, new X3Core.X3Light(0, 1, 1) // enable a default light for the model</SourceLine>
+   <SourceLine>X3_SetPerspective 0, 0, Surface.Width, Surface.Height</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>tbMain.Item(1).Enabled = false</SourceLine>
    <SourceLine></SourceLine>
