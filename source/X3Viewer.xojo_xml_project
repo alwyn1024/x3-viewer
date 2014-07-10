@@ -8246,6 +8246,7 @@
    <SourceLine>Dim models() As X3Core.X3Model</SourceLine>
    <SourceLine>Dim tmpCamera As X3Core.X3Camera</SourceLine>
    <SourceLine>Dim tmpLight As X3Core.X3Light</SourceLine>
+   <SourceLine>Dim defaultCam As Integer = -1</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>scene = new X3Core.X3Scene</SourceLine>
    <SourceLine></SourceLine>
@@ -8324,6 +8325,10 @@
    <SourceLine>skipWhitespace mp, pos</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>case "defaultcam"</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>result = matchInteger(mp, pos, defaultCam)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>case "lights"</SourceLine>
    <SourceLine></SourceLine>
@@ -8474,7 +8479,11 @@
    <SourceLine>scene.Camera.Append tmpCamera</SourceLine>
    <SourceLine>end if</SourceLine>
    <SourceLine></SourceLine>
+   <SourceLine>if defaultCam &gt;= 0 then</SourceLine>
+   <SourceLine>scene.CameraIndex = defaultCam</SourceLine>
+   <SourceLine>else</SourceLine>
    <SourceLine>scene.CameraIndex = 0</SourceLine>
+   <SourceLine>end if</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>return result</SourceLine>
    <SourceLine>End Function</SourceLine>
@@ -8932,7 +8941,6 @@
    <SourceLine>end if</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>return result</SourceLine>
-   <SourceLineBreakpoint>100</SourceLineBreakpoint>
    <SourceLine>End Function</SourceLine>
   </ItemSource>
   <TextEncoding>134217984</TextEncoding>
@@ -10835,7 +10843,7 @@
    <EditorCount>1</EditorCount>
    <Editor>
     <EditorIndex>0</EditorIndex>
-    <EditorLocation>X3Core.X3IO.matchCamera</EditorLocation>
+    <EditorLocation>X3Core.X3IO.matchX3Scene</EditorLocation>
     <EditorPath></EditorPath>
     <EditingPartID>1421578239</EditingPartID>
    </Editor>
