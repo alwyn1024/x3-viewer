@@ -188,12 +188,30 @@
  <IsInterface>0</IsInterface>
  <Compatibility></Compatibility>
  <HookInstance>
-  <ItemName>Open</ItemName>
+  <ItemName>KeyDown</ItemName>
   <Compatibility></Compatibility>
   <Visible>1</Visible>
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Sub Open()</SourceLine>
+   <SourceLine>Function KeyDown(Key As String) As Boolean</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>frmMain.handleKey Key</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Function</SourceLine>
+  </ItemSource>
+ </HookInstance>
+ <Method>
+  <ItemName>LoadSceneCameras</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub LoadSceneCameras()</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>Dim i As Integer</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>if frmMain.CurrentScene &lt;&gt; nil then</SourceLine>
@@ -203,7 +221,7 @@
    <SourceLine>comCamera.DeleteAllRows</SourceLine>
    <SourceLine>for i = 0 to frmMain.CurrentScene.Camera.Ubound</SourceLine>
    <SourceLine>comCamera.AddRow "Camera " + Str(i + 1)</SourceLine>
-   <SourceLine>next i </SourceLine>
+   <SourceLine>next i</SourceLine>
    <SourceLine>comCamera.ListIndex = frmMain.CurrentScene.CameraIndex</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>// set active camera fields</SourceLine>
@@ -215,19 +233,13 @@
    <SourceLine></SourceLine>
    <SourceLine>End Sub</SourceLine>
   </ItemSource>
- </HookInstance>
- <HookInstance>
-  <ItemName>KeyDown</ItemName>
-  <Compatibility></Compatibility>
-  <Visible>1</Visible>
-  <ItemSource>
-   <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Function KeyDown(Key As String) As Boolean</SourceLine>
-   <SourceLine>frmMain.handleKey Key</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>End Function</SourceLine>
-  </ItemSource>
- </HookInstance>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams></ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
  <PropertyVal Name="ImplicitInstance">True</PropertyVal>
  <PropertyVal Name="MenuBar">0</PropertyVal>
  <PropertyVal Name="MacProcID"><Hex bytes="1">30</Hex></PropertyVal>
@@ -488,6 +500,9 @@
    <ItemSource>
     <TextEncoding>134217984</TextEncoding>
     <SourceLine>Sub Action()</SourceLine>
+    <SourceLine>' www.Xojo3D.com</SourceLine>
+    <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+    <SourceLine></SourceLine>
     <SourceLine>if frmMain.CurrentScene &lt;&gt; nil then</SourceLine>
     <SourceLine>frmMain.CurrentScene.DollyIn 0.5</SourceLine>
     <SourceLine>frmMain.Surface.Render</SourceLine>
@@ -911,9 +926,9 @@
   <PropertyVal Name="Top">73</PropertyVal>
   <PropertyVal Name="Left">20</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">cmdDollyIn</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>0</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -947,9 +962,9 @@
   <PropertyVal Name="Top">97</PropertyVal>
   <PropertyVal Name="Left">20</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">cmdDollyOut</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>1</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -983,9 +998,9 @@
   <PropertyVal Name="Top">121</PropertyVal>
   <PropertyVal Name="Left">20</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">cmdPedestalUp</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>2</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -1019,9 +1034,9 @@
   <PropertyVal Name="Top">145</PropertyVal>
   <PropertyVal Name="Left">20</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">cmdPedestalDown</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>3</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -1055,9 +1070,9 @@
   <PropertyVal Name="Top">169</PropertyVal>
   <PropertyVal Name="Left">20</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">cmdTruckLeft</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>4</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -1091,9 +1106,9 @@
   <PropertyVal Name="Top">193</PropertyVal>
   <PropertyVal Name="Left">20</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">cmdTruckRight</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>5</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -1127,9 +1142,9 @@
   <PropertyVal Name="Top">217</PropertyVal>
   <PropertyVal Name="Left">20</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">cmdPanLeft</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>6</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -1163,9 +1178,9 @@
   <PropertyVal Name="Top">241</PropertyVal>
   <PropertyVal Name="Left">20</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">cmdPanRight</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>7</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -1199,9 +1214,9 @@
   <PropertyVal Name="Top">265</PropertyVal>
   <PropertyVal Name="Left">20</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">cmdTurnDollyLeft</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>8</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -1235,9 +1250,9 @@
   <PropertyVal Name="Top">289</PropertyVal>
   <PropertyVal Name="Left">20</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">cmdTurnDollyRight</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>9</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -1271,9 +1286,9 @@
   <PropertyVal Name="Top">314</PropertyVal>
   <PropertyVal Name="Left">20</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">cmdTiltCameraUp</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>10</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -1307,9 +1322,9 @@
   <PropertyVal Name="Top">338</PropertyVal>
   <PropertyVal Name="Left">20</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">cmdTiltCameraDown</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>11</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -1343,9 +1358,9 @@
   <PropertyVal Name="Top">48</PropertyVal>
   <PropertyVal Name="Left">140</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">cmdRollCameraLeft</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>12</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -1379,9 +1394,9 @@
   <PropertyVal Name="Top">72</PropertyVal>
   <PropertyVal Name="Left">140</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">cmdRollCameraRight</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>13</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -1415,9 +1430,9 @@
   <PropertyVal Name="Top">48</PropertyVal>
   <PropertyVal Name="Left">20</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">cmdResetCamera</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>14</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -1454,10 +1469,9 @@
   <PropertyVal Name="Top">145</PropertyVal>
   <PropertyVal Name="Left">141</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">Label</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">lblFOV</PropertyVal>
-  <PropertyVal Name="TabStop">True</PropertyVal>
-  <PropertyVal Name="Super">Label</PropertyVal>
   <ControlIndex>15</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -1502,9 +1516,9 @@
   <PropertyVal Name="Top">169</PropertyVal>
   <PropertyVal Name="Left">161</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">TextField</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">txtFOV</PropertyVal>
-  <PropertyVal Name="Super">TextField</PropertyVal>
   <ControlIndex>16</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -1541,10 +1555,9 @@
   <PropertyVal Name="Top">203</PropertyVal>
   <PropertyVal Name="Left">141</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">Label</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">lblZNear</PropertyVal>
-  <PropertyVal Name="TabStop">True</PropertyVal>
-  <PropertyVal Name="Super">Label</PropertyVal>
   <ControlIndex>17</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -1589,9 +1602,9 @@
   <PropertyVal Name="Top">227</PropertyVal>
   <PropertyVal Name="Left">161</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">TextField</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">txtZNear</PropertyVal>
-  <PropertyVal Name="Super">TextField</PropertyVal>
   <ControlIndex>18</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -1628,10 +1641,9 @@
   <PropertyVal Name="Top">261</PropertyVal>
   <PropertyVal Name="Left">141</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">Label</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">lblZFar</PropertyVal>
-  <PropertyVal Name="TabStop">True</PropertyVal>
-  <PropertyVal Name="Super">Label</PropertyVal>
   <ControlIndex>19</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -1676,9 +1688,9 @@
   <PropertyVal Name="Top">285</PropertyVal>
   <PropertyVal Name="Left">161</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">TextField</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">txtZFar</PropertyVal>
-  <PropertyVal Name="Super">TextField</PropertyVal>
   <ControlIndex>20</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -1712,9 +1724,9 @@
   <PropertyVal Name="Top">96</PropertyVal>
   <PropertyVal Name="Left">140</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">cmdTiltDollyUp</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>21</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -1748,9 +1760,9 @@
   <PropertyVal Name="Top">120</PropertyVal>
   <PropertyVal Name="Left">140</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">cmdTiltDollyDown</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>22</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -1784,9 +1796,9 @@
   <PropertyVal Name="Top">14</PropertyVal>
   <PropertyVal Name="Left">20</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">PopupMenu</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">comCamera</PropertyVal>
-  <PropertyVal Name="Super">PopupMenu</PropertyVal>
   <ControlIndex>23</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -1806,6 +1818,9 @@
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub Open()</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>Self.MouseCursor = System.Cursors.StandardPointer</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>loadToolbar</SourceLine>
@@ -1820,6 +1835,9 @@
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub Paint(g As Graphics, areas() As REALbasic.Rect)</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>Surface.Render </SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>End Sub</SourceLine>
@@ -1832,6 +1850,9 @@
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Function KeyDown(Key As String) As Boolean</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>handleKey Key</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>End Function</SourceLine>
@@ -1844,6 +1865,9 @@
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub actionOpen()</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>Dim dlg As new OpenDialog</SourceLine>
    <SourceLine>Dim x3File As FolderItem</SourceLine>
    <SourceLine>Dim x3AllTypes As new FileType // All X3 file types</SourceLine>
@@ -1895,8 +1919,8 @@
    <SourceLine>CurrentScene = io.LoadScene(x3File)</SourceLine>
    <SourceLine>CurrentScene.SetViewport 0, 0, Surface.Width, Surface.Height</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine></SourceLine>
    <SourceLine>frmCamera.Show()</SourceLine>
+   <SourceLine>frmCamera.LoadSceneCameras()</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Surface.Render</SourceLine>
    <SourceLine></SourceLine>
@@ -1919,6 +1943,9 @@
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub loadToolbar()</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>Dim button As ToolButton</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' Open</SourceLine>
@@ -1965,6 +1992,9 @@
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub actionCamera()</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>frmCamera.Show()</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>End Sub</SourceLine>
@@ -1983,6 +2013,9 @@
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub actionSnapshot()</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>Dim ss As Picture</SourceLine>
    <SourceLine>Dim f As FolderItem</SourceLine>
    <SourceLine>Dim dlg As new SaveAsDialog</SourceLine>
@@ -2016,6 +2049,9 @@
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub handleKey(Key As String)</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>if CurrentScene &lt;&gt; nil then</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>select case Asc(Lowercase(Key))</SourceLine>
@@ -2395,6 +2431,9 @@
    <ItemSource>
     <TextEncoding>134217984</TextEncoding>
     <SourceLine>Sub Open()</SourceLine>
+    <SourceLine>' www.Xojo3D.com</SourceLine>
+    <SourceLine>' X3 is a {Zoclee} initiative. _</SourceLine>
+    <SourceLine></SourceLine>
     <SourceLine>X3_Initialize</SourceLine>
     <SourceLine></SourceLine>
     <SourceLine></SourceLine>
@@ -2409,6 +2448,9 @@
    <ItemSource>
     <TextEncoding>134217984</TextEncoding>
     <SourceLine>Sub Resized()</SourceLine>
+    <SourceLine>' www.Xojo3D.com</SourceLine>
+    <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+    <SourceLine></SourceLine>
     <SourceLine>if CurrentScene &lt;&gt; nil then</SourceLine>
     <SourceLine>CurrentScene.SetViewport 0, 0, Surface.Width, Surface.Height</SourceLine>
     <SourceLine>else</SourceLine>
@@ -2425,6 +2467,9 @@
    <ItemSource>
     <TextEncoding>134217984</TextEncoding>
     <SourceLine>Function Render() As Boolean</SourceLine>
+    <SourceLine>' www.Xojo3D.com</SourceLine>
+    <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+    <SourceLine></SourceLine>
     <SourceLine>OpenGL.glClearColor(0.2, 0.2, 0.2, 1) ' set the background color</SourceLine>
     <SourceLine>OpenGL.glClear(OpenGL.GL_COLOR_BUFFER_BIT + OpenGL.GL_DEPTH_BUFFER_BIT)</SourceLine>
     <SourceLine></SourceLine>
@@ -2453,6 +2498,9 @@
    <ItemSource>
     <TextEncoding>134217984</TextEncoding>
     <SourceLine>Function MouseDown(x as Integer, y as Integer) As Boolean</SourceLine>
+    <SourceLine>' www.Xojo3D.com</SourceLine>
+    <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+    <SourceLine></SourceLine>
     <SourceLine>MousePrevX = x</SourceLine>
     <SourceLine>MousePrevY = y</SourceLine>
     <SourceLine></SourceLine>
@@ -2468,6 +2516,9 @@
    <ItemSource>
     <TextEncoding>134217984</TextEncoding>
     <SourceLine>Sub MouseDrag(x as Integer, y as Integer)</SourceLine>
+    <SourceLine>' www.Xojo3D.com</SourceLine>
+    <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+    <SourceLine></SourceLine>
     <SourceLine>if CurrentScene &lt;&gt; nil then</SourceLine>
     <SourceLine>X3_RotateWithXY CurrentScene.Camera(CurrentScene.CameraIndex).DollyRotation, -(y - MousePrevY), -(x - MousePrevX)</SourceLine>
     <SourceLine>X3_RotateWithXY CurrentScene.Camera(CurrentScene.CameraIndex).CameraRotation, -(y - MousePrevY), -(x - MousePrevX)</SourceLine>
@@ -2492,6 +2543,9 @@
    <ItemSource>
     <TextEncoding>134217984</TextEncoding>
     <SourceLine>Sub Action(item As ToolItem)</SourceLine>
+    <SourceLine>' www.Xojo3D.com</SourceLine>
+    <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+    <SourceLine></SourceLine>
     <SourceLine>select case item.Name</SourceLine>
     <SourceLine></SourceLine>
     <SourceLine>case "toolCamera"</SourceLine>
@@ -2532,9 +2586,9 @@
   <PropertyVal Name="Top"><Hex bytes="1">30</Hex></PropertyVal>
   <PropertyVal Name="Left"><Hex bytes="1">30</Hex></PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">OpenGLSurface</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">Surface</PropertyVal>
-  <PropertyVal Name="Super">OpenGLSurface</PropertyVal>
   <ControlIndex>0</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -2550,9 +2604,9 @@
   <PropertyVal Name="Top">20</PropertyVal>
   <PropertyVal Name="Left">20</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">MainToolbar</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">tbMain</PropertyVal>
-  <PropertyVal Name="Super">MainToolbar</PropertyVal>
   <ControlIndex>1</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -11074,9 +11128,9 @@
    <EditorCount>1</EditorCount>
    <Editor>
     <EditorIndex>0</EditorIndex>
-    <EditorLocation>X3Core</EditorLocation>
+    <EditorLocation>frmCamera</EditorLocation>
     <EditorPath></EditorPath>
-    <EditingPartID>20486143</EditingPartID>
+    <EditingPartID>2112952319</EditingPartID>
    </Editor>
    <SelectedTab>0</SelectedTab>
   </Editors>
