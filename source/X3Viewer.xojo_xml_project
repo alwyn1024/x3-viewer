@@ -262,8 +262,8 @@
  <PropertyVal Name="MaxWidth">32000</PropertyVal>
  <PropertyVal Name="MinHeight">64</PropertyVal>
  <PropertyVal Name="MinWidth">64</PropertyVal>
- <PropertyVal Name="Height">380</PropertyVal>
- <PropertyVal Name="Width">269</PropertyVal>
+ <PropertyVal Name="Height">305</PropertyVal>
+ <PropertyVal Name="Width">382</PropertyVal>
  <PropertyVal Name="Placement"><Hex bytes="1">30</Hex></PropertyVal>
  <ViewBehavior>
   <ViewProperty>
@@ -983,7 +983,7 @@
   <PropertyVal Name="LockLeft">True</PropertyVal>
   <PropertyVal Name="Height">22</PropertyVal>
   <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">73</PropertyVal>
+  <PropertyVal Name="Top">48</PropertyVal>
   <PropertyVal Name="Left">20</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
   <PropertyVal Name="Super">PushButton</PropertyVal>
@@ -1019,7 +1019,7 @@
   <PropertyVal Name="LockLeft">True</PropertyVal>
   <PropertyVal Name="Height">22</PropertyVal>
   <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">97</PropertyVal>
+  <PropertyVal Name="Top">72</PropertyVal>
   <PropertyVal Name="Left">20</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
   <PropertyVal Name="Super">PushButton</PropertyVal>
@@ -1055,7 +1055,7 @@
   <PropertyVal Name="LockLeft">True</PropertyVal>
   <PropertyVal Name="Height">22</PropertyVal>
   <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">121</PropertyVal>
+  <PropertyVal Name="Top">96</PropertyVal>
   <PropertyVal Name="Left">20</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
   <PropertyVal Name="Super">PushButton</PropertyVal>
@@ -1091,7 +1091,7 @@
   <PropertyVal Name="LockLeft">True</PropertyVal>
   <PropertyVal Name="Height">22</PropertyVal>
   <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">145</PropertyVal>
+  <PropertyVal Name="Top">120</PropertyVal>
   <PropertyVal Name="Left">20</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
   <PropertyVal Name="Super">PushButton</PropertyVal>
@@ -1127,7 +1127,7 @@
   <PropertyVal Name="LockLeft">True</PropertyVal>
   <PropertyVal Name="Height">22</PropertyVal>
   <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">169</PropertyVal>
+  <PropertyVal Name="Top">144</PropertyVal>
   <PropertyVal Name="Left">20</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
   <PropertyVal Name="Super">PushButton</PropertyVal>
@@ -1163,7 +1163,7 @@
   <PropertyVal Name="LockLeft">True</PropertyVal>
   <PropertyVal Name="Height">22</PropertyVal>
   <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">193</PropertyVal>
+  <PropertyVal Name="Top">168</PropertyVal>
   <PropertyVal Name="Left">20</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
   <PropertyVal Name="Super">PushButton</PropertyVal>
@@ -1199,8 +1199,8 @@
   <PropertyVal Name="LockLeft">True</PropertyVal>
   <PropertyVal Name="Height">22</PropertyVal>
   <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">217</PropertyVal>
-  <PropertyVal Name="Left">20</PropertyVal>
+  <PropertyVal Name="Top">72</PropertyVal>
+  <PropertyVal Name="Left">141</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
   <PropertyVal Name="Super">PushButton</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
@@ -1235,8 +1235,8 @@
   <PropertyVal Name="LockLeft">True</PropertyVal>
   <PropertyVal Name="Height">22</PropertyVal>
   <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">241</PropertyVal>
-  <PropertyVal Name="Left">20</PropertyVal>
+  <PropertyVal Name="Top">96</PropertyVal>
+  <PropertyVal Name="Left">141</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
   <PropertyVal Name="Super">PushButton</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
@@ -1271,7 +1271,7 @@
   <PropertyVal Name="LockLeft">True</PropertyVal>
   <PropertyVal Name="Height">22</PropertyVal>
   <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">265</PropertyVal>
+  <PropertyVal Name="Top">191</PropertyVal>
   <PropertyVal Name="Left">20</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
   <PropertyVal Name="Super">PushButton</PropertyVal>
@@ -1307,7 +1307,7 @@
   <PropertyVal Name="LockLeft">True</PropertyVal>
   <PropertyVal Name="Height">22</PropertyVal>
   <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">289</PropertyVal>
+  <PropertyVal Name="Top">215</PropertyVal>
   <PropertyVal Name="Left">20</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
   <PropertyVal Name="Super">PushButton</PropertyVal>
@@ -1343,8 +1343,8 @@
   <PropertyVal Name="LockLeft">True</PropertyVal>
   <PropertyVal Name="Height">22</PropertyVal>
   <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">314</PropertyVal>
-  <PropertyVal Name="Left">20</PropertyVal>
+  <PropertyVal Name="Top">168</PropertyVal>
+  <PropertyVal Name="Left">141</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
   <PropertyVal Name="Super">PushButton</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
@@ -1379,8 +1379,8 @@
   <PropertyVal Name="LockLeft">True</PropertyVal>
   <PropertyVal Name="Height">22</PropertyVal>
   <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">338</PropertyVal>
-  <PropertyVal Name="Left">20</PropertyVal>
+  <PropertyVal Name="Top">192</PropertyVal>
+  <PropertyVal Name="Left">141</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
   <PropertyVal Name="Super">PushButton</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
@@ -1415,8 +1415,8 @@
   <PropertyVal Name="LockLeft">True</PropertyVal>
   <PropertyVal Name="Height">22</PropertyVal>
   <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">48</PropertyVal>
-  <PropertyVal Name="Left">140</PropertyVal>
+  <PropertyVal Name="Top">120</PropertyVal>
+  <PropertyVal Name="Left">141</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
   <PropertyVal Name="Super">PushButton</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
@@ -1451,8 +1451,8 @@
   <PropertyVal Name="LockLeft">True</PropertyVal>
   <PropertyVal Name="Height">22</PropertyVal>
   <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">72</PropertyVal>
-  <PropertyVal Name="Left">140</PropertyVal>
+  <PropertyVal Name="Top">144</PropertyVal>
+  <PropertyVal Name="Left">141</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
   <PropertyVal Name="Super">PushButton</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
@@ -1488,7 +1488,7 @@
   <PropertyVal Name="Height">22</PropertyVal>
   <PropertyVal Name="Width">109</PropertyVal>
   <PropertyVal Name="Top">48</PropertyVal>
-  <PropertyVal Name="Left">20</PropertyVal>
+  <PropertyVal Name="Left">141</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
   <PropertyVal Name="Super">PushButton</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
@@ -1526,8 +1526,8 @@
   <PropertyVal Name="LockLeft">True</PropertyVal>
   <PropertyVal Name="Height">20</PropertyVal>
   <PropertyVal Name="Width">100</PropertyVal>
-  <PropertyVal Name="Top">145</PropertyVal>
-  <PropertyVal Name="Left">141</PropertyVal>
+  <PropertyVal Name="Top">48</PropertyVal>
+  <PropertyVal Name="Left">262</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
   <PropertyVal Name="Super">Label</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
@@ -1573,8 +1573,8 @@
   <PropertyVal Name="LockLeft">True</PropertyVal>
   <PropertyVal Name="Height">22</PropertyVal>
   <PropertyVal Name="Width">80</PropertyVal>
-  <PropertyVal Name="Top">169</PropertyVal>
-  <PropertyVal Name="Left">161</PropertyVal>
+  <PropertyVal Name="Top">72</PropertyVal>
+  <PropertyVal Name="Left">282</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
   <PropertyVal Name="Super">TextField</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
@@ -1612,8 +1612,8 @@
   <PropertyVal Name="LockLeft">True</PropertyVal>
   <PropertyVal Name="Height">20</PropertyVal>
   <PropertyVal Name="Width">100</PropertyVal>
-  <PropertyVal Name="Top">203</PropertyVal>
-  <PropertyVal Name="Left">141</PropertyVal>
+  <PropertyVal Name="Top">106</PropertyVal>
+  <PropertyVal Name="Left">262</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
   <PropertyVal Name="Super">Label</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
@@ -1659,8 +1659,8 @@
   <PropertyVal Name="LockLeft">True</PropertyVal>
   <PropertyVal Name="Height">22</PropertyVal>
   <PropertyVal Name="Width">80</PropertyVal>
-  <PropertyVal Name="Top">227</PropertyVal>
-  <PropertyVal Name="Left">161</PropertyVal>
+  <PropertyVal Name="Top">130</PropertyVal>
+  <PropertyVal Name="Left">282</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
   <PropertyVal Name="Super">TextField</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
@@ -1698,8 +1698,8 @@
   <PropertyVal Name="LockLeft">True</PropertyVal>
   <PropertyVal Name="Height">20</PropertyVal>
   <PropertyVal Name="Width">100</PropertyVal>
-  <PropertyVal Name="Top">261</PropertyVal>
-  <PropertyVal Name="Left">141</PropertyVal>
+  <PropertyVal Name="Top">164</PropertyVal>
+  <PropertyVal Name="Left">262</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
   <PropertyVal Name="Super">Label</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
@@ -1745,8 +1745,8 @@
   <PropertyVal Name="LockLeft">True</PropertyVal>
   <PropertyVal Name="Height">22</PropertyVal>
   <PropertyVal Name="Width">80</PropertyVal>
-  <PropertyVal Name="Top">285</PropertyVal>
-  <PropertyVal Name="Left">161</PropertyVal>
+  <PropertyVal Name="Top">188</PropertyVal>
+  <PropertyVal Name="Left">282</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
   <PropertyVal Name="Super">TextField</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
@@ -1781,8 +1781,8 @@
   <PropertyVal Name="LockLeft">True</PropertyVal>
   <PropertyVal Name="Height">22</PropertyVal>
   <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">96</PropertyVal>
-  <PropertyVal Name="Left">140</PropertyVal>
+  <PropertyVal Name="Top">239</PropertyVal>
+  <PropertyVal Name="Left">20</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
   <PropertyVal Name="Super">PushButton</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
@@ -1817,8 +1817,8 @@
   <PropertyVal Name="LockLeft">True</PropertyVal>
   <PropertyVal Name="Height">22</PropertyVal>
   <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">120</PropertyVal>
-  <PropertyVal Name="Left">140</PropertyVal>
+  <PropertyVal Name="Top">263</PropertyVal>
+  <PropertyVal Name="Left">20</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
   <PropertyVal Name="Super">PushButton</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
@@ -1852,7 +1852,7 @@
   <PropertyVal Name="LockTop">True</PropertyVal>
   <PropertyVal Name="LockLeft">True</PropertyVal>
   <PropertyVal Name="Height">22</PropertyVal>
-  <PropertyVal Name="Width">229</PropertyVal>
+  <PropertyVal Name="Width">342</PropertyVal>
   <PropertyVal Name="Top">14</PropertyVal>
   <PropertyVal Name="Left">20</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
@@ -11560,9 +11560,9 @@
    <EditorCount>1</EditorCount>
    <Editor>
     <EditorIndex>0</EditorIndex>
-    <EditorLocation>frmMain</EditorLocation>
+    <EditorLocation>frmCamera</EditorLocation>
     <EditorPath></EditorPath>
-    <EditingPartID>893575167</EditingPartID>
+    <EditingPartID>2112952319</EditingPartID>
    </Editor>
    <SelectedTab>0</SelectedTab>
   </Editors>
