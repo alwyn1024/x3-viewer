@@ -263,7 +263,7 @@
  <PropertyVal Name="MinHeight">64</PropertyVal>
  <PropertyVal Name="MinWidth">64</PropertyVal>
  <PropertyVal Name="Height">305</PropertyVal>
- <PropertyVal Name="Width">382</PropertyVal>
+ <PropertyVal Name="Width">270</PropertyVal>
  <PropertyVal Name="Placement"><Hex bytes="1">30</Hex></PropertyVal>
  <ViewBehavior>
   <ViewProperty>
@@ -1516,8 +1516,8 @@
   <PropertyVal Name="Enabled">True</PropertyVal>
   <PropertyVal Name="Multiline">False</PropertyVal>
   <PropertyVal Name="TextColor"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="TextAlign"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="Text">Field of view:</PropertyVal>
+  <PropertyVal Name="TextAlign"><Hex bytes="1">32</Hex></PropertyVal>
+  <PropertyVal Name="Text">FOV:</PropertyVal>
   <PropertyVal Name="TabIndex">15</PropertyVal>
   <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
   <PropertyVal Name="LockBottom">False</PropertyVal>
@@ -1525,9 +1525,9 @@
   <PropertyVal Name="LockTop">True</PropertyVal>
   <PropertyVal Name="LockLeft">True</PropertyVal>
   <PropertyVal Name="Height">20</PropertyVal>
-  <PropertyVal Name="Width">100</PropertyVal>
-  <PropertyVal Name="Top">48</PropertyVal>
-  <PropertyVal Name="Left">262</PropertyVal>
+  <PropertyVal Name="Width">47</PropertyVal>
+  <PropertyVal Name="Top">216</PropertyVal>
+  <PropertyVal Name="Left">141</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
   <PropertyVal Name="Super">Label</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
@@ -1572,9 +1572,9 @@
   <PropertyVal Name="LockTop">True</PropertyVal>
   <PropertyVal Name="LockLeft">True</PropertyVal>
   <PropertyVal Name="Height">22</PropertyVal>
-  <PropertyVal Name="Width">80</PropertyVal>
-  <PropertyVal Name="Top">72</PropertyVal>
-  <PropertyVal Name="Left">282</PropertyVal>
+  <PropertyVal Name="Width">50</PropertyVal>
+  <PropertyVal Name="Top">215</PropertyVal>
+  <PropertyVal Name="Left">200</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
   <PropertyVal Name="Super">TextField</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
@@ -1602,7 +1602,7 @@
   <PropertyVal Name="Enabled">True</PropertyVal>
   <PropertyVal Name="Multiline">False</PropertyVal>
   <PropertyVal Name="TextColor"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="TextAlign"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="TextAlign"><Hex bytes="1">32</Hex></PropertyVal>
   <PropertyVal Name="Text">Z-Near:</PropertyVal>
   <PropertyVal Name="TabIndex">17</PropertyVal>
   <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
@@ -1611,9 +1611,9 @@
   <PropertyVal Name="LockTop">True</PropertyVal>
   <PropertyVal Name="LockLeft">True</PropertyVal>
   <PropertyVal Name="Height">20</PropertyVal>
-  <PropertyVal Name="Width">100</PropertyVal>
-  <PropertyVal Name="Top">106</PropertyVal>
-  <PropertyVal Name="Left">262</PropertyVal>
+  <PropertyVal Name="Width">47</PropertyVal>
+  <PropertyVal Name="Top">240</PropertyVal>
+  <PropertyVal Name="Left">141</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
   <PropertyVal Name="Super">Label</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
@@ -1658,9 +1658,9 @@
   <PropertyVal Name="LockTop">True</PropertyVal>
   <PropertyVal Name="LockLeft">True</PropertyVal>
   <PropertyVal Name="Height">22</PropertyVal>
-  <PropertyVal Name="Width">80</PropertyVal>
-  <PropertyVal Name="Top">130</PropertyVal>
-  <PropertyVal Name="Left">282</PropertyVal>
+  <PropertyVal Name="Width">50</PropertyVal>
+  <PropertyVal Name="Top">239</PropertyVal>
+  <PropertyVal Name="Left">200</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
   <PropertyVal Name="Super">TextField</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
@@ -1688,7 +1688,7 @@
   <PropertyVal Name="Enabled">True</PropertyVal>
   <PropertyVal Name="Multiline">False</PropertyVal>
   <PropertyVal Name="TextColor"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="TextAlign"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="TextAlign"><Hex bytes="1">32</Hex></PropertyVal>
   <PropertyVal Name="Text">Z-Far:</PropertyVal>
   <PropertyVal Name="TabIndex">19</PropertyVal>
   <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
@@ -1697,9 +1697,9 @@
   <PropertyVal Name="LockTop">True</PropertyVal>
   <PropertyVal Name="LockLeft">True</PropertyVal>
   <PropertyVal Name="Height">20</PropertyVal>
-  <PropertyVal Name="Width">100</PropertyVal>
-  <PropertyVal Name="Top">164</PropertyVal>
-  <PropertyVal Name="Left">262</PropertyVal>
+  <PropertyVal Name="Width">47</PropertyVal>
+  <PropertyVal Name="Top">264</PropertyVal>
+  <PropertyVal Name="Left">141</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
   <PropertyVal Name="Super">Label</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
@@ -1744,9 +1744,9 @@
   <PropertyVal Name="LockTop">True</PropertyVal>
   <PropertyVal Name="LockLeft">True</PropertyVal>
   <PropertyVal Name="Height">22</PropertyVal>
-  <PropertyVal Name="Width">80</PropertyVal>
-  <PropertyVal Name="Top">188</PropertyVal>
-  <PropertyVal Name="Left">282</PropertyVal>
+  <PropertyVal Name="Width">50</PropertyVal>
+  <PropertyVal Name="Top">263</PropertyVal>
+  <PropertyVal Name="Left">200</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
   <PropertyVal Name="Super">TextField</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
@@ -1852,7 +1852,7 @@
   <PropertyVal Name="LockTop">True</PropertyVal>
   <PropertyVal Name="LockLeft">True</PropertyVal>
   <PropertyVal Name="Height">22</PropertyVal>
-  <PropertyVal Name="Width">342</PropertyVal>
+  <PropertyVal Name="Width">230</PropertyVal>
   <PropertyVal Name="Top">14</PropertyVal>
   <PropertyVal Name="Left">20</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
