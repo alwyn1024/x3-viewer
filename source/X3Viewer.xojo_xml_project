@@ -17,7 +17,7 @@
  <DefaultLanguage>0</DefaultLanguage>
  <CurrentLanguage>0</CurrentLanguage>
  <DefaultEncoding>0</DefaultEncoding>
- <BuildFlags>20880</BuildFlags>
+ <BuildFlags>29072</BuildFlags>
  <UseBuildsFolder>1</UseBuildsFolder>
  <WebApp>0</WebApp>
  <Icon>
@@ -964,7 +964,7 @@
   <PropertyVal Name="Italic">False</PropertyVal>
   <PropertyVal Name="Bold">False</PropertyVal>
   <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
+  <PropertyVal Name="TextSize">0.0</PropertyVal>
   <PropertyVal Name="TextFont">System</PropertyVal>
   <PropertyVal Name="ButtonStyle">0</PropertyVal>
   <PropertyVal Name="AutoDeactivate">True</PropertyVal>
@@ -1000,7 +1000,7 @@
   <PropertyVal Name="Italic">False</PropertyVal>
   <PropertyVal Name="Bold">False</PropertyVal>
   <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
+  <PropertyVal Name="TextSize">0.0</PropertyVal>
   <PropertyVal Name="TextFont">System</PropertyVal>
   <PropertyVal Name="ButtonStyle">0</PropertyVal>
   <PropertyVal Name="AutoDeactivate">True</PropertyVal>
@@ -1036,7 +1036,7 @@
   <PropertyVal Name="Italic">False</PropertyVal>
   <PropertyVal Name="Bold">False</PropertyVal>
   <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
+  <PropertyVal Name="TextSize">0.0</PropertyVal>
   <PropertyVal Name="TextFont">System</PropertyVal>
   <PropertyVal Name="ButtonStyle">0</PropertyVal>
   <PropertyVal Name="AutoDeactivate">True</PropertyVal>
@@ -1072,7 +1072,7 @@
   <PropertyVal Name="Italic">False</PropertyVal>
   <PropertyVal Name="Bold">False</PropertyVal>
   <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
+  <PropertyVal Name="TextSize">0.0</PropertyVal>
   <PropertyVal Name="TextFont">System</PropertyVal>
   <PropertyVal Name="ButtonStyle">0</PropertyVal>
   <PropertyVal Name="AutoDeactivate">True</PropertyVal>
@@ -1108,7 +1108,7 @@
   <PropertyVal Name="Italic">False</PropertyVal>
   <PropertyVal Name="Bold">False</PropertyVal>
   <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
+  <PropertyVal Name="TextSize">0.0</PropertyVal>
   <PropertyVal Name="TextFont">System</PropertyVal>
   <PropertyVal Name="ButtonStyle">0</PropertyVal>
   <PropertyVal Name="AutoDeactivate">True</PropertyVal>
@@ -1144,7 +1144,7 @@
   <PropertyVal Name="Italic">False</PropertyVal>
   <PropertyVal Name="Bold">False</PropertyVal>
   <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
+  <PropertyVal Name="TextSize">0.0</PropertyVal>
   <PropertyVal Name="TextFont">System</PropertyVal>
   <PropertyVal Name="ButtonStyle">0</PropertyVal>
   <PropertyVal Name="AutoDeactivate">True</PropertyVal>
@@ -1180,7 +1180,7 @@
   <PropertyVal Name="Italic">False</PropertyVal>
   <PropertyVal Name="Bold">False</PropertyVal>
   <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
+  <PropertyVal Name="TextSize">0.0</PropertyVal>
   <PropertyVal Name="TextFont">System</PropertyVal>
   <PropertyVal Name="ButtonStyle">0</PropertyVal>
   <PropertyVal Name="AutoDeactivate">True</PropertyVal>
@@ -1216,7 +1216,7 @@
   <PropertyVal Name="Italic">False</PropertyVal>
   <PropertyVal Name="Bold">False</PropertyVal>
   <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
+  <PropertyVal Name="TextSize">0.0</PropertyVal>
   <PropertyVal Name="TextFont">System</PropertyVal>
   <PropertyVal Name="ButtonStyle">0</PropertyVal>
   <PropertyVal Name="AutoDeactivate">True</PropertyVal>
@@ -1252,7 +1252,7 @@
   <PropertyVal Name="Italic">False</PropertyVal>
   <PropertyVal Name="Bold">False</PropertyVal>
   <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
+  <PropertyVal Name="TextSize">0.0</PropertyVal>
   <PropertyVal Name="TextFont">System</PropertyVal>
   <PropertyVal Name="ButtonStyle">0</PropertyVal>
   <PropertyVal Name="AutoDeactivate">True</PropertyVal>
@@ -1288,7 +1288,7 @@
   <PropertyVal Name="Italic">False</PropertyVal>
   <PropertyVal Name="Bold">False</PropertyVal>
   <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
+  <PropertyVal Name="TextSize">0.0</PropertyVal>
   <PropertyVal Name="TextFont">System</PropertyVal>
   <PropertyVal Name="ButtonStyle">0</PropertyVal>
   <PropertyVal Name="AutoDeactivate">True</PropertyVal>
@@ -1324,7 +1324,7 @@
   <PropertyVal Name="Italic">False</PropertyVal>
   <PropertyVal Name="Bold">False</PropertyVal>
   <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
+  <PropertyVal Name="TextSize">0.0</PropertyVal>
   <PropertyVal Name="TextFont">System</PropertyVal>
   <PropertyVal Name="ButtonStyle">0</PropertyVal>
   <PropertyVal Name="AutoDeactivate">True</PropertyVal>
@@ -1360,7 +1360,7 @@
   <PropertyVal Name="Italic">False</PropertyVal>
   <PropertyVal Name="Bold">False</PropertyVal>
   <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
+  <PropertyVal Name="TextSize">0.0</PropertyVal>
   <PropertyVal Name="TextFont">System</PropertyVal>
   <PropertyVal Name="ButtonStyle">0</PropertyVal>
   <PropertyVal Name="AutoDeactivate">True</PropertyVal>
@@ -1396,7 +1396,7 @@
   <PropertyVal Name="Italic">False</PropertyVal>
   <PropertyVal Name="Bold">False</PropertyVal>
   <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
+  <PropertyVal Name="TextSize">0.0</PropertyVal>
   <PropertyVal Name="TextFont">System</PropertyVal>
   <PropertyVal Name="ButtonStyle">0</PropertyVal>
   <PropertyVal Name="AutoDeactivate">True</PropertyVal>
@@ -1432,7 +1432,7 @@
   <PropertyVal Name="Italic">False</PropertyVal>
   <PropertyVal Name="Bold">False</PropertyVal>
   <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
+  <PropertyVal Name="TextSize">0.0</PropertyVal>
   <PropertyVal Name="TextFont">System</PropertyVal>
   <PropertyVal Name="ButtonStyle">0</PropertyVal>
   <PropertyVal Name="AutoDeactivate">True</PropertyVal>
@@ -1468,7 +1468,7 @@
   <PropertyVal Name="Italic">False</PropertyVal>
   <PropertyVal Name="Bold">False</PropertyVal>
   <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
+  <PropertyVal Name="TextSize">0.0</PropertyVal>
   <PropertyVal Name="TextFont">System</PropertyVal>
   <PropertyVal Name="ButtonStyle">0</PropertyVal>
   <PropertyVal Name="AutoDeactivate">True</PropertyVal>
@@ -1506,7 +1506,7 @@
   <PropertyVal Name="Italic">False</PropertyVal>
   <PropertyVal Name="Bold">False</PropertyVal>
   <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
+  <PropertyVal Name="TextSize">0.0</PropertyVal>
   <PropertyVal Name="TextFont">System</PropertyVal>
   <PropertyVal Name="AutoDeactivate">True</PropertyVal>
   <PropertyVal Name="HelpTag"></PropertyVal>
@@ -1552,7 +1552,7 @@
   <PropertyVal Name="Italic">False</PropertyVal>
   <PropertyVal Name="Bold">False</PropertyVal>
   <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
+  <PropertyVal Name="TextSize">0.0</PropertyVal>
   <PropertyVal Name="TextFont">System</PropertyVal>
   <PropertyVal Name="AutoDeactivate">True</PropertyVal>
   <PropertyVal Name="HelpTag"></PropertyVal>
@@ -1592,7 +1592,7 @@
   <PropertyVal Name="Italic">False</PropertyVal>
   <PropertyVal Name="Bold">False</PropertyVal>
   <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
+  <PropertyVal Name="TextSize">0.0</PropertyVal>
   <PropertyVal Name="TextFont">System</PropertyVal>
   <PropertyVal Name="AutoDeactivate">True</PropertyVal>
   <PropertyVal Name="HelpTag"></PropertyVal>
@@ -1638,7 +1638,7 @@
   <PropertyVal Name="Italic">False</PropertyVal>
   <PropertyVal Name="Bold">False</PropertyVal>
   <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
+  <PropertyVal Name="TextSize">0.0</PropertyVal>
   <PropertyVal Name="TextFont">System</PropertyVal>
   <PropertyVal Name="AutoDeactivate">True</PropertyVal>
   <PropertyVal Name="HelpTag"></PropertyVal>
@@ -1678,7 +1678,7 @@
   <PropertyVal Name="Italic">False</PropertyVal>
   <PropertyVal Name="Bold">False</PropertyVal>
   <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
+  <PropertyVal Name="TextSize">0.0</PropertyVal>
   <PropertyVal Name="TextFont">System</PropertyVal>
   <PropertyVal Name="AutoDeactivate">True</PropertyVal>
   <PropertyVal Name="HelpTag"></PropertyVal>
@@ -1724,7 +1724,7 @@
   <PropertyVal Name="Italic">False</PropertyVal>
   <PropertyVal Name="Bold">False</PropertyVal>
   <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
+  <PropertyVal Name="TextSize">0.0</PropertyVal>
   <PropertyVal Name="TextFont">System</PropertyVal>
   <PropertyVal Name="AutoDeactivate">True</PropertyVal>
   <PropertyVal Name="HelpTag"></PropertyVal>
@@ -1762,7 +1762,7 @@
   <PropertyVal Name="Italic">False</PropertyVal>
   <PropertyVal Name="Bold">False</PropertyVal>
   <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
+  <PropertyVal Name="TextSize">0.0</PropertyVal>
   <PropertyVal Name="TextFont">System</PropertyVal>
   <PropertyVal Name="ButtonStyle">0</PropertyVal>
   <PropertyVal Name="AutoDeactivate">True</PropertyVal>
@@ -1798,7 +1798,7 @@
   <PropertyVal Name="Italic">False</PropertyVal>
   <PropertyVal Name="Bold">False</PropertyVal>
   <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
+  <PropertyVal Name="TextSize">0.0</PropertyVal>
   <PropertyVal Name="TextFont">System</PropertyVal>
   <PropertyVal Name="ButtonStyle">0</PropertyVal>
   <PropertyVal Name="AutoDeactivate">True</PropertyVal>
@@ -1836,7 +1836,7 @@
   <PropertyVal Name="Italic">False</PropertyVal>
   <PropertyVal Name="Bold">False</PropertyVal>
   <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
+  <PropertyVal Name="TextSize">0.0</PropertyVal>
   <PropertyVal Name="TextFont">System</PropertyVal>
   <PropertyVal Name="AutoDeactivate">True</PropertyVal>
   <PropertyVal Name="HelpTag"></PropertyVal>
@@ -2626,52 +2626,52 @@
  <Control>
   <ControlClass>OpenGLSurface</ControlClass>
   <ItemName>OpenGLSurface</ItemName>
-  <PropertyVal Name="DoubleBuffer">True</PropertyVal>
-  <PropertyVal Name="DepthBits">24</PropertyVal>
-  <PropertyVal Name="ColorBits">24</PropertyVal>
-  <PropertyVal Name="Enabled">True</PropertyVal>
-  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
-  <PropertyVal Name="HelpTag"></PropertyVal>
-  <PropertyVal Name="Visible">True</PropertyVal>
-  <PropertyVal Name="InitialParent"></PropertyVal>
-  <PropertyVal Name="TabStop">True</PropertyVal>
-  <PropertyVal Name="TabIndex"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="LockBottom">True</PropertyVal>
-  <PropertyVal Name="LockRight">True</PropertyVal>
-  <PropertyVal Name="LockTop">True</PropertyVal>
-  <PropertyVal Name="LockLeft">True</PropertyVal>
-  <PropertyVal Name="Height">400</PropertyVal>
-  <PropertyVal Name="Width">600</PropertyVal>
-  <PropertyVal Name="Top"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="Left"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Super">OpenGLSurface</PropertyVal>
-  <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">Surface</PropertyVal>
+  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Left"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="Top"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="Width">600</PropertyVal>
+  <PropertyVal Name="Height">400</PropertyVal>
+  <PropertyVal Name="LockLeft">True</PropertyVal>
+  <PropertyVal Name="LockTop">True</PropertyVal>
+  <PropertyVal Name="LockRight">True</PropertyVal>
+  <PropertyVal Name="LockBottom">True</PropertyVal>
+  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="TabIndex"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="TabStop">True</PropertyVal>
+  <PropertyVal Name="InitialParent"></PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="HelpTag"></PropertyVal>
+  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
+  <PropertyVal Name="Enabled">True</PropertyVal>
+  <PropertyVal Name="ColorBits">24</PropertyVal>
+  <PropertyVal Name="DepthBits">24</PropertyVal>
+  <PropertyVal Name="DoubleBuffer">True</PropertyVal>
+  <PropertyVal Name="Super">OpenGLSurface</PropertyVal>
   <ControlIndex>0</ControlIndex>
   <Locked>0</Locked>
  </Control>
  <Control>
   <ControlClass>MainToolbar</ControlClass>
   <ItemName>MainToolbar</ItemName>
-  <PropertyVal Name="TabPanelIndex">0</PropertyVal>
-  <PropertyVal Name="InitialParent"></PropertyVal>
-  <PropertyVal Name="Enabled">True</PropertyVal>
-  <PropertyVal Name="Visible">True</PropertyVal>
-  <PropertyVal Name="Height">32</PropertyVal>
-  <PropertyVal Name="Width">100</PropertyVal>
-  <PropertyVal Name="Top">20</PropertyVal>
-  <PropertyVal Name="Left">20</PropertyVal>
-  <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Super">MainToolbar</PropertyVal>
-  <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">tbMain</PropertyVal>
+  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Left">20</PropertyVal>
+  <PropertyVal Name="Top">20</PropertyVal>
+  <PropertyVal Name="Width">100</PropertyVal>
+  <PropertyVal Name="Height">32</PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="Enabled">True</PropertyVal>
+  <PropertyVal Name="InitialParent"></PropertyVal>
+  <PropertyVal Name="TabPanelIndex">0</PropertyVal>
+  <PropertyVal Name="Super">MainToolbar</PropertyVal>
   <ControlIndex>1</ControlIndex>
   <Locked>0</Locked>
  </Control>
 </block>
-<block type="Module" ID="1206462463">
+<block type="Module" ID="1872037887">
  <ObjName>X3Core</ObjName>
  <ObjContainerID>0</ObjContainerID>
  <IsClass>0</IsClass>
@@ -4248,9 +4248,9 @@
  <ObjName>Build</ObjName>
  <ObjContainerID>1656686591</ObjContainerID>
 </block>
-<block type="Module" ID="1558067199">
+<block type="Module" ID="702093311">
  <ObjName>X3Camera</ObjName>
- <ObjContainerID>1206462463</ObjContainerID>
+ <ObjContainerID>1872037887</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -4931,9 +4931,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="206696447">
+<block type="Module" ID="1562236927">
  <ObjName>X3Vector</ObjName>
- <ObjContainerID>1206462463</ObjContainerID>
+ <ObjContainerID>1872037887</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -5223,9 +5223,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="311996415">
+<block type="Module" ID="1074980863">
  <ObjName>X3Color</ObjName>
- <ObjContainerID>1206462463</ObjContainerID>
+ <ObjContainerID>1872037887</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -5422,9 +5422,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="621797375">
+<block type="Module" ID="1803952127">
  <ObjName>X3Polygon</ObjName>
- <ObjContainerID>1206462463</ObjContainerID>
+ <ObjContainerID>1872037887</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -6043,9 +6043,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="1097498623">
+<block type="Module" ID="1711716351">
  <ObjName>X3Light</ObjName>
- <ObjContainerID>1206462463</ObjContainerID>
+ <ObjContainerID>1872037887</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -6197,9 +6197,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="1643692031">
+<block type="Module" ID="869681151">
  <ObjName>X3Model</ObjName>
- <ObjContainerID>1206462463</ObjContainerID>
+ <ObjContainerID>1872037887</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -6802,9 +6802,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="754952191">
+<block type="Module" ID="1045366783">
  <ObjName>X3Texture</ObjName>
- <ObjContainerID>1206462463</ObjContainerID>
+ <ObjContainerID>1872037887</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -7081,9 +7081,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="1049819135">
+<block type="Module" ID="2079082495">
  <ObjName>X3UVCoordinate</ObjName>
- <ObjContainerID>1206462463</ObjContainerID>
+ <ObjContainerID>1872037887</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -7210,9 +7210,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="1196587007">
+<block type="Module" ID="1101582335">
  <ObjName>X3Quaternion</ObjName>
- <ObjContainerID>1206462463</ObjContainerID>
+ <ObjContainerID>1872037887</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -7685,9 +7685,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="340312063">
+<block type="Module" ID="1598873599">
  <ObjName>X3Scene</ObjName>
- <ObjContainerID>1206462463</ObjContainerID>
+ <ObjContainerID>1872037887</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -8320,9 +8320,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="1171775487">
+<block type="Module" ID="1461864447">
  <ObjName>X3Material</ObjName>
- <ObjContainerID>1206462463</ObjContainerID>
+ <ObjContainerID>1872037887</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -8476,9 +8476,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="980223999">
+<block type="Module" ID="1198829567">
  <ObjName>X3Sprite</ObjName>
- <ObjContainerID>1206462463</ObjContainerID>
+ <ObjContainerID>1872037887</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -8671,9 +8671,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="350410751">
+<block type="Module" ID="1126594559">
  <ObjName>X3SpriteCoordinate</ObjName>
- <ObjContainerID>1206462463</ObjContainerID>
+ <ObjContainerID>1872037887</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -8839,9 +8839,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="89892863">
+<block type="Module" ID="906254335">
  <ObjName>X3IO</ObjName>
- <ObjContainerID>1206462463</ObjContainerID>
+ <ObjContainerID>1872037887</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -11245,9 +11245,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="2060902399">
+<block type="Module" ID="968392703">
  <ObjName>X3BoundingBox</ObjName>
- <ObjContainerID>1206462463</ObjContainerID>
+ <ObjContainerID>1872037887</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -11560,9 +11560,9 @@
    <EditorCount>1</EditorCount>
    <Editor>
     <EditorIndex>0</EditorIndex>
-    <EditorLocation>frmCamera</EditorLocation>
+    <EditorLocation>X3Core</EditorLocation>
     <EditorPath></EditorPath>
-    <EditingPartID>2112952319</EditingPartID>
+    <EditingPartID>1872037887</EditingPartID>
    </Editor>
    <SelectedTab>0</SelectedTab>
   </Editors>
