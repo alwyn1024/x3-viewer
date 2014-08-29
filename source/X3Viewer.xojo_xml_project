@@ -17,7 +17,7 @@
  <DefaultLanguage>0</DefaultLanguage>
  <CurrentLanguage>0</CurrentLanguage>
  <DefaultEncoding>0</DefaultEncoding>
- <BuildFlags>29072</BuildFlags>
+ <BuildFlags>20880</BuildFlags>
  <UseBuildsFolder>1</UseBuildsFolder>
  <WebApp>0</WebApp>
  <Icon>
@@ -961,906 +961,909 @@
  <Control>
   <ControlClass>PushButton</ControlClass>
   <ItemName>PushButton</ItemName>
-  <PropertyVal Name="InitialParent"></PropertyVal>
-  <PropertyVal Name="Underline">False</PropertyVal>
-  <PropertyVal Name="Italic">False</PropertyVal>
-  <PropertyVal Name="Bold">False</PropertyVal>
-  <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0</PropertyVal>
-  <PropertyVal Name="TextFont">System</PropertyVal>
-  <PropertyVal Name="ButtonStyle">0</PropertyVal>
-  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
-  <PropertyVal Name="HelpTag"></PropertyVal>
-  <PropertyVal Name="Visible">True</PropertyVal>
-  <PropertyVal Name="Enabled">True</PropertyVal>
-  <PropertyVal Name="Cancel">False</PropertyVal>
-  <PropertyVal Name="Default">False</PropertyVal>
-  <PropertyVal Name="Caption">Dolly In</PropertyVal>
-  <PropertyVal Name="TabStop">True</PropertyVal>
-  <PropertyVal Name="TabIndex"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="LockBottom">False</PropertyVal>
-  <PropertyVal Name="LockRight">False</PropertyVal>
-  <PropertyVal Name="LockTop">True</PropertyVal>
-  <PropertyVal Name="LockLeft">True</PropertyVal>
-  <PropertyVal Name="Height">22</PropertyVal>
-  <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">48</PropertyVal>
-  <PropertyVal Name="Left">20</PropertyVal>
-  <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
-  <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">cmdDollyIn</PropertyVal>
+  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Left">20</PropertyVal>
+  <PropertyVal Name="Top">48</PropertyVal>
+  <PropertyVal Name="Width">109</PropertyVal>
+  <PropertyVal Name="Height">22</PropertyVal>
+  <PropertyVal Name="LockLeft">True</PropertyVal>
+  <PropertyVal Name="LockTop">True</PropertyVal>
+  <PropertyVal Name="LockRight">False</PropertyVal>
+  <PropertyVal Name="LockBottom">False</PropertyVal>
+  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="TabIndex"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="TabStop">True</PropertyVal>
+  <PropertyVal Name="Caption">Dolly In</PropertyVal>
+  <PropertyVal Name="Default">False</PropertyVal>
+  <PropertyVal Name="Cancel">False</PropertyVal>
+  <PropertyVal Name="Enabled">True</PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="HelpTag"></PropertyVal>
+  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
+  <PropertyVal Name="ButtonStyle">0</PropertyVal>
+  <PropertyVal Name="TextFont">System</PropertyVal>
+  <PropertyVal Name="TextSize">0.0</PropertyVal>
+  <PropertyVal Name="TextUnit">0</PropertyVal>
+  <PropertyVal Name="Bold">False</PropertyVal>
+  <PropertyVal Name="Italic">False</PropertyVal>
+  <PropertyVal Name="Underline">False</PropertyVal>
+  <PropertyVal Name="InitialParent"></PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>0</ControlIndex>
   <Locked>0</Locked>
  </Control>
  <Control>
   <ControlClass>PushButton</ControlClass>
   <ItemName>PushButton</ItemName>
-  <PropertyVal Name="InitialParent"></PropertyVal>
-  <PropertyVal Name="Underline">False</PropertyVal>
-  <PropertyVal Name="Italic">False</PropertyVal>
-  <PropertyVal Name="Bold">False</PropertyVal>
-  <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0</PropertyVal>
-  <PropertyVal Name="TextFont">System</PropertyVal>
-  <PropertyVal Name="ButtonStyle">0</PropertyVal>
-  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
-  <PropertyVal Name="HelpTag"></PropertyVal>
-  <PropertyVal Name="Visible">True</PropertyVal>
-  <PropertyVal Name="Enabled">True</PropertyVal>
-  <PropertyVal Name="Cancel">False</PropertyVal>
-  <PropertyVal Name="Default">False</PropertyVal>
-  <PropertyVal Name="Caption">Dolly Out</PropertyVal>
-  <PropertyVal Name="TabStop">True</PropertyVal>
-  <PropertyVal Name="TabIndex"><Hex bytes="1">31</Hex></PropertyVal>
-  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="LockBottom">False</PropertyVal>
-  <PropertyVal Name="LockRight">False</PropertyVal>
-  <PropertyVal Name="LockTop">True</PropertyVal>
-  <PropertyVal Name="LockLeft">True</PropertyVal>
-  <PropertyVal Name="Height">22</PropertyVal>
-  <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">72</PropertyVal>
-  <PropertyVal Name="Left">20</PropertyVal>
-  <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
-  <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">cmdDollyOut</PropertyVal>
+  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Left">20</PropertyVal>
+  <PropertyVal Name="Top">72</PropertyVal>
+  <PropertyVal Name="Width">109</PropertyVal>
+  <PropertyVal Name="Height">22</PropertyVal>
+  <PropertyVal Name="LockLeft">True</PropertyVal>
+  <PropertyVal Name="LockTop">True</PropertyVal>
+  <PropertyVal Name="LockRight">False</PropertyVal>
+  <PropertyVal Name="LockBottom">False</PropertyVal>
+  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="TabIndex"><Hex bytes="1">31</Hex></PropertyVal>
+  <PropertyVal Name="TabStop">True</PropertyVal>
+  <PropertyVal Name="Caption">Dolly Out</PropertyVal>
+  <PropertyVal Name="Default">False</PropertyVal>
+  <PropertyVal Name="Cancel">False</PropertyVal>
+  <PropertyVal Name="Enabled">True</PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="HelpTag"></PropertyVal>
+  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
+  <PropertyVal Name="ButtonStyle">0</PropertyVal>
+  <PropertyVal Name="TextFont">System</PropertyVal>
+  <PropertyVal Name="TextSize">0.0</PropertyVal>
+  <PropertyVal Name="TextUnit">0</PropertyVal>
+  <PropertyVal Name="Bold">False</PropertyVal>
+  <PropertyVal Name="Italic">False</PropertyVal>
+  <PropertyVal Name="Underline">False</PropertyVal>
+  <PropertyVal Name="InitialParent"></PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>1</ControlIndex>
   <Locked>0</Locked>
  </Control>
  <Control>
   <ControlClass>PushButton</ControlClass>
   <ItemName>PushButton</ItemName>
-  <PropertyVal Name="InitialParent"></PropertyVal>
-  <PropertyVal Name="Underline">False</PropertyVal>
-  <PropertyVal Name="Italic">False</PropertyVal>
-  <PropertyVal Name="Bold">False</PropertyVal>
-  <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0</PropertyVal>
-  <PropertyVal Name="TextFont">System</PropertyVal>
-  <PropertyVal Name="ButtonStyle">0</PropertyVal>
-  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
-  <PropertyVal Name="HelpTag"></PropertyVal>
-  <PropertyVal Name="Visible">True</PropertyVal>
-  <PropertyVal Name="Enabled">True</PropertyVal>
-  <PropertyVal Name="Cancel">False</PropertyVal>
-  <PropertyVal Name="Default">False</PropertyVal>
-  <PropertyVal Name="Caption">Pedestal Up</PropertyVal>
-  <PropertyVal Name="TabStop">True</PropertyVal>
-  <PropertyVal Name="TabIndex"><Hex bytes="1">32</Hex></PropertyVal>
-  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="LockBottom">False</PropertyVal>
-  <PropertyVal Name="LockRight">False</PropertyVal>
-  <PropertyVal Name="LockTop">True</PropertyVal>
-  <PropertyVal Name="LockLeft">True</PropertyVal>
-  <PropertyVal Name="Height">22</PropertyVal>
-  <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">96</PropertyVal>
-  <PropertyVal Name="Left">20</PropertyVal>
-  <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
-  <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">cmdPedestalUp</PropertyVal>
+  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Left">20</PropertyVal>
+  <PropertyVal Name="Top">96</PropertyVal>
+  <PropertyVal Name="Width">109</PropertyVal>
+  <PropertyVal Name="Height">22</PropertyVal>
+  <PropertyVal Name="LockLeft">True</PropertyVal>
+  <PropertyVal Name="LockTop">True</PropertyVal>
+  <PropertyVal Name="LockRight">False</PropertyVal>
+  <PropertyVal Name="LockBottom">False</PropertyVal>
+  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="TabIndex"><Hex bytes="1">32</Hex></PropertyVal>
+  <PropertyVal Name="TabStop">True</PropertyVal>
+  <PropertyVal Name="Caption">Pedestal Up</PropertyVal>
+  <PropertyVal Name="Default">False</PropertyVal>
+  <PropertyVal Name="Cancel">False</PropertyVal>
+  <PropertyVal Name="Enabled">True</PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="HelpTag"></PropertyVal>
+  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
+  <PropertyVal Name="ButtonStyle">0</PropertyVal>
+  <PropertyVal Name="TextFont">System</PropertyVal>
+  <PropertyVal Name="TextSize">0.0</PropertyVal>
+  <PropertyVal Name="TextUnit">0</PropertyVal>
+  <PropertyVal Name="Bold">False</PropertyVal>
+  <PropertyVal Name="Italic">False</PropertyVal>
+  <PropertyVal Name="Underline">False</PropertyVal>
+  <PropertyVal Name="InitialParent"></PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>2</ControlIndex>
   <Locked>0</Locked>
  </Control>
  <Control>
   <ControlClass>PushButton</ControlClass>
   <ItemName>PushButton</ItemName>
-  <PropertyVal Name="InitialParent"></PropertyVal>
-  <PropertyVal Name="Underline">False</PropertyVal>
-  <PropertyVal Name="Italic">False</PropertyVal>
-  <PropertyVal Name="Bold">False</PropertyVal>
-  <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0</PropertyVal>
-  <PropertyVal Name="TextFont">System</PropertyVal>
-  <PropertyVal Name="ButtonStyle">0</PropertyVal>
-  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
-  <PropertyVal Name="HelpTag"></PropertyVal>
-  <PropertyVal Name="Visible">True</PropertyVal>
-  <PropertyVal Name="Enabled">True</PropertyVal>
-  <PropertyVal Name="Cancel">False</PropertyVal>
-  <PropertyVal Name="Default">False</PropertyVal>
-  <PropertyVal Name="Caption">Pedestal Down</PropertyVal>
-  <PropertyVal Name="TabStop">True</PropertyVal>
-  <PropertyVal Name="TabIndex"><Hex bytes="1">33</Hex></PropertyVal>
-  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="LockBottom">False</PropertyVal>
-  <PropertyVal Name="LockRight">False</PropertyVal>
-  <PropertyVal Name="LockTop">True</PropertyVal>
-  <PropertyVal Name="LockLeft">True</PropertyVal>
-  <PropertyVal Name="Height">22</PropertyVal>
-  <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">120</PropertyVal>
-  <PropertyVal Name="Left">20</PropertyVal>
-  <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
-  <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">cmdPedestalDown</PropertyVal>
+  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Left">20</PropertyVal>
+  <PropertyVal Name="Top">120</PropertyVal>
+  <PropertyVal Name="Width">109</PropertyVal>
+  <PropertyVal Name="Height">22</PropertyVal>
+  <PropertyVal Name="LockLeft">True</PropertyVal>
+  <PropertyVal Name="LockTop">True</PropertyVal>
+  <PropertyVal Name="LockRight">False</PropertyVal>
+  <PropertyVal Name="LockBottom">False</PropertyVal>
+  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="TabIndex"><Hex bytes="1">33</Hex></PropertyVal>
+  <PropertyVal Name="TabStop">True</PropertyVal>
+  <PropertyVal Name="Caption">Pedestal Down</PropertyVal>
+  <PropertyVal Name="Default">False</PropertyVal>
+  <PropertyVal Name="Cancel">False</PropertyVal>
+  <PropertyVal Name="Enabled">True</PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="HelpTag"></PropertyVal>
+  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
+  <PropertyVal Name="ButtonStyle">0</PropertyVal>
+  <PropertyVal Name="TextFont">System</PropertyVal>
+  <PropertyVal Name="TextSize">0.0</PropertyVal>
+  <PropertyVal Name="TextUnit">0</PropertyVal>
+  <PropertyVal Name="Bold">False</PropertyVal>
+  <PropertyVal Name="Italic">False</PropertyVal>
+  <PropertyVal Name="Underline">False</PropertyVal>
+  <PropertyVal Name="InitialParent"></PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>3</ControlIndex>
   <Locked>0</Locked>
  </Control>
  <Control>
   <ControlClass>PushButton</ControlClass>
   <ItemName>PushButton</ItemName>
-  <PropertyVal Name="InitialParent"></PropertyVal>
-  <PropertyVal Name="Underline">False</PropertyVal>
-  <PropertyVal Name="Italic">False</PropertyVal>
-  <PropertyVal Name="Bold">False</PropertyVal>
-  <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0</PropertyVal>
-  <PropertyVal Name="TextFont">System</PropertyVal>
-  <PropertyVal Name="ButtonStyle">0</PropertyVal>
-  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
-  <PropertyVal Name="HelpTag"></PropertyVal>
-  <PropertyVal Name="Visible">True</PropertyVal>
-  <PropertyVal Name="Enabled">True</PropertyVal>
-  <PropertyVal Name="Cancel">False</PropertyVal>
-  <PropertyVal Name="Default">False</PropertyVal>
-  <PropertyVal Name="Caption">Truck Left</PropertyVal>
-  <PropertyVal Name="TabStop">True</PropertyVal>
-  <PropertyVal Name="TabIndex"><Hex bytes="1">34</Hex></PropertyVal>
-  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="LockBottom">False</PropertyVal>
-  <PropertyVal Name="LockRight">False</PropertyVal>
-  <PropertyVal Name="LockTop">True</PropertyVal>
-  <PropertyVal Name="LockLeft">True</PropertyVal>
-  <PropertyVal Name="Height">22</PropertyVal>
-  <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">144</PropertyVal>
-  <PropertyVal Name="Left">20</PropertyVal>
-  <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
-  <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">cmdTruckLeft</PropertyVal>
+  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Left">20</PropertyVal>
+  <PropertyVal Name="Top">144</PropertyVal>
+  <PropertyVal Name="Width">109</PropertyVal>
+  <PropertyVal Name="Height">22</PropertyVal>
+  <PropertyVal Name="LockLeft">True</PropertyVal>
+  <PropertyVal Name="LockTop">True</PropertyVal>
+  <PropertyVal Name="LockRight">False</PropertyVal>
+  <PropertyVal Name="LockBottom">False</PropertyVal>
+  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="TabIndex"><Hex bytes="1">34</Hex></PropertyVal>
+  <PropertyVal Name="TabStop">True</PropertyVal>
+  <PropertyVal Name="Caption">Truck Left</PropertyVal>
+  <PropertyVal Name="Default">False</PropertyVal>
+  <PropertyVal Name="Cancel">False</PropertyVal>
+  <PropertyVal Name="Enabled">True</PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="HelpTag"></PropertyVal>
+  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
+  <PropertyVal Name="ButtonStyle">0</PropertyVal>
+  <PropertyVal Name="TextFont">System</PropertyVal>
+  <PropertyVal Name="TextSize">0.0</PropertyVal>
+  <PropertyVal Name="TextUnit">0</PropertyVal>
+  <PropertyVal Name="Bold">False</PropertyVal>
+  <PropertyVal Name="Italic">False</PropertyVal>
+  <PropertyVal Name="Underline">False</PropertyVal>
+  <PropertyVal Name="InitialParent"></PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>4</ControlIndex>
   <Locked>0</Locked>
  </Control>
  <Control>
   <ControlClass>PushButton</ControlClass>
   <ItemName>PushButton</ItemName>
-  <PropertyVal Name="InitialParent"></PropertyVal>
-  <PropertyVal Name="Underline">False</PropertyVal>
-  <PropertyVal Name="Italic">False</PropertyVal>
-  <PropertyVal Name="Bold">False</PropertyVal>
-  <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0</PropertyVal>
-  <PropertyVal Name="TextFont">System</PropertyVal>
-  <PropertyVal Name="ButtonStyle">0</PropertyVal>
-  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
-  <PropertyVal Name="HelpTag"></PropertyVal>
-  <PropertyVal Name="Visible">True</PropertyVal>
-  <PropertyVal Name="Enabled">True</PropertyVal>
-  <PropertyVal Name="Cancel">False</PropertyVal>
-  <PropertyVal Name="Default">False</PropertyVal>
-  <PropertyVal Name="Caption">Truck Right</PropertyVal>
-  <PropertyVal Name="TabStop">True</PropertyVal>
-  <PropertyVal Name="TabIndex"><Hex bytes="1">35</Hex></PropertyVal>
-  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="LockBottom">False</PropertyVal>
-  <PropertyVal Name="LockRight">False</PropertyVal>
-  <PropertyVal Name="LockTop">True</PropertyVal>
-  <PropertyVal Name="LockLeft">True</PropertyVal>
-  <PropertyVal Name="Height">22</PropertyVal>
-  <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">168</PropertyVal>
-  <PropertyVal Name="Left">20</PropertyVal>
-  <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
-  <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">cmdTruckRight</PropertyVal>
+  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Left">20</PropertyVal>
+  <PropertyVal Name="Top">168</PropertyVal>
+  <PropertyVal Name="Width">109</PropertyVal>
+  <PropertyVal Name="Height">22</PropertyVal>
+  <PropertyVal Name="LockLeft">True</PropertyVal>
+  <PropertyVal Name="LockTop">True</PropertyVal>
+  <PropertyVal Name="LockRight">False</PropertyVal>
+  <PropertyVal Name="LockBottom">False</PropertyVal>
+  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="TabIndex"><Hex bytes="1">35</Hex></PropertyVal>
+  <PropertyVal Name="TabStop">True</PropertyVal>
+  <PropertyVal Name="Caption">Truck Right</PropertyVal>
+  <PropertyVal Name="Default">False</PropertyVal>
+  <PropertyVal Name="Cancel">False</PropertyVal>
+  <PropertyVal Name="Enabled">True</PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="HelpTag"></PropertyVal>
+  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
+  <PropertyVal Name="ButtonStyle">0</PropertyVal>
+  <PropertyVal Name="TextFont">System</PropertyVal>
+  <PropertyVal Name="TextSize">0.0</PropertyVal>
+  <PropertyVal Name="TextUnit">0</PropertyVal>
+  <PropertyVal Name="Bold">False</PropertyVal>
+  <PropertyVal Name="Italic">False</PropertyVal>
+  <PropertyVal Name="Underline">False</PropertyVal>
+  <PropertyVal Name="InitialParent"></PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>5</ControlIndex>
   <Locked>0</Locked>
  </Control>
  <Control>
   <ControlClass>PushButton</ControlClass>
   <ItemName>PushButton</ItemName>
-  <PropertyVal Name="InitialParent"></PropertyVal>
-  <PropertyVal Name="Underline">False</PropertyVal>
-  <PropertyVal Name="Italic">False</PropertyVal>
-  <PropertyVal Name="Bold">False</PropertyVal>
-  <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0</PropertyVal>
-  <PropertyVal Name="TextFont">System</PropertyVal>
-  <PropertyVal Name="ButtonStyle">0</PropertyVal>
-  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
-  <PropertyVal Name="HelpTag"></PropertyVal>
-  <PropertyVal Name="Visible">True</PropertyVal>
-  <PropertyVal Name="Enabled">True</PropertyVal>
-  <PropertyVal Name="Cancel">False</PropertyVal>
-  <PropertyVal Name="Default">False</PropertyVal>
-  <PropertyVal Name="Caption">Pan Left</PropertyVal>
-  <PropertyVal Name="TabStop">True</PropertyVal>
-  <PropertyVal Name="TabIndex"><Hex bytes="1">36</Hex></PropertyVal>
-  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="LockBottom">False</PropertyVal>
-  <PropertyVal Name="LockRight">False</PropertyVal>
-  <PropertyVal Name="LockTop">True</PropertyVal>
-  <PropertyVal Name="LockLeft">True</PropertyVal>
-  <PropertyVal Name="Height">22</PropertyVal>
-  <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">72</PropertyVal>
-  <PropertyVal Name="Left">141</PropertyVal>
-  <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
-  <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">cmdPanLeft</PropertyVal>
+  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Left">141</PropertyVal>
+  <PropertyVal Name="Top">72</PropertyVal>
+  <PropertyVal Name="Width">109</PropertyVal>
+  <PropertyVal Name="Height">22</PropertyVal>
+  <PropertyVal Name="LockLeft">True</PropertyVal>
+  <PropertyVal Name="LockTop">True</PropertyVal>
+  <PropertyVal Name="LockRight">False</PropertyVal>
+  <PropertyVal Name="LockBottom">False</PropertyVal>
+  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="TabIndex"><Hex bytes="1">36</Hex></PropertyVal>
+  <PropertyVal Name="TabStop">True</PropertyVal>
+  <PropertyVal Name="Caption">Pan Left</PropertyVal>
+  <PropertyVal Name="Default">False</PropertyVal>
+  <PropertyVal Name="Cancel">False</PropertyVal>
+  <PropertyVal Name="Enabled">True</PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="HelpTag"></PropertyVal>
+  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
+  <PropertyVal Name="ButtonStyle">0</PropertyVal>
+  <PropertyVal Name="TextFont">System</PropertyVal>
+  <PropertyVal Name="TextSize">0.0</PropertyVal>
+  <PropertyVal Name="TextUnit">0</PropertyVal>
+  <PropertyVal Name="Bold">False</PropertyVal>
+  <PropertyVal Name="Italic">False</PropertyVal>
+  <PropertyVal Name="Underline">False</PropertyVal>
+  <PropertyVal Name="InitialParent"></PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>6</ControlIndex>
   <Locked>0</Locked>
  </Control>
  <Control>
   <ControlClass>PushButton</ControlClass>
   <ItemName>PushButton</ItemName>
-  <PropertyVal Name="InitialParent"></PropertyVal>
-  <PropertyVal Name="Underline">False</PropertyVal>
-  <PropertyVal Name="Italic">False</PropertyVal>
-  <PropertyVal Name="Bold">False</PropertyVal>
-  <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0</PropertyVal>
-  <PropertyVal Name="TextFont">System</PropertyVal>
-  <PropertyVal Name="ButtonStyle">0</PropertyVal>
-  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
-  <PropertyVal Name="HelpTag"></PropertyVal>
-  <PropertyVal Name="Visible">True</PropertyVal>
-  <PropertyVal Name="Enabled">True</PropertyVal>
-  <PropertyVal Name="Cancel">False</PropertyVal>
-  <PropertyVal Name="Default">False</PropertyVal>
-  <PropertyVal Name="Caption">Pan Right</PropertyVal>
-  <PropertyVal Name="TabStop">True</PropertyVal>
-  <PropertyVal Name="TabIndex"><Hex bytes="1">37</Hex></PropertyVal>
-  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="LockBottom">False</PropertyVal>
-  <PropertyVal Name="LockRight">False</PropertyVal>
-  <PropertyVal Name="LockTop">True</PropertyVal>
-  <PropertyVal Name="LockLeft">True</PropertyVal>
-  <PropertyVal Name="Height">22</PropertyVal>
-  <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">96</PropertyVal>
-  <PropertyVal Name="Left">141</PropertyVal>
-  <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
-  <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">cmdPanRight</PropertyVal>
+  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Left">141</PropertyVal>
+  <PropertyVal Name="Top">96</PropertyVal>
+  <PropertyVal Name="Width">109</PropertyVal>
+  <PropertyVal Name="Height">22</PropertyVal>
+  <PropertyVal Name="LockLeft">True</PropertyVal>
+  <PropertyVal Name="LockTop">True</PropertyVal>
+  <PropertyVal Name="LockRight">False</PropertyVal>
+  <PropertyVal Name="LockBottom">False</PropertyVal>
+  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="TabIndex"><Hex bytes="1">37</Hex></PropertyVal>
+  <PropertyVal Name="TabStop">True</PropertyVal>
+  <PropertyVal Name="Caption">Pan Right</PropertyVal>
+  <PropertyVal Name="Default">False</PropertyVal>
+  <PropertyVal Name="Cancel">False</PropertyVal>
+  <PropertyVal Name="Enabled">True</PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="HelpTag"></PropertyVal>
+  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
+  <PropertyVal Name="ButtonStyle">0</PropertyVal>
+  <PropertyVal Name="TextFont">System</PropertyVal>
+  <PropertyVal Name="TextSize">0.0</PropertyVal>
+  <PropertyVal Name="TextUnit">0</PropertyVal>
+  <PropertyVal Name="Bold">False</PropertyVal>
+  <PropertyVal Name="Italic">False</PropertyVal>
+  <PropertyVal Name="Underline">False</PropertyVal>
+  <PropertyVal Name="InitialParent"></PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>7</ControlIndex>
   <Locked>0</Locked>
  </Control>
  <Control>
   <ControlClass>PushButton</ControlClass>
   <ItemName>PushButton</ItemName>
-  <PropertyVal Name="InitialParent"></PropertyVal>
-  <PropertyVal Name="Underline">False</PropertyVal>
-  <PropertyVal Name="Italic">False</PropertyVal>
-  <PropertyVal Name="Bold">False</PropertyVal>
-  <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0</PropertyVal>
-  <PropertyVal Name="TextFont">System</PropertyVal>
-  <PropertyVal Name="ButtonStyle">0</PropertyVal>
-  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
-  <PropertyVal Name="HelpTag"></PropertyVal>
-  <PropertyVal Name="Visible">True</PropertyVal>
-  <PropertyVal Name="Enabled">True</PropertyVal>
-  <PropertyVal Name="Cancel">False</PropertyVal>
-  <PropertyVal Name="Default">False</PropertyVal>
-  <PropertyVal Name="Caption">Turn Dolly Left</PropertyVal>
-  <PropertyVal Name="TabStop">True</PropertyVal>
-  <PropertyVal Name="TabIndex"><Hex bytes="1">38</Hex></PropertyVal>
-  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="LockBottom">False</PropertyVal>
-  <PropertyVal Name="LockRight">False</PropertyVal>
-  <PropertyVal Name="LockTop">True</PropertyVal>
-  <PropertyVal Name="LockLeft">True</PropertyVal>
-  <PropertyVal Name="Height">22</PropertyVal>
-  <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">191</PropertyVal>
-  <PropertyVal Name="Left">20</PropertyVal>
-  <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
-  <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">cmdTurnDollyLeft</PropertyVal>
+  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Left">20</PropertyVal>
+  <PropertyVal Name="Top">191</PropertyVal>
+  <PropertyVal Name="Width">109</PropertyVal>
+  <PropertyVal Name="Height">22</PropertyVal>
+  <PropertyVal Name="LockLeft">True</PropertyVal>
+  <PropertyVal Name="LockTop">True</PropertyVal>
+  <PropertyVal Name="LockRight">False</PropertyVal>
+  <PropertyVal Name="LockBottom">False</PropertyVal>
+  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="TabIndex"><Hex bytes="1">38</Hex></PropertyVal>
+  <PropertyVal Name="TabStop">True</PropertyVal>
+  <PropertyVal Name="Caption">Turn Dolly Left</PropertyVal>
+  <PropertyVal Name="Default">False</PropertyVal>
+  <PropertyVal Name="Cancel">False</PropertyVal>
+  <PropertyVal Name="Enabled">True</PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="HelpTag"></PropertyVal>
+  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
+  <PropertyVal Name="ButtonStyle">0</PropertyVal>
+  <PropertyVal Name="TextFont">System</PropertyVal>
+  <PropertyVal Name="TextSize">0.0</PropertyVal>
+  <PropertyVal Name="TextUnit">0</PropertyVal>
+  <PropertyVal Name="Bold">False</PropertyVal>
+  <PropertyVal Name="Italic">False</PropertyVal>
+  <PropertyVal Name="Underline">False</PropertyVal>
+  <PropertyVal Name="InitialParent"></PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>8</ControlIndex>
   <Locked>0</Locked>
  </Control>
  <Control>
   <ControlClass>PushButton</ControlClass>
   <ItemName>PushButton</ItemName>
-  <PropertyVal Name="InitialParent"></PropertyVal>
-  <PropertyVal Name="Underline">False</PropertyVal>
-  <PropertyVal Name="Italic">False</PropertyVal>
-  <PropertyVal Name="Bold">False</PropertyVal>
-  <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0</PropertyVal>
-  <PropertyVal Name="TextFont">System</PropertyVal>
-  <PropertyVal Name="ButtonStyle">0</PropertyVal>
-  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
-  <PropertyVal Name="HelpTag"></PropertyVal>
-  <PropertyVal Name="Visible">True</PropertyVal>
-  <PropertyVal Name="Enabled">True</PropertyVal>
-  <PropertyVal Name="Cancel">False</PropertyVal>
-  <PropertyVal Name="Default">False</PropertyVal>
-  <PropertyVal Name="Caption">Turn Dolly Right</PropertyVal>
-  <PropertyVal Name="TabStop">True</PropertyVal>
-  <PropertyVal Name="TabIndex"><Hex bytes="1">39</Hex></PropertyVal>
-  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="LockBottom">False</PropertyVal>
-  <PropertyVal Name="LockRight">False</PropertyVal>
-  <PropertyVal Name="LockTop">True</PropertyVal>
-  <PropertyVal Name="LockLeft">True</PropertyVal>
-  <PropertyVal Name="Height">22</PropertyVal>
-  <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">215</PropertyVal>
-  <PropertyVal Name="Left">20</PropertyVal>
-  <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
-  <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">cmdTurnDollyRight</PropertyVal>
+  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Left">20</PropertyVal>
+  <PropertyVal Name="Top">215</PropertyVal>
+  <PropertyVal Name="Width">109</PropertyVal>
+  <PropertyVal Name="Height">22</PropertyVal>
+  <PropertyVal Name="LockLeft">True</PropertyVal>
+  <PropertyVal Name="LockTop">True</PropertyVal>
+  <PropertyVal Name="LockRight">False</PropertyVal>
+  <PropertyVal Name="LockBottom">False</PropertyVal>
+  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="TabIndex"><Hex bytes="1">39</Hex></PropertyVal>
+  <PropertyVal Name="TabStop">True</PropertyVal>
+  <PropertyVal Name="Caption">Turn Dolly Right</PropertyVal>
+  <PropertyVal Name="Default">False</PropertyVal>
+  <PropertyVal Name="Cancel">False</PropertyVal>
+  <PropertyVal Name="Enabled">True</PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="HelpTag"></PropertyVal>
+  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
+  <PropertyVal Name="ButtonStyle">0</PropertyVal>
+  <PropertyVal Name="TextFont">System</PropertyVal>
+  <PropertyVal Name="TextSize">0.0</PropertyVal>
+  <PropertyVal Name="TextUnit">0</PropertyVal>
+  <PropertyVal Name="Bold">False</PropertyVal>
+  <PropertyVal Name="Italic">False</PropertyVal>
+  <PropertyVal Name="Underline">False</PropertyVal>
+  <PropertyVal Name="InitialParent"></PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>9</ControlIndex>
   <Locked>0</Locked>
  </Control>
  <Control>
   <ControlClass>PushButton</ControlClass>
   <ItemName>PushButton</ItemName>
-  <PropertyVal Name="InitialParent"></PropertyVal>
-  <PropertyVal Name="Underline">False</PropertyVal>
-  <PropertyVal Name="Italic">False</PropertyVal>
-  <PropertyVal Name="Bold">False</PropertyVal>
-  <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0</PropertyVal>
-  <PropertyVal Name="TextFont">System</PropertyVal>
-  <PropertyVal Name="ButtonStyle">0</PropertyVal>
-  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
-  <PropertyVal Name="HelpTag"></PropertyVal>
-  <PropertyVal Name="Visible">True</PropertyVal>
-  <PropertyVal Name="Enabled">True</PropertyVal>
-  <PropertyVal Name="Cancel">False</PropertyVal>
-  <PropertyVal Name="Default">False</PropertyVal>
-  <PropertyVal Name="Caption">Tilt Camera Up</PropertyVal>
-  <PropertyVal Name="TabStop">True</PropertyVal>
-  <PropertyVal Name="TabIndex">10</PropertyVal>
-  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="LockBottom">False</PropertyVal>
-  <PropertyVal Name="LockRight">False</PropertyVal>
-  <PropertyVal Name="LockTop">True</PropertyVal>
-  <PropertyVal Name="LockLeft">True</PropertyVal>
-  <PropertyVal Name="Height">22</PropertyVal>
-  <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">168</PropertyVal>
-  <PropertyVal Name="Left">141</PropertyVal>
-  <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
-  <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">cmdTiltCameraUp</PropertyVal>
+  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Left">141</PropertyVal>
+  <PropertyVal Name="Top">168</PropertyVal>
+  <PropertyVal Name="Width">109</PropertyVal>
+  <PropertyVal Name="Height">22</PropertyVal>
+  <PropertyVal Name="LockLeft">True</PropertyVal>
+  <PropertyVal Name="LockTop">True</PropertyVal>
+  <PropertyVal Name="LockRight">False</PropertyVal>
+  <PropertyVal Name="LockBottom">False</PropertyVal>
+  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="TabIndex">10</PropertyVal>
+  <PropertyVal Name="TabStop">True</PropertyVal>
+  <PropertyVal Name="Caption">Tilt Camera Up</PropertyVal>
+  <PropertyVal Name="Default">False</PropertyVal>
+  <PropertyVal Name="Cancel">False</PropertyVal>
+  <PropertyVal Name="Enabled">True</PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="HelpTag"></PropertyVal>
+  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
+  <PropertyVal Name="ButtonStyle">0</PropertyVal>
+  <PropertyVal Name="TextFont">System</PropertyVal>
+  <PropertyVal Name="TextSize">0.0</PropertyVal>
+  <PropertyVal Name="TextUnit">0</PropertyVal>
+  <PropertyVal Name="Bold">False</PropertyVal>
+  <PropertyVal Name="Italic">False</PropertyVal>
+  <PropertyVal Name="Underline">False</PropertyVal>
+  <PropertyVal Name="InitialParent"></PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>10</ControlIndex>
   <Locked>0</Locked>
  </Control>
  <Control>
   <ControlClass>PushButton</ControlClass>
   <ItemName>PushButton</ItemName>
-  <PropertyVal Name="InitialParent"></PropertyVal>
-  <PropertyVal Name="Underline">False</PropertyVal>
-  <PropertyVal Name="Italic">False</PropertyVal>
-  <PropertyVal Name="Bold">False</PropertyVal>
-  <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0</PropertyVal>
-  <PropertyVal Name="TextFont">System</PropertyVal>
-  <PropertyVal Name="ButtonStyle">0</PropertyVal>
-  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
-  <PropertyVal Name="HelpTag"></PropertyVal>
-  <PropertyVal Name="Visible">True</PropertyVal>
-  <PropertyVal Name="Enabled">True</PropertyVal>
-  <PropertyVal Name="Cancel">False</PropertyVal>
-  <PropertyVal Name="Default">False</PropertyVal>
-  <PropertyVal Name="Caption">Tilt Camera Down</PropertyVal>
-  <PropertyVal Name="TabStop">True</PropertyVal>
-  <PropertyVal Name="TabIndex">11</PropertyVal>
-  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="LockBottom">False</PropertyVal>
-  <PropertyVal Name="LockRight">False</PropertyVal>
-  <PropertyVal Name="LockTop">True</PropertyVal>
-  <PropertyVal Name="LockLeft">True</PropertyVal>
-  <PropertyVal Name="Height">22</PropertyVal>
-  <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">192</PropertyVal>
-  <PropertyVal Name="Left">141</PropertyVal>
-  <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
-  <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">cmdTiltCameraDown</PropertyVal>
+  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Left">141</PropertyVal>
+  <PropertyVal Name="Top">192</PropertyVal>
+  <PropertyVal Name="Width">109</PropertyVal>
+  <PropertyVal Name="Height">22</PropertyVal>
+  <PropertyVal Name="LockLeft">True</PropertyVal>
+  <PropertyVal Name="LockTop">True</PropertyVal>
+  <PropertyVal Name="LockRight">False</PropertyVal>
+  <PropertyVal Name="LockBottom">False</PropertyVal>
+  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="TabIndex">11</PropertyVal>
+  <PropertyVal Name="TabStop">True</PropertyVal>
+  <PropertyVal Name="Caption">Tilt Camera Down</PropertyVal>
+  <PropertyVal Name="Default">False</PropertyVal>
+  <PropertyVal Name="Cancel">False</PropertyVal>
+  <PropertyVal Name="Enabled">True</PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="HelpTag"></PropertyVal>
+  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
+  <PropertyVal Name="ButtonStyle">0</PropertyVal>
+  <PropertyVal Name="TextFont">System</PropertyVal>
+  <PropertyVal Name="TextSize">0.0</PropertyVal>
+  <PropertyVal Name="TextUnit">0</PropertyVal>
+  <PropertyVal Name="Bold">False</PropertyVal>
+  <PropertyVal Name="Italic">False</PropertyVal>
+  <PropertyVal Name="Underline">False</PropertyVal>
+  <PropertyVal Name="InitialParent"></PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>11</ControlIndex>
   <Locked>0</Locked>
  </Control>
  <Control>
   <ControlClass>PushButton</ControlClass>
   <ItemName>PushButton</ItemName>
-  <PropertyVal Name="InitialParent"></PropertyVal>
-  <PropertyVal Name="Underline">False</PropertyVal>
-  <PropertyVal Name="Italic">False</PropertyVal>
-  <PropertyVal Name="Bold">False</PropertyVal>
-  <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0</PropertyVal>
-  <PropertyVal Name="TextFont">System</PropertyVal>
-  <PropertyVal Name="ButtonStyle">0</PropertyVal>
-  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
-  <PropertyVal Name="HelpTag"></PropertyVal>
-  <PropertyVal Name="Visible">True</PropertyVal>
-  <PropertyVal Name="Enabled">True</PropertyVal>
-  <PropertyVal Name="Cancel">False</PropertyVal>
-  <PropertyVal Name="Default">False</PropertyVal>
-  <PropertyVal Name="Caption">Roll Camera Left</PropertyVal>
-  <PropertyVal Name="TabStop">True</PropertyVal>
-  <PropertyVal Name="TabIndex">12</PropertyVal>
-  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="LockBottom">False</PropertyVal>
-  <PropertyVal Name="LockRight">False</PropertyVal>
-  <PropertyVal Name="LockTop">True</PropertyVal>
-  <PropertyVal Name="LockLeft">True</PropertyVal>
-  <PropertyVal Name="Height">22</PropertyVal>
-  <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">120</PropertyVal>
-  <PropertyVal Name="Left">141</PropertyVal>
-  <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
-  <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">cmdRollCameraLeft</PropertyVal>
+  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Left">141</PropertyVal>
+  <PropertyVal Name="Top">120</PropertyVal>
+  <PropertyVal Name="Width">109</PropertyVal>
+  <PropertyVal Name="Height">22</PropertyVal>
+  <PropertyVal Name="LockLeft">True</PropertyVal>
+  <PropertyVal Name="LockTop">True</PropertyVal>
+  <PropertyVal Name="LockRight">False</PropertyVal>
+  <PropertyVal Name="LockBottom">False</PropertyVal>
+  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="TabIndex">12</PropertyVal>
+  <PropertyVal Name="TabStop">True</PropertyVal>
+  <PropertyVal Name="Caption">Roll Camera Left</PropertyVal>
+  <PropertyVal Name="Default">False</PropertyVal>
+  <PropertyVal Name="Cancel">False</PropertyVal>
+  <PropertyVal Name="Enabled">True</PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="HelpTag"></PropertyVal>
+  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
+  <PropertyVal Name="ButtonStyle">0</PropertyVal>
+  <PropertyVal Name="TextFont">System</PropertyVal>
+  <PropertyVal Name="TextSize">0.0</PropertyVal>
+  <PropertyVal Name="TextUnit">0</PropertyVal>
+  <PropertyVal Name="Bold">False</PropertyVal>
+  <PropertyVal Name="Italic">False</PropertyVal>
+  <PropertyVal Name="Underline">False</PropertyVal>
+  <PropertyVal Name="InitialParent"></PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>12</ControlIndex>
   <Locked>0</Locked>
  </Control>
  <Control>
   <ControlClass>PushButton</ControlClass>
   <ItemName>PushButton</ItemName>
-  <PropertyVal Name="InitialParent"></PropertyVal>
-  <PropertyVal Name="Underline">False</PropertyVal>
-  <PropertyVal Name="Italic">False</PropertyVal>
-  <PropertyVal Name="Bold">False</PropertyVal>
-  <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0</PropertyVal>
-  <PropertyVal Name="TextFont">System</PropertyVal>
-  <PropertyVal Name="ButtonStyle">0</PropertyVal>
-  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
-  <PropertyVal Name="HelpTag"></PropertyVal>
-  <PropertyVal Name="Visible">True</PropertyVal>
-  <PropertyVal Name="Enabled">True</PropertyVal>
-  <PropertyVal Name="Cancel">False</PropertyVal>
-  <PropertyVal Name="Default">False</PropertyVal>
-  <PropertyVal Name="Caption">Roll Camera Right</PropertyVal>
-  <PropertyVal Name="TabStop">True</PropertyVal>
-  <PropertyVal Name="TabIndex">13</PropertyVal>
-  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="LockBottom">False</PropertyVal>
-  <PropertyVal Name="LockRight">False</PropertyVal>
-  <PropertyVal Name="LockTop">True</PropertyVal>
-  <PropertyVal Name="LockLeft">True</PropertyVal>
-  <PropertyVal Name="Height">22</PropertyVal>
-  <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">144</PropertyVal>
-  <PropertyVal Name="Left">141</PropertyVal>
-  <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
-  <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">cmdRollCameraRight</PropertyVal>
+  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Left">141</PropertyVal>
+  <PropertyVal Name="Top">144</PropertyVal>
+  <PropertyVal Name="Width">109</PropertyVal>
+  <PropertyVal Name="Height">22</PropertyVal>
+  <PropertyVal Name="LockLeft">True</PropertyVal>
+  <PropertyVal Name="LockTop">True</PropertyVal>
+  <PropertyVal Name="LockRight">False</PropertyVal>
+  <PropertyVal Name="LockBottom">False</PropertyVal>
+  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="TabIndex">13</PropertyVal>
+  <PropertyVal Name="TabStop">True</PropertyVal>
+  <PropertyVal Name="Caption">Roll Camera Right</PropertyVal>
+  <PropertyVal Name="Default">False</PropertyVal>
+  <PropertyVal Name="Cancel">False</PropertyVal>
+  <PropertyVal Name="Enabled">True</PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="HelpTag"></PropertyVal>
+  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
+  <PropertyVal Name="ButtonStyle">0</PropertyVal>
+  <PropertyVal Name="TextFont">System</PropertyVal>
+  <PropertyVal Name="TextSize">0.0</PropertyVal>
+  <PropertyVal Name="TextUnit">0</PropertyVal>
+  <PropertyVal Name="Bold">False</PropertyVal>
+  <PropertyVal Name="Italic">False</PropertyVal>
+  <PropertyVal Name="Underline">False</PropertyVal>
+  <PropertyVal Name="InitialParent"></PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>13</ControlIndex>
   <Locked>0</Locked>
  </Control>
  <Control>
   <ControlClass>PushButton</ControlClass>
   <ItemName>PushButton</ItemName>
-  <PropertyVal Name="InitialParent"></PropertyVal>
-  <PropertyVal Name="Underline">False</PropertyVal>
-  <PropertyVal Name="Italic">False</PropertyVal>
-  <PropertyVal Name="Bold">False</PropertyVal>
-  <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0</PropertyVal>
-  <PropertyVal Name="TextFont">System</PropertyVal>
-  <PropertyVal Name="ButtonStyle">0</PropertyVal>
-  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
-  <PropertyVal Name="HelpTag"></PropertyVal>
-  <PropertyVal Name="Visible">True</PropertyVal>
-  <PropertyVal Name="Enabled">True</PropertyVal>
-  <PropertyVal Name="Cancel">False</PropertyVal>
-  <PropertyVal Name="Default">False</PropertyVal>
-  <PropertyVal Name="Caption">ResetCamera</PropertyVal>
-  <PropertyVal Name="TabStop">True</PropertyVal>
-  <PropertyVal Name="TabIndex">14</PropertyVal>
-  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="LockBottom">False</PropertyVal>
-  <PropertyVal Name="LockRight">False</PropertyVal>
-  <PropertyVal Name="LockTop">True</PropertyVal>
-  <PropertyVal Name="LockLeft">True</PropertyVal>
-  <PropertyVal Name="Height">22</PropertyVal>
-  <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">48</PropertyVal>
-  <PropertyVal Name="Left">141</PropertyVal>
-  <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
-  <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">cmdResetCamera</PropertyVal>
+  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Left">141</PropertyVal>
+  <PropertyVal Name="Top">48</PropertyVal>
+  <PropertyVal Name="Width">109</PropertyVal>
+  <PropertyVal Name="Height">22</PropertyVal>
+  <PropertyVal Name="LockLeft">True</PropertyVal>
+  <PropertyVal Name="LockTop">True</PropertyVal>
+  <PropertyVal Name="LockRight">False</PropertyVal>
+  <PropertyVal Name="LockBottom">False</PropertyVal>
+  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="TabIndex">14</PropertyVal>
+  <PropertyVal Name="TabStop">True</PropertyVal>
+  <PropertyVal Name="Caption">ResetCamera</PropertyVal>
+  <PropertyVal Name="Default">False</PropertyVal>
+  <PropertyVal Name="Cancel">False</PropertyVal>
+  <PropertyVal Name="Enabled">True</PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="HelpTag"></PropertyVal>
+  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
+  <PropertyVal Name="ButtonStyle">0</PropertyVal>
+  <PropertyVal Name="TextFont">System</PropertyVal>
+  <PropertyVal Name="TextSize">0.0</PropertyVal>
+  <PropertyVal Name="TextUnit">0</PropertyVal>
+  <PropertyVal Name="Bold">False</PropertyVal>
+  <PropertyVal Name="Italic">False</PropertyVal>
+  <PropertyVal Name="Underline">False</PropertyVal>
+  <PropertyVal Name="InitialParent"></PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>14</ControlIndex>
   <Locked>0</Locked>
  </Control>
  <Control>
   <ControlClass>Label</ControlClass>
   <ItemName>Label</ItemName>
-  <PropertyVal Name="InitialParent"></PropertyVal>
-  <PropertyVal Name="DataField"></PropertyVal>
-  <PropertyVal Name="DataSource"></PropertyVal>
-  <PropertyVal Name="Underline">False</PropertyVal>
-  <PropertyVal Name="Italic">False</PropertyVal>
-  <PropertyVal Name="Bold">False</PropertyVal>
-  <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0</PropertyVal>
-  <PropertyVal Name="TextFont">System</PropertyVal>
-  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
-  <PropertyVal Name="HelpTag"></PropertyVal>
-  <PropertyVal Name="Transparent">False</PropertyVal>
-  <PropertyVal Name="Selectable">False</PropertyVal>
-  <PropertyVal Name="Visible">True</PropertyVal>
-  <PropertyVal Name="Enabled">True</PropertyVal>
-  <PropertyVal Name="Multiline">False</PropertyVal>
-  <PropertyVal Name="TextColor"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="TextAlign"><Hex bytes="1">32</Hex></PropertyVal>
-  <PropertyVal Name="Text">FOV:</PropertyVal>
-  <PropertyVal Name="TabIndex">15</PropertyVal>
-  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="LockBottom">False</PropertyVal>
-  <PropertyVal Name="LockRight">False</PropertyVal>
-  <PropertyVal Name="LockTop">True</PropertyVal>
-  <PropertyVal Name="LockLeft">True</PropertyVal>
-  <PropertyVal Name="Height">20</PropertyVal>
-  <PropertyVal Name="Width">47</PropertyVal>
-  <PropertyVal Name="Top">216</PropertyVal>
-  <PropertyVal Name="Left">141</PropertyVal>
-  <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Super">Label</PropertyVal>
-  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="TabStop">True</PropertyVal>
   <PropertyVal Name="Name">lblFOV</PropertyVal>
+  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Left">141</PropertyVal>
+  <PropertyVal Name="Top">216</PropertyVal>
+  <PropertyVal Name="Width">47</PropertyVal>
+  <PropertyVal Name="Height">20</PropertyVal>
+  <PropertyVal Name="LockLeft">True</PropertyVal>
+  <PropertyVal Name="LockTop">True</PropertyVal>
+  <PropertyVal Name="LockRight">False</PropertyVal>
+  <PropertyVal Name="LockBottom">False</PropertyVal>
+  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="TabIndex">15</PropertyVal>
+  <PropertyVal Name="Text">FOV:</PropertyVal>
+  <PropertyVal Name="TextAlign"><Hex bytes="1">32</Hex></PropertyVal>
+  <PropertyVal Name="TextColor"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="Multiline">False</PropertyVal>
+  <PropertyVal Name="Enabled">True</PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="Selectable">False</PropertyVal>
+  <PropertyVal Name="Transparent">False</PropertyVal>
+  <PropertyVal Name="HelpTag"></PropertyVal>
+  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
+  <PropertyVal Name="TextFont">System</PropertyVal>
+  <PropertyVal Name="TextSize">0.0</PropertyVal>
+  <PropertyVal Name="TextUnit">0</PropertyVal>
+  <PropertyVal Name="Bold">False</PropertyVal>
+  <PropertyVal Name="Italic">False</PropertyVal>
+  <PropertyVal Name="Underline">False</PropertyVal>
+  <PropertyVal Name="DataSource"></PropertyVal>
+  <PropertyVal Name="DataField"></PropertyVal>
+  <PropertyVal Name="InitialParent"></PropertyVal>
+  <PropertyVal Name="Super">Label</PropertyVal>
   <ControlIndex>15</ControlIndex>
   <Locked>0</Locked>
  </Control>
  <Control>
   <ControlClass>TextField</ControlClass>
   <ItemName>TextField</ItemName>
-  <PropertyVal Name="DataField"></PropertyVal>
-  <PropertyVal Name="DataSource"></PropertyVal>
-  <PropertyVal Name="AutomaticallyCheckSpelling">False</PropertyVal>
-  <PropertyVal Name="Alignment"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="AcceptTabs">False</PropertyVal>
-  <PropertyVal Name="LimitText"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="ReadOnly">False</PropertyVal>
-  <PropertyVal Name="Mask"></PropertyVal>
-  <PropertyVal Name="Text"></PropertyVal>
-  <PropertyVal Name="CueText"></PropertyVal>
-  <PropertyVal Name="Underline">False</PropertyVal>
-  <PropertyVal Name="Italic">False</PropertyVal>
-  <PropertyVal Name="Bold">False</PropertyVal>
-  <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0</PropertyVal>
-  <PropertyVal Name="TextFont">System</PropertyVal>
-  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
-  <PropertyVal Name="HelpTag"></PropertyVal>
-  <PropertyVal Name="Visible">True</PropertyVal>
-  <PropertyVal Name="Format"></PropertyVal>
-  <PropertyVal Name="Enabled">True</PropertyVal>
-  <PropertyVal Name="BackColor">16777215</PropertyVal>
-  <PropertyVal Name="TextColor"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="UseFocusRing">True</PropertyVal>
-  <PropertyVal Name="Password">False</PropertyVal>
-  <PropertyVal Name="Border">True</PropertyVal>
-  <PropertyVal Name="TabStop">True</PropertyVal>
-  <PropertyVal Name="TabIndex">16</PropertyVal>
-  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="LockBottom">False</PropertyVal>
-  <PropertyVal Name="LockRight">False</PropertyVal>
-  <PropertyVal Name="LockTop">True</PropertyVal>
-  <PropertyVal Name="LockLeft">True</PropertyVal>
-  <PropertyVal Name="Height">22</PropertyVal>
-  <PropertyVal Name="Width">50</PropertyVal>
-  <PropertyVal Name="Top">215</PropertyVal>
-  <PropertyVal Name="Left">200</PropertyVal>
-  <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Super">TextField</PropertyVal>
-  <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">txtFOV</PropertyVal>
+  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Left">200</PropertyVal>
+  <PropertyVal Name="Top">215</PropertyVal>
+  <PropertyVal Name="Width">50</PropertyVal>
+  <PropertyVal Name="Height">22</PropertyVal>
+  <PropertyVal Name="LockLeft">True</PropertyVal>
+  <PropertyVal Name="LockTop">True</PropertyVal>
+  <PropertyVal Name="LockRight">False</PropertyVal>
+  <PropertyVal Name="LockBottom">False</PropertyVal>
+  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="TabIndex">16</PropertyVal>
+  <PropertyVal Name="TabStop">True</PropertyVal>
+  <PropertyVal Name="Border">True</PropertyVal>
+  <PropertyVal Name="Password">False</PropertyVal>
+  <PropertyVal Name="UseFocusRing">True</PropertyVal>
+  <PropertyVal Name="TextColor"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="BackColor">16777215</PropertyVal>
+  <PropertyVal Name="Enabled">True</PropertyVal>
+  <PropertyVal Name="Format"></PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="HelpTag"></PropertyVal>
+  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
+  <PropertyVal Name="TextFont">System</PropertyVal>
+  <PropertyVal Name="TextSize">0.0</PropertyVal>
+  <PropertyVal Name="TextUnit">0</PropertyVal>
+  <PropertyVal Name="Bold">False</PropertyVal>
+  <PropertyVal Name="Italic">False</PropertyVal>
+  <PropertyVal Name="Underline">False</PropertyVal>
+  <PropertyVal Name="CueText"></PropertyVal>
+  <PropertyVal Name="Text"></PropertyVal>
+  <PropertyVal Name="Mask"></PropertyVal>
+  <PropertyVal Name="ReadOnly">False</PropertyVal>
+  <PropertyVal Name="LimitText"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="AcceptTabs">False</PropertyVal>
+  <PropertyVal Name="Alignment"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="AutomaticallyCheckSpelling">False</PropertyVal>
+  <PropertyVal Name="DataSource"></PropertyVal>
+  <PropertyVal Name="DataField"></PropertyVal>
+  <PropertyVal Name="Super">TextField</PropertyVal>
   <ControlIndex>16</ControlIndex>
   <Locked>0</Locked>
  </Control>
  <Control>
   <ControlClass>Label</ControlClass>
   <ItemName>Label</ItemName>
-  <PropertyVal Name="InitialParent"></PropertyVal>
-  <PropertyVal Name="DataField"></PropertyVal>
-  <PropertyVal Name="DataSource"></PropertyVal>
-  <PropertyVal Name="Underline">False</PropertyVal>
-  <PropertyVal Name="Italic">False</PropertyVal>
-  <PropertyVal Name="Bold">False</PropertyVal>
-  <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0</PropertyVal>
-  <PropertyVal Name="TextFont">System</PropertyVal>
-  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
-  <PropertyVal Name="HelpTag"></PropertyVal>
-  <PropertyVal Name="Transparent">False</PropertyVal>
-  <PropertyVal Name="Selectable">False</PropertyVal>
-  <PropertyVal Name="Visible">True</PropertyVal>
-  <PropertyVal Name="Enabled">True</PropertyVal>
-  <PropertyVal Name="Multiline">False</PropertyVal>
-  <PropertyVal Name="TextColor"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="TextAlign"><Hex bytes="1">32</Hex></PropertyVal>
-  <PropertyVal Name="Text">Z-Near:</PropertyVal>
-  <PropertyVal Name="TabIndex">17</PropertyVal>
-  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="LockBottom">False</PropertyVal>
-  <PropertyVal Name="LockRight">False</PropertyVal>
-  <PropertyVal Name="LockTop">True</PropertyVal>
-  <PropertyVal Name="LockLeft">True</PropertyVal>
-  <PropertyVal Name="Height">20</PropertyVal>
-  <PropertyVal Name="Width">47</PropertyVal>
-  <PropertyVal Name="Top">240</PropertyVal>
-  <PropertyVal Name="Left">141</PropertyVal>
-  <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Super">Label</PropertyVal>
-  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="TabStop">True</PropertyVal>
   <PropertyVal Name="Name">lblZNear</PropertyVal>
+  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Left">141</PropertyVal>
+  <PropertyVal Name="Top">240</PropertyVal>
+  <PropertyVal Name="Width">47</PropertyVal>
+  <PropertyVal Name="Height">20</PropertyVal>
+  <PropertyVal Name="LockLeft">True</PropertyVal>
+  <PropertyVal Name="LockTop">True</PropertyVal>
+  <PropertyVal Name="LockRight">False</PropertyVal>
+  <PropertyVal Name="LockBottom">False</PropertyVal>
+  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="TabIndex">17</PropertyVal>
+  <PropertyVal Name="Text">Z-Near:</PropertyVal>
+  <PropertyVal Name="TextAlign"><Hex bytes="1">32</Hex></PropertyVal>
+  <PropertyVal Name="TextColor"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="Multiline">False</PropertyVal>
+  <PropertyVal Name="Enabled">True</PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="Selectable">False</PropertyVal>
+  <PropertyVal Name="Transparent">False</PropertyVal>
+  <PropertyVal Name="HelpTag"></PropertyVal>
+  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
+  <PropertyVal Name="TextFont">System</PropertyVal>
+  <PropertyVal Name="TextSize">0.0</PropertyVal>
+  <PropertyVal Name="TextUnit">0</PropertyVal>
+  <PropertyVal Name="Bold">False</PropertyVal>
+  <PropertyVal Name="Italic">False</PropertyVal>
+  <PropertyVal Name="Underline">False</PropertyVal>
+  <PropertyVal Name="DataSource"></PropertyVal>
+  <PropertyVal Name="DataField"></PropertyVal>
+  <PropertyVal Name="InitialParent"></PropertyVal>
+  <PropertyVal Name="Super">Label</PropertyVal>
   <ControlIndex>17</ControlIndex>
   <Locked>0</Locked>
  </Control>
  <Control>
   <ControlClass>TextField</ControlClass>
   <ItemName>TextField</ItemName>
-  <PropertyVal Name="DataField"></PropertyVal>
-  <PropertyVal Name="DataSource"></PropertyVal>
-  <PropertyVal Name="AutomaticallyCheckSpelling">False</PropertyVal>
-  <PropertyVal Name="Alignment"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="AcceptTabs">False</PropertyVal>
-  <PropertyVal Name="LimitText"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="ReadOnly">False</PropertyVal>
-  <PropertyVal Name="Mask"></PropertyVal>
-  <PropertyVal Name="Text"></PropertyVal>
-  <PropertyVal Name="CueText"></PropertyVal>
-  <PropertyVal Name="Underline">False</PropertyVal>
-  <PropertyVal Name="Italic">False</PropertyVal>
-  <PropertyVal Name="Bold">False</PropertyVal>
-  <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0</PropertyVal>
-  <PropertyVal Name="TextFont">System</PropertyVal>
-  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
-  <PropertyVal Name="HelpTag"></PropertyVal>
-  <PropertyVal Name="Visible">True</PropertyVal>
-  <PropertyVal Name="Format"></PropertyVal>
-  <PropertyVal Name="Enabled">True</PropertyVal>
-  <PropertyVal Name="BackColor">16777215</PropertyVal>
-  <PropertyVal Name="TextColor"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="UseFocusRing">True</PropertyVal>
-  <PropertyVal Name="Password">False</PropertyVal>
-  <PropertyVal Name="Border">True</PropertyVal>
-  <PropertyVal Name="TabStop">True</PropertyVal>
-  <PropertyVal Name="TabIndex">18</PropertyVal>
-  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="LockBottom">False</PropertyVal>
-  <PropertyVal Name="LockRight">False</PropertyVal>
-  <PropertyVal Name="LockTop">True</PropertyVal>
-  <PropertyVal Name="LockLeft">True</PropertyVal>
-  <PropertyVal Name="Height">22</PropertyVal>
-  <PropertyVal Name="Width">50</PropertyVal>
-  <PropertyVal Name="Top">239</PropertyVal>
-  <PropertyVal Name="Left">200</PropertyVal>
-  <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Super">TextField</PropertyVal>
-  <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">txtZNear</PropertyVal>
+  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Left">200</PropertyVal>
+  <PropertyVal Name="Top">239</PropertyVal>
+  <PropertyVal Name="Width">50</PropertyVal>
+  <PropertyVal Name="Height">22</PropertyVal>
+  <PropertyVal Name="LockLeft">True</PropertyVal>
+  <PropertyVal Name="LockTop">True</PropertyVal>
+  <PropertyVal Name="LockRight">False</PropertyVal>
+  <PropertyVal Name="LockBottom">False</PropertyVal>
+  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="TabIndex">18</PropertyVal>
+  <PropertyVal Name="TabStop">True</PropertyVal>
+  <PropertyVal Name="Border">True</PropertyVal>
+  <PropertyVal Name="Password">False</PropertyVal>
+  <PropertyVal Name="UseFocusRing">True</PropertyVal>
+  <PropertyVal Name="TextColor"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="BackColor">16777215</PropertyVal>
+  <PropertyVal Name="Enabled">True</PropertyVal>
+  <PropertyVal Name="Format"></PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="HelpTag"></PropertyVal>
+  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
+  <PropertyVal Name="TextFont">System</PropertyVal>
+  <PropertyVal Name="TextSize">0.0</PropertyVal>
+  <PropertyVal Name="TextUnit">0</PropertyVal>
+  <PropertyVal Name="Bold">False</PropertyVal>
+  <PropertyVal Name="Italic">False</PropertyVal>
+  <PropertyVal Name="Underline">False</PropertyVal>
+  <PropertyVal Name="CueText"></PropertyVal>
+  <PropertyVal Name="Text"></PropertyVal>
+  <PropertyVal Name="Mask"></PropertyVal>
+  <PropertyVal Name="ReadOnly">False</PropertyVal>
+  <PropertyVal Name="LimitText"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="AcceptTabs">False</PropertyVal>
+  <PropertyVal Name="Alignment"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="AutomaticallyCheckSpelling">False</PropertyVal>
+  <PropertyVal Name="DataSource"></PropertyVal>
+  <PropertyVal Name="DataField"></PropertyVal>
+  <PropertyVal Name="Super">TextField</PropertyVal>
   <ControlIndex>18</ControlIndex>
   <Locked>0</Locked>
  </Control>
  <Control>
   <ControlClass>Label</ControlClass>
   <ItemName>Label</ItemName>
-  <PropertyVal Name="InitialParent"></PropertyVal>
-  <PropertyVal Name="DataField"></PropertyVal>
-  <PropertyVal Name="DataSource"></PropertyVal>
-  <PropertyVal Name="Underline">False</PropertyVal>
-  <PropertyVal Name="Italic">False</PropertyVal>
-  <PropertyVal Name="Bold">False</PropertyVal>
-  <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0</PropertyVal>
-  <PropertyVal Name="TextFont">System</PropertyVal>
-  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
-  <PropertyVal Name="HelpTag"></PropertyVal>
-  <PropertyVal Name="Transparent">False</PropertyVal>
-  <PropertyVal Name="Selectable">False</PropertyVal>
-  <PropertyVal Name="Visible">True</PropertyVal>
-  <PropertyVal Name="Enabled">True</PropertyVal>
-  <PropertyVal Name="Multiline">False</PropertyVal>
-  <PropertyVal Name="TextColor"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="TextAlign"><Hex bytes="1">32</Hex></PropertyVal>
-  <PropertyVal Name="Text">Z-Far:</PropertyVal>
-  <PropertyVal Name="TabIndex">19</PropertyVal>
-  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="LockBottom">False</PropertyVal>
-  <PropertyVal Name="LockRight">False</PropertyVal>
-  <PropertyVal Name="LockTop">True</PropertyVal>
-  <PropertyVal Name="LockLeft">True</PropertyVal>
-  <PropertyVal Name="Height">20</PropertyVal>
-  <PropertyVal Name="Width">47</PropertyVal>
-  <PropertyVal Name="Top">264</PropertyVal>
-  <PropertyVal Name="Left">141</PropertyVal>
-  <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Super">Label</PropertyVal>
-  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="TabStop">True</PropertyVal>
   <PropertyVal Name="Name">lblZFar</PropertyVal>
+  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Left">141</PropertyVal>
+  <PropertyVal Name="Top">264</PropertyVal>
+  <PropertyVal Name="Width">47</PropertyVal>
+  <PropertyVal Name="Height">20</PropertyVal>
+  <PropertyVal Name="LockLeft">True</PropertyVal>
+  <PropertyVal Name="LockTop">True</PropertyVal>
+  <PropertyVal Name="LockRight">False</PropertyVal>
+  <PropertyVal Name="LockBottom">False</PropertyVal>
+  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="TabIndex">19</PropertyVal>
+  <PropertyVal Name="Text">Z-Far:</PropertyVal>
+  <PropertyVal Name="TextAlign"><Hex bytes="1">32</Hex></PropertyVal>
+  <PropertyVal Name="TextColor"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="Multiline">False</PropertyVal>
+  <PropertyVal Name="Enabled">True</PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="Selectable">False</PropertyVal>
+  <PropertyVal Name="Transparent">False</PropertyVal>
+  <PropertyVal Name="HelpTag"></PropertyVal>
+  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
+  <PropertyVal Name="TextFont">System</PropertyVal>
+  <PropertyVal Name="TextSize">0.0</PropertyVal>
+  <PropertyVal Name="TextUnit">0</PropertyVal>
+  <PropertyVal Name="Bold">False</PropertyVal>
+  <PropertyVal Name="Italic">False</PropertyVal>
+  <PropertyVal Name="Underline">False</PropertyVal>
+  <PropertyVal Name="DataSource"></PropertyVal>
+  <PropertyVal Name="DataField"></PropertyVal>
+  <PropertyVal Name="InitialParent"></PropertyVal>
+  <PropertyVal Name="Super">Label</PropertyVal>
   <ControlIndex>19</ControlIndex>
   <Locked>0</Locked>
  </Control>
  <Control>
   <ControlClass>TextField</ControlClass>
   <ItemName>TextField</ItemName>
-  <PropertyVal Name="DataField"></PropertyVal>
-  <PropertyVal Name="DataSource"></PropertyVal>
-  <PropertyVal Name="AutomaticallyCheckSpelling">False</PropertyVal>
-  <PropertyVal Name="Alignment"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="AcceptTabs">False</PropertyVal>
-  <PropertyVal Name="LimitText"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="ReadOnly">False</PropertyVal>
-  <PropertyVal Name="Mask"></PropertyVal>
-  <PropertyVal Name="Text"></PropertyVal>
-  <PropertyVal Name="CueText"></PropertyVal>
-  <PropertyVal Name="Underline">False</PropertyVal>
-  <PropertyVal Name="Italic">False</PropertyVal>
-  <PropertyVal Name="Bold">False</PropertyVal>
-  <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0</PropertyVal>
-  <PropertyVal Name="TextFont">System</PropertyVal>
-  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
-  <PropertyVal Name="HelpTag"></PropertyVal>
-  <PropertyVal Name="Visible">True</PropertyVal>
-  <PropertyVal Name="Format"></PropertyVal>
-  <PropertyVal Name="Enabled">True</PropertyVal>
-  <PropertyVal Name="BackColor">16777215</PropertyVal>
-  <PropertyVal Name="TextColor"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="UseFocusRing">True</PropertyVal>
-  <PropertyVal Name="Password">False</PropertyVal>
-  <PropertyVal Name="Border">True</PropertyVal>
-  <PropertyVal Name="TabStop">True</PropertyVal>
-  <PropertyVal Name="TabIndex">20</PropertyVal>
-  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="LockBottom">False</PropertyVal>
-  <PropertyVal Name="LockRight">False</PropertyVal>
-  <PropertyVal Name="LockTop">True</PropertyVal>
-  <PropertyVal Name="LockLeft">True</PropertyVal>
-  <PropertyVal Name="Height">22</PropertyVal>
-  <PropertyVal Name="Width">50</PropertyVal>
-  <PropertyVal Name="Top">263</PropertyVal>
-  <PropertyVal Name="Left">200</PropertyVal>
-  <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Super">TextField</PropertyVal>
-  <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">txtZFar</PropertyVal>
+  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Left">200</PropertyVal>
+  <PropertyVal Name="Top">263</PropertyVal>
+  <PropertyVal Name="Width">50</PropertyVal>
+  <PropertyVal Name="Height">22</PropertyVal>
+  <PropertyVal Name="LockLeft">True</PropertyVal>
+  <PropertyVal Name="LockTop">True</PropertyVal>
+  <PropertyVal Name="LockRight">False</PropertyVal>
+  <PropertyVal Name="LockBottom">False</PropertyVal>
+  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="TabIndex">20</PropertyVal>
+  <PropertyVal Name="TabStop">True</PropertyVal>
+  <PropertyVal Name="Border">True</PropertyVal>
+  <PropertyVal Name="Password">False</PropertyVal>
+  <PropertyVal Name="UseFocusRing">True</PropertyVal>
+  <PropertyVal Name="TextColor"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="BackColor">16777215</PropertyVal>
+  <PropertyVal Name="Enabled">True</PropertyVal>
+  <PropertyVal Name="Format"></PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="HelpTag"></PropertyVal>
+  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
+  <PropertyVal Name="TextFont">System</PropertyVal>
+  <PropertyVal Name="TextSize">0.0</PropertyVal>
+  <PropertyVal Name="TextUnit">0</PropertyVal>
+  <PropertyVal Name="Bold">False</PropertyVal>
+  <PropertyVal Name="Italic">False</PropertyVal>
+  <PropertyVal Name="Underline">False</PropertyVal>
+  <PropertyVal Name="CueText"></PropertyVal>
+  <PropertyVal Name="Text"></PropertyVal>
+  <PropertyVal Name="Mask"></PropertyVal>
+  <PropertyVal Name="ReadOnly">False</PropertyVal>
+  <PropertyVal Name="LimitText"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="AcceptTabs">False</PropertyVal>
+  <PropertyVal Name="Alignment"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="AutomaticallyCheckSpelling">False</PropertyVal>
+  <PropertyVal Name="DataSource"></PropertyVal>
+  <PropertyVal Name="DataField"></PropertyVal>
+  <PropertyVal Name="Super">TextField</PropertyVal>
   <ControlIndex>20</ControlIndex>
   <Locked>0</Locked>
  </Control>
  <Control>
   <ControlClass>PushButton</ControlClass>
   <ItemName>PushButton</ItemName>
-  <PropertyVal Name="InitialParent"></PropertyVal>
-  <PropertyVal Name="Underline">False</PropertyVal>
-  <PropertyVal Name="Italic">False</PropertyVal>
-  <PropertyVal Name="Bold">False</PropertyVal>
-  <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0</PropertyVal>
-  <PropertyVal Name="TextFont">System</PropertyVal>
-  <PropertyVal Name="ButtonStyle">0</PropertyVal>
-  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
-  <PropertyVal Name="HelpTag"></PropertyVal>
-  <PropertyVal Name="Visible">True</PropertyVal>
-  <PropertyVal Name="Enabled">True</PropertyVal>
-  <PropertyVal Name="Cancel">False</PropertyVal>
-  <PropertyVal Name="Default">False</PropertyVal>
-  <PropertyVal Name="Caption">Tilt Dolly Up</PropertyVal>
-  <PropertyVal Name="TabStop">True</PropertyVal>
-  <PropertyVal Name="TabIndex">21</PropertyVal>
-  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="LockBottom">False</PropertyVal>
-  <PropertyVal Name="LockRight">False</PropertyVal>
-  <PropertyVal Name="LockTop">True</PropertyVal>
-  <PropertyVal Name="LockLeft">True</PropertyVal>
-  <PropertyVal Name="Height">22</PropertyVal>
-  <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">239</PropertyVal>
-  <PropertyVal Name="Left">20</PropertyVal>
-  <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
-  <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">cmdTiltDollyUp</PropertyVal>
+  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Left">20</PropertyVal>
+  <PropertyVal Name="Top">239</PropertyVal>
+  <PropertyVal Name="Width">109</PropertyVal>
+  <PropertyVal Name="Height">22</PropertyVal>
+  <PropertyVal Name="LockLeft">True</PropertyVal>
+  <PropertyVal Name="LockTop">True</PropertyVal>
+  <PropertyVal Name="LockRight">False</PropertyVal>
+  <PropertyVal Name="LockBottom">False</PropertyVal>
+  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="TabIndex">21</PropertyVal>
+  <PropertyVal Name="TabStop">True</PropertyVal>
+  <PropertyVal Name="Caption">Tilt Dolly Up</PropertyVal>
+  <PropertyVal Name="Default">False</PropertyVal>
+  <PropertyVal Name="Cancel">False</PropertyVal>
+  <PropertyVal Name="Enabled">True</PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="HelpTag"></PropertyVal>
+  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
+  <PropertyVal Name="ButtonStyle">0</PropertyVal>
+  <PropertyVal Name="TextFont">System</PropertyVal>
+  <PropertyVal Name="TextSize">0.0</PropertyVal>
+  <PropertyVal Name="TextUnit">0</PropertyVal>
+  <PropertyVal Name="Bold">False</PropertyVal>
+  <PropertyVal Name="Italic">False</PropertyVal>
+  <PropertyVal Name="Underline">False</PropertyVal>
+  <PropertyVal Name="InitialParent"></PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>21</ControlIndex>
   <Locked>0</Locked>
  </Control>
  <Control>
   <ControlClass>PushButton</ControlClass>
   <ItemName>PushButton</ItemName>
-  <PropertyVal Name="InitialParent"></PropertyVal>
-  <PropertyVal Name="Underline">False</PropertyVal>
-  <PropertyVal Name="Italic">False</PropertyVal>
-  <PropertyVal Name="Bold">False</PropertyVal>
-  <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0</PropertyVal>
-  <PropertyVal Name="TextFont">System</PropertyVal>
-  <PropertyVal Name="ButtonStyle">0</PropertyVal>
-  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
-  <PropertyVal Name="HelpTag"></PropertyVal>
-  <PropertyVal Name="Visible">True</PropertyVal>
-  <PropertyVal Name="Enabled">True</PropertyVal>
-  <PropertyVal Name="Cancel">False</PropertyVal>
-  <PropertyVal Name="Default">False</PropertyVal>
-  <PropertyVal Name="Caption">Tilt Dolly Down</PropertyVal>
-  <PropertyVal Name="TabStop">True</PropertyVal>
-  <PropertyVal Name="TabIndex">22</PropertyVal>
-  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="LockBottom">False</PropertyVal>
-  <PropertyVal Name="LockRight">False</PropertyVal>
-  <PropertyVal Name="LockTop">True</PropertyVal>
-  <PropertyVal Name="LockLeft">True</PropertyVal>
-  <PropertyVal Name="Height">22</PropertyVal>
-  <PropertyVal Name="Width">109</PropertyVal>
-  <PropertyVal Name="Top">263</PropertyVal>
-  <PropertyVal Name="Left">20</PropertyVal>
-  <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
-  <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">cmdTiltDollyDown</PropertyVal>
+  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Left">20</PropertyVal>
+  <PropertyVal Name="Top">263</PropertyVal>
+  <PropertyVal Name="Width">109</PropertyVal>
+  <PropertyVal Name="Height">22</PropertyVal>
+  <PropertyVal Name="LockLeft">True</PropertyVal>
+  <PropertyVal Name="LockTop">True</PropertyVal>
+  <PropertyVal Name="LockRight">False</PropertyVal>
+  <PropertyVal Name="LockBottom">False</PropertyVal>
+  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="TabIndex">22</PropertyVal>
+  <PropertyVal Name="TabStop">True</PropertyVal>
+  <PropertyVal Name="Caption">Tilt Dolly Down</PropertyVal>
+  <PropertyVal Name="Default">False</PropertyVal>
+  <PropertyVal Name="Cancel">False</PropertyVal>
+  <PropertyVal Name="Enabled">True</PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="HelpTag"></PropertyVal>
+  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
+  <PropertyVal Name="ButtonStyle">0</PropertyVal>
+  <PropertyVal Name="TextFont">System</PropertyVal>
+  <PropertyVal Name="TextSize">0.0</PropertyVal>
+  <PropertyVal Name="TextUnit">0</PropertyVal>
+  <PropertyVal Name="Bold">False</PropertyVal>
+  <PropertyVal Name="Italic">False</PropertyVal>
+  <PropertyVal Name="Underline">False</PropertyVal>
+  <PropertyVal Name="InitialParent"></PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>22</ControlIndex>
   <Locked>0</Locked>
  </Control>
  <Control>
   <ControlClass>PopupMenu</ControlClass>
   <ItemName>PopupMenu</ItemName>
-  <PropertyVal Name="InitialParent"></PropertyVal>
-  <PropertyVal Name="DataField"></PropertyVal>
-  <PropertyVal Name="DataSource"></PropertyVal>
-  <PropertyVal Name="Underline">False</PropertyVal>
-  <PropertyVal Name="Italic">False</PropertyVal>
-  <PropertyVal Name="Bold">False</PropertyVal>
-  <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0</PropertyVal>
-  <PropertyVal Name="TextFont">System</PropertyVal>
-  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
-  <PropertyVal Name="HelpTag"></PropertyVal>
-  <PropertyVal Name="Visible">True</PropertyVal>
-  <PropertyVal Name="ListIndex"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="InitialValue"></PropertyVal>
-  <PropertyVal Name="Enabled">True</PropertyVal>
-  <PropertyVal Name="TabStop">True</PropertyVal>
-  <PropertyVal Name="TabIndex">23</PropertyVal>
-  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="LockBottom">False</PropertyVal>
-  <PropertyVal Name="LockRight">False</PropertyVal>
-  <PropertyVal Name="LockTop">True</PropertyVal>
-  <PropertyVal Name="LockLeft">True</PropertyVal>
-  <PropertyVal Name="Height">22</PropertyVal>
-  <PropertyVal Name="Width">230</PropertyVal>
-  <PropertyVal Name="Top">14</PropertyVal>
-  <PropertyVal Name="Left">20</PropertyVal>
-  <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Super">PopupMenu</PropertyVal>
-  <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">comCamera</PropertyVal>
+  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Left">20</PropertyVal>
+  <PropertyVal Name="Top">14</PropertyVal>
+  <PropertyVal Name="Width">230</PropertyVal>
+  <PropertyVal Name="Height">22</PropertyVal>
+  <PropertyVal Name="LockLeft">True</PropertyVal>
+  <PropertyVal Name="LockTop">True</PropertyVal>
+  <PropertyVal Name="LockRight">False</PropertyVal>
+  <PropertyVal Name="LockBottom">False</PropertyVal>
+  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="TabIndex">23</PropertyVal>
+  <PropertyVal Name="TabStop">True</PropertyVal>
+  <PropertyVal Name="Enabled">True</PropertyVal>
+  <PropertyVal Name="InitialValue"></PropertyVal>
+  <PropertyVal Name="ListIndex"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="HelpTag"></PropertyVal>
+  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
+  <PropertyVal Name="TextFont">System</PropertyVal>
+  <PropertyVal Name="TextSize">0.0</PropertyVal>
+  <PropertyVal Name="TextUnit">0</PropertyVal>
+  <PropertyVal Name="Bold">False</PropertyVal>
+  <PropertyVal Name="Italic">False</PropertyVal>
+  <PropertyVal Name="Underline">False</PropertyVal>
+  <PropertyVal Name="DataSource"></PropertyVal>
+  <PropertyVal Name="DataField"></PropertyVal>
+  <PropertyVal Name="InitialParent"></PropertyVal>
+  <PropertyVal Name="Super">PopupMenu</PropertyVal>
   <ControlIndex>23</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -2485,118 +2488,6 @@
   </ViewProperty>
  </ViewBehavior>
  <ControlBehavior>
-  <Superclass>OpenGLSurface</Superclass>
-  <HookInstance>
-   <ItemName>Open</ItemName>
-   <Compatibility></Compatibility>
-   <Visible>1</Visible>
-   <ItemSource>
-    <TextEncoding>134217984</TextEncoding>
-    <SourceLine>Sub Open()</SourceLine>
-    <SourceLine>' www.Xojo3D.com</SourceLine>
-    <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
-    <SourceLine></SourceLine>
-    <SourceLine>X3_Initialize</SourceLine>
-    <SourceLine></SourceLine>
-    <SourceLine></SourceLine>
-    <SourceLine></SourceLine>
-    <SourceLine>End Sub</SourceLine>
-   </ItemSource>
-  </HookInstance>
-  <HookInstance>
-   <ItemName>Resized</ItemName>
-   <Compatibility></Compatibility>
-   <Visible>1</Visible>
-   <ItemSource>
-    <TextEncoding>134217984</TextEncoding>
-    <SourceLine>Sub Resized()</SourceLine>
-    <SourceLine>' www.Xojo3D.com</SourceLine>
-    <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
-    <SourceLine></SourceLine>
-    <SourceLine>if CurrentScene &lt;&gt; nil then</SourceLine>
-    <SourceLine>CurrentScene.SetViewport 0, 0, Surface.Width, Surface.Height</SourceLine>
-    <SourceLine>else</SourceLine>
-    <SourceLine>X3_SetPerspective 0, 0, Surface.Width, Surface.Height, 60.0, 0.01</SourceLine>
-    <SourceLine>end if</SourceLine>
-    <SourceLine></SourceLine>
-    <SourceLine>End Sub</SourceLine>
-   </ItemSource>
-  </HookInstance>
-  <HookInstance>
-   <ItemName>Render</ItemName>
-   <Compatibility></Compatibility>
-   <Visible>1</Visible>
-   <ItemSource>
-    <TextEncoding>134217984</TextEncoding>
-    <SourceLine>Function Render() As Boolean</SourceLine>
-    <SourceLine>' www.Xojo3D.com</SourceLine>
-    <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
-    <SourceLine></SourceLine>
-    <SourceLine>OpenGL.glClearColor(0.2, 0.2, 0.2, 1) ' set the background color</SourceLine>
-    <SourceLine>OpenGL.glClear(OpenGL.GL_COLOR_BUFFER_BIT + OpenGL.GL_DEPTH_BUFFER_BIT)</SourceLine>
-    <SourceLine></SourceLine>
-    <SourceLine>if CurrentScene &lt;&gt; nil then</SourceLine>
-    <SourceLine></SourceLine>
-    <SourceLine>X3_RenderScene CurrentScene</SourceLine>
-    <SourceLine></SourceLine>
-    <SourceLine>elseif CurrentModel &lt;&gt; nil then</SourceLine>
-    <SourceLine></SourceLine>
-    <SourceLine>OpenGL.glPushMatrix</SourceLine>
-    <SourceLine>OpenGL.glTranslatef 0, 0, -2</SourceLine>
-    <SourceLine>X3_RenderModel CurrentModel</SourceLine>
-    <SourceLine>OpenGL.glPopMatrix</SourceLine>
-    <SourceLine></SourceLine>
-    <SourceLine>end if</SourceLine>
-    <SourceLine></SourceLine>
-    <SourceLine></SourceLine>
-    <SourceLine></SourceLine>
-    <SourceLine>End Function</SourceLine>
-   </ItemSource>
-  </HookInstance>
-  <HookInstance>
-   <ItemName>MouseDown</ItemName>
-   <Compatibility></Compatibility>
-   <Visible>1</Visible>
-   <ItemSource>
-    <TextEncoding>134217984</TextEncoding>
-    <SourceLine>Function MouseDown(x as Integer, y as Integer) As Boolean</SourceLine>
-    <SourceLine>' www.Xojo3D.com</SourceLine>
-    <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
-    <SourceLine></SourceLine>
-    <SourceLine>MousePrevX = x</SourceLine>
-    <SourceLine>MousePrevY = y</SourceLine>
-    <SourceLine></SourceLine>
-    <SourceLine>return true</SourceLine>
-    <SourceLine></SourceLine>
-    <SourceLine>End Function</SourceLine>
-   </ItemSource>
-  </HookInstance>
-  <HookInstance>
-   <ItemName>MouseDrag</ItemName>
-   <Compatibility></Compatibility>
-   <Visible>1</Visible>
-   <ItemSource>
-    <TextEncoding>134217984</TextEncoding>
-    <SourceLine>Sub MouseDrag(x as Integer, y as Integer)</SourceLine>
-    <SourceLine>' www.Xojo3D.com</SourceLine>
-    <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
-    <SourceLine></SourceLine>
-    <SourceLine>if CurrentScene &lt;&gt; nil then</SourceLine>
-    <SourceLine>X3_RotateWithXY CurrentScene.Camera(CurrentScene.CameraIndex).DollyRotation, -(y - MousePrevY), -(x - MousePrevX)</SourceLine>
-    <SourceLine>X3_RotateWithXY CurrentScene.Camera(CurrentScene.CameraIndex).CameraRotation, -(y - MousePrevY), -(x - MousePrevX)</SourceLine>
-    <SourceLine>Surface.Render</SourceLine>
-    <SourceLine>elseif CurrentModel &lt;&gt; nil then</SourceLine>
-    <SourceLine>X3_RotateWithXY CurrentModel.Rotation, (y - MousePrevY), (x - MousePrevX)</SourceLine>
-    <SourceLine>Surface.Render</SourceLine>
-    <SourceLine>end if</SourceLine>
-    <SourceLine></SourceLine>
-    <SourceLine>MousePrevX = x</SourceLine>
-    <SourceLine>MousePrevY = y</SourceLine>
-    <SourceLine>End Sub</SourceLine>
-   </ItemSource>
-  </HookInstance>
- </ControlBehavior>
- <ControlBehavior>
   <Superclass>MainToolbar</Superclass>
   <HookInstance>
    <ItemName>Action</ItemName>
@@ -2625,55 +2516,58 @@
    </ItemSource>
   </HookInstance>
  </ControlBehavior>
+ <ControlBehavior>
+  <Superclass>X3Core.X3Canvas</Superclass>
+ </ControlBehavior>
  <Control>
-  <ControlClass>OpenGLSurface</ControlClass>
-  <ItemName>OpenGLSurface</ItemName>
-  <PropertyVal Name="Name">Surface</PropertyVal>
-  <PropertyVal Name="Index">-2147483648</PropertyVal>
-  <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Left"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="Top"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="Width">600</PropertyVal>
-  <PropertyVal Name="Height">400</PropertyVal>
-  <PropertyVal Name="LockLeft">True</PropertyVal>
-  <PropertyVal Name="LockTop">True</PropertyVal>
-  <PropertyVal Name="LockRight">True</PropertyVal>
-  <PropertyVal Name="LockBottom">True</PropertyVal>
-  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="TabIndex"><Hex bytes="1">30</Hex></PropertyVal>
-  <PropertyVal Name="TabStop">True</PropertyVal>
+  <ControlClass>MainToolbar</ControlClass>
+  <ItemName>MainToolbar</ItemName>
+  <PropertyVal Name="TabPanelIndex">0</PropertyVal>
   <PropertyVal Name="InitialParent"></PropertyVal>
-  <PropertyVal Name="Visible">True</PropertyVal>
-  <PropertyVal Name="HelpTag"></PropertyVal>
-  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
   <PropertyVal Name="Enabled">True</PropertyVal>
-  <PropertyVal Name="ColorBits">24</PropertyVal>
-  <PropertyVal Name="DepthBits">24</PropertyVal>
-  <PropertyVal Name="DoubleBuffer">True</PropertyVal>
-  <PropertyVal Name="Super">OpenGLSurface</PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="Height">32</PropertyVal>
+  <PropertyVal Name="Width">100</PropertyVal>
+  <PropertyVal Name="Top">20</PropertyVal>
+  <PropertyVal Name="Left">20</PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">MainToolbar</PropertyVal>
+  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Name">tbMain</PropertyVal>
   <ControlIndex>0</ControlIndex>
   <Locked>0</Locked>
  </Control>
  <Control>
-  <ControlClass>MainToolbar</ControlClass>
-  <ItemName>MainToolbar</ItemName>
-  <PropertyVal Name="Name">tbMain</PropertyVal>
-  <PropertyVal Name="Index">-2147483648</PropertyVal>
-  <PropertyVal Name="Scope">0</PropertyVal>
-  <PropertyVal Name="Left">20</PropertyVal>
-  <PropertyVal Name="Top">20</PropertyVal>
-  <PropertyVal Name="Width">100</PropertyVal>
-  <PropertyVal Name="Height">32</PropertyVal>
-  <PropertyVal Name="Visible">True</PropertyVal>
+  <ControlClass>X3Core.X3Canvas</ControlClass>
+  <ItemName>X3Core.X3Canvas</ItemName>
+  <PropertyVal Name="DoubleBuffer">True</PropertyVal>
+  <PropertyVal Name="DepthBits">24</PropertyVal>
+  <PropertyVal Name="ColorBits">24</PropertyVal>
   <PropertyVal Name="Enabled">True</PropertyVal>
+  <PropertyVal Name="AutoDeactivate">True</PropertyVal>
+  <PropertyVal Name="HelpTag"></PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
   <PropertyVal Name="InitialParent"></PropertyVal>
-  <PropertyVal Name="TabPanelIndex">0</PropertyVal>
-  <PropertyVal Name="Super">MainToolbar</PropertyVal>
+  <PropertyVal Name="TabStop">True</PropertyVal>
+  <PropertyVal Name="TabIndex"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="TabPanelIndex"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="LockBottom">True</PropertyVal>
+  <PropertyVal Name="LockRight">True</PropertyVal>
+  <PropertyVal Name="LockTop">True</PropertyVal>
+  <PropertyVal Name="LockLeft">True</PropertyVal>
+  <PropertyVal Name="Height">400</PropertyVal>
+  <PropertyVal Name="Width">600</PropertyVal>
+  <PropertyVal Name="Top"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="Left"><Hex bytes="1">30</Hex></PropertyVal>
+  <PropertyVal Name="Scope">1</PropertyVal>
+  <PropertyVal Name="Super">X3Core.X3Canvas</PropertyVal>
+  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Name">Surface</PropertyVal>
   <ControlIndex>1</ControlIndex>
   <Locked>0</Locked>
  </Control>
 </block>
-<block type="Module" ID="1818238975">
+<block type="Module" ID="1113044991">
  <ObjName>X3Core</ObjName>
  <ObjContainerID>0</ObjContainerID>
  <IsClass>0</IsClass>
@@ -2688,7 +2582,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub renderPolygon(poly As X3Core.X3Polygon, ByRef currMat As Integer, ByRef currIndex As Integer)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim model As X3Core.X3Model</SourceLine>
    <SourceLine>Dim n As X3Core.X3Vector</SourceLine>
@@ -2842,7 +2737,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Function X3_CreateSprite(initSheet As Picture, spriteWidth As Integer, spriteHeight As Integer, imageCount As Integer) As X3Core.X3Model</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim model As X3Core.X3Model</SourceLine>
    <SourceLine>Dim p As X3Core.X3Polygon</SourceLine>
@@ -2896,7 +2792,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub X3_EnableLight(lightIndex As Integer, light As X3Core.X3Light)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>OpenGL.glLightfv lightIndex, OpenGL.GL_POSITION, light.Position.GetMemoryBlock ' set position</SourceLine>
    <SourceLine>OpenGL.glLightfv lightIndex, OpenGL.GL_AMBIENT, light.Ambient.GetMemoryBlock ' set ambience</SourceLine>
@@ -2922,7 +2819,14 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub X3_Initialize()</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' Optimized texture loading source code courtesy of Alain Bailleul from Alwaysbusy's Corner.</SourceLine>
+   <SourceLine>' alwaysbusycorner.wordpress.com</SourceLine>
+   <SourceLine>' Some fun programming projects and technology news.</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>Dim mb as new MemoryBlock(16)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' enable depth buffer to ensure objects in distance is not drawn over objects closer to us</SourceLine>
    <SourceLine></SourceLine>
@@ -2948,8 +2852,15 @@
    <SourceLine>OpenGL.glBlendFunc OpenGL.GL_SRC_ALPHA, OpenGL.GL_ONE_MINUS_SRC_ALPHA</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' render buffer storage</SourceLine>
-   <SourceLine>dim mb as new MemoryBlock(16)</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>OpenGL.glGetIntegerv OpenGL.GL_ALPHA_BITS, mb // shouldn't be zero</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' flip images right side up</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>OpenGL.glMatrixMode(OpenGL.GL_TEXTURE)</SourceLine>
+   <SourceLine>OpenGL.glLoadIdentity()</SourceLine>
+   <SourceLine>OpenGL.glScalef(1.0, -1.0, 1.0)</SourceLine>
+   <SourceLine>OpenGL.glMatrixMode(OpenGL.GL_MODELVIEW)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>End Sub</SourceLine>
   </ItemSource>
@@ -2961,14 +2872,19 @@
   <ItemResult></ItemResult>
  </Method>
  <Method>
-  <ItemName>X3_LoadRGBATexture</ItemName>
+  <ItemName>X3_LoadBGRATexture</ItemName>
   <Compatibility></Compatibility>
   <Visible>1</Visible>
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Function X3_LoadRGBATexture(RGBABitmap As MemoryBlock, width As Integer, height As Integer) As Integer</SourceLine>
+   <SourceLine>Function X3_LoadBGRATexture(RGBABitmap As MemoryBlock, width As Integer, height As Integer) As Integer</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' Optimized texture loading source code courtesy of Alain Bailleul from Alwaysbusy's Corner.</SourceLine>
+   <SourceLine>' alwaysbusycorner.wordpress.com</SourceLine>
+   <SourceLine>' Some fun programming projects and technology news.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim idMB As MemoryBlock</SourceLine>
    <SourceLine>Dim oglName As Integer</SourceLine>
@@ -2988,7 +2904,8 @@
    <SourceLine></SourceLine>
    <SourceLine>' now we load the image bitmap</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>OpenGL.glTexImage2d(OpenGL.GL_TEXTURE_2D, 0, 4, width, height , 0, OpenGL.GL_RGBA, OpenGL.GL_UNSIGNED_BYTE, RGBABitmap)</SourceLine>
+   <SourceLine>'OpenGL.glTexImage2d(OpenGL.GL_TEXTURE_2D, 0, 4, width, height , 0, OpenGL.GL_RGBA, OpenGL.GL_UNSIGNED_BYTE, RGBABitmap)</SourceLine>
+   <SourceLine>OpenGL.glTexImage2d(OpenGL.GL_TEXTURE_2D, 0, OpenGL.GL_RGBA, Width, Height, 0, OpenGL.GL_BGRA, OpenGL.GL_UNSIGNED_BYTE,  RGBABitmap)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>return oglName</SourceLine>
    <SourceLine></SourceLine>
@@ -3009,7 +2926,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Function X3_PictureFromTexture(text As X3Core.X3Texture) As Picture</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim pic as new Picture(text.Width, text.height, 32)</SourceLine>
    <SourceLine>Dim i As Integer</SourceLine>
@@ -3024,7 +2942,7 @@
    <SourceLine>i = 0</SourceLine>
    <SourceLine>while i &lt; text.width</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>pic.RGBSurface.Pixel(i, j) = RGB(text.RGBABitmap.UInt8Value(pixIndex), text.RGBABitmap.UInt8Value(pixIndex + 1), text.RGBABitmap.UInt8Value(pixIndex + 2), text.RGBABitmap.UInt8Value(pixIndex + 3))</SourceLine>
+   <SourceLine>pic.RGBSurface.Pixel(i, j) = RGB(text.BGRABitmap.UInt8Value(pixIndex), text.BGRABitmap.UInt8Value(pixIndex + 1), text.BGRABitmap.UInt8Value(pixIndex + 2), text.BGRABitmap.UInt8Value(pixIndex + 3))</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>pixIndex = pixIndex + 4</SourceLine>
    <SourceLine></SourceLine>
@@ -3053,7 +2971,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub X3_RenderModel(model As X3Core.X3Model)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim i As Integer</SourceLine>
    <SourceLine>Dim j As Integer</SourceLine>
@@ -3163,7 +3082,7 @@
    <SourceLine></SourceLine>
    <SourceLine>' if texture not already loaded into OpenGL, let's first load the texture into OpenGL</SourceLine>
    <SourceLine>if texture.OGLName &lt;= 0 then</SourceLine>
-   <SourceLine>texture.OGLName = X3_LoadRGBATexture(texture.RGBABitmap, texture.Width, texture.Height)</SourceLine>
+   <SourceLine>texture.OGLName = X3_LoadBGRATexture(texture.BGRABitmap, texture.Width, texture.Height)</SourceLine>
    <SourceLine>end if</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>OpenGL.glBindTexture(OpenGL.GL_TEXTURE_2D, texture.OGLName) ' bind to the polygon's texture</SourceLine>
@@ -3256,7 +3175,7 @@
    <SourceLine></SourceLine>
    <SourceLine>' if texture not already loaded into OpenGL, let's first load the texture into OpenGL</SourceLine>
    <SourceLine>if texture.OGLName &lt;= 0 then</SourceLine>
-   <SourceLine>texture.OGLName = X3_LoadRGBATexture(texture.RGBABitmap, texture.Width, texture.Height)</SourceLine>
+   <SourceLine>texture.OGLName = X3_LoadBGRATexture(texture.BGRABitmap, texture.Width, texture.Height)</SourceLine>
    <SourceLine>end if</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>OpenGL.glBindTexture(OpenGL.GL_TEXTURE_2D, model.Texture(poly.TIndex).OGLName) ' bind to the polygon's texture</SourceLine>
@@ -3350,7 +3269,7 @@
    <SourceLine></SourceLine>
    <SourceLine>' load spritesheet into OpenGL memory</SourceLine>
    <SourceLine>if model.Sprite(poly.SIndex).SpriteSheet.OGLName &lt;= 0 then</SourceLine>
-   <SourceLine>model.Sprite(poly.SIndex).SpriteSheet.OGLName = X3_LoadRGBATexture(model.Sprite(poly.SIndex).SpriteSheet.RGBABitmap, model.Sprite(poly.SIndex).SpriteSheet.Width, model.Sprite(poly.SIndex).SpriteSheet.Height)</SourceLine>
+   <SourceLine>model.Sprite(poly.SIndex).SpriteSheet.OGLName = X3_LoadBGRATexture(model.Sprite(poly.SIndex).SpriteSheet.BGRABitmap, model.Sprite(poly.SIndex).SpriteSheet.Width, model.Sprite(poly.SIndex).SpriteSheet.Height)</SourceLine>
    <SourceLine>end if</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>OpenGL.glBindTexture(OpenGL.GL_TEXTURE_2D, model.Sprite(poly.SIndex).SpriteSheet.OGLName) ' bind to the polygon's texture</SourceLine>
@@ -3393,7 +3312,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub X3_RotateWithXY(q As X3Quaternion, xAngle As Double, yAngle As Double)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim result As new X3Quaternion</SourceLine>
    <SourceLine>Dim tmpQuat As new X3Quaternion</SourceLine>
@@ -3441,7 +3361,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub X3_SetMaterial(material As X3Core.X3Material)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim matMB As MemoryBlock</SourceLine>
    <SourceLine></SourceLine>
@@ -3484,7 +3405,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub X3_SetPerspective(x As Double, y As Double, width As Double, height As Double, fov As Double = 60.0, zNear As Double = 0.01, zFar As Double = 100)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>OpenGL.glViewport x, y, width, height ' set the viewport rectangle</SourceLine>
    <SourceLine></SourceLine>
@@ -3517,7 +3439,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub X3_SetRotation(rotation As X3Quaternion)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim angle As Double ' Euler angle of rotation</SourceLine>
    <SourceLine></SourceLine>
@@ -3542,7 +3465,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Function X3_Str(d As Double) As String</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>if (d \ 1) = d then // whole number?</SourceLine>
    <SourceLine>return Str(d, "-0")</SourceLine>
@@ -3566,7 +3490,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Function X3_PickPolygon(model As X3Core.X3Model, x As Integer, y As Integer) As X3Core.X3Polygon</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim i As Integer</SourceLine>
    <SourceLine>Dim j As Integer</SourceLine>
@@ -3684,7 +3609,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Function X3_ModelToJSON(model As X3Core.X3Model) As String</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim addedChild As Boolean</SourceLine>
    <SourceLine>Dim i As Integer</SourceLine>
@@ -4006,7 +3932,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub X3_RenderScene(scene As X3Core.X3Scene)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim i As Integer</SourceLine>
    <SourceLine>Dim activeCam As X3Core.X3Camera</SourceLine>
@@ -4067,7 +3994,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub X3_SetCamera(camera As X3Core.X3Camera)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' apply the perspective settings of the camera</SourceLine>
    <SourceLine></SourceLine>
@@ -4098,7 +4026,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Function X3_Snapshot(x As Integer, y As Integer, width As Integer, height As Integer) As Picture</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim pixelData As New MemoryBlock(width * height * 4)</SourceLine>
    <SourceLine>Dim result As Picture</SourceLine>
@@ -4146,7 +4075,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub X3_DisableAllLights()</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>OpenGL.glDisable OpenGL.GL_LIGHT0</SourceLine>
    <SourceLine>OpenGL.glDisable OpenGL.GL_LIGHT1</SourceLine>
@@ -4250,9 +4180,9 @@
  <ObjName>Build</ObjName>
  <ObjContainerID>1656686591</ObjContainerID>
 </block>
-<block type="Module" ID="264906751">
+<block type="Module" ID="1973708799">
  <ObjName>X3Camera</ObjName>
- <ObjContainerID>1818238975</ObjContainerID>
+ <ObjContainerID>1113044991</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -4951,9 +4881,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="1951076351">
+<block type="Module" ID="522209279">
  <ObjName>X3Canvas</ObjName>
- <ObjContainerID>1818238975</ObjContainerID>
+ <ObjContainerID>1113044991</ObjContainerID>
  <IsClass>1</IsClass>
  <Superclass>OpenGLSurface</Superclass>
  <ItemFlags>1</ItemFlags>
@@ -4973,7 +4903,8 @@
    <SourceLine>Me.MakeCurrent()</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>X3_Initialize</SourceLine>
-   <SourceLine>OpenGL.glDisable OpenGL.GL_LIGHTING</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>Graphics.Scene.SetViewport 0, 0, Me.Width, Me.Height</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>End Sub</SourceLine>
   </ItemSource>
@@ -5010,12 +4941,8 @@
    <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
    <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>Me.MakeCurrent()</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>Graphics.Scene.SetViewport 0, 0, Me.Width, Me.Height</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>Redim Graphics.Scene.Model(-1)</SourceLine>
-   <SourceLine>RaiseEvent Paint(Graphics)</SourceLine>
+   <SourceLine>Graphics.Width = Me.Width</SourceLine>
+   <SourceLine>Graphics.Height = Me.Height</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>End Sub</SourceLine>
   </ItemSource>
@@ -5045,14 +4972,6 @@
   <ItemParams></ItemParams>
   <ItemResult></ItemResult>
  </Method>
- <Hook>
-  <ItemName>Paint</ItemName>
-  <TextEncoding>134217984</TextEncoding>
-  <ItemFlags>33</ItemFlags>
-  <SystemFlags>0</SystemFlags>
-  <ItemParams>g As X3Core.X3Graphics</ItemParams>
-  <ItemResult></ItemResult>
- </Hook>
  <Property>
   <ItemName>Graphics</ItemName>
   <Compatibility></Compatibility>
@@ -5226,9 +5145,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="1858177023">
+<block type="Module" ID="288178175">
  <ObjName>X3Vector</ObjName>
- <ObjContainerID>1818238975</ObjContainerID>
+ <ObjContainerID>1113044991</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -5241,7 +5160,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Function Clone() As X3Core.X3Vector</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim vec as new X3Core.X3Vector(X, Y, Z)</SourceLine>
    <SourceLine></SourceLine>
@@ -5263,7 +5183,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub Constructor(initX As Double, initY As Double, initZ As Double)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' configure vector with initial values</SourceLine>
    <SourceLine></SourceLine>
@@ -5288,7 +5209,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Function GetMemoryBlock() As MemoryBlock</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim mblock As new MemoryBlock(16)</SourceLine>
    <SourceLine></SourceLine>
@@ -5317,7 +5239,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub Normalize()</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim m As Double ' magnitude of vector</SourceLine>
    <SourceLine></SourceLine>
@@ -5348,7 +5271,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub Rotate(quat As X3Core.X3Quaternion)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim rotX As Double</SourceLine>
    <SourceLine>Dim rotY As Double</SourceLine>
@@ -5383,7 +5307,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub Multiply(scalar As Double)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' multiply the vector with the given scalar value</SourceLine>
    <SourceLine></SourceLine>
@@ -5408,7 +5333,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub Add(vec As X3Core.X3Vector)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' add the given vector to this vector</SourceLine>
    <SourceLine></SourceLine>
@@ -5433,7 +5359,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Function DotProduct(vec As X3Core.X3Vector) As Double</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim result As Double</SourceLine>
    <SourceLine></SourceLine>
@@ -5457,6 +5384,10 @@
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub CrossProduct(vec As X3Core.X3Vector)</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>Dim cpX As Double</SourceLine>
    <SourceLine>Dim cpY As Double</SourceLine>
    <SourceLine>Dim cpZ As Double</SourceLine>
@@ -5490,6 +5421,10 @@
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Function PerpendicularVector() As X3Core.X3Vector</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>Dim result As X3Core.X3Vector</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>if X &lt;&gt; 0 then</SourceLine>
@@ -5603,9 +5538,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="1295192063">
+<block type="Module" ID="1771393023">
  <ObjName>X3Color</ObjName>
- <ObjContainerID>1818238975</ObjContainerID>
+ <ObjContainerID>1113044991</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -5833,9 +5768,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="1354401791">
+<block type="Module" ID="1945233407">
  <ObjName>X3Graphics</ObjName>
- <ObjContainerID>1818238975</ObjContainerID>
+ <ObjContainerID>1113044991</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -5874,17 +5809,22 @@
    <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
    <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>mCanvas = canvas // store reference to X3Canvas control</SourceLine>
+   <SourceLine>Height = canvas.Height</SourceLine>
+   <SourceLine>Width = canvas.Width</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>// intialize scene object</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Scene = new X3Core.X3Scene()</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>Scene.Light.Append new X3Light(0, 0, 100)</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>Scene.Camera.Append new X3Camera()</SourceLine>
    <SourceLine>Scene.CameraIndex = 0</SourceLine>
-   <SourceLine></SourceLine>
    <SourceLine>Scene.ActiveCamera.DollyOut 1.2 // dolly the camare out a bit so that we can see the drawing</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>calcPic = new Picture(1, 1, 24) // Picture object used for calculations</SourceLine>
+   <SourceLine>// Instantiate picture object used for calculations</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>calcPic = new Picture(1, 1, 24) </SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>End Sub</SourceLine>
   </ItemSource>
@@ -5894,60 +5834,6 @@
   <IsShared>0</IsShared>
   <ItemParams>canvas As X3Canvas</ItemParams>
   <ItemResult></ItemResult>
- </Method>
- <Method>
-  <ItemName>mapX</ItemName>
-  <Compatibility></Compatibility>
-  <Visible>1</Visible>
-  <ItemSource>
-   <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Function mapX(x As Integer) As Double</SourceLine>
-   <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>Dim result As Double</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>result = x - (mCanvas.Width / 2)</SourceLine>
-   <SourceLine>result = result / mCanvas.Height</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>return result</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>End Function</SourceLine>
-  </ItemSource>
-  <TextEncoding>134217984</TextEncoding>
-  <AliasName></AliasName>
-  <ItemFlags>33</ItemFlags>
-  <IsShared>0</IsShared>
-  <ItemParams>x As Integer</ItemParams>
-  <ItemResult>Double</ItemResult>
- </Method>
- <Method>
-  <ItemName>mapY</ItemName>
-  <Compatibility></Compatibility>
-  <Visible>1</Visible>
-  <ItemSource>
-   <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Function mapY(y As Integer) As Double</SourceLine>
-   <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
-   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>Dim result As Double</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>result = (mCanvas.Height / 2) - y</SourceLine>
-   <SourceLine>result = result / (mCanvas.Height)</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>return result</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>End Function</SourceLine>
-  </ItemSource>
-  <TextEncoding>134217984</TextEncoding>
-  <AliasName></AliasName>
-  <ItemFlags>33</ItemFlags>
-  <IsShared>0</IsShared>
-  <ItemParams>y As Integer</ItemParams>
-  <ItemResult>Double</ItemResult>
  </Method>
  <Method>
   <ItemName>FillRect</ItemName>
@@ -5984,27 +5870,56 @@
    <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim model As new X3Core.X3Model</SourceLine>
-   <SourceLine>Dim poly As new X3Core.X3Polygon</SourceLine>
+   <SourceLine>Dim poly As X3Core.X3Polygon</SourceLine>
    <SourceLine>Dim x1 As Double</SourceLine>
    <SourceLine>Dim y1 As Double</SourceLine>
    <SourceLine>Dim x2 As Double</SourceLine>
    <SourceLine>Dim y2 As Double</SourceLine>
    <SourceLine>Dim midX As Double</SourceLine>
    <SourceLine>Dim midY As Double</SourceLine>
+   <SourceLine>Dim u1 As Double</SourceLine>
+   <SourceLine>Dim v1 As Double</SourceLine>
+   <SourceLine>Dim u2 As Double</SourceLine>
+   <SourceLine>Dim v2 As Double</SourceLine>
+   <SourceLine>Dim w As Double</SourceLine>
+   <SourceLine>Dim h As Double</SourceLine>
+   <SourceLine>Dim iWidth As Double</SourceLine>
+   <SourceLine>Dim iHeight As Double</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>// add vertices</SourceLine>
+   <SourceLine>// do integer to double conversion once</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>x1 = MapX(x)</SourceLine>
-   <SourceLine>y1 = MapY(y)</SourceLine>
+   <SourceLine>iWidth = image.Width</SourceLine>
+   <SourceLine>iHeight = image.Height</SourceLine>
+   <SourceLine>w = Width</SourceLine>
+   <SourceLine>h = Height</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>// calculate xy coordinates</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' mapX(x)</SourceLine>
+   <SourceLine>x1 = x - (w / 2)</SourceLine>
+   <SourceLine>x1 = x1 / h</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' mapY(y)</SourceLine>
+   <SourceLine>y1 = (h / 2) - y</SourceLine>
+   <SourceLine>y1 = y1 / h</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>if w1 &gt; 0 Then</SourceLine>
-   <SourceLine>x2 = MapX(x + w1)</SourceLine>
+   <SourceLine>' mapX(x + w1)</SourceLine>
+   <SourceLine>x2 = x + w1 - (w / 2)</SourceLine>
+   <SourceLine>x2 = x2 / h</SourceLine>
    <SourceLine>else</SourceLine>
-   <SourceLine>x2 = MapX(x + image.Width)</SourceLine>
+   <SourceLine>' mapX(x + texture.Width)</SourceLine>
+   <SourceLine>x2 = x + iWidth - (w / 2)</SourceLine>
+   <SourceLine>x2 = x2 / h</SourceLine>
    <SourceLine>end if</SourceLine>
    <SourceLine>if h1 &gt; 0 Then</SourceLine>
-   <SourceLine>y2 = MapY(y + h1)</SourceLine>
+   <SourceLine>' mapY(y + h1)</SourceLine>
+   <SourceLine>y2 = (h / 2) - y - h1</SourceLine>
+   <SourceLine>y2 = y2 / h</SourceLine>
    <SourceLine>else</SourceLine>
-   <SourceLine>y2 = MapY(y + image.Height)</SourceLine>
+   <SourceLine>' mapY(y + texture.Height)</SourceLine>
+   <SourceLine>y2 = (h / 2) - y - iHeight</SourceLine>
+   <SourceLine>y2 = y2 / h</SourceLine>
    <SourceLine>end if</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>midX = (x2 - x1) / 2</SourceLine>
@@ -6019,52 +5934,58 @@
    <SourceLine>x2 = x2 - model.Position.X</SourceLine>
    <SourceLine>y2 = y2 - model.Position.Y</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>model.Vertex.Append new X3Core.X3Vector(x1, y1, 0)</SourceLine>
-   <SourceLine>model.Vertex.Append new X3Core.X3Vector(x1, y2, 0)</SourceLine>
-   <SourceLine>model.Vertex.Append new X3Core.X3Vector(x2, y2, 0)</SourceLine>
-   <SourceLine>model.Vertex.Append new X3Core.X3Vector(x2, y1, 0)</SourceLine>
+   <SourceLine>// calculate uv coordinates</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>// add uv-coordinates</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>x1 = sx / image.Width</SourceLine>
+   <SourceLine>u1 = sx / image.Width</SourceLine>
    <SourceLine>if w2 &gt; 0 then</SourceLine>
-   <SourceLine>x2 = (sx + w2) / image.Width</SourceLine>
+   <SourceLine>u2 = (sx + w2) / iWidth</SourceLine>
    <SourceLine>else</SourceLine>
    <SourceLine>if w1 &gt; 0 Then</SourceLine>
-   <SourceLine>x2 = (sx + w1) / image.Width</SourceLine>
+   <SourceLine>u2 = (sx + w1) / iWidth</SourceLine>
    <SourceLine>else</SourceLine>
-   <SourceLine>x2 = 1</SourceLine>
+   <SourceLine>u2 = 1</SourceLine>
    <SourceLine>end if</SourceLine>
-   <SourceLine>end if </SourceLine>
+   <SourceLine>end if</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>y1 =  sy / image.Width</SourceLine>
+   <SourceLine>v1 =  sy / image.Width</SourceLine>
    <SourceLine>if h2 &gt; 0 then</SourceLine>
-   <SourceLine>y2 = (sy + h2) / image.Width</SourceLine>
+   <SourceLine>v2 = (sy + h2) / iHeight</SourceLine>
    <SourceLine>else</SourceLine>
    <SourceLine>if h1 &gt; 0 Then</SourceLine>
-   <SourceLine>y2 = (sy + h1) / image.Height</SourceLine>
+   <SourceLine>v2 = (sy + h1) / iHeight</SourceLine>
    <SourceLine>else</SourceLine>
-   <SourceLine>y2 = 1</SourceLine>
+   <SourceLine>v2 = 1</SourceLine>
    <SourceLine>end if</SourceLine>
    <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>model.UVMap.Append new X3Core.X3UVCoordinate(x1, y1)</SourceLine>
-   <SourceLine>model.UVMap.Append new X3Core.X3UVCoordinate(x1, y2)</SourceLine>
-   <SourceLine>model.UVMap.Append new X3Core.X3UVCoordinate(x2, y2)</SourceLine>
-   <SourceLine>model.UVMap.Append new X3Core.X3UVCoordinate(x2, y1)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>// add texture (created from image)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>model.Texture.Append new X3Core.X3Texture(image)</SourceLine>
    <SourceLine></SourceLine>
+   <SourceLine>// add uv-coordinates</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>model.UVMap.Append new X3Core.X3UVCoordinate(u1, v1)</SourceLine>
+   <SourceLine>model.UVMap.Append new X3Core.X3UVCoordinate(u1, v2)</SourceLine>
+   <SourceLine>model.UVMap.Append new X3Core.X3UVCoordinate(u2, v2)</SourceLine>
+   <SourceLine>model.UVMap.Append new X3Core.X3UVCoordinate(u2, v1)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>// add vertices </SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>model.Vertex.Append new X3Core.X3Vector(x1, y1, 0)</SourceLine>
+   <SourceLine>model.Vertex.Append new X3Core.X3Vector(x2, y1, 0)</SourceLine>
+   <SourceLine>model.Vertex.Append new X3Core.X3Vector(x1, y2, 0)</SourceLine>
+   <SourceLine>model.Vertex.Append new X3Core.X3Vector(x2, y2, 0)</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>// create polygon</SourceLine>
    <SourceLine></SourceLine>
+   <SourceLine>poly = new X3Core.X3Polygon()</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>poly.VIndex.Append 0</SourceLine>
-   <SourceLine>poly.VIndex.Append 1</SourceLine>
    <SourceLine>poly.VIndex.Append 2</SourceLine>
    <SourceLine>poly.VIndex.Append 3</SourceLine>
+   <SourceLine>poly.VIndex.Append 1</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>poly.TIndex = 0 // point to image texture </SourceLine>
+   <SourceLine>poly.TIndex = 0 // point to image texture</SourceLine>
    <SourceLine>poly.UVIndex.Append 0</SourceLine>
    <SourceLine>poly.UVIndex.Append 1</SourceLine>
    <SourceLine>poly.UVIndex.Append 2</SourceLine>
@@ -6105,6 +6026,13 @@
    <SourceLine>Dim y2 As Double</SourceLine>
    <SourceLine>Dim midX As Double</SourceLine>
    <SourceLine>Dim midY As Double</SourceLine>
+   <SourceLine>Dim w As Double</SourceLine>
+   <SourceLine>Dim h As Double</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>// do integer to double conversion once</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>w = Width</SourceLine>
+   <SourceLine>h = Height</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>// add color</SourceLine>
    <SourceLine></SourceLine>
@@ -6112,11 +6040,27 @@
    <SourceLine></SourceLine>
    <SourceLine>// add vertices</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>x1 = MapX(x)</SourceLine>
-   <SourceLine>y1 = MapY(y)</SourceLine>
+   <SourceLine>' mapX(x)</SourceLine>
+   <SourceLine>x1 = x - (w / 2)</SourceLine>
+   <SourceLine>x1 = x1 / h</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>x2 = MapX(x + width)</SourceLine>
-   <SourceLine>y2 = MapY(y +height)</SourceLine>
+   <SourceLine>' mapY(y)</SourceLine>
+   <SourceLine>y1 = (h / 2) - y</SourceLine>
+   <SourceLine>y1 = y1 / h</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' mapX(x + width)</SourceLine>
+   <SourceLine>x2 = (x + width) - (w / 2)</SourceLine>
+   <SourceLine>x2 = x2 / h</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' mapY(y +height)</SourceLine>
+   <SourceLine>y2 = (h / 2) - (y +height)</SourceLine>
+   <SourceLine>y2 = y2 / h</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>'x1 = MapX(x)</SourceLine>
+   <SourceLine>'y1 = MapY(y)</SourceLine>
+   <SourceLine>'</SourceLine>
+   <SourceLine>'x2 = MapX(x + width)</SourceLine>
+   <SourceLine>'y2 = MapY(y +height)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>midX = (x2 - x1) / 2</SourceLine>
    <SourceLine>midY = (y2 - y1) / 2</SourceLine>
@@ -6213,6 +6157,13 @@
    <SourceLine>Dim midX As Double</SourceLine>
    <SourceLine>Dim midY As Double</SourceLine>
    <SourceLine>Dim totVerts As Integer</SourceLine>
+   <SourceLine>Dim w As Double</SourceLine>
+   <SourceLine>Dim h As Double</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>// do integer to double conversion once</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>w = Width</SourceLine>
+   <SourceLine>h = Height</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>// add color</SourceLine>
    <SourceLine></SourceLine>
@@ -6225,8 +6176,13 @@
    <SourceLine>xSum = 0</SourceLine>
    <SourceLine>ySum = 0</SourceLine>
    <SourceLine>while i &lt; pointCount</SourceLine>
-   <SourceLine>x = mapX(points(1 + i * 2))</SourceLine>
-   <SourceLine>y = mapY(points(2 + i * 2))</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>x = points(1 + i * 2) - (w / 2)</SourceLine>
+   <SourceLine>x = x / h</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>y = (h / 2) - points(2 + i * 2)</SourceLine>
+   <SourceLine>y = y / h</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>xSum = xSum + x</SourceLine>
    <SourceLine>ySum = ySum + y</SourceLine>
    <SourceLine>model.Vertex.Append new X3Core.X3Vector(x, y, 0)</SourceLine>
@@ -6270,8 +6226,12 @@
    <SourceLine>xSum = 0</SourceLine>
    <SourceLine>ySum = 0</SourceLine>
    <SourceLine>while i &gt;= 0</SourceLine>
-   <SourceLine>x = mapX(points(1 + i * 2))</SourceLine>
-   <SourceLine>y = mapY(points(2 + i * 2))</SourceLine>
+   <SourceLine>x = points(1 + i * 2) - (w / 2)</SourceLine>
+   <SourceLine>x = x / h</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>y = (h / 2) - points(2 + i * 2)</SourceLine>
+   <SourceLine>y = y / h</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>xSum = xSum + x</SourceLine>
    <SourceLine>ySum = ySum + y</SourceLine>
    <SourceLine>model.Vertex.Append new X3Core.X3Vector(x, y, 0)</SourceLine>
@@ -6345,7 +6305,16 @@
    <SourceLine>Dim y2 As Double</SourceLine>
    <SourceLine>Dim midX As Double</SourceLine>
    <SourceLine>Dim midY As Double</SourceLine>
+   <SourceLine>Dim w As Double</SourceLine>
+   <SourceLine>Dim h As Double</SourceLine>
    <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>// do integer to double conversion once</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>w = Me.Width</SourceLine>
+   <SourceLine>h = Me.Height</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>// init picture calculator </SourceLine>
    <SourceLine>calcPic.Graphics.Bold = Bold</SourceLine>
    <SourceLine>calcPic.Graphics.Italic = Italic</SourceLine>
    <SourceLine>calcPic.Graphics.TextFont = TextFont</SourceLine>
@@ -6393,10 +6362,17 @@
    <SourceLine></SourceLine>
    <SourceLine>// add vertices</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>x1 = MapX(x)</SourceLine>
-   <SourceLine>y1 = MapY(y - calcPic.Graphics.TextAscent)</SourceLine>
-   <SourceLine>x2 = MapX(x + image.Width)</SourceLine>
-   <SourceLine>y2 = MapY(y - calcPic.Graphics.TextAscent + image.Height)</SourceLine>
+   <SourceLine>x1 = x - (w / 2)</SourceLine>
+   <SourceLine>x1 = x1 / h</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>y1 = (h / 2) - (y - calcPic.Graphics.TextAscent)</SourceLine>
+   <SourceLine>y1 = y1 / h</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>x2 = (x + image.Width) - (w / 2)</SourceLine>
+   <SourceLine>x2 = x2 / h</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>y2 = (h / 2) - (y - calcPic.Graphics.TextAscent + image.Height)</SourceLine>
+   <SourceLine>y2 = y2 / h</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>midX = (x2 - x1) / 2</SourceLine>
    <SourceLine>midY = (y2 - y1) / 2</SourceLine>
@@ -6455,81 +6431,179 @@
   <ItemParams>str As String, x As Integer, y As Integer, width As Integer = 0, condense As Boolean = False</ItemParams>
   <ItemResult>X3Core.X3Model</ItemResult>
  </Method>
- <Property>
-  <ItemName>mCanvas</ItemName>
+ <Method>
+  <ItemName>DrawTexture</ItemName>
   <Compatibility></Compatibility>
   <Visible>1</Visible>
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
-   <SourceLine>mCanvas As X3Canvas</SourceLine>
+   <SourceLine>Function DrawTexture(texture As X3Core.X3Texture, x As Integer, y As Integer, w1 As Integer = -10000, h1 As Integer = -10000, sx As Integer = 0, sy As Integer = 0, w2 As Integer = -10000, h2 As Integer = -10000) As X3Core.X3Model</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
+   <SourceLine>Dim model As new X3Core.X3Model</SourceLine>
+   <SourceLine>Dim poly As X3Core.X3Polygon</SourceLine>
+   <SourceLine>Dim x1 As Double</SourceLine>
+   <SourceLine>Dim y1 As Double</SourceLine>
+   <SourceLine>Dim x2 As Double</SourceLine>
+   <SourceLine>Dim y2 As Double</SourceLine>
+   <SourceLine>Dim midX As Double</SourceLine>
+   <SourceLine>Dim midY As Double</SourceLine>
+   <SourceLine>Dim u1 As Double</SourceLine>
+   <SourceLine>Dim v1 As Double</SourceLine>
+   <SourceLine>Dim u2 As Double</SourceLine>
+   <SourceLine>Dim v2 As Double</SourceLine>
+   <SourceLine>Dim tWidth As Double</SourceLine>
+   <SourceLine>Dim tHeight As Double</SourceLine>
+   <SourceLine>Dim w As Double</SourceLine>
+   <SourceLine>Dim h As Double</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>// do integer to double conversion once</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>tWidth = texture.Width</SourceLine>
+   <SourceLine>tHeight = texture.Height</SourceLine>
+   <SourceLine>w = Width</SourceLine>
+   <SourceLine>h = Height</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>// calculate xy coordinates</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' mapX(x)</SourceLine>
+   <SourceLine>x1 = x - (w / 2)</SourceLine>
+   <SourceLine>x1 = x1 / h</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>' mapY(y)</SourceLine>
+   <SourceLine>y1 = (h / 2) - y</SourceLine>
+   <SourceLine>y1 = y1 / h</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if w1 &gt; 0 Then</SourceLine>
+   <SourceLine>' mapX(x + w1)</SourceLine>
+   <SourceLine>x2 = x + w1 - (w / 2)</SourceLine>
+   <SourceLine>x2 = x2 / h</SourceLine>
+   <SourceLine>else</SourceLine>
+   <SourceLine>' mapX(x + texture.Width)</SourceLine>
+   <SourceLine>x2 = x + tWidth - (w / 2)</SourceLine>
+   <SourceLine>x2 = x2 / h</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine>if h1 &gt; 0 Then</SourceLine>
+   <SourceLine>' mapY(y + h1)</SourceLine>
+   <SourceLine>y2 = (h / 2) - y - h1</SourceLine>
+   <SourceLine>y2 = y2 / h</SourceLine>
+   <SourceLine>else</SourceLine>
+   <SourceLine>' mapY(y + texture.Height)</SourceLine>
+   <SourceLine>y2 = (h / 2) - y - tHeight</SourceLine>
+   <SourceLine>y2 = y2 / h</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>midX = (x2 - x1) / 2</SourceLine>
+   <SourceLine>midY = (y2 - y1) / 2</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>model.Position.X = x1 + midX</SourceLine>
+   <SourceLine>model.Position.Y = y1 + midY</SourceLine>
+   <SourceLine>model.Position.Z = 0</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>x1 = x1 - model.Position.X</SourceLine>
+   <SourceLine>y1 = y1 - model.Position.Y</SourceLine>
+   <SourceLine>x2 = x2 - model.Position.X</SourceLine>
+   <SourceLine>y2 = y2 - model.Position.Y</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>// calculate uv coordinates</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>u1 = sx / tWidth</SourceLine>
+   <SourceLine>if w2 &gt; 0 then</SourceLine>
+   <SourceLine>u2 = (sx + w2) / tWidth</SourceLine>
+   <SourceLine>else</SourceLine>
+   <SourceLine>if w1 &gt; 0 Then</SourceLine>
+   <SourceLine>u2 = (sx + w1) / tWidth</SourceLine>
+   <SourceLine>else</SourceLine>
+   <SourceLine>u2 = 1</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>v1 =  sy / tWidth</SourceLine>
+   <SourceLine>if h2 &gt; 0 then</SourceLine>
+   <SourceLine>v2 = (sy + h2) / tHeight</SourceLine>
+   <SourceLine>else</SourceLine>
+   <SourceLine>if h1 &gt; 0 Then</SourceLine>
+   <SourceLine>v2 = (sy + h1) / tHeight</SourceLine>
+   <SourceLine>else</SourceLine>
+   <SourceLine>v2 = 1</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine>end if</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>// add texture (created from image)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>model.Texture.Append texture</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>// add uv-coordinates</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>model.UVMap.Append new X3Core.X3UVCoordinate(u1, v1)</SourceLine>
+   <SourceLine>model.UVMap.Append new X3Core.X3UVCoordinate(u1, v2)</SourceLine>
+   <SourceLine>model.UVMap.Append new X3Core.X3UVCoordinate(u2, v2)</SourceLine>
+   <SourceLine>model.UVMap.Append new X3Core.X3UVCoordinate(u2, v1)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>// add vertices </SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>model.Vertex.Append new X3Core.X3Vector(x1, y1, 0)</SourceLine>
+   <SourceLine>model.Vertex.Append new X3Core.X3Vector(x2, y1, 0)</SourceLine>
+   <SourceLine>model.Vertex.Append new X3Core.X3Vector(x1, y2, 0)</SourceLine>
+   <SourceLine>model.Vertex.Append new X3Core.X3Vector(x2, y2, 0)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>// create polygon</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>poly = new X3Core.X3Polygon()</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>poly.VIndex.Append 0</SourceLine>
+   <SourceLine>poly.VIndex.Append 2</SourceLine>
+   <SourceLine>poly.VIndex.Append 3</SourceLine>
+   <SourceLine>poly.VIndex.Append 1</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>poly.TIndex = 0 // point to image texture</SourceLine>
+   <SourceLine>poly.UVIndex.Append 0</SourceLine>
+   <SourceLine>poly.UVIndex.Append 1</SourceLine>
+   <SourceLine>poly.UVIndex.Append 2</SourceLine>
+   <SourceLine>poly.UVIndex.Append 3</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>model.AppendPolygon poly</SourceLine>
+   <SourceLine>poly.CalculateNormal() // update polygon normal</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>Scene.Model.Append model // add model to scene</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>return model</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Function</SourceLine>
   </ItemSource>
   <TextEncoding>134217984</TextEncoding>
-  <ItemDeclaration>mCanvas As X3Canvas</ItemDeclaration>
-  <ItemFlags>33</ItemFlags>
-  <IsShared>0</IsShared>
- </Property>
- <Property>
-  <ItemName>Width</ItemName>
-  <Compatibility></Compatibility>
-  <Visible>1</Visible>
-  <ItemSource>
-   <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Width As Integer</SourceLine>
-   <SourceLine></SourceLine>
-  </ItemSource>
-  <TextEncoding>134217984</TextEncoding>
-  <ItemDeclaration>Width As Integer</ItemDeclaration>
+  <AliasName></AliasName>
   <ItemFlags>0</ItemFlags>
   <IsShared>0</IsShared>
-  <SetAccessor>
-   <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Set</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>End Set</SourceLine>
-  </SetAccessor>
-  <GetAccessor>
-   <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Get</SourceLine>
-   <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>return mCanvas.Width</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>End Get</SourceLine>
-  </GetAccessor>
- </Property>
- <Property>
-  <ItemName>Height</ItemName>
+  <ItemParams>texture As X3Core.X3Texture, x As Integer, y As Integer, w1 As Integer = -10000, h1 As Integer = -10000, sx As Integer = 0, sy As Integer = 0, w2 As Integer = -10000, h2 As Integer = -10000</ItemParams>
+  <ItemResult>X3Core.X3Model</ItemResult>
+ </Method>
+ <Method>
+  <ItemName>DrawTexture</ItemName>
   <Compatibility></Compatibility>
   <Visible>1</Visible>
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Height As Integer</SourceLine>
+   <SourceLine>Sub DrawTexture(texture As X3Core.X3Texture, x As Integer, y As Integer, w1 As Integer = -10000, h1 As Integer = -10000, sx As Integer = 0, sy As Integer = 0, w2 As Integer = -10000, h2 As Integer = -10000)</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
+   <SourceLine>Dim model As X3Core.X3Model</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>model = DrawTexture(texture, x, y, w1, h1, sx, sy, w2, h2)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
   </ItemSource>
   <TextEncoding>134217984</TextEncoding>
-  <ItemDeclaration>Height As Integer</ItemDeclaration>
+  <AliasName></AliasName>
   <ItemFlags>0</ItemFlags>
   <IsShared>0</IsShared>
-  <SetAccessor>
-   <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Set</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>End Set</SourceLine>
-  </SetAccessor>
-  <GetAccessor>
-   <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Get</SourceLine>
-   <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>return mCanvas.Height</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>End Get</SourceLine>
-  </GetAccessor>
- </Property>
+  <ItemParams>texture As X3Core.X3Texture, x As Integer, y As Integer, w1 As Integer = -10000, h1 As Integer = -10000, sx As Integer = 0, sy As Integer = 0, w2 As Integer = -10000, h2 As Integer = -10000</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
  <Property>
   <ItemName>Scene</ItemName>
   <Compatibility></Compatibility>
@@ -6880,6 +6954,34 @@
    <SourceLine>End Get</SourceLine>
   </GetAccessor>
  </Property>
+ <Property>
+  <ItemName>Height</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Height As Integer</SourceLine>
+   <SourceLine></SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <ItemDeclaration>Height As Integer</ItemDeclaration>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+ </Property>
+ <Property>
+  <ItemName>Width</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Width As Integer</SourceLine>
+   <SourceLine></SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <ItemDeclaration>Width As Integer</ItemDeclaration>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+ </Property>
  <ViewBehavior>
   <ViewProperty>
    <ObjName>Name</ObjName>
@@ -7009,9 +7111,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="1620326399">
+<block type="Module" ID="133738495">
  <ObjName>X3Polygon</ObjName>
- <ObjContainerID>1818238975</ObjContainerID>
+ <ObjContainerID>1113044991</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -7024,7 +7126,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub CalculateNormal()</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim v1X As Double ' temporary value used during calculations</SourceLine>
    <SourceLine>Dim v1Y As Double ' temporary value used during calculations</SourceLine>
@@ -7037,16 +7140,25 @@
    <SourceLine>Dim cpZ As Double ' cross product z</SourceLine>
    <SourceLine>Dim m As Double ' magnitude of vector</SourceLine>
    <SourceLine>Dim n As X3Core.X3Vector</SourceLine>
+   <SourceLine>Dim pmv0 As X3Core.X3Vector</SourceLine>
+   <SourceLine>Dim pmv1 As X3Core.X3Vector</SourceLine>
+   <SourceLine>Dim pmv2 As X3Core.X3Vector</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>// derefence vertices (for faster calculations)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>pmv0 = ParentModel.Vertex(VIndex(0))</SourceLine>
+   <SourceLine>pmv1 = ParentModel.Vertex(VIndex(1))</SourceLine>
+   <SourceLine>pmv2 = ParentModel.Vertex(VIndex(2))</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' calculate polygon surface vectors</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>v1X = ParentModel.Vertex(VIndex(1)).X - ParentModel.Vertex(VIndex(0)).X</SourceLine>
-   <SourceLine>v1Y = ParentModel.Vertex(VIndex(1)).Y - ParentModel.Vertex(VIndex(0)).Y</SourceLine>
-   <SourceLine>v1Z = ParentModel.Vertex(VIndex(1)).Z - ParentModel.Vertex(VIndex(0)).Z</SourceLine>
+   <SourceLine>v1X = pmv1.X - pmv0.X</SourceLine>
+   <SourceLine>v1Y = pmv1.Y - pmv0.Y</SourceLine>
+   <SourceLine>v1Z = pmv1.Z - pmv0.Z</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>v2X = ParentModel.Vertex(VIndex(2)).X - ParentModel.Vertex(VIndex(1)).X</SourceLine>
-   <SourceLine>v2Y = ParentModel.Vertex(VIndex(2)).Y - ParentModel.Vertex(VIndex(1)).Y</SourceLine>
-   <SourceLine>v2Z = ParentModel.Vertex(VIndex(2)).Z - ParentModel.Vertex(VIndex(1)).Z</SourceLine>
+   <SourceLine>v2X = pmv2.X - pmv1.X</SourceLine>
+   <SourceLine>v2Y = pmv2.Y - pmv1.Y</SourceLine>
+   <SourceLine>v2Z = pmv2.Z - pmv1.Z</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' calculate cross product</SourceLine>
    <SourceLine></SourceLine>
@@ -7091,7 +7203,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Function Clone() As X3Core.X3Polygon</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim poly As new X3Core.X3Polygon(ParentModel)</SourceLine>
    <SourceLine>Dim i As Integer</SourceLine>
@@ -7134,7 +7247,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub Constructor()</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>End Sub</SourceLine>
   </ItemSource>
@@ -7153,7 +7267,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub Constructor(parent As X3Core.X3Model)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim n As new X3Core.X3Vector(0, 0, 0)</SourceLine>
    <SourceLine></SourceLine>
@@ -7178,7 +7293,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub Constructor(parent As X3Core.X3Model, normalX As Double, normalY As Double, normalZ As Double)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim n As new X3Core.X3Vector(normalX, normalY, normalZ)</SourceLine>
    <SourceLine></SourceLine>
@@ -7203,7 +7319,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Function GetCenter() As X3Core.X3Vector</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim xTot As Double</SourceLine>
    <SourceLine>Dim yTot As Double</SourceLine>
@@ -7242,7 +7359,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub NextSpriteImage()</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim s As X3Core.X3Sprite</SourceLine>
    <SourceLine></SourceLine>
@@ -7275,7 +7393,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub Triangulate()</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim i As Integer</SourceLine>
    <SourceLine>Dim j As Integer</SourceLine>
@@ -7479,7 +7598,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Function CalculateNormal() As X3Core.X3Vector</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim v1X As Double ' temporary value used during calculations</SourceLine>
    <SourceLine>Dim v1Y As Double ' temporary value used during calculations</SourceLine>
@@ -7492,16 +7612,25 @@
    <SourceLine>Dim cpZ As Double ' cross product z</SourceLine>
    <SourceLine>Dim m As Double ' magnitude of vector</SourceLine>
    <SourceLine>Dim n As X3Core.X3Vector</SourceLine>
+   <SourceLine>Dim pmv0 As X3Core.X3Vector</SourceLine>
+   <SourceLine>Dim pmv1 As X3Core.X3Vector</SourceLine>
+   <SourceLine>Dim pmv2 As X3Core.X3Vector</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>// derefence vertices (for faster calculations)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>pmv0 = ParentModel.Vertex(VIndex(0))</SourceLine>
+   <SourceLine>pmv1 = ParentModel.Vertex(VIndex(1))</SourceLine>
+   <SourceLine>pmv2 = ParentModel.Vertex(VIndex(2))</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' calculate polygon surface vectors</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>v1X = ParentModel.Vertex(VIndex(1)).X - ParentModel.Vertex(VIndex(0)).X</SourceLine>
-   <SourceLine>v1Y = ParentModel.Vertex(VIndex(1)).Y - ParentModel.Vertex(VIndex(0)).Y</SourceLine>
-   <SourceLine>v1Z = ParentModel.Vertex(VIndex(1)).Z - ParentModel.Vertex(VIndex(0)).Z</SourceLine>
+   <SourceLine>v1X = pmv1.X - pmv0.X</SourceLine>
+   <SourceLine>v1Y = pmv1.Y - pmv0.Y</SourceLine>
+   <SourceLine>v1Z = pmv1.Z - pmv0.Z</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>v2X = ParentModel.Vertex(VIndex(2)).X - ParentModel.Vertex(VIndex(1)).X</SourceLine>
-   <SourceLine>v2Y = ParentModel.Vertex(VIndex(2)).Y - ParentModel.Vertex(VIndex(1)).Y</SourceLine>
-   <SourceLine>v2Z = ParentModel.Vertex(VIndex(2)).Z - ParentModel.Vertex(VIndex(1)).Z</SourceLine>
+   <SourceLine>v2X = pmv2.X - pmv1.X</SourceLine>
+   <SourceLine>v2Y = pmv2.Y - pmv1.Y</SourceLine>
+   <SourceLine>v2Z = pmv2.Z - pmv1.Z</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' calculate cross product</SourceLine>
    <SourceLine></SourceLine>
@@ -7543,7 +7672,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Function GetXYProjectionCoords() As X3Core.X3Vector()</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim coords() As X3Core.X3Vector</SourceLine>
    <SourceLine>Dim i As Integer</SourceLine>
@@ -7958,9 +8088,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="1276641279">
+<block type="Module" ID="702015487">
  <ObjName>X3Light</ObjName>
- <ObjContainerID>1818238975</ObjContainerID>
+ <ObjContainerID>1113044991</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -8114,9 +8244,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="2113382399">
+<block type="Module" ID="1768617983">
  <ObjName>X3Model</ObjName>
- <ObjContainerID>1818238975</ObjContainerID>
+ <ObjContainerID>1113044991</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -8129,7 +8259,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub AppendPolygon(poly As X3Core.X3Polygon)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim i As Integer</SourceLine>
    <SourceLine>Dim firstUVIndex As Integer</SourceLine>
@@ -8169,7 +8300,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Function Clone() As X3Core.X3Model</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim model As new X3Core.X3Model</SourceLine>
    <SourceLine>Dim i As Integer</SourceLine>
@@ -8236,12 +8368,12 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub Constructor()</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Position = new X3Core.X3Vector(0, 0, 0) ' instantiate the default position at the origin</SourceLine>
    <SourceLine>Rotation = new X3Core.X3Quaternion() ' instantiate a default rotation quaternion</SourceLine>
    <SourceLine>Scale = new X3Core.X3Vector(1, 1, 1) ' instantiate the default scale</SourceLine>
-   <SourceLine>BoundingBox = new X3Core.X3BoundingBox() ' instantiate the bounding box object of the model</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine></SourceLine>
    <SourceLine></SourceLine>
@@ -8264,7 +8396,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub NextSpriteImage()</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim i As Integer</SourceLine>
    <SourceLine></SourceLine>
@@ -8289,7 +8422,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub Center(pos As X3Core.X3Vector = nil)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim centPos As X3Core.X3Vector</SourceLine>
    <SourceLine>Dim maxX As Double</SourceLine>
@@ -8363,7 +8497,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub Unitize(pos As X3Core.X3Vector = nil)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim centPos As X3Core.X3Vector</SourceLine>
    <SourceLine>Dim i As Integer</SourceLine>
@@ -8429,9 +8564,14 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub UpdateBoundingBox()</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative. </SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim i As Integer</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>if BoundingBox = nil then</SourceLine>
+   <SourceLine>BoundingBox = new X3Core.X3BoundingBox</SourceLine>
+   <SourceLine>end if</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>if Vertex.Ubound &gt;= 0 then</SourceLine>
    <SourceLine></SourceLine>
@@ -8452,7 +8592,6 @@
    <SourceLine></SourceLine>
    <SourceLine>end if</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine></SourceLine>
    <SourceLine>End Sub</SourceLine>
   </ItemSource>
   <TextEncoding>134217984</TextEncoding>
@@ -8470,7 +8609,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub Triangulate()</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim i As Integer</SourceLine>
    <SourceLine></SourceLine>
@@ -8479,6 +8619,37 @@
    <SourceLine>Polygon(i).Triangulate()</SourceLine>
    <SourceLine>i = i + 1</SourceLine>
    <SourceLine>wend</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams></ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>Destructor</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub Destructor()</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>'Dim i As Integer</SourceLine>
+   <SourceLine>'</SourceLine>
+   <SourceLine>'// remove textures used by model from memory</SourceLine>
+   <SourceLine>'</SourceLine>
+   <SourceLine>'i = 0 </SourceLine>
+   <SourceLine>'while i &lt; Texture.Ubound</SourceLine>
+   <SourceLine>'Texture(i) = nil</SourceLine>
+   <SourceLine>'i = i + 1</SourceLine>
+   <SourceLine>'wend</SourceLine>
+   <SourceLine>'Redim Texture(-1)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>End Sub</SourceLine>
   </ItemSource>
@@ -8746,9 +8917,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="1170751487">
+<block type="Module" ID="1495889919">
  <ObjName>X3Texture</ObjName>
- <ObjContainerID>1818238975</ObjContainerID>
+ <ObjContainerID>1113044991</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -8761,8 +8932,10 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub Constructor()</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
+   <SourceLine>Self.Transparent = false</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>End Sub</SourceLine>
   </ItemSource>
@@ -8779,65 +8952,29 @@
   <Visible>1</Visible>
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Sub Constructor(texture As Picture)</SourceLine>
+   <SourceLine>Sub Constructor(texture As Picture, transparent As Boolean = False)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>Dim x As Integer</SourceLine>
-   <SourceLine>Dim y As Integer</SourceLine>
-   <SourceLine>Dim offset As Integer</SourceLine>
-   <SourceLine>Dim textCol As Color</SourceLine>
-   <SourceLine>Dim textMaskCol As Color</SourceLine>
-   <SourceLine>Dim w As Integer</SourceLine>
-   <SourceLine>Dim h As Integer</SourceLine>
-   <SourceLine>Dim rgbMain As RGBSurface</SourceLine>
-   <SourceLine>Dim rgbMask As RGBSurface</SourceLine>
-   <SourceLine>Dim RGBABitmapPtr As Ptr</SourceLine>
+   <SourceLine>' Optimized texture loading source code courtesy of Alain Bailleul from Alwaysbusy's Corner.</SourceLine>
+   <SourceLine>' alwaysbusycorner.wordpress.com</SourceLine>
+   <SourceLine>' Some fun programming projects and technology news.</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>Transparent = false</SourceLine>
+   <SourceLine>Dim mb as MemoryBlock</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>Self.Transparent = transparent</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' convert pictures to raw formats</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Width = texture.Width</SourceLine>
    <SourceLine>Height = texture.Height</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>RGBABitmap = new MemoryBlock(Height * Width * 4) ' create a MemoryBlock for the OpenGL RGBA format</SourceLine>
-   <SourceLine>RGBABitmapPtr = RGBABitmap</SourceLine>
+   <SourceLine>' get the pixel data, but as it is in BMP uncompressed format it's flipped upside down and in BGRA format</SourceLine>
+   <SourceLine>' the first 54 bytes are the header, so remove them. the rest is BGRA data</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>' loop through all the pixels of the picture</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>offset = 0</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>h = Height - 1</SourceLine>
-   <SourceLine>w = Width - 1</SourceLine>
-   <SourceLine>rgbMain = texture.RGBSurface</SourceLine>
-   <SourceLine>rgbMask = texture.Mask.RGBSurface</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>for y = 0 to h</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>for x = 0 to w</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' read the values of the current pixel</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>textCol = rgbMain.Pixel(x,y) ' get the color of the current pixel</SourceLine>
-   <SourceLine>textMaskCol = rgbMask.Pixel(x, y) ' get the mask (alpha) color of the current pixel</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>' store the color and alpha values into our OpenGL texture bitmap</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>RGBABitmapPtr.Byte(offset) = textCol.Red</SourceLine>
-   <SourceLine>RGBABitmapPtr.Byte(offset + 1) = textCol.Green</SourceLine>
-   <SourceLine>RGBABitmapPtr.Byte(offset + 2) = textCol.Blue</SourceLine>
-   <SourceLine>RGBABitmapPtr.Byte(offset + 3) = 255 - textMaskCol.Red</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>if RGBABitmapPtr.Byte(offset + 3) &lt; 255 then</SourceLine>
-   <SourceLine>Transparent = true</SourceLine>
-   <SourceLine>end if</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>offset = offset + 4 ' move to the next pixel in our OpenGL texture bitmap</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>next x</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>next y</SourceLine>
+   <SourceLine>mb = texture.GetData(Picture.FormatBMP)</SourceLine>
+   <SourceLine>BGRABitmap = mb.StringValue(54, Height * Width * 4)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>TextureImage = texture</SourceLine>
    <SourceLine>OGLName = 0</SourceLine>
@@ -8848,7 +8985,7 @@
   <AliasName></AliasName>
   <ItemFlags>0</ItemFlags>
   <IsShared>0</IsShared>
-  <ItemParams>texture As Picture</ItemParams>
+  <ItemParams>texture As Picture, transparent As Boolean = False</ItemParams>
   <ItemResult></ItemResult>
  </Method>
  <Method>
@@ -8909,16 +9046,16 @@
   <IsShared>0</IsShared>
  </Property>
  <Property>
-  <ItemName>RGBABitmap</ItemName>
+  <ItemName>BGRABitmap</ItemName>
   <Compatibility></Compatibility>
   <Visible>1</Visible>
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
-   <SourceLine>RGBABitmap As MemoryBlock</SourceLine>
+   <SourceLine>BGRABitmap As MemoryBlock</SourceLine>
    <SourceLine></SourceLine>
   </ItemSource>
   <TextEncoding>134217984</TextEncoding>
-  <ItemDeclaration>RGBABitmap As MemoryBlock</ItemDeclaration>
+  <ItemDeclaration>BGRABitmap As MemoryBlock</ItemDeclaration>
   <ItemFlags>0</ItemFlags>
   <IsShared>0</IsShared>
  </Property>
@@ -8932,7 +9069,7 @@
    <SourceLine></SourceLine>
   </ItemSource>
   <TextEncoding>134217984</TextEncoding>
-  <ItemDeclaration>Transparent As Boolean</ItemDeclaration>
+  <ItemDeclaration>Transparent As Boolean = False</ItemDeclaration>
   <ItemFlags>0</ItemFlags>
   <IsShared>0</IsShared>
  </Property>
@@ -9011,6 +9148,7 @@
   <ViewProperty>
    <ObjName>Transparent</ObjName>
    <PropertyGroup>Behavior</PropertyGroup>
+   <PropertyValue>False</PropertyValue>
    <ItemType>Boolean</ItemType>
   </ViewProperty>
   <ViewProperty>
@@ -9025,9 +9163,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="173907967">
+<block type="Module" ID="216926207">
  <ObjName>X3UVCoordinate</ObjName>
- <ObjContainerID>1818238975</ObjContainerID>
+ <ObjContainerID>1113044991</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -9040,7 +9178,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Function Clone() As X3Core.X3UVCoordinate</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim coord As new X3UVCoordinate(U, V)</SourceLine>
    <SourceLine></SourceLine>
@@ -9063,7 +9202,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub Constructor(initU As Double, initV As Double)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' configure coordinate with initial values</SourceLine>
    <SourceLine></SourceLine>
@@ -9154,9 +9294,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="246806527">
+<block type="Module" ID="1133940735">
  <ObjName>X3Quaternion</ObjName>
- <ObjContainerID>1818238975</ObjContainerID>
+ <ObjContainerID>1113044991</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -9169,7 +9309,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Function Clone() As X3Core.X3Quaternion</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim quat As new X3Core.X3Quaternion(W, X, Y, Z)</SourceLine>
    <SourceLine></SourceLine>
@@ -9191,7 +9332,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub Constructor()</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' initialize quaternion with a zero rotation</SourceLine>
    <SourceLine></SourceLine>
@@ -9217,7 +9359,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub Constructor(initW As Double, initX As Double, initY As Double, initZ As Double)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' configure quaternion with initial values</SourceLine>
    <SourceLine></SourceLine>
@@ -9243,7 +9386,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub FromEulerRotation(x As Double, y As Double, z As Double, angle As Double)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' IMPORTANT: vector needs to be normalized prior to this call</SourceLine>
    <SourceLine></SourceLine>
@@ -9277,7 +9421,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub Multiply(q As X3Quaternion)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim resultX As Double</SourceLine>
    <SourceLine>Dim resultY As Double</SourceLine>
@@ -9315,7 +9460,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub Normalize()</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim m As Double ' magnitude of quaternion</SourceLine>
    <SourceLine></SourceLine>
@@ -9347,7 +9493,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub Pitch(angle As Double)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim tmpQuat As new X3Quaternion</SourceLine>
    <SourceLine></SourceLine>
@@ -9377,7 +9524,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub Roll(angle As Double)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim tmpQuat As new X3Quaternion</SourceLine>
    <SourceLine></SourceLine>
@@ -9407,7 +9555,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub Yaw(angle As Double)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim tmpQuat As new X3Quaternion</SourceLine>
    <SourceLine></SourceLine>
@@ -9435,7 +9584,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub RotateAroundAxis(axis As X3Core.X3Vector, angle As Double)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim tmpQuat As new X3Core.X3Quaternion</SourceLine>
    <SourceLine></SourceLine>
@@ -9466,7 +9616,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub Assign(quat As X3Core.X3Quaternion)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' assign given quaternion value to self</SourceLine>
    <SourceLine></SourceLine>
@@ -9493,7 +9644,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub Constructor(fromVec As X3Core.X3Vector, toVec As X3Core.X3Vector)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim tmpFrom As X3Core.X3Vector ' temporary vector used in calculations</SourceLine>
    <SourceLine>Dim tmpTo As X3Core.X3Vector</SourceLine>
@@ -9534,7 +9686,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub FromEulerRotation(axis As X3Core.X3Vector, angle As Double)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' IMPORTANT: axis needs to be normalized prior to this call</SourceLine>
    <SourceLine></SourceLine>
@@ -9556,6 +9709,10 @@
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub Constructor(axis As X3Core.X3Vector, angle As Double)</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>FromEulerRotation axis, angle</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>End Sub</SourceLine>
@@ -9679,9 +9836,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="246487039">
+<block type="Module" ID="1053237247">
  <ObjName>X3Scene</ObjName>
- <ObjContainerID>1818238975</ObjContainerID>
+ <ObjContainerID>1113044991</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -9694,7 +9851,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub DollyIn(distance As Double)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>if mActiveCamera &lt;&gt; nil then</SourceLine>
    <SourceLine>mActiveCamera.DollyIn(distance)</SourceLine>
@@ -9717,7 +9875,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub DollyOut(distance As Double)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>if mActiveCamera &lt;&gt; nil then</SourceLine>
    <SourceLine>mActiveCamera.DollyOut(distance)</SourceLine>
@@ -9743,7 +9902,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub PedestalUp(distance As Double)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>if mActiveCamera &lt;&gt; nil then</SourceLine>
    <SourceLine>mActiveCamera.PedestalUp(distance)</SourceLine>
@@ -9767,7 +9927,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub PedestalDown(distance As Double)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>if mActiveCamera &lt;&gt; nil then</SourceLine>
    <SourceLine>mActiveCamera.PedestalDown(distance)</SourceLine>
@@ -9792,7 +9953,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub TruckLeft(distance As Double)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>if mActiveCamera &lt;&gt; nil then</SourceLine>
    <SourceLine>mActiveCamera.TruckLeft(distance)</SourceLine>
@@ -9817,7 +9979,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub TruckRight(distance As Double)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>if mActiveCamera &lt;&gt; nil then</SourceLine>
    <SourceLine>mActiveCamera.TruckRight(distance)</SourceLine>
@@ -9843,7 +10006,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub PanLeft(angle As Double)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>if mActiveCamera &lt;&gt; nil then</SourceLine>
    <SourceLine>mActiveCamera.PanLeft(angle)</SourceLine>
@@ -9868,7 +10032,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub PanRight(angle As Double)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>if mActiveCamera &lt;&gt; nil then</SourceLine>
    <SourceLine>mActiveCamera.PanRight(angle)</SourceLine>
@@ -9893,7 +10058,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub TurnDollyLeft(angle As Double, Optional lockCamera As Boolean = True)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>if mActiveCamera &lt;&gt; nil then</SourceLine>
    <SourceLine>mActiveCamera.TurnDollyLeft(angle, lockCamera)</SourceLine>
@@ -9918,7 +10084,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub TurnDollyRight(angle As Double, Optional lockCamera As Boolean = True)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>if mActiveCamera &lt;&gt; nil then</SourceLine>
    <SourceLine>mActiveCamera.TurnDollyRight(angle, lockCamera)</SourceLine>
@@ -9943,7 +10110,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub TiltCameraUp(angle As Double)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>if mActiveCamera &lt;&gt; nil then</SourceLine>
    <SourceLine>mActiveCamera.TiltCameraUp(angle)</SourceLine>
@@ -9969,7 +10137,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub TiltCameraDown(angle As Double)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>if mActiveCamera &lt;&gt; nil then</SourceLine>
    <SourceLine>mActiveCamera.TiltCameraDown(angle)</SourceLine>
@@ -9995,7 +10164,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub RollCameraRight(angle As Double)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>if mActiveCamera &lt;&gt; nil then</SourceLine>
    <SourceLine>mActiveCamera.RollCameraRight(angle)</SourceLine>
@@ -10021,7 +10191,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub RollCameraLeft(angle As Double)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>if mActiveCamera &lt;&gt; nil then</SourceLine>
    <SourceLine>mActiveCamera.RollCameraLeft(angle)</SourceLine>
@@ -10047,7 +10218,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub ResetCamera()</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>if mActiveCamera &lt;&gt; nil then</SourceLine>
    <SourceLine>mActiveCamera.ResetCamera()</SourceLine>
@@ -10070,7 +10242,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub SetViewport(x As Double, y As Double, width As Double, height As Double)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim i as Integer</SourceLine>
    <SourceLine></SourceLine>
@@ -10101,7 +10274,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub TiltDollyDown(angle As Double)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>if mActiveCamera &lt;&gt; nil then</SourceLine>
    <SourceLine>mActiveCamera.TiltDollyDown(angle)</SourceLine>
@@ -10127,7 +10301,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub TiltDollyUp(angle As Double)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>if mActiveCamera &lt;&gt; nil then</SourceLine>
    <SourceLine>mActiveCamera.TiltDollyUp(angle)</SourceLine>
@@ -10143,6 +10318,34 @@
   <ItemFlags>0</ItemFlags>
   <IsShared>0</IsShared>
   <ItemParams>angle As Double</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>Clear</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub Clear()</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>Redim Model(-1) As X3Core.X3Model</SourceLine>
+   <SourceLine>Redim Camera(-1) As X3Core.X3Model</SourceLine>
+   <SourceLine>Redim Light(-1) As X3Core.X3Model</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>CameraIndex = -1</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams></ItemParams>
   <ItemResult></ItemResult>
  </Method>
  <Property>
@@ -10314,9 +10517,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="914765823">
+<block type="Module" ID="1041352703">
  <ObjName>X3Material</ObjName>
- <ObjContainerID>1818238975</ObjContainerID>
+ <ObjContainerID>1113044991</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -10329,7 +10532,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Function Clone() As X3Core.X3Material</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim mat As new X3Core.X3Material</SourceLine>
    <SourceLine></SourceLine>
@@ -10357,7 +10561,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub Constructor()</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Ambient = new X3Color(0.2, 0.2, 0.2)</SourceLine>
    <SourceLine>Diffuse = new X3Color(0.8, 0.8, 0.8)</SourceLine>
@@ -10470,9 +10675,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="169496575">
+<block type="Module" ID="1604759551">
  <ObjName>X3Sprite</ObjName>
- <ObjContainerID>1818238975</ObjContainerID>
+ <ObjContainerID>1113044991</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -10485,7 +10690,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Function Clone() As X3Core.X3Sprite</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim sprite As New X3Core.X3Sprite</SourceLine>
    <SourceLine>Dim i As Integer</SourceLine>
@@ -10514,9 +10720,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub Constructor()</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine></SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>End Sub</SourceLine>
@@ -10536,7 +10741,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub Constructor(initSheet As Picture)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>SpriteSheet = new X3Core.X3Texture(initSheet)</SourceLine>
    <SourceLine></SourceLine>
@@ -10557,7 +10763,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub Constructor(initSheet As Picture, spriteWidth As Integer, spriteHeight As Integer, imageCount As Integer)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim i As Integer</SourceLine>
    <SourceLine>Dim colCount As Integer</SourceLine>
@@ -10665,9 +10872,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="1790232575">
+<block type="Module" ID="1888217087">
  <ObjName>X3SpriteCoordinate</ObjName>
- <ObjContainerID>1818238975</ObjContainerID>
+ <ObjContainerID>1113044991</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -10680,7 +10887,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Function Clone() As X3Core.X3SpriteCoordinate</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Dim coord As new X3SpriteCoordinate(U1, V1, U2, V2)</SourceLine>
    <SourceLine></SourceLine>
@@ -10703,7 +10911,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub Constructor(initU1 As Double, initV1 As Double, initU2 As Double, initV2 As Double)</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>' configure coordinates with initial values</SourceLine>
    <SourceLine></SourceLine>
@@ -10833,9 +11042,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="749113343">
+<block type="Module" ID="355676159">
  <ObjName>X3IO</ObjName>
- <ObjContainerID>1818238975</ObjContainerID>
+ <ObjContainerID>1113044991</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -13274,9 +13483,9 @@
   </ViewProperty>
  </ViewBehavior>
 </block>
-<block type="Module" ID="1801095167">
+<block type="Module" ID="162605055">
  <ObjName>X3BoundingBox</ObjName>
- <ObjContainerID>1818238975</ObjContainerID>
+ <ObjContainerID>1113044991</ObjContainerID>
  <IsClass>1</IsClass>
  <ItemFlags>1</ItemFlags>
  <IsInterface>0</IsInterface>
@@ -13593,9 +13802,9 @@
    <EditorCount>1</EditorCount>
    <Editor>
     <EditorIndex>0</EditorIndex>
-    <EditorLocation>X3Core</EditorLocation>
+    <EditorLocation>X3Core.X3Scene.Clear</EditorLocation>
     <EditorPath></EditorPath>
-    <EditingPartID>1818238975</EditingPartID>
+    <EditingPartID>1053237247</EditingPartID>
    </Editor>
    <SelectedTab>0</SelectedTab>
   </Editors>
