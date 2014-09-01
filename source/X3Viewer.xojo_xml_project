@@ -1953,16 +1953,12 @@
    <SourceLine></SourceLine>
    <SourceLine>scene = Surface.Graphics.Scene</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>ViewMode = 0 // Model</SourceLine>
-   <SourceLine></SourceLine>
    <SourceLine>tbMain.Item(1).Enabled = false</SourceLine>
    <SourceLine>frmCamera.Hide()</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>CurrentModel = io.LoadModel(x3File)</SourceLine>
    <SourceLine>CurrentModel.Unitize()</SourceLine>
    <SourceLine>CurrentModel.Center()</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>//Surface.Graphics.Scene.ActiveCamera.DollyPosition.Z = 2</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Redim scene.Light(-1)</SourceLine>
    <SourceLine>Redim scene.Camera(-1)</SourceLine>
@@ -1979,9 +1975,6 @@
    <SourceLine></SourceLine>
    <SourceLine>elseif Right(x3File.Name, 4) = ".x3s" then // x3 scene</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>ViewMode = 1 // Scene</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>Surface.MakeCurrent</SourceLine>
    <SourceLine>X3_DisableAllLights() // disable all lights since lights sources are defined in the scene</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>tbMain.Item(1).Enabled = true</SourceLine>
@@ -2094,7 +2087,6 @@
    <SourceLine>Dim dlg As new SaveAsDialog</SourceLine>
    <SourceLine>Dim pngType As new FileType // PNG files</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>Surface.MakeCurrent()</SourceLine>
    <SourceLine>ss = X3_Snapshot(0, 0, Surface.Width, Surface.Height)</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>pngType.Name = "Portable Network Graphics" </SourceLine>
@@ -2216,22 +2208,6 @@
   </ItemSource>
   <TextEncoding>134217984</TextEncoding>
   <ItemDeclaration>CurrentScene As X3Core.X3Scene</ItemDeclaration>
-  <ItemFlags>0</ItemFlags>
-  <IsShared>0</IsShared>
- </Property>
- <Property>
-  <ItemName>ViewMode</ItemName>
-  <Compatibility></Compatibility>
-  <Visible>1</Visible>
-  <ItemSource>
-   <TextEncoding>134217984</TextEncoding>
-   <SourceLine>ViewMode As Integer</SourceLine>
-   <SourceLine>0 = Model</SourceLine>
-   <SourceLine>1 = Scene</SourceLine>
-   <SourceLine></SourceLine>
-  </ItemSource>
-  <TextEncoding>134217984</TextEncoding>
-  <ItemDeclaration>ViewMode As Integer = 0</ItemDeclaration>
   <ItemFlags>0</ItemFlags>
   <IsShared>0</IsShared>
  </Property>
@@ -13946,9 +13922,9 @@
    <EditorCount>1</EditorCount>
    <Editor>
     <EditorIndex>0</EditorIndex>
-    <EditorLocation>frmMain.actionOpen</EditorLocation>
+    <EditorLocation>X3Core.X3Canvas.Render</EditorLocation>
     <EditorPath></EditorPath>
-    <EditingPartID>893575167</EditingPartID>
+    <EditingPartID>522209279</EditingPartID>
    </Editor>
    <SelectedTab>0</SelectedTab>
   </Editors>
