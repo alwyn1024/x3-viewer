@@ -17,7 +17,7 @@
  <DefaultLanguage>0</DefaultLanguage>
  <CurrentLanguage>0</CurrentLanguage>
  <DefaultEncoding>0</DefaultEncoding>
- <BuildFlags>29072</BuildFlags>
+ <BuildFlags>20880</BuildFlags>
  <UseBuildsFolder>1</UseBuildsFolder>
  <WebApp>0</WebApp>
  <Icon>
@@ -966,7 +966,7 @@
   <PropertyVal Name="Italic">False</PropertyVal>
   <PropertyVal Name="Bold">False</PropertyVal>
   <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0</PropertyVal>
+  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
   <PropertyVal Name="TextFont">System</PropertyVal>
   <PropertyVal Name="ButtonStyle">0</PropertyVal>
   <PropertyVal Name="AutoDeactivate">True</PropertyVal>
@@ -988,9 +988,9 @@
   <PropertyVal Name="Top">48</PropertyVal>
   <PropertyVal Name="Left">20</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">cmdDollyIn</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>0</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -1002,7 +1002,7 @@
   <PropertyVal Name="Italic">False</PropertyVal>
   <PropertyVal Name="Bold">False</PropertyVal>
   <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0</PropertyVal>
+  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
   <PropertyVal Name="TextFont">System</PropertyVal>
   <PropertyVal Name="ButtonStyle">0</PropertyVal>
   <PropertyVal Name="AutoDeactivate">True</PropertyVal>
@@ -1024,9 +1024,9 @@
   <PropertyVal Name="Top">72</PropertyVal>
   <PropertyVal Name="Left">20</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">cmdDollyOut</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>1</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -1038,7 +1038,7 @@
   <PropertyVal Name="Italic">False</PropertyVal>
   <PropertyVal Name="Bold">False</PropertyVal>
   <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0</PropertyVal>
+  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
   <PropertyVal Name="TextFont">System</PropertyVal>
   <PropertyVal Name="ButtonStyle">0</PropertyVal>
   <PropertyVal Name="AutoDeactivate">True</PropertyVal>
@@ -1060,9 +1060,9 @@
   <PropertyVal Name="Top">96</PropertyVal>
   <PropertyVal Name="Left">20</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">cmdPedestalUp</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>2</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -1074,7 +1074,7 @@
   <PropertyVal Name="Italic">False</PropertyVal>
   <PropertyVal Name="Bold">False</PropertyVal>
   <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0</PropertyVal>
+  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
   <PropertyVal Name="TextFont">System</PropertyVal>
   <PropertyVal Name="ButtonStyle">0</PropertyVal>
   <PropertyVal Name="AutoDeactivate">True</PropertyVal>
@@ -1096,9 +1096,9 @@
   <PropertyVal Name="Top">120</PropertyVal>
   <PropertyVal Name="Left">20</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">cmdPedestalDown</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>3</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -1110,7 +1110,7 @@
   <PropertyVal Name="Italic">False</PropertyVal>
   <PropertyVal Name="Bold">False</PropertyVal>
   <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0</PropertyVal>
+  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
   <PropertyVal Name="TextFont">System</PropertyVal>
   <PropertyVal Name="ButtonStyle">0</PropertyVal>
   <PropertyVal Name="AutoDeactivate">True</PropertyVal>
@@ -1132,9 +1132,9 @@
   <PropertyVal Name="Top">144</PropertyVal>
   <PropertyVal Name="Left">20</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">cmdTruckLeft</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>4</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -1146,7 +1146,7 @@
   <PropertyVal Name="Italic">False</PropertyVal>
   <PropertyVal Name="Bold">False</PropertyVal>
   <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0</PropertyVal>
+  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
   <PropertyVal Name="TextFont">System</PropertyVal>
   <PropertyVal Name="ButtonStyle">0</PropertyVal>
   <PropertyVal Name="AutoDeactivate">True</PropertyVal>
@@ -1168,9 +1168,9 @@
   <PropertyVal Name="Top">168</PropertyVal>
   <PropertyVal Name="Left">20</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">cmdTruckRight</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>5</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -1182,7 +1182,7 @@
   <PropertyVal Name="Italic">False</PropertyVal>
   <PropertyVal Name="Bold">False</PropertyVal>
   <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0</PropertyVal>
+  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
   <PropertyVal Name="TextFont">System</PropertyVal>
   <PropertyVal Name="ButtonStyle">0</PropertyVal>
   <PropertyVal Name="AutoDeactivate">True</PropertyVal>
@@ -1204,9 +1204,9 @@
   <PropertyVal Name="Top">72</PropertyVal>
   <PropertyVal Name="Left">141</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">cmdPanLeft</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>6</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -1218,7 +1218,7 @@
   <PropertyVal Name="Italic">False</PropertyVal>
   <PropertyVal Name="Bold">False</PropertyVal>
   <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0</PropertyVal>
+  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
   <PropertyVal Name="TextFont">System</PropertyVal>
   <PropertyVal Name="ButtonStyle">0</PropertyVal>
   <PropertyVal Name="AutoDeactivate">True</PropertyVal>
@@ -1240,9 +1240,9 @@
   <PropertyVal Name="Top">96</PropertyVal>
   <PropertyVal Name="Left">141</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">cmdPanRight</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>7</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -1254,7 +1254,7 @@
   <PropertyVal Name="Italic">False</PropertyVal>
   <PropertyVal Name="Bold">False</PropertyVal>
   <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0</PropertyVal>
+  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
   <PropertyVal Name="TextFont">System</PropertyVal>
   <PropertyVal Name="ButtonStyle">0</PropertyVal>
   <PropertyVal Name="AutoDeactivate">True</PropertyVal>
@@ -1276,9 +1276,9 @@
   <PropertyVal Name="Top">191</PropertyVal>
   <PropertyVal Name="Left">20</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">cmdTurnDollyLeft</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>8</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -1290,7 +1290,7 @@
   <PropertyVal Name="Italic">False</PropertyVal>
   <PropertyVal Name="Bold">False</PropertyVal>
   <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0</PropertyVal>
+  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
   <PropertyVal Name="TextFont">System</PropertyVal>
   <PropertyVal Name="ButtonStyle">0</PropertyVal>
   <PropertyVal Name="AutoDeactivate">True</PropertyVal>
@@ -1312,9 +1312,9 @@
   <PropertyVal Name="Top">215</PropertyVal>
   <PropertyVal Name="Left">20</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">cmdTurnDollyRight</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>9</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -1326,7 +1326,7 @@
   <PropertyVal Name="Italic">False</PropertyVal>
   <PropertyVal Name="Bold">False</PropertyVal>
   <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0</PropertyVal>
+  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
   <PropertyVal Name="TextFont">System</PropertyVal>
   <PropertyVal Name="ButtonStyle">0</PropertyVal>
   <PropertyVal Name="AutoDeactivate">True</PropertyVal>
@@ -1348,9 +1348,9 @@
   <PropertyVal Name="Top">168</PropertyVal>
   <PropertyVal Name="Left">141</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">cmdTiltCameraUp</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>10</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -1362,7 +1362,7 @@
   <PropertyVal Name="Italic">False</PropertyVal>
   <PropertyVal Name="Bold">False</PropertyVal>
   <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0</PropertyVal>
+  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
   <PropertyVal Name="TextFont">System</PropertyVal>
   <PropertyVal Name="ButtonStyle">0</PropertyVal>
   <PropertyVal Name="AutoDeactivate">True</PropertyVal>
@@ -1384,9 +1384,9 @@
   <PropertyVal Name="Top">192</PropertyVal>
   <PropertyVal Name="Left">141</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">cmdTiltCameraDown</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>11</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -1398,7 +1398,7 @@
   <PropertyVal Name="Italic">False</PropertyVal>
   <PropertyVal Name="Bold">False</PropertyVal>
   <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0</PropertyVal>
+  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
   <PropertyVal Name="TextFont">System</PropertyVal>
   <PropertyVal Name="ButtonStyle">0</PropertyVal>
   <PropertyVal Name="AutoDeactivate">True</PropertyVal>
@@ -1420,9 +1420,9 @@
   <PropertyVal Name="Top">120</PropertyVal>
   <PropertyVal Name="Left">141</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">cmdRollCameraLeft</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>12</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -1434,7 +1434,7 @@
   <PropertyVal Name="Italic">False</PropertyVal>
   <PropertyVal Name="Bold">False</PropertyVal>
   <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0</PropertyVal>
+  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
   <PropertyVal Name="TextFont">System</PropertyVal>
   <PropertyVal Name="ButtonStyle">0</PropertyVal>
   <PropertyVal Name="AutoDeactivate">True</PropertyVal>
@@ -1456,9 +1456,9 @@
   <PropertyVal Name="Top">144</PropertyVal>
   <PropertyVal Name="Left">141</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">cmdRollCameraRight</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>13</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -1470,7 +1470,7 @@
   <PropertyVal Name="Italic">False</PropertyVal>
   <PropertyVal Name="Bold">False</PropertyVal>
   <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0</PropertyVal>
+  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
   <PropertyVal Name="TextFont">System</PropertyVal>
   <PropertyVal Name="ButtonStyle">0</PropertyVal>
   <PropertyVal Name="AutoDeactivate">True</PropertyVal>
@@ -1492,9 +1492,9 @@
   <PropertyVal Name="Top">48</PropertyVal>
   <PropertyVal Name="Left">141</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">cmdResetCamera</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>14</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -1508,7 +1508,7 @@
   <PropertyVal Name="Italic">False</PropertyVal>
   <PropertyVal Name="Bold">False</PropertyVal>
   <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0</PropertyVal>
+  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
   <PropertyVal Name="TextFont">System</PropertyVal>
   <PropertyVal Name="AutoDeactivate">True</PropertyVal>
   <PropertyVal Name="HelpTag"></PropertyVal>
@@ -1531,10 +1531,9 @@
   <PropertyVal Name="Top">216</PropertyVal>
   <PropertyVal Name="Left">141</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">Label</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">lblFOV</PropertyVal>
-  <PropertyVal Name="TabStop">True</PropertyVal>
-  <PropertyVal Name="Super">Label</PropertyVal>
   <ControlIndex>15</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -1555,7 +1554,7 @@
   <PropertyVal Name="Italic">False</PropertyVal>
   <PropertyVal Name="Bold">False</PropertyVal>
   <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0</PropertyVal>
+  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
   <PropertyVal Name="TextFont">System</PropertyVal>
   <PropertyVal Name="AutoDeactivate">True</PropertyVal>
   <PropertyVal Name="HelpTag"></PropertyVal>
@@ -1579,9 +1578,9 @@
   <PropertyVal Name="Top">215</PropertyVal>
   <PropertyVal Name="Left">200</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">TextField</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">txtFOV</PropertyVal>
-  <PropertyVal Name="Super">TextField</PropertyVal>
   <ControlIndex>16</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -1595,7 +1594,7 @@
   <PropertyVal Name="Italic">False</PropertyVal>
   <PropertyVal Name="Bold">False</PropertyVal>
   <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0</PropertyVal>
+  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
   <PropertyVal Name="TextFont">System</PropertyVal>
   <PropertyVal Name="AutoDeactivate">True</PropertyVal>
   <PropertyVal Name="HelpTag"></PropertyVal>
@@ -1618,10 +1617,9 @@
   <PropertyVal Name="Top">240</PropertyVal>
   <PropertyVal Name="Left">141</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">Label</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">lblZNear</PropertyVal>
-  <PropertyVal Name="TabStop">True</PropertyVal>
-  <PropertyVal Name="Super">Label</PropertyVal>
   <ControlIndex>17</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -1642,7 +1640,7 @@
   <PropertyVal Name="Italic">False</PropertyVal>
   <PropertyVal Name="Bold">False</PropertyVal>
   <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0</PropertyVal>
+  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
   <PropertyVal Name="TextFont">System</PropertyVal>
   <PropertyVal Name="AutoDeactivate">True</PropertyVal>
   <PropertyVal Name="HelpTag"></PropertyVal>
@@ -1666,9 +1664,9 @@
   <PropertyVal Name="Top">239</PropertyVal>
   <PropertyVal Name="Left">200</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">TextField</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">txtZNear</PropertyVal>
-  <PropertyVal Name="Super">TextField</PropertyVal>
   <ControlIndex>18</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -1682,7 +1680,7 @@
   <PropertyVal Name="Italic">False</PropertyVal>
   <PropertyVal Name="Bold">False</PropertyVal>
   <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0</PropertyVal>
+  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
   <PropertyVal Name="TextFont">System</PropertyVal>
   <PropertyVal Name="AutoDeactivate">True</PropertyVal>
   <PropertyVal Name="HelpTag"></PropertyVal>
@@ -1705,10 +1703,9 @@
   <PropertyVal Name="Top">264</PropertyVal>
   <PropertyVal Name="Left">141</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">Label</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">lblZFar</PropertyVal>
-  <PropertyVal Name="TabStop">True</PropertyVal>
-  <PropertyVal Name="Super">Label</PropertyVal>
   <ControlIndex>19</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -1729,7 +1726,7 @@
   <PropertyVal Name="Italic">False</PropertyVal>
   <PropertyVal Name="Bold">False</PropertyVal>
   <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0</PropertyVal>
+  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
   <PropertyVal Name="TextFont">System</PropertyVal>
   <PropertyVal Name="AutoDeactivate">True</PropertyVal>
   <PropertyVal Name="HelpTag"></PropertyVal>
@@ -1753,9 +1750,9 @@
   <PropertyVal Name="Top">263</PropertyVal>
   <PropertyVal Name="Left">200</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">TextField</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">txtZFar</PropertyVal>
-  <PropertyVal Name="Super">TextField</PropertyVal>
   <ControlIndex>20</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -1767,7 +1764,7 @@
   <PropertyVal Name="Italic">False</PropertyVal>
   <PropertyVal Name="Bold">False</PropertyVal>
   <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0</PropertyVal>
+  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
   <PropertyVal Name="TextFont">System</PropertyVal>
   <PropertyVal Name="ButtonStyle">0</PropertyVal>
   <PropertyVal Name="AutoDeactivate">True</PropertyVal>
@@ -1789,9 +1786,9 @@
   <PropertyVal Name="Top">239</PropertyVal>
   <PropertyVal Name="Left">20</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">cmdTiltDollyUp</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>21</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -1803,7 +1800,7 @@
   <PropertyVal Name="Italic">False</PropertyVal>
   <PropertyVal Name="Bold">False</PropertyVal>
   <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0</PropertyVal>
+  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
   <PropertyVal Name="TextFont">System</PropertyVal>
   <PropertyVal Name="ButtonStyle">0</PropertyVal>
   <PropertyVal Name="AutoDeactivate">True</PropertyVal>
@@ -1825,9 +1822,9 @@
   <PropertyVal Name="Top">263</PropertyVal>
   <PropertyVal Name="Left">20</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">cmdTiltDollyDown</PropertyVal>
-  <PropertyVal Name="Super">PushButton</PropertyVal>
   <ControlIndex>22</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -1841,7 +1838,7 @@
   <PropertyVal Name="Italic">False</PropertyVal>
   <PropertyVal Name="Bold">False</PropertyVal>
   <PropertyVal Name="TextUnit">0</PropertyVal>
-  <PropertyVal Name="TextSize">0.0</PropertyVal>
+  <PropertyVal Name="TextSize">0.0e+</PropertyVal>
   <PropertyVal Name="TextFont">System</PropertyVal>
   <PropertyVal Name="AutoDeactivate">True</PropertyVal>
   <PropertyVal Name="HelpTag"></PropertyVal>
@@ -1861,9 +1858,9 @@
   <PropertyVal Name="Top">14</PropertyVal>
   <PropertyVal Name="Left">20</PropertyVal>
   <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">PopupMenu</PropertyVal>
   <PropertyVal Name="Index">-2147483648</PropertyVal>
   <PropertyVal Name="Name">comCamera</PropertyVal>
-  <PropertyVal Name="Super">PopupMenu</PropertyVal>
   <ControlIndex>23</ControlIndex>
   <Locked>0</Locked>
  </Control>
@@ -1884,27 +1881,14 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Sub Open()</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Self.MouseCursor = System.Cursors.StandardPointer</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>loadToolbar</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>End Sub</SourceLine>
-  </ItemSource>
- </HookInstance>
- <HookInstance>
-  <ItemName>Paint</ItemName>
-  <Compatibility></Compatibility>
-  <Visible>1</Visible>
-  <ItemSource>
-   <TextEncoding>134217984</TextEncoding>
-   <SourceLine>Sub Paint(g As Graphics, areas() As REALbasic.Rect)</SourceLine>
-   <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>Surface.Render </SourceLine>
-   <SourceLine></SourceLine>
+   <SourceLine>Surface.Graphics.Scene.Backcolor.Assign(0.2, 0.2, 0.2, 1)</SourceLine>
    <SourceLine>End Sub</SourceLine>
   </ItemSource>
  </HookInstance>
@@ -1916,7 +1900,8 @@
    <TextEncoding>134217984</TextEncoding>
    <SourceLine>Function KeyDown(Key As String) As Boolean</SourceLine>
    <SourceLine>' www.Xojo3D.com</SourceLine>
-   <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>handleKey Key</SourceLine>
    <SourceLine></SourceLine>
@@ -1963,6 +1948,8 @@
    <SourceLine></SourceLine>
    <SourceLine>if Right(x3File.Name, 4) = ".x3m" then // x3 model</SourceLine>
    <SourceLine></SourceLine>
+   <SourceLine>scene = Surface.Graphics.Scene</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>ViewMode = 0 // Model</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>tbMain.Item(1).Enabled = false</SourceLine>
@@ -1974,45 +1961,18 @@
    <SourceLine></SourceLine>
    <SourceLine>//Surface.Graphics.Scene.ActiveCamera.DollyPosition.Z = 2</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>Redim Surface.Graphics.Scene.Light(-1)</SourceLine>
-   <SourceLine>Redim Surface.Graphics.Scene.Camera(-1)</SourceLine>
-   <SourceLine>Redim Surface.Graphics.Scene.Model(-1)</SourceLine>
+   <SourceLine>Redim scene.Light(-1)</SourceLine>
+   <SourceLine>Redim scene.Camera(-1)</SourceLine>
+   <SourceLine>Redim scene.Model(-1)</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>Surface.Graphics.Scene.Light.Append new X3Core.X3Light(0, 1, 1)</SourceLine>
-   <SourceLine>Surface.Graphics.Scene.Camera.Append new X3Core.X3Camera(0, 0, 2)</SourceLine>
-   <SourceLine>Surface.Graphics.Scene.CameraIndex = 0</SourceLine>
-   <SourceLine>Surface.Graphics.Scene.SetViewport 0, 0, Surface.Width, Surface.Height</SourceLine>
-   <SourceLine>Surface.Graphics.Scene.Model.Append CurrentModel</SourceLine>
+   <SourceLine>scene.Backcolor.Assign(0.2, 0.2, 0.2, 1)</SourceLine>
+   <SourceLine>scene.Light.Append new X3Core.X3Light(0, 1, 1)</SourceLine>
+   <SourceLine>scene.Camera.Append new X3Core.X3Camera(0, 0, 2)</SourceLine>
+   <SourceLine>scene.CameraIndex = 0</SourceLine>
+   <SourceLine>scene.SetViewport 0, 0, Surface.Width, Surface.Height</SourceLine>
+   <SourceLine>scene.Model.Append CurrentModel</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>Surface.Render()</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>'scene = Surface.Graphics.Scene</SourceLine>
-   <SourceLine>'model = io.LoadModel(x3File)</SourceLine>
-   <SourceLine>'model.Unitize()</SourceLine>
-   <SourceLine>'model.Center()</SourceLine>
-   <SourceLine>'</SourceLine>
-   <SourceLine>'scene.Clear()</SourceLine>
-   <SourceLine>'</SourceLine>
-   <SourceLine>'scene.Model.Append model</SourceLine>
-   <SourceLine>'scene.Camera.Append new X3Core.X3Camera()</SourceLine>
-   <SourceLine>'scene.CameraIndex = 0</SourceLine>
-   <SourceLine>'scene.ActiveCamera.DollyPosition.Z = 2 // move camera back a bit so that we can see the model</SourceLine>
-   <SourceLine>'</SourceLine>
-   <SourceLine>'Surface.Render()</SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine></SourceLine>
-   <SourceLine>'Surface.MakeCurrent</SourceLine>
-   <SourceLine>'X3_EnableLight OpenGL.GL_LIGHT0, new X3Core.X3Light(0, 1, 1) // enable a default light for the model</SourceLine>
-   <SourceLine>'X3_SetPerspective 0, 0, Surface.Width, Surface.Height</SourceLine>
-   <SourceLine>'</SourceLine>
-   <SourceLine>'tbMain.Item(1).Enabled = false</SourceLine>
-   <SourceLine>'</SourceLine>
-   <SourceLine>'frmCamera.Hide()</SourceLine>
-   <SourceLine>'</SourceLine>
-   <SourceLine>'CurrentModel = io.LoadModel(x3File)</SourceLine>
-   <SourceLine>'CurrentModel.Unitize()</SourceLine>
-   <SourceLine>'CurrentModel.Center()</SourceLine>
-   <SourceLine>'Surface.Render</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>elseif Right(x3File.Name, 4) = ".x3s" then // x3 scene</SourceLine>
    <SourceLine></SourceLine>
@@ -2262,7 +2222,7 @@
   <Visible>1</Visible>
   <ItemSource>
    <TextEncoding>134217984</TextEncoding>
-   <SourceLine>ViewMode As Integer = 0</SourceLine>
+   <SourceLine>ViewMode As Integer</SourceLine>
    <SourceLine>0 = Model</SourceLine>
    <SourceLine>1 = Scene</SourceLine>
    <SourceLine></SourceLine>
@@ -2548,6 +2508,12 @@
    <PropertyGroup>Behavior</PropertyGroup>
    <ItemType>Integer</ItemType>
   </ViewProperty>
+  <ViewProperty>
+   <ObjName>ViewMode</ObjName>
+   <PropertyGroup>Behavior</PropertyGroup>
+   <PropertyValue>0</PropertyValue>
+   <ItemType>Integer</ItemType>
+  </ViewProperty>
  </ViewBehavior>
  <ControlBehavior>
   <Superclass>MainToolbar</Superclass>
@@ -2559,7 +2525,8 @@
     <TextEncoding>134217984</TextEncoding>
     <SourceLine>Sub Action(item As ToolItem)</SourceLine>
     <SourceLine>' www.Xojo3D.com</SourceLine>
-    <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+    <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+    <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
     <SourceLine></SourceLine>
     <SourceLine>select case item.Name</SourceLine>
     <SourceLine></SourceLine>
@@ -2606,7 +2573,8 @@
     <TextEncoding>134217984</TextEncoding>
     <SourceLine>Sub MouseDrag(x as Integer, y as Integer)</SourceLine>
     <SourceLine>' www.Xojo3D.com</SourceLine>
-    <SourceLine>' X3 is a {Zoclee} initiative.</SourceLine>
+    <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+    <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
     <SourceLine></SourceLine>
     <SourceLine>if CurrentScene &lt;&gt; nil then</SourceLine>
     <SourceLine>X3_RotateWithXY CurrentScene.Camera(CurrentScene.CameraIndex).DollyRotation, -(y - MousePrevY), -(x - MousePrevX)</SourceLine>
@@ -5053,12 +5021,16 @@
    <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
    <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
    <SourceLine></SourceLine>
+   <SourceLine>Dim s As X3Core.X3Scene</SourceLine>
+   <SourceLine></SourceLine>
    <SourceLine>Me.MakeCurrent()</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>OpenGL.glClearColor(1, 1, 1, 1) ' set the background color</SourceLine>
+   <SourceLine>s = Graphics.Scene</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>OpenGL.glClearColor(s.Backcolor.Red, s.Backcolor.Green, s.Backcolor.Blue, s.Backcolor.Alpha) ' set the background color</SourceLine>
    <SourceLine>OpenGL.glClear(OpenGL.GL_COLOR_BUFFER_BIT + OpenGL.GL_DEPTH_BUFFER_BIT)</SourceLine>
    <SourceLine></SourceLine>
-   <SourceLine>X3_RenderScene Graphics.Scene</SourceLine>
+   <SourceLine>X3_RenderScene s</SourceLine>
    <SourceLine></SourceLine>
    <SourceLine>End Function</SourceLine>
   </ItemSource>
@@ -5787,6 +5759,31 @@
   <ItemFlags>0</ItemFlags>
   <IsShared>0</IsShared>
   <ItemParams>initColor As Color</ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>Assign</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub Assign(red As Double, green As Double, blue As Double, alpha As Double = 1)</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>Me.Red = red</SourceLine>
+   <SourceLine>Me.Green = green</SourceLine>
+   <SourceLine>Me.Blue = blue</SourceLine>
+   <SourceLine>Me.Alpha = alpha</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>red As Double, green As Double, blue As Double, alpha As Double = 1</ItemParams>
   <ItemResult></ItemResult>
  </Method>
  <Property>
@@ -10453,6 +10450,28 @@
   <ItemParams>angle As Double</ItemParams>
   <ItemResult></ItemResult>
  </Method>
+ <Method>
+  <ItemName>Constructor</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub Constructor()</SourceLine>
+   <SourceLine>' www.Xojo3D.com</SourceLine>
+   <SourceLine>' X3 is a {Zoclee}™ initiative.</SourceLine>
+   <SourceLine>' All X3 code is donated to the public domain and can be used freely in commercial and non-commercial applications.</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>Backcolor =new X3Core.X3Color(1, 1, 1)</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams></ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
  <Property>
   <ItemName>Model()</ItemName>
   <Compatibility></Compatibility>
@@ -10579,6 +10598,20 @@
   </ItemSource>
   <TextEncoding>134217984</TextEncoding>
   <ItemDeclaration>Light() As X3Core.X3Light</ItemDeclaration>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+ </Property>
+ <Property>
+  <ItemName>Backcolor</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Backcolor As X3Core.X3Color</SourceLine>
+   <SourceLine></SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <ItemDeclaration>Backcolor As X3Core.X3Color</ItemDeclaration>
   <ItemFlags>0</ItemFlags>
   <IsShared>0</IsShared>
  </Property>
